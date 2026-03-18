@@ -28,8 +28,8 @@ export async function sendEnquiryEmail(data: EnquiryData) {
 
   const resend = getResendClient();
   const { error } = await resend.emails.send({
-    from: "Website Enquiry <enquiry@yourdomain.com>",
-    to: process.env.ENQUIRY_EMAIL || "hello@emmarosesinger.com",
+    from: "Website Enquiry <enquiry@nicolamason.co.uk>",
+    to: process.env.ENQUIRY_EMAIL || "hello@nicolamason.co.uk",
     replyTo: email,
     subject: `New Enquiry: ${eventType} on ${formattedDate}`,
     html: `

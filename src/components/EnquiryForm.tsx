@@ -12,9 +12,10 @@ interface FormData {
 
 const eventTypes = [
   "Wedding Ceremony",
-  "Wedding Reception",
+  "Wedding Drinks Reception",
+  "Wedding Full Day",
   "Corporate Event",
-  "Private Party",
+  "Private Party / Celebration",
   "Funeral / Memorial",
   "Other",
 ];
@@ -79,13 +80,14 @@ export default function EnquiryForm() {
             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
           />
         </svg>
-        <h3 className="text-xl font-serif text-stone-800 mb-2">Thank You!</h3>
-        <p className="text-stone-600">
-          Your enquiry has been sent successfully. I&apos;ll be in touch within 24-48 hours.
+        <h3 className="text-xl font-serif text-[#2C2C2C] mb-2">Thank You!</h3>
+        <p className="text-[#444444]">
+          Your enquiry has been sent successfully. I&apos;ll be in touch within 1-2
+          hours to discuss your event.
         </p>
         <button
           onClick={() => setStatus("idle")}
-          className="mt-6 text-rose-600 hover:text-rose-700 text-sm underline"
+          className="mt-6 text-[#C4A882] hover:text-[#A68B5B] text-sm underline"
         >
           Send another enquiry
         </button>
@@ -96,14 +98,14 @@ export default function EnquiryForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       {status === "error" && (
-        <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-red-700 text-sm">
+        <div className="bg-red-50 border border-red-200 rounded-[4px] p-4 text-red-700 text-sm">
           {errorMessage}
         </div>
       )}
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-stone-700 mb-2">
+          <label htmlFor="name" className="block text-sm font-medium text-[#2C2C2C] mb-2">
             Your Name *
           </label>
           <input
@@ -112,13 +114,13 @@ export default function EnquiryForm() {
             required
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            className="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-transparent transition-shadow"
-            placeholder="John Smith"
+            className="w-full px-4 py-3 border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow"
+            placeholder="Your name"
           />
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-stone-700 mb-2">
+          <label htmlFor="email" className="block text-sm font-medium text-[#2C2C2C] mb-2">
             Email Address *
           </label>
           <input
@@ -127,13 +129,13 @@ export default function EnquiryForm() {
             required
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            className="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-transparent transition-shadow"
-            placeholder="john@example.com"
+            className="w-full px-4 py-3 border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow"
+            placeholder="your@email.com"
           />
         </div>
 
         <div>
-          <label htmlFor="eventDate" className="block text-sm font-medium text-stone-700 mb-2">
+          <label htmlFor="eventDate" className="block text-sm font-medium text-[#2C2C2C] mb-2">
             Event Date *
           </label>
           <input
@@ -142,12 +144,12 @@ export default function EnquiryForm() {
             required
             value={formData.eventDate}
             onChange={(e) => setFormData({ ...formData, eventDate: e.target.value })}
-            className="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-transparent transition-shadow"
+            className="w-full px-4 py-3 border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow"
           />
         </div>
 
         <div>
-          <label htmlFor="eventType" className="block text-sm font-medium text-stone-700 mb-2">
+          <label htmlFor="eventType" className="block text-sm font-medium text-[#2C2C2C] mb-2">
             Event Type *
           </label>
           <select
@@ -155,7 +157,7 @@ export default function EnquiryForm() {
             required
             value={formData.eventType}
             onChange={(e) => setFormData({ ...formData, eventType: e.target.value })}
-            className="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-transparent transition-shadow bg-white"
+            className="w-full px-4 py-3 border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow bg-white"
           >
             <option value="">Select event type...</option>
             {eventTypes.map((type) => (
@@ -168,7 +170,7 @@ export default function EnquiryForm() {
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-stone-700 mb-2">
+        <label htmlFor="message" className="block text-sm font-medium text-[#2C2C2C] mb-2">
           Tell me about your event *
         </label>
         <textarea
@@ -177,21 +179,22 @@ export default function EnquiryForm() {
           rows={5}
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-          className="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-transparent transition-shadow resize-none"
-          placeholder="Please include details about your venue, approximate number of guests, and any specific songs or style you have in mind..."
+          className="w-full px-4 py-3 border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow resize-none"
+          placeholder="Please include details about your venue, approximate number of guests, and any specific songs or packages you're interested in..."
         />
       </div>
 
       <button
         type="submit"
         disabled={status === "loading"}
-        className="w-full bg-rose-600 hover:bg-rose-700 disabled:bg-rose-400 text-white py-4 text-sm uppercase tracking-wider transition-colors"
+        className="w-full bg-[#2C2C2C] hover:bg-[#1a1a1a] disabled:bg-[#888888] text-white py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
       >
         {status === "loading" ? "Sending..." : "Send Enquiry"}
       </button>
 
-      <p className="text-sm text-stone-500 text-center">
-        I typically respond within 24-48 hours. For urgent enquiries, please call directly.
+      <p className="text-sm text-[#888888] text-center">
+        I typically respond within 1-2 hours. For urgent enquiries, please
+        WhatsApp or call directly.
       </p>
     </form>
   );

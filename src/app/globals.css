@@ -3,12 +3,19 @@
 @theme inline {
   --font-serif: var(--font-playfair), Georgia, serif;
   --font-sans: var(--font-lato), system-ui, sans-serif;
+
+  /* Custom brand colours */
+  --color-brand-gold: #C4A882;
+  --color-brand-gold-light: #D4BE9C;
+  --color-brand-gold-dark: #A68B5B;
+  --color-brand-charcoal: #2C2C2C;
+  --color-brand-charcoal-light: #444444;
 }
 
 body {
   font-family: var(--font-sans);
-  background-color: #fafaf9;
-  color: #1c1917;
+  background-color: #ffffff;
+  color: #2C2C2C;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,6 +29,6 @@ html {
 
 /* Custom selection color */
 ::selection {
-  background-color: #fecdd3;
-  color: #1c1917;
+  background-color: #C4A882;
+  color: #ffffff;
 }

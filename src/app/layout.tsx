@@ -18,9 +18,16 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Emma Rose | Wedding & Event Singer",
+  title: "Nicola Mason | Award-Winning Wedding & Events Singer",
   description:
-    "Professional wedding and event singer bringing elegance and emotion to your special occasions. Available for weddings, corporate events, and private parties across the UK.",
+    "Award-winning wedding and events singer based in Glasgow, Scotland. Tailored live music for ceremonies, receptions, and celebrations across Central Scotland.",
+  keywords: [
+    "wedding singer Glasgow",
+    "wedding singer Scotland",
+    "events singer",
+    "ceremony singer",
+    "Scottish wedding entertainment",
+  ],
 };
 
 export default function RootLayout({
