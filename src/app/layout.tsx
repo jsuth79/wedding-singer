@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Lato } from "next/font/google";
+import { EB_Garamond, Lato } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const garamond = EB_Garamond({
+  variable: "--font-garamond",
   subsets: ["latin"],
   display: "swap",
 });
@@ -37,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${playfair.variable} ${lato.variable} antialiased`}>
+      <body className={`${garamond.variable} ${lato.variable} antialiased`}>
         <Navbar />
         <main>{children}</main>
         <Footer />

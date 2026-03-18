@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
-@theme inline {
-  --font-serif: var(--font-playfair), Georgia, serif;
-  --font-sans: var(--font-lato), system-ui, sans-serif;
+@theme {
+  --font-family-sans: var(--font-garamond), Georgia, serif;
+  --font-family-serif: var(--font-garamond), Georgia, serif;
 
   /* Custom brand colours */
   --color-brand-gold: #C4A882;
@@ -13,13 +13,13 @@
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-garamond), Georgia, serif;
   background-color: #ffffff;
   color: #2C2C2C;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif);
+  font-family: var(--font-garamond), Georgia, serif;
 }
 
 /* Smooth scrolling */

@@ -6,7 +6,10 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(gh auth status:*)",
-      "WebFetch(domain:www.nicolamason.co.uk)"
+      "WebFetch(domain:www.nicolamason.co.uk)",
+      "Bash(lsof -ti:3000)",
+      "Bash(kill 1215 2843)",
+      "Bash(npm run dev)"
     ]
   }
 }
