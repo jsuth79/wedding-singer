@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Award-winning wedding singer in Edinburgh & The Lothians. Live acoustic music for ceremonies, drinks receptions & celebrations. Trusted at Edinburgh's finest venues.",
   alternates: {
-    canonical: '/wedding-singer-edinburgh',
+    canonical: '/weddings',
   },
   openGraph: {
     title: 'Wedding Singer Edinburgh | Nicola Mason',

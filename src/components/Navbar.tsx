@@ -42,7 +42,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/enquire"
-                className="bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-6 py-2.5 text-base tracking-wide transition-colors rounded-[4px]"
+                className="bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-6 py-2.5 text-base tracking-wide transition-colors rounded-[4px] whitespace-nowrap"
               >
                 Check Availability
               </Link>
@@ -70,9 +70,9 @@ export default function Navbar() {
         {/* Mobile nav */}
         {isOpen && (
           <div className="md:hidden pt-4 pb-2">
-            <ul className="flex flex-col gap-4">
+            <ul className="flex flex-col items-center text-center divide-y divide-stone-200">
               {navLinks.map((link) => (
-                <li key={link.href}>
+                <li key={link.href} className="w-full py-3">
                   <Link
                     href={link.href}
                     onClick={() => setIsOpen(false)}
@@ -86,7 +86,7 @@ export default function Navbar() {
                   </Link>
                 </li>
               ))}
-              <li>
+              <li className="w-full pt-3">
                 <Link
                   href="/enquire"
                   onClick={() => setIsOpen(false)}

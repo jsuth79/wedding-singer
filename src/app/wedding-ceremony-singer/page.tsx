@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Professional wedding ceremony singer in Glasgow & Central Scotland. Live acoustic music for your aisle entrance, register signing & recessional. Award-winning vocalist. From £325.",
   alternates: {
-    canonical: '/wedding-ceremony-singer',
+    canonical: '/weddings',
   },
   openGraph: {
     title: 'Wedding Ceremony Singer Glasgow & Scotland | Nicola Mason',

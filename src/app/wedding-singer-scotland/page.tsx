@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Professional wedding singer across Scotland. Serving Glasgow, Edinburgh, Lanarkshire, Stirling & The Lothians. Award-winning vocalist for ceremonies & receptions. From £325.",
   alternates: {
-    canonical: '/wedding-singer-scotland',
+    canonical: '/weddings',
   },
   openGraph: {
     title: 'Wedding Singer Scotland | Nicola Mason',

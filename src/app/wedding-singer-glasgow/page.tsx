@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Award-winning wedding singer in Glasgow. Scottish Wedding Awards 2026 Winner. Live acoustic music for ceremonies, drinks receptions & first dances. Serving Glasgow & Central Scotland.",
   alternates: {
-    canonical: '/wedding-singer-glasgow',
+    canonical: '/weddings',
   },
   openGraph: {
     title: 'Wedding Singer Glasgow | Nicola Mason',
