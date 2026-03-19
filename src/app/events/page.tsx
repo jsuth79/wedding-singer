@@ -104,7 +104,7 @@ export default function EventsPage() {
                 <p className="text-[#444444] leading-relaxed mb-6">
                   {event.description}
                 </p>
-                <ul className="space-y-2 mb-8">
+                <ul className="space-y-2">
                   {event.features.map((feature) => (
                     <li
                       key={feature}
@@ -115,12 +115,6 @@ export default function EventsPage() {
                     </li>
                   ))}
                 </ul>
-                <Link
-                  href="/enquire"
-                  className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors"
-                >
-                  Enquire about {event.title.toLowerCase()}
-                </Link>
               </div>
               <div className={index % 2 === 1 ? "lg:order-1" : ""}>
                 <div className="aspect-[4/3] relative rounded-lg overflow-hidden">
@@ -134,6 +128,41 @@ export default function EventsPage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-24 px-6 bg-[#2C2C2C]">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-serif text-white mb-6">
+            Ready to Discuss Your Event?
+          </h2>
+          <p className="text-stone-300 text-lg mb-10 max-w-2xl mx-auto">
+            I&apos;d love to discuss how I can make your event memorable. Get in
+            touch with details about your occasion for a personalised quote.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://wa.me/447740360678"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-white px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
+            >
+              <span className="font-medium">Check My Availability</span>
+              <span className="text-xs normal-case tracking-normal mt-1 opacity-90">
+                via WhatsApp (1-2 hour response)
+              </span>
+            </a>
+            <Link
+              href="/enquire"
+              className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
+            >
+              <span className="font-medium">Check My Availability</span>
+              <span className="text-xs normal-case tracking-normal mt-1 opacity-90">
+                via Contact Form
+              </span>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -219,41 +248,6 @@ export default function EventsPage() {
             40 miles travel included in all packages. Additional mileage at 45p
             per mile.
           </p>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-24 px-6 bg-[#2C2C2C]">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-serif text-white mb-6">
-            Planning an Event?
-          </h2>
-          <p className="text-stone-300 text-lg mb-10 max-w-2xl mx-auto">
-            I&apos;d love to discuss how I can make your event memorable. Get in
-            touch with details about your occasion for a personalised quote.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://wa.me/447740360678"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-white px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
-            >
-              <span className="font-medium">Check My Availability</span>
-              <span className="text-xs normal-case tracking-normal mt-1 opacity-90">
-                via WhatsApp (1-2 hour response)
-              </span>
-            </a>
-            <Link
-              href="/enquire"
-              className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
-            >
-              <span className="font-medium">Check My Availability</span>
-              <span className="text-xs normal-case tracking-normal mt-1 opacity-90">
-                via Contact Form
-              </span>
-            </Link>
-          </div>
         </div>
       </section>
     </div>

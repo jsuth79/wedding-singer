@@ -1,21 +1,15 @@
 export default function Footer() {
   return (
     <footer className="bg-[#2C2C2C] text-stone-300">
-      <div className="px-6 py-8">
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
-          {/* Contact - Left */}
-          <div className="flex items-center gap-4 text-sm shrink-0">
-            <a href="mailto:hello@nicolamason.co.uk" className="hover:text-[#C4A882] transition-colors">
-              hello@nicolamason.co.uk
-            </a>
-            <span className="text-stone-600">|</span>
-            <a href="tel:+447740360678" className="hover:text-[#C4A882] transition-colors">
-              +44 7740 360678
-            </a>
-          </div>
+      <div className="max-w-6xl mx-auto px-6 py-6">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+          {/* Copyright - Left */}
+          <p className="text-xs text-stone-500 shrink-0">
+            &copy; {new Date().getFullYear()} Nicola Mason
+          </p>
 
           {/* SEO Text - Middle */}
-          <p className="text-sm leading-relaxed text-center max-w-2xl">
+          <p className="text-xs leading-relaxed text-center max-w-2xl">
             Nicola Mason is an award-winning professional wedding singer
             providing live music across Central Scotland, including Glasgow,
             Lanarkshire, Edinburgh, Ayrshire, and The Lothians, bringing years
@@ -69,12 +63,6 @@ export default function Footer() {
               </svg>
             </a>
           </div>
-        </div>
-
-        {/* Bottom bar */}
-        <div className="border-t border-stone-700 mt-6 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-stone-400">
-          <p>&copy; {new Date().getFullYear()} Nicola Mason. All rights reserved.</p>
-          <p>Scottish Wedding Awards 2026 Winner &bull; Ceremony Entertainer of the Year</p>
         </div>
       </div>
     </footer>

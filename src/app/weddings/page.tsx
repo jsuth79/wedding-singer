@@ -29,7 +29,7 @@ const packages = [
     name: "Ceremony",
     price: "£325",
     description: "Perfect for your ceremony",
-    image: "/images/nicola-mason-wedding-ceremony.jpg",
+    image: "/images/IMG_7416.jpg.webp",
     features: [
       "Playlist during guest arrival",
       "Aisle entrance song",
@@ -42,7 +42,7 @@ const packages = [
     name: "Drinks Reception",
     price: "£350",
     description: "Entertain your guests",
-    image: "/images/nicola-mason-wedding-drinks.jpg",
+    image: "/images/Full+Day+Wedding+Singer+Nicola+Mason.jpg.webp",
     features: [
       "Two 45-minute live sets",
       "Playlist between sets",
@@ -55,7 +55,7 @@ const packages = [
     name: "Dinner",
     price: "£350",
     description: "Elegant background music",
-    image: "/images/nicola-mason-wedding-dinner.jpg",
+    image: "/images/Nicola+Mason+Wedding+Meal+Singer+Glasgow.JPG.webp",
     features: [
       "Grand entrance song",
       "Two 45-minute soft background sets",
@@ -69,7 +69,7 @@ const packages = [
     price: "£575",
     popular: true,
     description: "Ceremony through reception",
-    image: "/images/nicola-mason-daytime-package.jpg",
+    image: "/images/Nicola+Mason+Daytime+Wedding+Singer+Package.jpg.webp",
     features: [
       "Full ceremony service",
       "Drinks reception entertainment",
@@ -82,7 +82,7 @@ const packages = [
     name: "The Full Shebang",
     price: "£795",
     description: "Complete musical coverage",
-    image: "/images/nicola-mason-full-shebang.jpg",
+    image: "/images/nicola-mason-wedding-first-dance.jpg",
     features: [
       "Full ceremony service",
       "90-minute drinks reception",
@@ -95,7 +95,7 @@ const packages = [
     name: "First Dances",
     price: "£395",
     description: "Evening entertainment",
-    image: "/images/nicola-mason-first-dances.jpg",
+    image: "/images/tempImagelbxK5s.jpg.webp",
     features: [
       "Your first dance performed live",
       "One hour of upbeat party songs",
@@ -111,7 +111,7 @@ const extras = [
     name: "Surprise Singers",
     price: "From £795",
     popular: true,
-    image: "/images/nicola-mason-surprise-singers.jpg",
+    image: "/images/the-clooneys-secret-singers.webp",
     description:
       "Two or more performers disguised as waiters, delivery drivers, or police who reveal themselves to perform popular floor-fillers.",
     features: [
@@ -125,7 +125,7 @@ const extras = [
   {
     name: "The Clooneys",
     price: "POA",
-    image: "/images/nicola-mason-the-clooneys.jpg",
+    image: "/images/the-clooneys-band-2.webp",
     description:
       "Three-piece vocal harmony trio available for ceremonies, receptions, and evening entertainment.",
     features: [
@@ -139,7 +139,7 @@ const extras = [
   {
     name: "Keepsake Recording",
     price: "£80",
-    image: "/images/nicola-mason-keepsake-recording.jpg",
+    image: "/images/tempImagevQDw6p.jpg.webp",
     description:
       "Professional recording of your preferred wedding song. Discounts available for multiple recordings.",
     features: [
@@ -301,7 +301,7 @@ export default function WeddingsPage() {
       {/* What I Offer */}
       <section className="py-24 px-6 bg-[#FCFCFC]">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-16 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C] mb-6">
                 More Than Just a Singer
@@ -363,7 +363,7 @@ export default function WeddingsPage() {
             </div>
             <div className="relative aspect-square rounded-lg overflow-hidden">
               <Image
-                src="/images/nicola-mason-performing.jpg"
+                src="/images/tempImage3o1PSi.jpg.webp"
                 alt="Nicola Mason performing"
                 fill
                 className="object-cover"
