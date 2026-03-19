@@ -89,7 +89,7 @@ export default function FAQPage() {
       />
       <div className="pt-20">
       {/* Hero */}
-      <section className="py-24 px-6 bg-[#F5F5F5]">
+      <section className="py-12 md:py-24 px-6 bg-[#F5F5F5]">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
             Common Questions &amp; Planning
@@ -105,7 +105,7 @@ export default function FAQPage() {
       </section>
 
       {/* FAQs */}
-      <section className="py-24 px-6">
+      <section className="py-12 md:py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
             {faqs.map((faq) => (
@@ -121,7 +121,7 @@ export default function FAQPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 px-6 bg-[#2C2C2C]">
+      <section className="py-12 md:py-24 px-6 bg-[#2C2C2C]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-serif text-white mb-6">
             Still Have Questions?

@@ -1,41 +1,41 @@
 const videos = [
   {
     id: "0lfc3it4ipc",
-    title: "Wedding Performance",
+    title: "Don't Worry Be Happy - Bobby McFerrin at Atholl Palace Hotel",
   },
   {
     id: "eWq4rpsgmr0",
-    title: "Ceremony Song",
+    title: "At Last by Etta James",
   },
   {
     id: "szMqypzyTVo",
-    title: "Drinks Reception Set",
+    title: "Feels Like Home - Chantal Kreviazuk",
   },
   {
     id: "QpFyIJRPBR4",
-    title: "Live Performance",
+    title: "I Can't Help Falling In Love - Elvis Presley at Pollokshields Burgh Hall",
   },
   {
     id: "ECPd4LBicRI",
-    title: "Acoustic Set",
+    title: "True Colors - Cyndi Lauper",
   },
   {
     id: "PwrhoMe0cxA",
-    title: "Wedding Highlights",
+    title: "Glasgow No Place Like Home - Jessie Buckley at Oran Mor",
   },
   {
     id: "NvmNEAfTk2Y",
-    title: "Reception Entertainment",
+    title: "I Get To Love You - Ruelle at Dalziel Park",
   },
   {
     id: "6xz9mic2SA4",
-    title: "Live at Wedding",
+    title: "At Last - Etta James at Coats Paisley",
   },
 ];
 
 export default function YouTubeGrid() {
   return (
-    <section className="py-24 px-6">
+    <section className="py-12 md:py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">

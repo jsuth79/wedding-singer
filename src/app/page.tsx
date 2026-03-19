@@ -94,7 +94,7 @@ export default function HomePage() {
       <HeroSection />
 
       {/* About Section */}
-      <section className="py-24 px-6">
+      <section className="py-12 md:py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
@@ -105,7 +105,7 @@ export default function HomePage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-[3fr_7fr] gap-16 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-[3fr_7fr] gap-8 md:gap-16 items-center">
             <div className="aspect-[3/4] relative rounded-lg overflow-hidden">
               <Image
                 src="/images/nicola-mason-wedding-events-singer-ceremony.jpg"
@@ -158,7 +158,7 @@ export default function HomePage() {
       </section>
 
       {/* Common Questions */}
-      <section className="py-24 px-6 bg-[#FCFCFC]">
+      <section className="py-12 md:py-24 px-6 bg-[#FCFCFC]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
@@ -192,7 +192,7 @@ export default function HomePage() {
       </section>
 
       {/* Services Preview */}
-      <section className="py-24 px-6">
+      <section className="py-12 md:py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
@@ -260,7 +260,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 px-6 bg-[#2C2C2C]">
+      <section className="py-12 md:py-24 px-6 bg-[#2C2C2C]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-serif text-white mb-6">
             Let&apos;s Make Your Day Unforgettable
@@ -298,7 +298,7 @@ export default function HomePage() {
       </section>
 
       {/* Venues */}
-      <section className="py-24 px-6">
+      <section className="py-12 md:py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">

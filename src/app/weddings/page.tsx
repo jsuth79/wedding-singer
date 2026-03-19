@@ -157,7 +157,7 @@ export default function WeddingsPage() {
   return (
     <div className="pt-20">
       {/* Hero */}
-      <section className="py-24 px-6 bg-[#F5F5F5]">
+      <section className="py-12 md:py-24 px-6 bg-[#F5F5F5]">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
             Wedding Services
@@ -174,7 +174,7 @@ export default function WeddingsPage() {
       </section>
 
       {/* Pricing Packages */}
-      <section className="py-24 px-6 bg-[#FCFCFC]">
+      <section className="py-12 md:py-24 px-6 bg-[#FCFCFC]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
@@ -241,7 +241,7 @@ export default function WeddingsPage() {
       </section>
 
       {/* Extras */}
-      <section className="py-24 px-6">
+      <section className="py-12 md:py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
@@ -312,7 +312,7 @@ export default function WeddingsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 px-6 bg-[#F5F5F5]">
+      <section className="py-12 md:py-24 px-6 bg-[#F5F5F5]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C] mb-6">
             Ready to Discuss Your Wedding?
@@ -350,7 +350,7 @@ export default function WeddingsPage() {
       </section>
 
       {/* The Full Package */}
-      <section className="py-24 px-6 bg-[#FCFCFC]">
+      <section className="py-12 md:py-24 px-6 bg-[#FCFCFC]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">

@@ -8,15 +8,15 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
           {/* Left content - heading and CTA */}
           <div className="text-center md:text-left flex flex-col">
-            <h1 className="text-4xl md:text-4xl lg:text-5xl font-serif text-[#2C2C2C] mb-8 leading-tight">
+            <h1 className="text-4xl md:text-4xl lg:text-5xl font-serif text-[#2C2C2C] mb-4 md:mb-8 leading-tight">
               Award-Winning Vocals. Unforgettable Atmosphere.
             </h1>
-            <p className="text-lg md:text-lg text-[#444444] leading-relaxed mb-16">
+            <p className="text-lg md:text-lg text-[#444444] leading-relaxed mb-4 md:mb-16">
               Tailored live music for elegant Scottish celebrations.
             </p>
 
             {/* Image - mobile only (between subtitle and CTA) */}
-            <div className="relative aspect-[4/4] rounded-xl overflow-hidden my-8 md:hidden">
+            <div className="relative aspect-[4/4] rounded-xl overflow-hidden my-4 md:hidden">
               <Image
                 src="/images/nicola-mason-wedding-events-singer.jpg"
                 alt="Nicola Mason performing at a wedding"
