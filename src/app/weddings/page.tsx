@@ -29,7 +29,7 @@ const packages = [
     name: "Ceremony",
     price: "£325",
     description: "Perfect for your ceremony",
-    image: "/images/IMG_7416.jpg.webp",
+    image: "/images/nicola-mason-wedding-ceremony-singer-l.webp",
     features: [
       "Playlist during guest arrival",
       "Aisle entrance song",
@@ -42,7 +42,7 @@ const packages = [
     name: "Drinks Reception",
     price: "£350",
     description: "Entertain your guests",
-    image: "/images/Full+Day+Wedding+Singer+Nicola+Mason.jpg.webp",
+    image: "/images/nicola-mason-drinks-reception-l.webp",
     features: [
       "Two 45-minute live sets",
       "Playlist between sets",
@@ -55,7 +55,7 @@ const packages = [
     name: "Dinner",
     price: "£350",
     description: "Elegant background music",
-    image: "/images/Nicola+Mason+Wedding+Meal+Singer+Glasgow.JPG.webp",
+    image: "/images/nicola-mason-dinner-l.webp",
     features: [
       "Grand entrance song",
       "Two 45-minute soft background sets",
@@ -69,7 +69,7 @@ const packages = [
     price: "£575",
     popular: true,
     description: "Ceremony through reception",
-    image: "/images/Nicola+Mason+Daytime+Wedding+Singer+Package.jpg.webp",
+    image: "/images/nicola-mason-daytime-l.webp",
     features: [
       "Full ceremony service",
       "Drinks reception entertainment",
@@ -82,7 +82,7 @@ const packages = [
     name: "The Full Shebang",
     price: "£795",
     description: "Complete musical coverage",
-    image: "/images/nicola-mason-wedding-first-dance.jpg",
+    image: "/images/nicola-mason-full-day-singer-l.webp",
     features: [
       "Full ceremony service",
       "90-minute drinks reception",
@@ -95,7 +95,7 @@ const packages = [
     name: "First Dances",
     price: "£395",
     description: "Evening entertainment",
-    image: "/images/tempImagelbxK5s.jpg.webp",
+    image: "/images/nicola-mason-first-dance-l.webp",
     features: [
       "Your first dance performed live",
       "One hour of upbeat party songs",
@@ -111,7 +111,7 @@ const extras = [
     name: "Surprise Singers",
     price: "From £795",
     popular: true,
-    image: "/images/the-clooneys-secret-singers.webp",
+    image: "/images/nicola-mason-surprise-singer-l.webp",
     description:
       "Two or more performers disguised as waiters, delivery drivers, or police who reveal themselves to perform popular floor-fillers.",
     features: [
@@ -125,7 +125,7 @@ const extras = [
   {
     name: "The Clooneys",
     price: "POA",
-    image: "/images/the-clooneys-band-2.webp",
+    image: "/images/the-clooneys-band-l.webp",
     description:
       "Three-piece vocal harmony trio available for ceremonies, receptions, and evening entertainment.",
     features: [
@@ -140,7 +140,7 @@ const extras = [
   {
     name: "Keepsake Recording",
     price: "£80",
-    image: "/images/tempImagevQDw6p.jpg.webp",
+    image: "/images/nicola-mason-keepsake-recording-l.webp",
     description:
       "Professional recording of your preferred wedding song. Discounts available for multiple recordings.",
     features: [
@@ -160,7 +160,7 @@ export default function WeddingsPage() {
       <section className="py-12 md:py-24 px-6 bg-[#F5F5F5]">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-            Wedding Services
+            Wedding Singer Packages
           </p>
           <h1 className="text-4xl md:text-6xl font-serif text-[#2C2C2C] mb-6">
             Your Perfect Day Deserves the Perfect Soundtrack
@@ -216,7 +216,7 @@ export default function WeddingsPage() {
                     {pkg.price}
                   </p>
                   <p className="text-[#888888] text-sm mb-4">{pkg.description}</p>
-                  <ul className="space-y-2">
+                  <ul className="space-y-2 mb-6">
                     {pkg.features.map((feature, i) => (
                       <li
                         key={i}
@@ -227,6 +227,12 @@ export default function WeddingsPage() {
                       </li>
                     ))}
                   </ul>
+                  <Link
+                    href="/enquire"
+                    className="block w-full text-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-6 py-3 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
+                  >
+                    Check Availability
+                  </Link>
                 </div>
               </div>
             ))}
@@ -283,7 +289,7 @@ export default function WeddingsPage() {
                     {extra.price}
                   </p>
                   <p className="text-[#888888] text-sm mb-4">{extra.description}</p>
-                  <ul className="space-y-2">
+                  <ul className="space-y-2 mb-6">
                     {extra.features.map((feature, i) => (
                       <li
                         key={i}
@@ -294,15 +300,22 @@ export default function WeddingsPage() {
                       </li>
                     ))}
                   </ul>
-                  {extra.link && (
+                  {extra.link ? (
                     <a
                       href={extra.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-4 inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors text-sm"
+                      className="block w-full text-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-6 py-3 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
                     >
-                      Find Out More →
+                      Find Out More
                     </a>
+                  ) : (
+                    <Link
+                      href="/enquire"
+                      className="block w-full text-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-6 py-3 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
+                    >
+                      Check Availability
+                    </Link>
                   )}
                 </div>
               </div>
@@ -406,7 +419,7 @@ export default function WeddingsPage() {
             {/* Image column */}
             <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
               <Image
-                src="/images/tempImage3o1PSi.jpg.webp"
+                src="/images/nicola-mason-full-package-p.webp"
                 alt="Nicola Mason performing"
                 fill
                 className="object-cover"

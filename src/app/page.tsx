@@ -108,7 +108,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-[3fr_7fr] gap-8 md:gap-16 items-center">
             <div className="aspect-[3/4] relative rounded-lg overflow-hidden">
               <Image
-                src="/images/nicola-mason-wedding-events-singer-ceremony.jpg"
+                src="/images/nicola-mason-about-me-p.webp"
                 alt="Nicola Mason"
                 fill
                 className="object-cover"
@@ -208,7 +208,7 @@ export default function HomePage() {
               <div className="relative overflow-hidden rounded-lg">
                 <div className="aspect-[16/10] relative">
                   <Image
-                    src="/images/nicola-mason-wedding-first-dance.jpg"
+                    src="/images/nicola-mason-wedding-services-l.webp"
                     alt="Nicola Mason singing at a wedding"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -234,7 +234,7 @@ export default function HomePage() {
               <div className="relative overflow-hidden rounded-lg">
                 <div className="aspect-[16/10] relative">
                   <Image
-                    src="/images/nicola-mason-wedding-events.jpg"
+                    src="/images/nicola-mason-events-services-l.webp"
                     alt="Nicola Mason at an event"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"

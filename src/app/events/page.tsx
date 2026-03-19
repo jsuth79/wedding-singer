@@ -29,7 +29,7 @@ const eventTypes = [
     title: "Corporate Events",
     description:
       "From awards ceremonies to company celebrations, I provide sophisticated entertainment that elevates your corporate event. Professional, punctual, and adaptable to your brand's tone.",
-    image: "/images/nicola-mason-corporate-events.jpg",
+    image: "/images/nicola-mason-corporate-events-l.webp",
     features: [
       "Awards ceremonies & gala dinners",
       "Conference entertainment",
@@ -43,7 +43,7 @@ const eventTypes = [
     title: "Private Celebrations",
     description:
       "Whether it's a milestone birthday, anniversary celebration, or garden party, I'll create the perfect atmosphere for your gathering with a tailored setlist.",
-    image: "/images/nicola-mason-private-celebrations.jpg",
+    image: "/images/nicola-mason-celebration-singer-l.webp",
     features: [
       "Milestone birthdays (30th, 40th, 50th+)",
       "Anniversary celebrations",
@@ -57,7 +57,7 @@ const eventTypes = [
     title: "Funeral & Memorial Services",
     description:
       "I bring sensitivity and professionalism to life's most difficult moments, providing comfort through music at services and gatherings.",
-    image: "/images/nicola-mason-memorial-services.jpg",
+    image: "/images/nicola-mason-funeral-singer-l.webp",
     features: [
       "Church or civil ceremonies",
       "Crematorium services",
@@ -76,48 +76,36 @@ export default function EventsPage() {
       <section className="py-12 md:py-24 px-6 bg-[#F5F5F5]">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-            Event Services
+            Event Singer Packages
           </p>
           <h1 className="text-4xl md:text-6xl font-serif text-[#2C2C2C] mb-6">
             Entertainment for Every Occasion
           </h1>
           <p className="text-xl text-[#444444] leading-relaxed">
-            From corporate galas to intimate celebrations, I bring versatility,
-            professionalism, and a touch of magic to events of all sizes across
-            Central Scotland.
+            I perform at corporate events, private celebrations, and memorial services across Central Scotland. Adaptable to any occasion and audience.
           </p>
         </div>
       </section>
 
       {/* Event Types */}
-      <section className="py-12 md:py-24 px-6">
-        <div className="max-w-6xl mx-auto space-y-24">
-          {eventTypes.map((event, index) => (
-            <div
-              key={event.title}
-              className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
-            >
-              <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C] mb-4">
-                  {event.title}
-                </h2>
-                <p className="text-[#444444] leading-relaxed mb-6">
-                  {event.description}
-                </p>
-                <ul className="space-y-2">
-                  {event.features.map((feature) => (
-                    <li
-                      key={feature}
-                      className="flex items-center gap-3 text-[#444444]"
-                    >
-                      <span className="text-[#C4A882]">•</span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-                <div className="aspect-[4/3] relative rounded-lg overflow-hidden">
+      <section className="py-12 md:py-24 px-6 bg-[#FCFCFC]">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
+              What I Offer
+            </p>
+            <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
+              Event Entertainment Packages
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {eventTypes.map((event) => (
+              <div
+                key={event.title}
+                className="relative bg-white rounded-lg overflow-hidden border border-stone-200"
+              >
+                <div className="aspect-[4/3] relative">
                   <Image
                     src={event.image}
                     alt={event.title}
@@ -125,9 +113,32 @@ export default function EventsPage() {
                     className="object-cover"
                   />
                 </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-serif text-[#2C2C2C] mb-4">
+                    {event.title}
+                  </h3>
+                  <p className="text-[#888888] text-sm mb-4">{event.description}</p>
+                  <ul className="space-y-2 mb-6">
+                    {event.features.map((feature, i) => (
+                      <li
+                        key={i}
+                        className="flex items-start gap-2 text-sm text-[#444444]"
+                      >
+                        <span className="text-[#C4A882] mt-0.5">✓</span>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                  <Link
+                    href="/enquire"
+                    className="block w-full text-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-6 py-3 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
+                  >
+                    Check Availability
+                  </Link>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
@@ -174,7 +185,7 @@ export default function EventsPage() {
               What&apos;s Included
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
-              The Full Package
+              Professional Event Entertainment
             </h2>
           </div>
 

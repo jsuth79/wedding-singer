@@ -23,7 +23,7 @@ const faqs: { question: string; answer: string }[] = [
   {
     question: "Why choose a live singer for your wedding ceremony?",
     answer:
-      "Couples often tell me that live music adds something truly special to their wedding ceremony. Singing live during moments like the aisle entrance or signing of the register creates a warm and emotional atmosphere that recorded music can't quite replicate. Many couples say their guests comment on the music afterwards, and that the live performance helped create some of their favourite memories from the day.",
+      "Live music makes ceremony moments feel more personal and emotional. I've had couples tell me their guests still mention the music years later. Particularly during the aisle entrance and register signing. There's something about live vocals that recorded tracks just don't capture.",
   },
   {
     question: "How far in advance of my wedding should I book a singer?",

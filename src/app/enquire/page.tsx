@@ -28,7 +28,7 @@ export default function EnquirePage() {
             Let&apos;s Talk About Your Event
           </h1>
           <p className="text-xl text-[#444444] leading-relaxed">
-            Fill out the form below and I&apos;ll get back to you within 1-2 hours
+            Fill out the form below and I&apos;ll get back to you within 24 hours
             to discuss your requirements and check availability.
           </p>
         </div>

@@ -18,7 +18,7 @@ export default function HeroSection() {
             {/* Image - mobile only (between subtitle and CTA) */}
             <div className="relative aspect-[4/4] rounded-xl overflow-hidden my-4 md:hidden">
               <Image
-                src="/images/nicola-mason-wedding-events-singer.jpg"
+                src="/images/nicola-mason-wedding-events-singer-p.webp"
                 alt="Nicola Mason performing at a wedding"
                 fill
                 className="object-cover object-top"
@@ -45,7 +45,7 @@ export default function HeroSection() {
           {/* Right content - image (tablet/desktop only) */}
           <div className="hidden md:block relative aspect-[4/5] rounded-xl overflow-hidden">
             <Image
-              src="/images/nicola-mason-wedding-events-singer.jpg"
+              src="/images/nicola-mason-wedding-events-singer-p.webp"
               alt="Nicola Mason performing at a wedding"
               fill
               className="object-cover object-top"
