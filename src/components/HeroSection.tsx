@@ -3,20 +3,20 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="pt-28 pb-16 md:pt-32 md:pb-24 px-6 bg-[#F5F5F5]">
+    <section className="pt-24 pb-6 md:pt-28 md:pb-8 px-6 bg-[#F5F5F5]">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
           {/* Left content - heading and CTA */}
-          <div className="text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-[#2C2C2C] mb-6 leading-tight">
+          <div className="text-center md:text-left flex flex-col">
+            <h1 className="text-4xl md:text-4xl lg:text-5xl font-serif text-[#2C2C2C] mb-8 leading-tight">
               Award-Winning Vocals. Unforgettable Atmosphere.
             </h1>
-            <p className="text-lg md:text-xl text-[#444444] leading-relaxed lg:mb-8">
+            <p className="text-lg md:text-lg text-[#444444] leading-relaxed mb-16">
               Tailored live music for elegant Scottish celebrations.
             </p>
 
             {/* Image - mobile only (between subtitle and CTA) */}
-            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden my-8 lg:hidden">
+            <div className="relative aspect-[4/4] rounded-xl overflow-hidden my-8 md:hidden">
               <Image
                 src="/images/nicola-mason-wedding-events-singer.jpg"
                 alt="Nicola Mason performing at a wedding"
@@ -26,7 +26,7 @@ export default function HeroSection() {
               />
             </div>
 
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-center md:justify-start">
               <Link
                 href="/weddings"
                 className="inline-flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-8 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
@@ -42,8 +42,8 @@ export default function HeroSection() {
             </p>
           </div>
 
-          {/* Right content - image (desktop only) */}
-          <div className="hidden lg:block relative aspect-[3/4] rounded-2xl overflow-hidden">
+          {/* Right content - image (tablet/desktop only) */}
+          <div className="hidden md:block relative aspect-[4/5] rounded-xl overflow-hidden">
             <Image
               src="/images/nicola-mason-wedding-events-singer.jpg"
               alt="Nicola Mason performing at a wedding"
@@ -52,6 +52,22 @@ export default function HeroSection() {
               priority
             />
           </div>
+        </div>
+
+        {/* Awards - full width */}
+        <div className="flex flex-wrap justify-between mt-6 text-sm text-[#888888]">
+          <span className="flex items-center gap-1.5">
+            <span className="text-[#C4A882]">★</span> Scottish Wedding Awards 2026
+          </span>
+          <span className="flex items-center gap-1.5">
+            <span className="text-[#C4A882]">★</span> Confetti Awards Finalist
+          </span>
+          <span className="flex items-center gap-1.5">
+            <span className="text-[#C4A882]">★</span> UKbride Approved
+          </span>
+          <span className="flex items-center gap-1.5">
+            <span className="text-[#C4A882]">★</span> 5-Star Reviews
+          </span>
         </div>
       </div>
     </section>

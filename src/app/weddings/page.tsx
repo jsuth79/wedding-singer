@@ -135,6 +135,7 @@ const extras = [
       "Evening celebrations",
       "Versatile repertoire",
     ],
+    link: "https://www.theclooneys.co.uk",
   },
   {
     name: "Keepsake Recording",
@@ -179,13 +180,9 @@ export default function WeddingsPage() {
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
               Pricing
             </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C] mb-4">
+            <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
               Wedding Packages
             </h2>
-            <p className="text-[#444444] max-w-2xl mx-auto">
-              All prices include professional PA equipment and 40 miles travel
-              from Glasgow. Additional mileage charged at 45p per mile.
-            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -200,7 +197,7 @@ export default function WeddingsPage() {
               >
                 {pkg.popular && (
                   <span className="absolute top-4 right-4 z-10 bg-[#C4A882] text-white text-xs uppercase tracking-wider px-3 py-1 rounded-full">
-                    Most Popular
+                    Popular
                   </span>
                 )}
                 <div className="aspect-[4/3] relative">
@@ -234,6 +231,12 @@ export default function WeddingsPage() {
               </div>
             ))}
           </div>
+
+          <p className="text-center text-[#888888] text-sm mt-10">
+            All prices include professional PA equipment and 40 miles travel from Glasgow. Additional mileage at 45p/mile.
+            <br />
+            Booking direct avoids platform fees (typically 20%).
+          </p>
         </div>
       </section>
 
@@ -261,7 +264,7 @@ export default function WeddingsPage() {
               >
                 {extra.popular && (
                   <span className="absolute top-4 right-4 z-10 bg-[#C4A882] text-white text-xs uppercase tracking-wider px-3 py-1 rounded-full">
-                    Most Popular
+                    Popular
                   </span>
                 )}
                 <div className="aspect-[4/3] relative">
@@ -291,84 +294,19 @@ export default function WeddingsPage() {
                       </li>
                     ))}
                   </ul>
+                  {extra.link && (
+                    <a
+                      href={extra.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors text-sm"
+                    >
+                      Find Out More →
+                    </a>
+                  )}
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* What I Offer */}
-      <section className="py-24 px-6 bg-[#FCFCFC]">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-16 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C] mb-6">
-                More Than Just a Singer
-              </h2>
-              <p className="text-[#444444] leading-relaxed mb-6">
-                Your wedding day is one of the most important days of your life,
-                and the music should be nothing short of exceptional. I bring not
-                only my voice but years of experience performing at Scotland&apos;s
-                most prestigious venues.
-              </p>
-              <p className="text-[#444444] leading-relaxed mb-6">
-                From helping you choose your ceremony songs to reading the room
-                during the reception, I pride myself on being a seamless,
-                professional addition to your wedding team.
-              </p>
-
-              <div className="bg-white rounded-lg p-6 mb-6 border border-stone-200">
-                <h3 className="text-lg font-serif text-[#2C2C2C] mb-3">
-                  Award-Winning Service
-                </h3>
-                <ul className="space-y-2 text-sm text-[#444444]">
-                  <li className="flex items-start gap-3">
-                    <span className="text-[#C4A882] mt-0.5">★</span>
-                    <span><strong>Scottish Wedding Awards 2026</strong> - Ceremony Entertainer of the Year</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-[#C4A882] mt-0.5">★</span>
-                    <span><strong>Confetti Awards 2025</strong> - Finalist, Best Ceremony Entertainer</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-[#C4A882] mt-0.5">★</span>
-                    <span><strong>UKbride</strong> - Approved Wedding Supplier</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-[#C4A882] mt-0.5">★</span>
-                    <span><strong>5-star reviews</strong> on Google &amp; Facebook</span>
-                  </li>
-                </ul>
-              </div>
-
-              <ul className="space-y-3 text-[#444444]">
-                <li className="flex items-start gap-3">
-                  <span className="text-[#C4A882] mt-1">✓</span>
-                  Full Public Liability Insurance &amp; PAT tested equipment
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-[#C4A882] mt-1">✓</span>
-                  Professional PA suitable for indoor &amp; outdoor venues
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-[#C4A882] mt-1">✓</span>
-                  Tailored playlists between live sets
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-[#C4A882] mt-1">✓</span>
-                  Happy to learn special songs for your day
-                </li>
-              </ul>
-            </div>
-            <div className="relative aspect-square rounded-lg overflow-hidden">
-              <Image
-                src="/images/tempImage3o1PSi.jpg.webp"
-                alt="Nicola Mason performing"
-                fill
-                className="object-cover"
-              />
-            </div>
           </div>
         </div>
       </section>
@@ -391,7 +329,7 @@ export default function WeddingsPage() {
               href="https://wa.me/447740360678"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-white px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
+              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
             >
               <span className="font-medium">Check My Availability</span>
               <span className="text-xs normal-case tracking-normal mt-1 opacity-90">
@@ -407,6 +345,108 @@ export default function WeddingsPage() {
                 via Contact Form
               </span>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* The Full Package */}
+      <section className="py-24 px-6 bg-[#FCFCFC]">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
+              What&apos;s Included
+            </p>
+            <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
+              The Full Package
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-[7fr_3fr] gap-12 mb-16 items-center">
+            {/* Text and pills column */}
+            <div>
+              <div className="text-[#444444] space-y-4 mb-10">
+                <p>
+                  You&apos;re not just getting a singer - you&apos;re getting someone who&apos;ll
+                  help you pick songs if you&apos;re stuck, learn whatever&apos;s special to
+                  you, and sort out the timing and sound with your venue so it&apos;s one
+                  less thing on your list.
+                </p>
+                <p>
+                  I know how different venues work and can read a room - quiet and
+                  elegant during dinner, or getting folk up dancing when it&apos;s time
+                  to celebrate.
+                </p>
+                <p>
+                  I&apos;ll keep you in the loop without pestering you. Weddings are
+                  stressful enough without suppliers making it worse.
+                </p>
+                <p>
+                  No awkward silences, no technical disasters, no drama. Just the
+                  music you want, done right.
+                </p>
+              </div>
+
+              <div className="flex flex-wrap gap-3">
+                {[
+                  "Scottish Wedding Awards 2026 Winner",
+                  "Confetti Awards 2025 Finalist",
+                  "UKbride Approved",
+                  "5-Star Reviews on Google & Facebook",
+                ].map((award) => (
+                  <span
+                    key={award}
+                    className="px-5 py-2 bg-white border border-stone-200 rounded-full text-sm text-[#2C2C2C]"
+                  >
+                    {award}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Image column */}
+            <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
+              <Image
+                src="/images/tempImage3o1PSi.jpg.webp"
+                alt="Nicola Mason performing"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                title: "Professional PA",
+                description:
+                  "State-of-the-art audio equipment suitable for indoor and outdoor venues",
+              },
+              {
+                title: "Flexible Setlist",
+                description:
+                  "Repertoire tailored to your wedding theme and personal preferences",
+              },
+              {
+                title: "Fully Insured",
+                description:
+                  "Full Public Liability Insurance with PAT-tested equipment",
+              },
+              {
+                title: "Song Requests",
+                description:
+                  "Happy to learn specific songs for your day (subject to availability)",
+              },
+            ].map((item) => (
+              <div key={item.title} className="text-center">
+                <div className="w-16 h-16 bg-[#C4A882]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-[#C4A882] text-2xl">♪</span>
+                </div>
+                <h3 className="text-lg font-serif text-[#2C2C2C] mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-[#444444] text-sm">{item.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

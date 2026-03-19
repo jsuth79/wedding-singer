@@ -146,7 +146,7 @@ export default function EventsPage() {
               href="https://wa.me/447740360678"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-white px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
+              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
             >
               <span className="font-medium">Check My Availability</span>
               <span className="text-xs normal-case tracking-normal mt-1 opacity-90">

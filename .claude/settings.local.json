@@ -10,7 +10,8 @@
       "Bash(lsof -ti:3000)",
       "Bash(kill 1215 2843)",
       "Bash(npm run dev)",
-      "Bash(curl -s https://www.nicolamason.co.uk/faq)"
+      "Bash(curl -s https://www.nicolamason.co.uk/faq)",
+      "Bash(npx tsc:*)"
     ]
   }
 }

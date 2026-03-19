@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
 };
 
-const faqs = [
+const faqs: { question: string; answer: string }[] = [
   {
     question: "When does a wedding singer usually perform during a ceremony?",
     answer:
@@ -68,8 +68,26 @@ const faqs = [
 ];
 
 export default function FAQPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map((faq) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer,
+      },
+    })),
+  };
+
   return (
-    <div className="pt-20">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <div className="pt-20">
       {/* Hero */}
       <section className="py-24 px-6 bg-[#F5F5F5]">
         <div className="max-w-4xl mx-auto text-center">
@@ -117,7 +135,7 @@ export default function FAQPage() {
               href="https://wa.me/447740360678"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-white px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
+              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
             >
               <span className="font-medium">Check My Availability</span>
               <span className="text-xs normal-case tracking-normal mt-1 opacity-90">
@@ -137,5 +155,6 @@ export default function FAQPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

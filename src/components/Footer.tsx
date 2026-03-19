@@ -3,10 +3,19 @@ export default function Footer() {
     <footer className="bg-[#2C2C2C] text-stone-300">
       <div className="max-w-6xl mx-auto px-6 py-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          {/* Copyright - Left */}
-          <p className="text-xs text-stone-500 shrink-0">
-            &copy; {new Date().getFullYear()} Nicola Mason
-          </p>
+          {/* Copyright & Contact - Left */}
+          <div className="text-xs text-stone-500 shrink-0 text-center md:text-left">
+            <p>&copy; {new Date().getFullYear()} Nicola Mason</p>
+            <p className="mt-1">
+              <a href="tel:+447740360678" className="hover:text-[#C4A882] transition-colors">
+                +44 7740 360678
+              </a>
+              {" · "}
+              <a href="mailto:hello@nicolamason.co.uk" className="hover:text-[#C4A882] transition-colors">
+                hello@nicolamason.co.uk
+              </a>
+            </p>
+          </div>
 
           {/* SEO Text - Middle */}
           <p className="text-xs leading-relaxed text-center max-w-2xl">

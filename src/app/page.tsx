@@ -93,40 +93,12 @@ export default function HomePage() {
     <>
       <HeroSection />
 
-      {/* Awards Bar */}
-      <section className="py-4 md:py-6 bg-[#2C2C2C]">
-        <div className="max-w-6xl mx-auto px-4 md:px-6">
-          <div className="flex flex-row items-center justify-center gap-4 md:gap-8 text-center">
-            <div className="text-stone-300 flex-1 md:flex-none">
-              <p className="text-[#C4A882] text-xs md:text-sm font-medium mb-0.5 md:mb-1">
-                Scottish Wedding Awards
-              </p>
-              <p className="text-[10px] md:text-xs">2026 Winner</p>
-            </div>
-            <div className="h-8 w-px bg-stone-700" />
-            <div className="text-stone-300 flex-1 md:flex-none">
-              <p className="text-[#C4A882] text-xs md:text-sm font-medium mb-0.5 md:mb-1">
-                Confetti Awards
-              </p>
-              <p className="text-[10px] md:text-xs">2025 Finalist</p>
-            </div>
-            <div className="h-8 w-px bg-stone-700" />
-            <div className="text-stone-300 flex-1 md:flex-none">
-              <p className="text-[#C4A882] text-xs md:text-sm font-medium mb-0.5 md:mb-1">
-                UKbride
-              </p>
-              <p className="text-[10px] md:text-xs">Approved Supplier</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* About Section */}
       <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-              About Me
+              About Nicola Mason, Wedding &amp; Events Singer
             </p>
             <h2 className="text-4xl md:text-5xl font-serif text-[#2C2C2C]">
               Your Vocal Soundtrack for Life&apos;s Special Moments
@@ -158,12 +130,12 @@ export default function HomePage() {
                 I handle all bookings personally, ensuring you receive dedicated
                 attention from your first enquiry to your last dance.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col md:flex-row gap-4 justify-center">
                 <a
                   href="https://wa.me/447740360678"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-white px-8 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
+                  className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-8 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px] min-w-[280px]"
                 >
                   <span className="font-medium">Check My Availability</span>
                   <span className="text-xs normal-case tracking-normal mt-1 opacity-90">
@@ -172,7 +144,7 @@ export default function HomePage() {
                 </a>
                 <Link
                   href="/enquire"
-                  className="inline-flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-8 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
+                  className="inline-flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-8 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px] min-w-[280px]"
                 >
                   <span className="font-medium">Check My Availability</span>
                   <span className="text-xs normal-case tracking-normal mt-1 opacity-90">
@@ -287,33 +259,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Venues */}
-      <section className="py-24 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-              Experience
-            </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
-              Trusted at Scotland&apos;s Finest Venues
-            </h2>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-8 gap-y-4 text-[#888888] text-center">
-            {venues.map((venue) => (
-              <span key={venue} className="text-sm">
-                {venue}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Video */}
-      <YouTubeGrid />
-
-      {/* Testimonials */}
-      <ReviewsSection />
-
       {/* CTA Section */}
       <section className="py-24 px-6 bg-[#2C2C2C]">
         <div className="max-w-4xl mx-auto text-center">
@@ -332,7 +277,7 @@ export default function HomePage() {
               href="https://wa.me/447740360678"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-white px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
+              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
             >
               <span className="font-medium">Check My Availability</span>
               <span className="text-xs normal-case tracking-normal mt-1 opacity-90">
@@ -351,6 +296,36 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Venues */}
+      <section className="py-24 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
+              Experience
+            </p>
+            <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
+              Trusted at Scotland&apos;s Finest Venues
+            </h2>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3">
+            {venues.map((venue) => (
+              <span
+                key={venue}
+                className="px-5 py-2 bg-white border border-stone-200 rounded-full text-sm text-[#2C2C2C]"
+              >
+                {venue}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Video */}
+      <YouTubeGrid />
+
+      {/* Testimonials */}
+      <ReviewsSection />
     </>
   );
 }

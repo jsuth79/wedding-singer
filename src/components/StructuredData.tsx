@@ -41,6 +41,14 @@ export default function StructuredData() {
       {
         "@type": "AdministrativeArea",
         "name": "Stirling"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Ayrshire"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "The Lothians"
       }
     ],
     "openingHoursSpecification": [
