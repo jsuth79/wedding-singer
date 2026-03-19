@@ -2,9 +2,17 @@ import type { Metadata } from "next";
 import EnquiryForm from "@/components/EnquiryForm";
 
 export const metadata: Metadata = {
-  title: "Get in Touch | Nicola Mason",
+  title: "Check Availability | Nicola Mason Wedding & Events Singer",
   description:
-    "Contact Nicola Mason to discuss your wedding or event entertainment. Check availability and receive a personalised quote.",
+    "Get in touch to discuss your wedding or event. Quick response times via WhatsApp or contact form. Based in Glasgow, serving Central Scotland.",
+  alternates: {
+    canonical: '/enquire',
+  },
+  openGraph: {
+    title: 'Check Availability | Nicola Mason Wedding & Events Singer',
+    description: 'Get in touch to discuss your wedding or event. Quick response times via WhatsApp or contact form.',
+    url: 'https://www.nicolamason.co.uk/enquire',
+  },
 };
 
 export default function EnquirePage() {

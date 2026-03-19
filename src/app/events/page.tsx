@@ -3,9 +3,25 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Event Singer Services | Nicola Mason",
+  title: "Events Singer Glasgow | Corporate & Private Events | Nicola Mason",
   description:
     "Professional event singer for corporate functions, private parties, and celebrations. Based in Glasgow, serving Central Scotland.",
+  alternates: {
+    canonical: '/events',
+  },
+  openGraph: {
+    title: 'Events Singer Glasgow | Corporate & Private Events | Nicola Mason',
+    description: 'Professional event entertainment for corporate functions, private parties, and celebrations across Central Scotland.',
+    url: 'https://www.nicolamason.co.uk/events',
+    images: [
+      {
+        url: '/images/nicola-mason-wedding-events.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Nicola Mason Events Singer',
+      },
+    ],
+  },
 };
 
 const eventTypes = [
@@ -13,7 +29,7 @@ const eventTypes = [
     title: "Corporate Events",
     description:
       "From awards ceremonies to company celebrations, I provide sophisticated entertainment that elevates your corporate event. Professional, punctual, and adaptable to your brand's tone.",
-    image: "https://images.squarespace-cdn.com/content/v1/641787c199b0b17ed0758ebc/1682725500724-WEFCWRLBWG777INITVNI/unsplash-image-rxpThOwuVgE.jpg",
+    image: "/images/nicola-mason-corporate-events.jpg",
     features: [
       "Awards ceremonies & gala dinners",
       "Conference entertainment",
@@ -27,7 +43,7 @@ const eventTypes = [
     title: "Private Celebrations",
     description:
       "Whether it's a milestone birthday, anniversary celebration, or garden party, I'll create the perfect atmosphere for your gathering with a tailored setlist.",
-    image: "https://images.squarespace-cdn.com/content/v1/641787c199b0b17ed0758ebc/1679789846255-8OD4II6DBW7J2TANSHK0/unsplash-image-fIHozNWfcvs.jpg",
+    image: "/images/nicola-mason-private-celebrations.jpg",
     features: [
       "Milestone birthdays (30th, 40th, 50th+)",
       "Anniversary celebrations",
@@ -41,7 +57,7 @@ const eventTypes = [
     title: "Funeral & Memorial Services",
     description:
       "I bring sensitivity and professionalism to life's most difficult moments, providing comfort through music at services and gatherings.",
-    image: "https://images.squarespace-cdn.com/content/v1/641787c199b0b17ed0758ebc/6843d2c1-7bde-455d-ab91-b3f4fc4ed9d1/unsplash-image-iSyyY1GfYSw.jpg",
+    image: "/images/nicola-mason-memorial-services.jpg",
     features: [
       "Church or civil ceremonies",
       "Crematorium services",

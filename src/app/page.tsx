@@ -1,18 +1,68 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import HeroSection from "@/components/HeroSection";
+import ReviewsSection from "@/components/ReviewsSection";
+import YouTubeGrid from "@/components/YouTubeGrid";
+
+export const metadata: Metadata = {
+  title: "Award-Winning Wedding Singer Glasgow | Nicola Mason | Scottish Ceremony & Event Singer",
+  description:
+    "Professional wedding singer in Glasgow & Central Scotland. Scottish Wedding Awards 2026 Winner. Live acoustic music for ceremonies, receptions & celebrations. Book now for 2026/2027.",
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Award-Winning Wedding Singer Glasgow | Nicola Mason',
+    description: 'Professional wedding singer in Glasgow & Central Scotland. Scottish Wedding Awards 2026 Winner. Live music for ceremonies, receptions & celebrations.',
+    url: 'https://www.nicolamason.co.uk',
+    images: [
+      {
+        url: '/images/nicola-mason-wedding-events-singer.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Nicola Mason Wedding Singer Glasgow',
+      },
+    ],
+  },
+};
 
 const venues = [
+  // Grand Estates & Historic Castles
   "Carlowrie Castle",
   "Fasque Castle",
   "Atholl Palace",
   "The Balmoral Hotel",
+  "Glenbervie House & Country Estate",
+  "Mar Hall",
+  "Edinburgh City Chambers",
+  "The George Hotel",
+  "The Bonham Hotel",
+  // Luxury Hotels & Country Clubs
   "Norton House Hotel",
   "Lodge on Loch Lomond",
   "Balbirnie House",
+  "Inglewood House & Spa",
+  "The Gailes Hotel & Spa",
+  "Dalmeny Park House Hotel",
+  "Lynnhurst Hotel",
+  "Ingliston Country Club & Hotel",
+  "Piersland House",
+  "Dalziel Park Hotel & Golf Club",
+  "Parklands Hotel",
+  "The Busby Hotel",
+  "Bowfield Hotel & Spa",
+  "Carnoustie Golf Hotel & Spa",
+  // Characterful, Chic & Unique Spaces
+  "Coats",
   "Oran Mor",
+  "Ghillie Dhu",
   "The Corinthian",
-  "Edinburgh City Chambers",
+  "Sloan's",
+  "The Byre at Inchyra",
+  "Broxmouth Courtyard",
+  "Hidden River Barn",
+  "The Vu",
 ];
 
 const faqs = [
@@ -29,7 +79,7 @@ const faqs = [
   {
     question: "Do you provide your own equipment and insurance?",
     answer:
-      "Yes. I provide a professional, compact PA system suitable for both indoor and outdoor settings. For your venue's peace of mind, all my equipment is PAT-tested, and I hold full Public Liability Insurance (PLI).",
+      "Yes. I provide a professional, compact PA system suitable for both indoor and outdoor venues. For your venue's peace of mind, all my equipment is PAT-tested, and I hold full Public Liability Insurance (PLI).",
   },
   {
     question: "What happens when you aren't singing?",
@@ -38,33 +88,35 @@ const faqs = [
   },
 ];
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <HeroSection />
 
-      {/* Awards Banner */}
-      <section className="bg-[#2C2C2C] py-6 px-6">
-        <div className="max-w-6xl mx-auto flex flex-wrap justify-center items-center gap-8 text-center">
-          <div className="text-white">
-            <p className="text-[#C4A882] text-xs uppercase tracking-wider mb-1">
-              Scottish Wedding Awards 2026
-            </p>
-            <p className="font-serif text-lg">Ceremony Entertainer of the Year</p>
-          </div>
-          <div className="hidden md:block w-px h-12 bg-stone-600" />
-          <div className="text-white">
-            <p className="text-[#C4A882] text-xs uppercase tracking-wider mb-1">
-              Confetti Awards 2025
-            </p>
-            <p className="font-serif text-lg">Finalist &bull; Best Ceremony Entertainer</p>
-          </div>
-          <div className="hidden md:block w-px h-12 bg-stone-600" />
-          <div className="text-white">
-            <p className="text-[#C4A882] text-xs uppercase tracking-wider mb-1">
-              UKbride
-            </p>
-            <p className="font-serif text-lg">Approved Wedding Supplier</p>
+      {/* Awards Bar */}
+      <section className="py-6 bg-[#2C2C2C]">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-center">
+            <div className="text-stone-300">
+              <p className="text-[#C4A882] text-sm font-medium mb-1">
+                Scottish Wedding Awards 2026
+              </p>
+              <p className="text-xs">Ceremony Entertainer of the Year</p>
+            </div>
+            <div className="hidden md:block h-8 w-px bg-stone-700" />
+            <div className="text-stone-300">
+              <p className="text-[#C4A882] text-sm font-medium mb-1">
+                Confetti Awards 2025
+              </p>
+              <p className="text-xs">Finalist, Best Ceremony Entertainer</p>
+            </div>
+            <div className="hidden md:block h-8 w-px bg-stone-700" />
+            <div className="text-stone-300">
+              <p className="text-[#C4A882] text-sm font-medium mb-1">
+                UKbride
+              </p>
+              <p className="text-xs">Approved Wedding Supplier</p>
+            </div>
           </div>
         </div>
       </section>
@@ -72,14 +124,25 @@ export default function Home() {
       {/* About Section */}
       <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="text-center mb-12">
+            <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
+              About Me
+            </p>
+            <h2 className="text-4xl md:text-5xl font-serif text-[#2C2C2C]">
+              Your Vocal Soundtrack for Life&apos;s Special Moments
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-[3fr_7fr] gap-16 items-center">
+            <div className="aspect-[3/4] relative rounded-lg overflow-hidden">
+              <Image
+                src="/images/nicola-mason-wedding-events-singer-ceremony.jpg"
+                alt="Nicola Mason"
+                fill
+                className="object-cover"
+              />
+            </div>
             <div>
-              <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-                About Me
-              </p>
-              <h2 className="text-4xl md:text-5xl font-serif text-[#2C2C2C] mb-6">
-                Your Vocal Soundtrack for Life&apos;s Special Moments
-              </h2>
               <p className="text-[#444444] leading-relaxed mb-6">
                 Trained at Napier University and Berklee College of Music in
                 Boston, I&apos;ve dedicated my career to creating the perfect musical
@@ -118,22 +181,14 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="aspect-[4/5] relative rounded-lg overflow-hidden">
-              <Image
-                src="https://images.squarespace-cdn.com/content/v1/641787c199b0b17ed0758ebc/5acddd01-44e6-4e2e-b7e5-e41df6af1e9d/tempImageCmiaaB.jpg"
-                alt="Nicola Mason"
-                fill
-                className="object-cover"
-              />
-            </div>
           </div>
         </div>
       </section>
 
       {/* Common Questions */}
       <section className="py-24 px-6 bg-[#FCFCFC]">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
               Common Questions &amp; Planning
             </p>
@@ -142,20 +197,20 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="space-y-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
             {faqs.map((faq) => (
-              <div key={faq.question} className="border-b border-stone-200 pb-8">
-                <h3 className="text-lg font-medium text-[#2C2C2C] mb-3">
+              <div key={faq.question} className="border-b border-stone-200 pb-6">
+                <h3 className="text-base font-medium text-[#2C2C2C] mb-2">
                   {faq.question}
                 </h3>
-                <p className="text-[#444444] leading-relaxed">{faq.answer}</p>
+                <p className="text-[#444444] text-sm leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-10">
             <Link
-              href="/enquire"
+              href="/faq"
               className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider"
             >
               View All Frequently Asked Questions →
@@ -169,15 +224,11 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-              Services
+              What I Offer
             </p>
-            <h2 className="text-4xl md:text-5xl font-serif text-[#2C2C2C] mb-4">
-              Tailored to Your Occasion
+            <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
+              Tailored Entertainment for Your Special Day
             </h2>
-            <p className="text-[#444444] max-w-2xl mx-auto">
-              From wedding ceremonies to corporate events, I provide professional
-              live entertainment with state-of-the-art audio equipment.
-            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -185,7 +236,7 @@ export default function Home() {
               <div className="relative overflow-hidden rounded-lg">
                 <div className="aspect-[16/10] relative">
                   <Image
-                    src="https://images.squarespace-cdn.com/content/v1/641787c199b0b17ed0758ebc/4611dfff-10dc-4704-b047-81633afcc4d5/tempImagetCYvTS.jpg"
+                    src="/images/nicola-mason-wedding-first-dance.jpg"
                     alt="Nicola Mason singing at a wedding"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -196,12 +247,13 @@ export default function Home() {
                   <h3 className="text-2xl font-serif text-white mb-2 group-hover:text-[#C4A882] transition-colors">
                     Weddings
                   </h3>
-                  <p className="text-stone-200 text-sm mb-2">
-                    Ceremonies, drinks receptions &amp; evening entertainment
+                  <p className="text-stone-200 text-sm mb-4">
+                    From intimate ceremonies to full-day celebrations. Acoustic
+                    classics and modern favorites tailored to your love story.
                   </p>
-                  <p className="text-[#C4A882] text-sm font-medium">
-                    Packages from £325
-                  </p>
+                  <span className="text-[#C4A882] text-sm uppercase tracking-wider">
+                    View Packages →
+                  </span>
                 </div>
               </div>
             </Link>
@@ -210,7 +262,7 @@ export default function Home() {
               <div className="relative overflow-hidden rounded-lg">
                 <div className="aspect-[16/10] relative">
                   <Image
-                    src="https://images.squarespace-cdn.com/content/v1/641787c199b0b17ed0758ebc/60d8b844-bedb-433d-9c34-97e87f72946e/tempImagekF7sSa.jpg"
+                    src="/images/nicola-mason-wedding-events.jpg"
                     alt="Nicola Mason at an event"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -221,9 +273,13 @@ export default function Home() {
                   <h3 className="text-2xl font-serif text-white mb-2 group-hover:text-[#C4A882] transition-colors">
                     Events
                   </h3>
-                  <p className="text-stone-200 text-sm">
-                    Corporate functions, private parties &amp; celebrations
+                  <p className="text-stone-200 text-sm mb-4">
+                    Professional entertainment for corporate events, private
+                    celebrations, and life&apos;s important moments.
                   </p>
+                  <span className="text-[#C4A882] text-sm uppercase tracking-wider">
+                    Learn More →
+                  </span>
                 </div>
               </div>
             </Link>
@@ -231,45 +287,45 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-24 px-6 bg-[#F5F5F5]">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-            Kind Words
-          </p>
-          <h2 className="text-4xl md:text-5xl font-serif text-[#2C2C2C] mb-16">
-            What Couples Say
-          </h2>
-
-          <div className="space-y-12">
-            <blockquote className="text-xl md:text-2xl text-[#444444] italic leading-relaxed">
-              &ldquo;Nicola is a phenomenal singer with a beautiful voice. Nothing
-              was too big an ask &mdash; she went above and beyond to make our day
-              truly special.&rdquo;
-            </blockquote>
-            <div className="flex justify-center gap-1 mb-4">
-              {[...Array(5)].map((_, i) => (
-                <span key={i} className="text-[#C4A882] text-xl">
-                  ★
-                </span>
-              ))}
-            </div>
-            <p className="text-[#888888] text-sm">
-              5-star reviews on Google &amp; Facebook
+      {/* Venues */}
+      <section className="py-24 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
+              Experience
             </p>
+            <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
+              Trusted at Scotland&apos;s Finest Venues
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-8 gap-y-4 text-[#888888] text-center">
+            {venues.map((venue) => (
+              <span key={venue} className="text-sm">
+                {venue}
+              </span>
+            ))}
           </div>
         </div>
       </section>
 
+      {/* Video */}
+      <YouTubeGrid />
+
+      {/* Testimonials */}
+      <ReviewsSection />
+
       {/* CTA Section */}
       <section className="py-24 px-6 bg-[#2C2C2C]">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">
-            Let&apos;s Create Something Beautiful
+          <h2 className="text-3xl md:text-4xl font-serif text-white mb-6">
+            Let&apos;s Make Your Day Unforgettable
           </h2>
-          <p className="text-stone-300 text-lg mb-10 max-w-2xl mx-auto">
-            I&apos;d love to hear about your upcoming celebration. Get in touch to
-            check availability and discuss how we can make your day unforgettable.
+          <p className="text-stone-300 text-lg mb-4">
+            Now booking for 2027. Still some 2026 dates available.
+          </p>
+          <p className="text-stone-400 mb-10">
+            Get in touch to discuss your wedding or event and check my
+            availability.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -295,62 +351,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Venues */}
-      <section className="py-24 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-              Experience
-            </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
-              Trusted at Scotland&apos;s Finest Venues
-            </h2>
-          </div>
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-[#888888]">
-            {venues.map((venue) => (
-              <span key={venue} className="text-sm">
-                {venue}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Video */}
-      <section className="py-24 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-              See & Hear Nicola in Action
-            </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
-              A selection of videos from my YouTube channel
-            </h2>
-          </div>
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-[#888888]">
-
-          </div>
-        </div>
-      </section>
-
-            {/* Social */}
-      <section className="py-24 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-              Behind the Scenes — Follow Nicola on Instagram
-            </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
-              A selection of content from my Instagram
-            </h2>
-          </div>
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-[#888888]">
-
-          </div>
-        </div>
-      </section>
-
     </>
   );
 }

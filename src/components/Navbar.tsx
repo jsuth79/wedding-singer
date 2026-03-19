@@ -29,7 +29,7 @@ export default function Navbar() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`text-sm tracking-wide transition-colors hover:text-[#C4A882] ${
+                  className={`text-base tracking-wide transition-colors hover:text-[#C4A882] ${
                     pathname === link.href
                       ? "text-[#C4A882] font-medium"
                       : "text-[#444444]"
@@ -42,7 +42,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/enquire"
-                className="bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-5 py-2 text-sm tracking-wide transition-colors rounded-[4px]"
+                className="bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-6 py-2.5 text-base tracking-wide transition-colors rounded-[4px]"
               >
                 Check Availability
               </Link>

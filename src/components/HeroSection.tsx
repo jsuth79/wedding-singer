@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative h-[75vh] min-h-[550px] max-h-[850px] flex flex-col justify-between bg-stone-100">
+    <section className="relative h-[75vh] min-h-[550px] lg:h-[78vh] xl:h-[85vh] flex flex-col justify-between bg-stone-100">
       {/* Background image */}
       <Image
-        src="https://images.squarespace-cdn.com/content/v1/641787c199b0b17ed0758ebc/e6ff22c4-f244-4fae-b9ef-19092b2f3d5d/nicola-mason-wedding-singer.jpg"
+        src="/images/nicola-mason-wedding-events-singer.jpg"
         alt="Nicola Mason performing at a wedding"
         fill
         className="object-cover object-top"
