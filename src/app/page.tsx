@@ -94,28 +94,28 @@ export default function HomePage() {
       <HeroSection />
 
       {/* Awards Bar */}
-      <section className="py-6 bg-[#2C2C2C]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-center">
-            <div className="text-stone-300">
-              <p className="text-[#C4A882] text-sm font-medium mb-1">
-                Scottish Wedding Awards 2026
+      <section className="py-4 md:py-6 bg-[#2C2C2C]">
+        <div className="max-w-6xl mx-auto px-4 md:px-6">
+          <div className="flex flex-row items-center justify-center gap-4 md:gap-8 text-center">
+            <div className="text-stone-300 flex-1 md:flex-none">
+              <p className="text-[#C4A882] text-xs md:text-sm font-medium mb-0.5 md:mb-1">
+                Scottish Wedding Awards
               </p>
-              <p className="text-xs">Ceremony Entertainer of the Year</p>
+              <p className="text-[10px] md:text-xs">2026 Winner</p>
             </div>
-            <div className="hidden md:block h-8 w-px bg-stone-700" />
-            <div className="text-stone-300">
-              <p className="text-[#C4A882] text-sm font-medium mb-1">
-                Confetti Awards 2025
+            <div className="h-8 w-px bg-stone-700" />
+            <div className="text-stone-300 flex-1 md:flex-none">
+              <p className="text-[#C4A882] text-xs md:text-sm font-medium mb-0.5 md:mb-1">
+                Confetti Awards
               </p>
-              <p className="text-xs">Finalist, Best Ceremony Entertainer</p>
+              <p className="text-[10px] md:text-xs">2025 Finalist</p>
             </div>
-            <div className="hidden md:block h-8 w-px bg-stone-700" />
-            <div className="text-stone-300">
-              <p className="text-[#C4A882] text-sm font-medium mb-1">
+            <div className="h-8 w-px bg-stone-700" />
+            <div className="text-stone-300 flex-1 md:flex-none">
+              <p className="text-[#C4A882] text-xs md:text-sm font-medium mb-0.5 md:mb-1">
                 UKbride
               </p>
-              <p className="text-xs">Approved Wedding Supplier</p>
+              <p className="text-[10px] md:text-xs">Approved Supplier</p>
             </div>
           </div>
         </div>
