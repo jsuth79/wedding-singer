@@ -401,7 +401,7 @@ export default function WeddingsPage() {
 
               <div className="flex flex-wrap gap-3">
                 {[
-                  "Scottish Wedding Awards 2026 Winner",
+                  "Scottish Wedding Awards Winner",
                   "Confetti Awards 2025 Finalist",
                   "UKbride Approved",
                   "5-Star Reviews on Google & Facebook",
@@ -413,6 +413,13 @@ export default function WeddingsPage() {
                     {award}
                   </span>
                 ))}
+              </div>
+
+              <div className="mt-8 border-l-4 border-[#C4A882] pl-6">
+                <Link href="/#reviews" className="text-xs uppercase tracking-[0.15em] text-[#C4A882] hover:text-[#A68B5B] mb-2 inline-block">From the reviews →</Link>
+                <p className="text-[#444444] text-sm leading-relaxed italic">
+                  &ldquo;Couples mention the same things: a voice described as &lsquo;phenomenal&rsquo; and &lsquo;extraordinary&rsquo;; communication that&apos;s fast, warm and proactive; songs learned and sets tailored to the room. And the guest reaction — &lsquo;everyone loved her&rsquo;, &lsquo;so many comments&rsquo;, &lsquo;the floor was filled all night&rsquo;. The phrase that comes up most? &lsquo;One less thing to worry about.&rsquo;&rdquo;
+                </p>
               </div>
             </div>
 
@@ -459,6 +466,66 @@ export default function WeddingsPage() {
                 </h3>
                 <p className="text-[#444444] text-sm">{item.description}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Venues */}
+      <section className="py-12 md:py-24 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
+              Experience
+            </p>
+            <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
+              Trusted at Scotland&apos;s Finest Venues
+            </h2>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              // Grand Estates & Historic Castles
+              { name: "Carlowrie Castle", area: "West Lothian" },
+              { name: "Fasque Castle", area: "Aberdeenshire" },
+              { name: "Atholl Palace", area: "Perthshire" },
+              { name: "The Balmoral Hotel", area: "Edinburgh" },
+              { name: "Glenbervie House & Country Estate", area: "Falkirk" },
+              { name: "Mar Hall", area: "Renfrewshire" },
+              { name: "Edinburgh City Chambers", area: "Edinburgh" },
+              { name: "The George Hotel", area: "Edinburgh" },
+              { name: "The Bonham Hotel", area: "Edinburgh" },
+              // Luxury Hotels & Country Clubs
+              { name: "Norton House Hotel", area: "Edinburgh" },
+              { name: "Lodge on Loch Lomond", area: "Loch Lomond" },
+              { name: "Balbirnie House", area: "Fife" },
+              { name: "Inglewood House & Spa", area: "Clackmannanshire" },
+              { name: "The Gailes Hotel & Spa", area: "Ayrshire" },
+              { name: "Dalmeny Park House Hotel", area: "Renfrewshire" },
+              { name: "Lynnhurst Hotel", area: "Renfrewshire" },
+              { name: "Ingliston Country Club & Hotel", area: "Renfrewshire" },
+              { name: "Piersland House", area: "Ayrshire" },
+              { name: "Dalziel Park Hotel & Golf Club", area: "Lanarkshire" },
+              { name: "Parklands Hotel", area: "Perthshire" },
+              { name: "The Busby Hotel", area: "East Renfrewshire" },
+              { name: "Bowfield Hotel & Spa", area: "Renfrewshire" },
+              { name: "Carnoustie Golf Hotel & Spa", area: "Angus" },
+              // Characterful, Chic & Unique Spaces
+              { name: "Coats", area: "Renfrewshire" },
+              { name: "Oran Mor", area: "Glasgow" },
+              { name: "Ghillie Dhu", area: "Edinburgh" },
+              { name: "The Corinthian", area: "Glasgow" },
+              { name: "Sloan's", area: "Glasgow" },
+              { name: "The Byre at Inchyra", area: "Perthshire" },
+              { name: "Broxmouth Courtyard", area: "East Lothian" },
+              { name: "The Vu", area: "West Lothian" },
+            ].map((venue) => (
+              <span
+                key={venue.name}
+                className="px-5 py-2 bg-white border border-stone-200 rounded-full text-sm text-[#2C2C2C]"
+              >
+                {venue.name}
+                <span className="text-[#888888] ml-1">· {venue.area}</span>
+              </span>
             ))}
           </div>
         </div>

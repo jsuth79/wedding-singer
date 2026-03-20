@@ -19,7 +19,7 @@ export default function EnquirePage() {
   return (
     <div className="pt-20">
       {/* Hero */}
-      <section className="py-24 px-6 bg-[#F5F5F5]">
+      <section className="py-12 md:py-24 px-6 bg-[#F5F5F5]">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
             Get in Touch
@@ -35,9 +35,9 @@ export default function EnquirePage() {
       </section>
 
       {/* Form Section */}
-      <section className="py-24 px-6">
+      <section className="py-12 md:py-24 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-16">
             {/* Form */}
             <div className="lg:col-span-2">
               <EnquiryForm />
@@ -127,20 +127,20 @@ export default function EnquirePage() {
               </div>
 
               {/* Social Proof */}
-              <div className="text-center">
-                <p className="text-[#888888] text-sm mb-2">
-                  Scottish Wedding Awards 2026 Winner
-                </p>
-                <div className="flex justify-center gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-[#C4A882] text-xl">
-                      ★
-                    </span>
-                  ))}
-                </div>
-                <p className="text-[#444444] text-sm mt-1">
-                  5-star reviews on Google &amp; Facebook
-                </p>
+              <div className="flex flex-wrap gap-2 justify-center">
+                {[
+                  "Scottish Wedding Awards Winner",
+                  "Confetti Awards 2025 Finalist",
+                  "UKbride Approved",
+                  "5-Star Reviews on Google & Facebook",
+                ].map((award) => (
+                  <span
+                    key={award}
+                    className="px-4 py-2 bg-white border border-stone-200 rounded-full text-sm text-[#2C2C2C]"
+                  >
+                    {award}
+                  </span>
+                ))}
               </div>
             </div>
           </div>

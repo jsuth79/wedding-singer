@@ -55,18 +55,18 @@ export default function HeroSection() {
         </div>
 
         {/* Awards - full width */}
-        <div className="flex flex-wrap justify-between mt-6 text-sm text-[#888888]">
-          <span className="flex items-center gap-1.5">
-            <span className="text-[#C4A882]">★</span> Scottish Wedding Awards 2026
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6 text-sm text-[#888888]">
+          <span className="flex items-start gap-1.5">
+            <span className="text-[#C4A882] shrink-0">★</span> Scottish Wedding Awards Winner
           </span>
-          <span className="flex items-center gap-1.5">
-            <span className="text-[#C4A882]">★</span> Confetti Awards Finalist
+          <span className="flex items-start gap-1.5">
+            <span className="text-[#C4A882] shrink-0">★</span> Confetti Awards Finalist
           </span>
-          <span className="flex items-center gap-1.5">
-            <span className="text-[#C4A882]">★</span> UKbride Approved
+          <span className="flex items-start gap-1.5">
+            <span className="text-[#C4A882] shrink-0">★</span> UKbride Approved
           </span>
-          <span className="flex items-center gap-1.5">
-            <span className="text-[#C4A882]">★</span> 5-Star Reviews
+          <span className="flex items-start gap-1.5">
+            <span className="text-[#C4A882] shrink-0">★</span> 5-Star Reviews
           </span>
         </div>
       </div>

@@ -8,13 +8,13 @@ import YouTubeGrid from "@/components/YouTubeGrid";
 export const metadata: Metadata = {
   title: "Award-Winning Wedding Singer Glasgow | Nicola Mason | Scottish Ceremony & Event Singer",
   description:
-    "Professional wedding singer in Glasgow & Central Scotland. Scottish Wedding Awards 2026 Winner. Live acoustic music for ceremonies, receptions & celebrations. Book now for 2026/2027.",
+    "Professional wedding singer in Glasgow & Central Scotland. Scottish Wedding Awards Winner. Live acoustic music for ceremonies, receptions & celebrations. Book now for 2026/2027.",
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'Award-Winning Wedding Singer Glasgow | Nicola Mason',
-    description: 'Professional wedding singer in Glasgow & Central Scotland. Scottish Wedding Awards 2026 Winner. Live music for ceremonies, receptions & celebrations.',
+    description: 'Professional wedding singer in Glasgow & Central Scotland. Scottish Wedding Awards Winner. Live music for ceremonies, receptions & celebrations.',
     url: 'https://www.nicolamason.co.uk',
     images: [
       {
@@ -27,42 +27,47 @@ export const metadata: Metadata = {
   },
 };
 
-const venues = [
-  // Grand Estates & Historic Castles
-  "Carlowrie Castle",
-  "Fasque Castle",
-  "Atholl Palace",
-  "The Balmoral Hotel",
-  "Glenbervie House & Country Estate",
-  "Mar Hall",
-  "Edinburgh City Chambers",
-  "The George Hotel",
-  "The Bonham Hotel",
-  // Luxury Hotels & Country Clubs
-  "Norton House Hotel",
-  "Lodge on Loch Lomond",
-  "Balbirnie House",
-  "Inglewood House & Spa",
-  "The Gailes Hotel & Spa",
-  "Dalmeny Park House Hotel",
-  "Lynnhurst Hotel",
-  "Ingliston Country Club & Hotel",
-  "Piersland House",
-  "Dalziel Park Hotel & Golf Club",
-  "Parklands Hotel",
-  "The Busby Hotel",
-  "Bowfield Hotel & Spa",
-  "Carnoustie Golf Hotel & Spa",
-  // Characterful, Chic & Unique Spaces
-  "Coats",
-  "Oran Mor",
-  "Ghillie Dhu",
-  "The Corinthian",
-  "Sloan's",
-  "The Byre at Inchyra",
-  "Broxmouth Courtyard",
-  "Hidden River Barn",
-  "The Vu",
+
+const venueRegions = [
+  {
+    region: "Glasgow & West Scotland",
+    description:
+      "I'm a familiar face on the Glasgow wedding scene and across Renfrewshire and Ayrshire, performing at some of the west of Scotland's most sought-after venues.",
+    venues: [
+      "Oran Mor", "The Corinthian", "Sloan's", "Mar Hall",
+      "Ingliston Country Club & Hotel", "Dalmeny Park House Hotel",
+      "Lynnhurst Hotel", "Bowfield Hotel & Spa", "Coats", "The Busby Hotel",
+      "The Gailes Hotel & Spa", "Piersland House", "Lodge on Loch Lomond",
+    ],
+  },
+  {
+    region: "Central Scotland",
+    description:
+      "From Lanarkshire and Falkirk to Clackmannanshire, I regularly perform at venues across the heart of Scotland.",
+    venues: [
+      "Dalziel Park Hotel & Golf Club", "Glenbervie House & Country Estate",
+      "Inglewood House & Spa",
+    ],
+  },
+  {
+    region: "Edinburgh & The Lothians",
+    description:
+      "From Edinburgh's iconic city-centre hotels to elegant venues across East and West Lothian, I bring live music to some of the capital region's finest settings.",
+    venues: [
+      "The Balmoral Hotel", "Edinburgh City Chambers", "The George Hotel",
+      "The Bonham Hotel", "Norton House Hotel", "Ghillie Dhu",
+      "Carlowrie Castle", "The Vu", "Broxmouth Courtyard",
+    ],
+  },
+  {
+    region: "Beyond Central Scotland",
+    description:
+      "I'm happy to travel for the right event, with recent performances taking me to Perthshire, Fife, Angus and Aberdeenshire.",
+    venues: [
+      "Atholl Palace", "Parklands Hotel", "The Byre at Inchyra",
+      "Balbirnie House", "Carnoustie Golf Hotel & Spa", "Fasque Castle",
+    ],
+  },
 ];
 
 const faqs = [
@@ -297,25 +302,33 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Venues */}
-      <section className="py-12 md:py-24 px-6">
-        <div className="max-w-7xl mx-auto">
+      {/* Venue Regions */}
+      <section className="py-12 md:py-24 px-6 bg-[#FCFCFC]">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-              Experience
+              Coverage
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
-              Trusted at Scotland&apos;s Finest Venues
+              Performing Across Scotland
             </h2>
           </div>
-          <div className="flex flex-wrap justify-center gap-3">
-            {venues.map((venue) => (
-              <span
-                key={venue}
-                className="px-5 py-2 bg-white border border-stone-200 rounded-full text-sm text-[#2C2C2C]"
-              >
-                {venue}
-              </span>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {venueRegions.map((group) => (
+              <div key={group.region} className="text-center">
+                <div className="w-16 h-16 bg-[#C4A882]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-[#C4A882] text-xl">✦</span>
+                </div>
+                <h3 className="text-lg font-serif text-[#2C2C2C] mb-3">
+                  {group.region}
+                </h3>
+                <p className="text-[#444444] text-sm leading-relaxed mb-3">
+                  {group.description}
+                </p>
+                <p className="text-[#888888] text-xs leading-relaxed">
+                  {group.venues.join(", ")}
+                </p>
+              </div>
             ))}
           </div>
         </div>
@@ -325,7 +338,9 @@ export default function HomePage() {
       <YouTubeGrid />
 
       {/* Testimonials */}
-      <ReviewsSection />
+      <div id="reviews">
+        <ReviewsSection />
+      </div>
     </>
   );
 }

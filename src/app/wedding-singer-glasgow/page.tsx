@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 export const metadata: Metadata = {
   title: "Wedding Singer Glasgow | Live Acoustic Music for Weddings | Nicola Mason",
   description:
-    "Award-winning wedding singer in Glasgow. Scottish Wedding Awards 2026 Winner. Live acoustic music for ceremonies, drinks receptions & first dances. Serving Glasgow & Central Scotland.",
+    "Award-winning wedding singer in Glasgow. Scottish Wedding Awards Winner. Live acoustic music for ceremonies, drinks receptions & first dances. Serving Glasgow & Central Scotland.",
   alternates: {
     canonical: '/weddings',
   },
