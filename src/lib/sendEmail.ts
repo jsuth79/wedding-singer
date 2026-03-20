@@ -26,10 +26,15 @@ export async function sendEnquiryEmail(data: EnquiryData) {
     day: "numeric",
   });
 
+  const enquiryEmail = process.env.ENQUIRY_EMAIL;
+  if (!enquiryEmail) {
+    throw new Error("ENQUIRY_EMAIL environment variable is not set");
+  }
+
   const resend = getResendClient();
   const { error } = await resend.emails.send({
-    from: "Website Enquiry <hello@nicolamason.co.uk>",
-    to: "hello@nicolamason.co.uk",
+    from: `Website Enquiry <${enquiryEmail}>`,
+    to: enquiryEmail,
     replyTo: email,
     subject: `New Enquiry: ${eventType} on ${formattedDate}`,
     html: `
