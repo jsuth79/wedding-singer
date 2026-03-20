@@ -84,46 +84,10 @@ export default function EnquirePage() {
                   className="mt-6 inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-6 py-3 rounded-[4px] transition-colors w-full"
                 >
                   <span className="font-medium text-sm uppercase tracking-wider">Check My Availability</span>
-                  <span className="text-xs normal-case tracking-normal mt-1 opacity-90">
+                  <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                     via WhatsApp (1-2 hour response)
                   </span>
                 </a>
-              </div>
-
-              {/* FAQ */}
-              <div className="bg-[#C4A882]/10 rounded-lg p-8">
-                <h3 className="text-xl font-serif text-[#2C2C2C] mb-6">
-                  Quick Answers
-                </h3>
-                <div className="space-y-4 text-sm">
-                  <div>
-                    <p className="font-medium text-[#2C2C2C] mb-1">
-                      How far in advance should I book?
-                    </p>
-                    <p className="text-[#444444]">
-                      As early as possible! I&apos;m now booking for 2027, with
-                      limited 2026 dates still available.
-                    </p>
-                  </div>
-                  <div>
-                    <p className="font-medium text-[#2C2C2C] mb-1">
-                      What areas do you cover?
-                    </p>
-                    <p className="text-[#444444]">
-                      I&apos;m based in Glasgow and serve Central Scotland. 40 miles
-                      travel included; additional at 45p/mile.
-                    </p>
-                  </div>
-                  <div>
-                    <p className="font-medium text-[#2C2C2C] mb-1">
-                      Can you learn a specific song?
-                    </p>
-                    <p className="text-[#444444]">
-                      Absolutely! I love learning songs that are meaningful to
-                      my clients (subject to availability).
-                    </p>
-                  </div>
-                </div>
               </div>
 
               {/* Social Proof */}

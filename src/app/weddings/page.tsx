@@ -30,6 +30,7 @@ const packages = [
     price: "£325",
     description: "Perfect for your ceremony",
     image: "/images/nicola-mason-wedding-ceremony-singer-l.webp",
+    alt: "Wedding ceremony singer performing acoustic music during Scottish wedding ceremony with vocals and guitar",
     features: [
       "Playlist during guest arrival",
       "Aisle entrance song",
@@ -43,6 +44,7 @@ const packages = [
     price: "£350",
     description: "Entertain your guests",
     image: "/images/nicola-mason-drinks-reception-l.webp",
+    alt: "Live music at drinks reception with professional wedding singer performing acoustic sets for guests",
     features: [
       "Two 45-minute live sets",
       "Playlist between sets",
@@ -56,6 +58,7 @@ const packages = [
     price: "£350",
     description: "Elegant background music",
     image: "/images/nicola-mason-dinner-l.webp",
+    alt: "Wedding dinner entertainment with live acoustic vocalist providing elegant background music during wedding breakfast",
     features: [
       "Grand entrance song",
       "Two 45-minute soft background sets",
@@ -70,6 +73,7 @@ const packages = [
     popular: true,
     description: "Ceremony through reception",
     image: "/images/nicola-mason-daytime-l.webp",
+    alt: "Full day wedding singer package covering ceremony and drinks reception with live acoustic performances",
     features: [
       "Full ceremony service",
       "Drinks reception entertainment",
@@ -83,6 +87,7 @@ const packages = [
     price: "£795",
     description: "Complete musical coverage",
     image: "/images/nicola-mason-full-day-singer-l.webp",
+    alt: "Complete wedding day entertainment package from ceremony through evening reception with live singing and first dance",
     features: [
       "Full ceremony service",
       "90-minute drinks reception",
@@ -96,6 +101,7 @@ const packages = [
     price: "£395",
     description: "Evening entertainment",
     image: "/images/nicola-mason-first-dance-l.webp",
+    alt: "First dance wedding singer performing romantic live songs and upbeat party music for evening reception",
     features: [
       "Your first dance performed live",
       "One hour of upbeat party songs",
@@ -112,6 +118,7 @@ const extras = [
     price: "From £795",
     popular: true,
     image: "/images/nicola-mason-surprise-singer-l.webp",
+    alt: "Surprise wedding singers disguised as waiters performing unexpected entertainment at Scottish wedding reception",
     description:
       "Two or more performers disguised as waiters, delivery drivers, or police who reveal themselves to perform popular floor-fillers.",
     features: [
@@ -126,6 +133,7 @@ const extras = [
     name: "The Clooneys",
     price: "POA",
     image: "/images/the-clooneys-band-l.webp",
+    alt: "The Clooneys vocal harmony trio performing live three-part harmonies at wedding ceremony and reception",
     description:
       "Three-piece vocal harmony trio available for ceremonies, receptions, and evening entertainment.",
     features: [
@@ -141,6 +149,7 @@ const extras = [
     name: "Keepsake Recording",
     price: "£80",
     image: "/images/nicola-mason-keepsake-recording-l.webp",
+    alt: "Studio recording session for personalized wedding song keepsake with professional vocalist",
     description:
       "Professional recording of your preferred wedding song. Discounts available for multiple recordings.",
     features: [
@@ -196,14 +205,14 @@ export default function WeddingsPage() {
                 }`}
               >
                 {pkg.popular && (
-                  <span className="absolute top-4 right-4 z-10 bg-[#C4A882] text-white text-xs uppercase tracking-wider px-3 py-1 rounded-full">
+                  <span className="absolute top-4 right-4 z-10 bg-[#C4A882] text-white text-sm uppercase tracking-wider px-3 py-1 rounded-full">
                     Popular
                   </span>
                 )}
                 <div className="aspect-[4/3] relative">
                   <Image
                     src={pkg.image}
-                    alt={pkg.name}
+                    alt={pkg.alt}
                     fill
                     className="object-cover"
                   />
@@ -269,14 +278,14 @@ export default function WeddingsPage() {
                 }`}
               >
                 {extra.popular && (
-                  <span className="absolute top-4 right-4 z-10 bg-[#C4A882] text-white text-xs uppercase tracking-wider px-3 py-1 rounded-full">
+                  <span className="absolute top-4 right-4 z-10 bg-[#C4A882] text-white text-sm uppercase tracking-wider px-3 py-1 rounded-full">
                     Popular
                   </span>
                 )}
                 <div className="aspect-[4/3] relative">
                   <Image
                     src={extra.image}
-                    alt={extra.name}
+                    alt={extra.alt}
                     fill
                     className="object-cover"
                   />
@@ -345,7 +354,7 @@ export default function WeddingsPage() {
               className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
             >
               <span className="font-medium">Check My Availability</span>
-              <span className="text-xs normal-case tracking-normal mt-1 opacity-90">
+              <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                 via WhatsApp (1-2 hour response)
               </span>
             </a>
@@ -354,7 +363,7 @@ export default function WeddingsPage() {
               className="inline-flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
             >
               <span className="font-medium">Check My Availability</span>
-              <span className="text-xs normal-case tracking-normal mt-1 opacity-90">
+              <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                 via Contact Form
               </span>
             </Link>
@@ -416,8 +425,8 @@ export default function WeddingsPage() {
               </div>
 
               <div className="mt-8 border-l-4 border-[#C4A882] pl-6">
-                <Link href="/#reviews" className="text-xs uppercase tracking-[0.15em] text-[#C4A882] hover:text-[#A68B5B] mb-2 inline-block">From the reviews →</Link>
-                <p className="text-[#444444] text-sm leading-relaxed italic">
+                <Link href="/#reviews" className="text-sm uppercase tracking-[0.15em] text-[#C4A882] hover:text-[#A68B5B] mb-2 inline-block">From the reviews →</Link>
+                <p className="text-[#444444] text-base leading-relaxed italic">
                   &ldquo;Couples mention the same things: a voice described as &lsquo;phenomenal&rsquo; and &lsquo;extraordinary&rsquo;; communication that&apos;s fast, warm and proactive; songs learned and sets tailored to the room. And the guest reaction — &lsquo;everyone loved her&rsquo;, &lsquo;so many comments&rsquo;, &lsquo;the floor was filled all night&rsquo;. The phrase that comes up most? &lsquo;One less thing to worry about.&rsquo;&rdquo;
                 </p>
               </div>
@@ -427,7 +436,7 @@ export default function WeddingsPage() {
             <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
               <Image
                 src="/images/nicola-mason-full-package-p.webp"
-                alt="Nicola Mason performing"
+                alt="Wedding singer Nicola Mason performing full day wedding package with live vocals and acoustic guitar"
                 fill
                 className="object-cover"
               />

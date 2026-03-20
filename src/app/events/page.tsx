@@ -30,6 +30,7 @@ const eventTypes = [
     description:
       "From awards ceremonies to company celebrations, I provide sophisticated entertainment that elevates your corporate event. Professional, punctual, and adaptable to your brand's tone.",
     image: "/images/nicola-mason-corporate-events-l.webp",
+    alt: "Professional corporate event singer performing at Glasgow business awards ceremony and gala dinner",
     features: [
       "Awards ceremonies & gala dinners",
       "Conference entertainment",
@@ -44,6 +45,7 @@ const eventTypes = [
     description:
       "Whether it's a milestone birthday, anniversary celebration, or garden party, I'll create the perfect atmosphere for your gathering with a tailored setlist.",
     image: "/images/nicola-mason-celebration-singer-l.webp",
+    alt: "Singer performing live music at private birthday party and anniversary celebration in Scotland",
     features: [
       "Milestone birthdays (30th, 40th, 50th+)",
       "Anniversary celebrations",
@@ -58,6 +60,7 @@ const eventTypes = [
     description:
       "I bring sensitivity and professionalism to life's most difficult moments, providing comfort through music at services and gatherings.",
     image: "/images/nicola-mason-funeral-singer-l.webp",
+    alt: "Professional funeral singer providing respectful live music at memorial service and crematorium ceremony",
     features: [
       "Church or civil ceremonies",
       "Crematorium services",
@@ -108,7 +111,7 @@ export default function EventsPage() {
                 <div className="aspect-[4/3] relative">
                   <Image
                     src={event.image}
-                    alt={event.title}
+                    alt={event.alt}
                     fill
                     className="object-cover"
                   />
@@ -160,7 +163,7 @@ export default function EventsPage() {
               className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
             >
               <span className="font-medium">Check My Availability</span>
-              <span className="text-xs normal-case tracking-normal mt-1 opacity-90">
+              <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                 via WhatsApp (1-2 hour response)
               </span>
             </a>
@@ -169,7 +172,7 @@ export default function EventsPage() {
               className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
             >
               <span className="font-medium">Check My Availability</span>
-              <span className="text-xs normal-case tracking-normal mt-1 opacity-90">
+              <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                 via Contact Form
               </span>
             </Link>

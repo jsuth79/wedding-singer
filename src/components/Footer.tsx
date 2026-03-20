@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Copyright & Contact - Left */}
-          <div className="text-xs text-stone-500 shrink-0 text-center md:text-left">
+          <div className="text-sm text-stone-500 shrink-0 text-center md:text-left">
             <p>&copy; {new Date().getFullYear()} Nicola Mason</p>
             <p className="mt-1">
               <a href="tel:+447740360678" className="hover:text-[#C4A882] transition-colors">
@@ -18,7 +18,7 @@ export default function Footer() {
           </div>
 
           {/* SEO Text - Middle */}
-          <p className="text-xs leading-relaxed text-center max-w-2xl">
+          <p className="text-sm leading-relaxed text-center max-w-2xl">
             Nicola Mason is an award-winning professional wedding singer
             providing live music across Central Scotland, including Glasgow,
             Lanarkshire, Edinburgh, Ayrshire, and The Lothians, bringing years

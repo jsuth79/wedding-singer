@@ -114,7 +114,7 @@ export default function HomePage() {
             <div className="aspect-[3/4] relative rounded-lg overflow-hidden">
               <Image
                 src="/images/nicola-mason-about-me-p.webp"
-                alt="Nicola Mason"
+                alt="Professional wedding and events singer Nicola Mason, trained at Berklee College of Music"
                 fill
                 className="object-cover"
               />
@@ -143,7 +143,7 @@ export default function HomePage() {
                   className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-8 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px] min-w-[280px]"
                 >
                   <span className="font-medium">Check My Availability</span>
-                  <span className="text-xs normal-case tracking-normal mt-1 opacity-90">
+                  <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                     via WhatsApp (1-2 hour response)
                   </span>
                 </a>
@@ -152,7 +152,7 @@ export default function HomePage() {
                   className="inline-flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-8 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px] min-w-[280px]"
                 >
                   <span className="font-medium">Check My Availability</span>
-                  <span className="text-xs normal-case tracking-normal mt-1 opacity-90">
+                  <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                     via Contact Form
                   </span>
                 </Link>
@@ -180,7 +180,7 @@ export default function HomePage() {
                 <h3 className="text-base font-medium text-[#2C2C2C] mb-2">
                   {faq.question}
                 </h3>
-                <p className="text-[#444444] text-sm leading-relaxed">{faq.answer}</p>
+                <p className="text-[#444444] text-base leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -214,7 +214,7 @@ export default function HomePage() {
                 <div className="aspect-[16/10] relative">
                   <Image
                     src="/images/nicola-mason-wedding-services-l.webp"
-                    alt="Nicola Mason singing at a wedding"
+                    alt="Live wedding singer performing acoustic music at Scottish wedding reception in Glasgow"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -224,7 +224,7 @@ export default function HomePage() {
                   <h3 className="text-2xl font-serif text-white mb-2 group-hover:text-[#C4A882] transition-colors">
                     Weddings
                   </h3>
-                  <p className="text-stone-200 text-sm mb-4">
+                  <p className="text-stone-200 text-base mb-4">
                     From intimate ceremonies to full-day celebrations. Acoustic
                     classics and modern favorites tailored to your love story.
                   </p>
@@ -240,7 +240,7 @@ export default function HomePage() {
                 <div className="aspect-[16/10] relative">
                   <Image
                     src="/images/nicola-mason-events-services-l.webp"
-                    alt="Nicola Mason at an event"
+                    alt="Professional vocalist Nicola Mason performing at corporate event and private celebration"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -250,7 +250,7 @@ export default function HomePage() {
                   <h3 className="text-2xl font-serif text-white mb-2 group-hover:text-[#C4A882] transition-colors">
                     Events
                   </h3>
-                  <p className="text-stone-200 text-sm mb-4">
+                  <p className="text-stone-200 text-base mb-4">
                     Professional entertainment for corporate events, private
                     celebrations, and life&apos;s important moments.
                   </p>
@@ -285,7 +285,7 @@ export default function HomePage() {
               className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
             >
               <span className="font-medium">Check My Availability</span>
-              <span className="text-xs normal-case tracking-normal mt-1 opacity-90">
+              <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                 via WhatsApp (1-2 hour response)
               </span>
             </a>
@@ -294,7 +294,7 @@ export default function HomePage() {
               className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
             >
               <span className="font-medium">Check My Availability</span>
-              <span className="text-xs normal-case tracking-normal mt-1 opacity-90">
+              <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                 via Contact Form
               </span>
             </Link>
@@ -322,10 +322,10 @@ export default function HomePage() {
                 <h3 className="text-lg font-serif text-[#2C2C2C] mb-3">
                   {group.region}
                 </h3>
-                <p className="text-[#444444] text-sm leading-relaxed mb-3">
+                <p className="text-[#444444] text-base leading-relaxed mb-3">
                   {group.description}
                 </p>
-                <p className="text-[#888888] text-xs leading-relaxed">
+                <p className="text-[#888888] text-base leading-relaxed">
                   {group.venues.join(", ")}
                 </p>
               </div>

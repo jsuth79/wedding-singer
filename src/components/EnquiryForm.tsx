@@ -193,7 +193,7 @@ export default function EnquiryForm() {
       </button>
 
       <p className="text-sm text-[#888888] text-center">
-        I typically respond within 1-2 hours. For urgent enquiries, please
+        I typically respond within 24 hours. For urgent enquiries, please
         WhatsApp or call directly.
       </p>
     </form>

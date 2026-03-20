@@ -19,7 +19,7 @@ export default function HeroSection() {
             <div className="relative aspect-[4/4] rounded-xl overflow-hidden my-4 md:hidden">
               <Image
                 src="/images/nicola-mason-wedding-events-singer-p.webp"
-                alt="Nicola Mason performing at a wedding"
+                alt="Award-winning wedding singer Nicola Mason performing live music at a Scottish wedding ceremony"
                 fill
                 className="object-cover object-top"
                 priority
@@ -32,12 +32,12 @@ export default function HeroSection() {
                 className="inline-flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-8 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
               >
                 <span className="font-medium">View Wedding Packages</span>
-                <span className="text-xs normal-case tracking-normal mt-1 opacity-90">
+                <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                   Starting from £325
                 </span>
               </Link>
             </div>
-            <p className="mt-6 text-[#888888] text-sm">
+            <p className="mt-6 text-[#888888] text-base">
               Now booking for 2027 &bull; Limited 2026 dates available
             </p>
           </div>
@@ -46,7 +46,7 @@ export default function HeroSection() {
           <div className="hidden md:block relative aspect-[4/5] rounded-xl overflow-hidden">
             <Image
               src="/images/nicola-mason-wedding-events-singer-p.webp"
-              alt="Nicola Mason performing at a wedding"
+              alt="Award-winning wedding singer Nicola Mason performing live music at a Scottish wedding ceremony"
               fill
               className="object-cover object-top"
               priority
@@ -56,16 +56,16 @@ export default function HeroSection() {
 
         {/* Awards - full width */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6 text-sm text-[#888888]">
-          <span className="flex items-start gap-1.5">
+          <span className="flex items-start justify-center gap-1.5">
             <span className="text-[#C4A882] shrink-0">★</span> Scottish Wedding Awards Winner
           </span>
-          <span className="flex items-start gap-1.5">
+          <span className="flex items-start justify-center gap-1.5">
             <span className="text-[#C4A882] shrink-0">★</span> Confetti Awards Finalist
           </span>
-          <span className="flex items-start gap-1.5">
+          <span className="flex items-start justify-center gap-1.5">
             <span className="text-[#C4A882] shrink-0">★</span> UKbride Approved
           </span>
-          <span className="flex items-start gap-1.5">
+          <span className="flex items-start justify-center gap-1.5">
             <span className="text-[#C4A882] shrink-0">★</span> 5-Star Reviews
           </span>
         </div>
