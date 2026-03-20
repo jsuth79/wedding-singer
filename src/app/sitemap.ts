@@ -29,10 +29,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.75,
     },
     {
-      url: `${baseUrl}/enquire`,
+      url: `${baseUrl}/enquiry`,
       lastModified: new Date('2026-03-20'),
       changeFrequency: 'monthly',
       priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/privacy`,
+      lastModified: new Date('2026-03-20'),
+      changeFrequency: 'yearly',
+      priority: 0.3,
     },
     // Keyword-optimized pages
     {

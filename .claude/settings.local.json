@@ -16,7 +16,8 @@
       "Bash(dir:*)",
       "Bash(xargs sed:*)",
       "Bash(cd:*)",
-      "Bash(find /Users/jsutherl/Documents/Apps/Journal/wedding-singer/src -name \"*.tsx\" -type f -exec sed -i '' 's/text-xs/text-sm/g' {} +)"
+      "Bash(find /Users/jsutherl/Documents/Apps/Journal/wedding-singer/src -name \"*.tsx\" -type f -exec sed -i '' 's/text-xs/text-sm/g' {} +)",
+      "Bash(npm run:*)"
     ]
   }
 }
