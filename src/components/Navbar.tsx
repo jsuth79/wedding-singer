@@ -41,7 +41,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/enquiry"
-                className="bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-6 py-2.5 text-base tracking-wide transition-colors rounded-[4px] whitespace-nowrap"
+                className="bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-6 py-2.5 text-sm uppercase tracking-wider transition-colors rounded-[4px] whitespace-nowrap"
               >
                 Check Availability
               </Link>
@@ -89,7 +89,7 @@ export default function Navbar() {
                 <Link
                   href="/enquiry"
                   onClick={() => setIsOpen(false)}
-                  className="inline-block bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-5 py-2 text-sm tracking-wide transition-colors rounded-[4px]"
+                  className="inline-block bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-5 py-2 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
                 >
                   Check Availability
                 </Link>

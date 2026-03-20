@@ -26,10 +26,10 @@ export default function HeroSection() {
               />
             </div>
 
-            <div className="flex justify-center md:justify-start">
+            <div className="flex justify-center md:justify-start w-full md:w-auto">
               <Link
                 href="/weddings"
-                className="inline-flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-8 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
+                className="inline-flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-8 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px] w-full md:w-auto"
               >
                 <span className="font-medium">View Wedding Packages</span>
                 <span className="text-sm normal-case tracking-normal mt-1 opacity-90">

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import PackageTips from "@/components/PackageTips";
 
 export const metadata: Metadata = {
   title: "Wedding Singer Packages Glasgow | Ceremony & Reception | Nicola Mason",
@@ -28,7 +29,7 @@ const packages = [
   {
     name: "Ceremony",
     price: "£325",
-    description: "Perfect for your ceremony",
+    description: "Elevate your moment with your favourite music sung live",
     image: "/images/nicola-mason-wedding-ceremony-singer-l.webp",
     alt: "Wedding ceremony singer performing acoustic music during Scottish wedding ceremony with vocals and guitar",
     features: [
@@ -38,11 +39,15 @@ const packages = [
       "Exit/recessional song",
       "Professional PA system included",
     ],
+    tips: [
+      "Consider an upbeat recessional song to set the tone for your celebration ahead",
+      "If a backing track isn't available for your chosen song, I can arrange for a musician to record one for a small additional fee"
+    ],
   },
   {
     name: "Drinks Reception",
     price: "£350",
-    description: "Entertain your guests",
+    description: "Keep the atmosphere flowing while your guests celebrate",
     image: "/images/nicola-mason-drinks-reception-l.webp",
     alt: "Live music at drinks reception with professional wedding singer performing acoustic sets for guests",
     features: [
@@ -52,11 +57,14 @@ const packages = [
       "Perfect for mingling atmosphere",
       "Professional PA system included",
     ],
+    tips: [
+      "Check your venue's outdoor/marquee setup - I'll need to know about power access and weather contingencies for my equipment"
+    ],
   },
   {
     name: "Dinner",
     price: "£350",
-    description: "Elegant background music",
+    description: "Create the perfect ambience for conversation and dining",
     image: "/images/nicola-mason-dinner-l.webp",
     alt: "Wedding dinner entertainment with live acoustic vocalist providing elegant background music during wedding breakfast",
     features: [
@@ -66,12 +74,15 @@ const packages = [
       "Relaxed, ambient atmosphere",
       "Professional PA system included",
     ],
+    tips: [
+      "Share your running order with me once confirmed - I'll coordinate with your venue to time the music around courses and speeches"
+    ],
   },
   {
     name: "Daytime Package",
     price: "£575",
     popular: true,
-    description: "Ceremony through reception",
+    description: "Live acoustic music from your vows through drinks reception",
     image: "/images/nicola-mason-daytime-l.webp",
     alt: "Full day wedding singer package covering ceremony and drinks reception with live acoustic performances",
     features: [
@@ -81,11 +92,14 @@ const packages = [
       "Substitute drinks for dinner (+£55)",
       "All equipment included",
     ],
+    tips: [
+      "Let me know your ceremony and drinks reception timings so I can plan my set lengths - especially if there's a gap between them"
+    ],
   },
   {
     name: "The Full Shebang",
     price: "£795",
-    description: "Complete musical coverage",
+    description: "Musical memories from ceremony to dance floor",
     image: "/images/nicola-mason-full-day-singer-l.webp",
     alt: "Complete wedding day entertainment package from ceremony through evening reception with live singing and first dance",
     features: [
@@ -95,11 +109,14 @@ const packages = [
       "One hour of party songs",
       "Everything you need for the day",
     ],
+    tips: [
+      "I'll need a place to set up and store my equipment during dinner - just a small corner or back room works perfectly"
+    ],
   },
   {
     name: "First Dances",
     price: "£395",
-    description: "Evening entertainment",
+    description: "Kick off your evening with live music to fill the dance floor",
     image: "/images/nicola-mason-first-dance-l.webp",
     alt: "First dance wedding singer performing romantic live songs and upbeat party music for evening reception",
     features: [
@@ -108,6 +125,9 @@ const packages = [
       "Get guests on the dancefloor",
       "High-energy performance",
       "Professional PA system included",
+    ],
+    tips: [
+      "Send me your first dance song choice as soon as possible - I'll need time to rehearse and create the right arrangement"
     ],
   },
 ];
@@ -120,7 +140,7 @@ const extras = [
     image: "/images/nicola-mason-surprise-singer-l.webp",
     alt: "Surprise wedding singers disguised as waiters performing unexpected entertainment at Scottish wedding reception",
     description:
-      "Two or more performers disguised as waiters, delivery drivers, or police who reveal themselves to perform popular floor-fillers.",
+      "Create a show-stopping moment your guests will talk about for years",
     features: [
       "2+ professional performers",
       "Disguised as staff or guests",
@@ -135,7 +155,7 @@ const extras = [
     image: "/images/the-clooneys-band-l.webp",
     alt: "The Clooneys vocal harmony trio performing live three-part harmonies at wedding ceremony and reception",
     description:
-      "Three-piece vocal harmony trio available for ceremonies, receptions, and evening entertainment.",
+      "Stunning three-part harmonies that bring depth and richness to your day",
     features: [
       "Three-part vocal harmonies",
       "Ceremony performances",
@@ -151,7 +171,7 @@ const extras = [
     image: "/images/nicola-mason-keepsake-recording-l.webp",
     alt: "Studio recording session for personalized wedding song keepsake with professional vocalist",
     description:
-      "Professional recording of your preferred wedding song. Discounts available for multiple recordings.",
+      "Relive your special moment forever with your song professionally recorded",
     features: [
       "Studio-quality recording",
       "Your chosen song",
@@ -236,6 +256,20 @@ export default function WeddingsPage() {
                       </li>
                     ))}
                   </ul>
+                  {pkg.tips && (
+                    <PackageTips
+                      tips={pkg.tips}
+                      title={
+                        pkg.name === "Ceremony" ? "Top Ceremony Tips from Nicola" :
+                        pkg.name === "Drinks Reception" ? "Top Drinks Reception Music Tips from Nicola" :
+                        pkg.name === "Dinner" ? "Top Wedding Dinner Music Tips from Nicola" :
+                        pkg.name === "Daytime Package" ? "Top Daytime Music Tips from Nicola" :
+                        pkg.name === "The Full Shebang" ? "Top Wedding Music Tips from Nicola" :
+                        pkg.name === "First Dances" ? "Top First Dance Music Tips from Nicola" :
+                        "Top Tips from Nicola"
+                      }
+                    />
+                  )}
                   <Link
                     href="/enquiry"
                     className="block w-full text-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-6 py-3 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
