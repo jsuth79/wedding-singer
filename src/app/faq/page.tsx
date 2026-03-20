@@ -143,7 +143,7 @@ export default function FAQPage() {
               </span>
             </a>
             <a
-              href="/enquire"
+              href="/enquiry"
               className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
             >
               <span className="font-medium">Check My Availability</span>

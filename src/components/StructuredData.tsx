@@ -22,34 +22,20 @@ export default function StructuredData() {
       "longitude": "-4.2518"
     },
     "areaServed": [
-      {
-        "@type": "City",
-        "name": "Glasgow"
-      },
-      {
-        "@type": "City",
-        "name": "Edinburgh"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Central Scotland"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Lanarkshire"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Stirling"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Ayrshire"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "The Lothians"
-      }
+      { "@type": "City", "name": "Glasgow" },
+      { "@type": "City", "name": "Edinburgh" },
+      { "@type": "AdministrativeArea", "name": "Lanarkshire" },
+      { "@type": "AdministrativeArea", "name": "Renfrewshire" },
+      { "@type": "AdministrativeArea", "name": "East Renfrewshire" },
+      { "@type": "AdministrativeArea", "name": "Ayrshire" },
+      { "@type": "AdministrativeArea", "name": "Falkirk" },
+      { "@type": "AdministrativeArea", "name": "Clackmannanshire" },
+      { "@type": "AdministrativeArea", "name": "Stirlingshire" },
+      { "@type": "AdministrativeArea", "name": "East Lothian" },
+      { "@type": "AdministrativeArea", "name": "West Lothian" },
+      { "@type": "AdministrativeArea", "name": "Fife" },
+      { "@type": "AdministrativeArea", "name": "Perthshire" },
+      { "@type": "AdministrativeArea", "name": "Central Scotland" }
     ],
     "openingHoursSpecification": [
       {
@@ -176,6 +162,43 @@ export default function StructuredData() {
     }
   };
 
+  const performerSchema = {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "@id": "https://www.nicolamason.co.uk/#performer",
+    "name": "Nicola Mason",
+    "url": "https://www.nicolamason.co.uk",
+    "image": "https://www.nicolamason.co.uk/images/nicola-mason-wedding-events-singer.jpg",
+    "description": "Professional solo wedding and events singer based in Glasgow, performing acoustic live music across Scotland for ceremonies, receptions and celebrations.",
+    "genre": ["Acoustic Pop", "Easy Listening", "Contemporary", "Classic Wedding"],
+    "member": {
+      "@type": "OrganizationRole",
+      "member": { "@id": "https://www.nicolamason.co.uk/#person" },
+      "roleName": "Vocalist"
+    },
+    "award": [
+      "Scottish Wedding Awards - Ceremony Entertainer of the Year",
+      "Confetti Awards 2025 - Finalist Best Ceremony Entertainer",
+      "UKbride Approved Wedding Supplier"
+    ],
+    "location": {
+      "@type": "Place",
+      "name": "Glasgow, Scotland",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Glasgow",
+        "addressRegion": "Scotland",
+        "addressCountry": "GB"
+      }
+    },
+    "sameAs": [
+      "https://www.facebook.com/nicolamasonvocalist",
+      "https://www.instagram.com/nicolamasonvocalist",
+      "https://www.tiktok.com/@nicolamasonvocalist",
+      "https://www.youtube.com/@nicolamasonvocalist"
+    ]
+  };
+
   const aggregateRatingSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -198,6 +221,10 @@ export default function StructuredData() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(performerSchema) }}
       />
       <script
         type="application/ld+json"

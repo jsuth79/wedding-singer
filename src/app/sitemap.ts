@@ -6,58 +6,58 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-20'),
       changeFrequency: 'monthly',
       priority: 1,
     },
     {
       url: `${baseUrl}/weddings`,
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-20'),
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/events`,
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-19'),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/faq`,
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-19'),
       changeFrequency: 'monthly',
-      priority: 0.7,
+      priority: 0.75,
     },
     {
       url: `${baseUrl}/enquire`,
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-20'),
       changeFrequency: 'monthly',
-      priority: 0.8,
+      priority: 0.6,
     },
     // Keyword-optimized pages
     {
       url: `${baseUrl}/wedding-singer-glasgow`,
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-20'),
       changeFrequency: 'monthly',
-      priority: 0.85,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/wedding-singer-scotland`,
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-19'),
       changeFrequency: 'monthly',
-      priority: 0.85,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/wedding-singer-edinburgh`,
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-19'),
       changeFrequency: 'monthly',
-      priority: 0.85,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/wedding-ceremony-singer`,
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-19'),
       changeFrequency: 'monthly',
-      priority: 0.85,
+      priority: 0.8,
     },
   ]
 }

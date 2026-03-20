@@ -36,7 +36,7 @@ const eventTypes = [
       "Product launches & brand events",
       "Client hospitality events",
       "Christmas parties & summer balls",
-      "Team building days (in-person or online)",
+      "Team building days",
     ],
   },
   {
@@ -130,7 +130,7 @@ export default function EventsPage() {
                     ))}
                   </ul>
                   <Link
-                    href="/enquire"
+                    href="/enquiry"
                     className="block w-full text-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-6 py-3 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
                   >
                     Check Availability
@@ -165,7 +165,7 @@ export default function EventsPage() {
               </span>
             </a>
             <Link
-              href="/enquire"
+              href="/enquiry"
               className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
             >
               <span className="font-medium">Check My Availability</span>

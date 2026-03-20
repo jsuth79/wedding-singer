@@ -13,7 +13,9 @@
       "Bash(curl -s https://www.nicolamason.co.uk/faq)",
       "Bash(npx tsc:*)",
       "Bash(findstr:*)",
-      "Bash(dir:*)"
+      "Bash(dir:*)",
+      "Bash(xargs sed:*)",
+      "Bash(cd:*)"
     ]
   }
 }

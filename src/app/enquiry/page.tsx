@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description:
     "Get in touch to discuss your wedding or event. Quick response times via WhatsApp or contact form. Based in Glasgow, serving Central Scotland.",
   alternates: {
-    canonical: '/enquire',
+    canonical: '/enquiry',
   },
   openGraph: {
     title: 'Check Availability | Nicola Mason Wedding & Events Singer',
     description: 'Get in touch to discuss your wedding or event. Quick response times via WhatsApp or contact form.',
-    url: 'https://www.nicolamason.co.uk/enquire',
+    url: 'https://www.nicolamason.co.uk/enquiry',
   },
 };
 
