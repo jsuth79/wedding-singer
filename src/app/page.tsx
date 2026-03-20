@@ -34,19 +34,19 @@ const venueRegions = [
     description:
       "I'm a familiar face on the Glasgow wedding scene and across Renfrewshire and Ayrshire, performing at some of the west of Scotland's most sought-after venues.",
     venues: [
-      "Oran Mor", "The Corinthian", "Sloan's", "Mar Hall",
-      "Ingliston Country Club & Hotel", "Dalmeny Park House Hotel",
-      "Lynnhurst Hotel", "Bowfield Hotel & Spa", "Coats", "The Busby Hotel",
-      "The Gailes Hotel & Spa", "Piersland House", "Lodge on Loch Lomond",
-    ],
-  },
-  {
-    region: "Central Scotland",
-    description:
-      "From Lanarkshire and Falkirk to Clackmannanshire, I regularly perform at venues across the heart of Scotland.",
-    venues: [
-      "Dalziel Park Hotel & Golf Club", "Glenbervie House & Country Estate",
-      "Inglewood House & Spa",
+      { name: "Oran Mor", location: "Glasgow" },
+      { name: "The Corinthian", location: "Glasgow" },
+      { name: "Sloan's", location: "Glasgow" },
+      { name: "Mar Hall", location: "Renfrewshire" },
+      { name: "Ingliston Country Club & Hotel", location: "Renfrewshire" },
+      { name: "Dalmeny Park House Hotel", location: "Renfrewshire" },
+      { name: "Lynnhurst Hotel", location: "Renfrewshire" },
+      { name: "Bowfield Hotel & Spa", location: "Renfrewshire" },
+      { name: "Coats", location: "Paisley" },
+      { name: "The Busby Hotel", location: "East Renfrewshire" },
+      { name: "The Gailes Hotel & Spa", location: "Ayrshire" },
+      { name: "Piersland House", location: "Ayrshire" },
+      { name: "Lodge on Loch Lomond", location: "Loch Lomond" },
     ],
   },
   {
@@ -54,18 +54,31 @@ const venueRegions = [
     description:
       "From Edinburgh's iconic city-centre hotels to elegant venues across East and West Lothian, I bring live music to some of the capital region's finest settings.",
     venues: [
-      "The Balmoral Hotel", "Edinburgh City Chambers", "The George Hotel",
-      "The Bonham Hotel", "Norton House Hotel", "Ghillie Dhu",
-      "Carlowrie Castle", "The Vu", "Broxmouth Courtyard",
+      { name: "The Balmoral Hotel", location: "Edinburgh" },
+      { name: "Edinburgh City Chambers", location: "Edinburgh" },
+      { name: "The George Hotel", location: "Edinburgh" },
+      { name: "The Bonham Hotel", location: "Edinburgh" },
+      { name: "Norton House Hotel", location: "Edinburgh" },
+      { name: "Ghillie Dhu", location: "Edinburgh" },
+      { name: "Carlowrie Castle", location: "West Lothian" },
+      { name: "The Vu", location: "East Lothian" },
+      { name: "Broxmouth Courtyard", location: "East Lothian" },
     ],
   },
   {
-    region: "Beyond Central Scotland",
+    region: "Central Scotland & Beyond",
     description:
-      "I'm happy to travel for the right event, with recent performances taking me to Perthshire, Fife, Angus and Aberdeenshire.",
+      "From Lanarkshire and Falkirk to Clackmannanshire, I regularly perform at venues across the heart of Scotland. I'm also happy to travel further afield, with recent performances in Perthshire, Fife, Angus and Aberdeenshire.",
     venues: [
-      "Atholl Palace", "Parklands Hotel", "The Byre at Inchyra",
-      "Balbirnie House", "Carnoustie Golf Hotel & Spa", "Fasque Castle",
+      { name: "Dalziel Park Hotel & Golf Club", location: "Lanarkshire" },
+      { name: "Glenbervie House & Country Estate", location: "Falkirk" },
+      { name: "Inglewood House & Spa", location: "Lanarkshire" },
+      { name: "Atholl Palace", location: "Perthshire" },
+      { name: "Parklands Hotel", location: "Perthshire" },
+      { name: "The Byre at Inchyra", location: "Perthshire" },
+      { name: "Balbirnie House", location: "Fife" },
+      { name: "Carnoustie Golf Hotel & Spa", location: "Angus" },
+      { name: "Fasque Castle", location: "Aberdeenshire" },
     ],
   },
 ];
@@ -94,8 +107,25 @@ const faqs = [
 ];
 
 export default function HomePage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map((faq) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <HeroSection />
 
       {/* About Section */}
@@ -313,21 +343,26 @@ export default function HomePage() {
               Performing Across Scotland
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {venueRegions.map((group) => (
-              <div key={group.region} className="text-center">
+              <div key={group.region}>
                 <div className="w-16 h-16 bg-[#C4A882]/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-[#C4A882] text-xl">✦</span>
                 </div>
-                <h3 className="text-lg font-serif text-[#2C2C2C] mb-3">
+                <h3 className="text-lg font-serif text-[#2C2C2C] mb-3 text-center">
                   {group.region}
                 </h3>
-                <p className="text-[#444444] text-base leading-relaxed mb-3">
+                <p className="text-[#444444] text-base leading-relaxed mb-4 text-left">
                   {group.description}
                 </p>
-                <p className="text-[#888888] text-base leading-relaxed">
-                  {group.venues.join(", ")}
-                </p>
+                <ul className="text-[#888888] text-base leading-relaxed space-y-2 text-left">
+                  {group.venues.map((venue) => (
+                    <li key={venue.name} className="flex justify-between items-baseline">
+                      <span>{venue.name}</span>
+                      <span className="text-[#C4A882] text-base">{venue.location}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
