@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="pt-24 pb-6 md:pt-28 md:pb-8 px-6 bg-[#F5F5F5]">
+    <section className="pt-24 pb-6 md:pt-20 md:pb-6 px-6 bg-[#F5F5F5]">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
           {/* Left content - heading and CTA */}
@@ -11,7 +11,7 @@ export default function HeroSection() {
             <h1 className="text-4xl md:text-4xl lg:text-5xl font-serif text-[#2C2C2C] mb-4 md:mb-8 leading-tight">
               Award-Winning Vocals. Unforgettable Atmosphere.
             </h1>
-            <p className="text-lg md:text-lg text-[#444444] leading-relaxed mb-4 md:mb-16">
+            <p className="text-lg md:text-lg text-[#444444] leading-relaxed mb-4 md:mb-8">
               Tailored live music for elegant Scottish celebrations.
             </p>
 
@@ -43,7 +43,7 @@ export default function HeroSection() {
           </div>
 
           {/* Right content - image (tablet/desktop only) */}
-          <div className="hidden md:block relative aspect-[4/5] rounded-xl overflow-hidden">
+          <div className="hidden md:block relative aspect-[4/4] rounded-xl overflow-hidden">
             <Image
               src="/images/nicola-mason-wedding-events-singer-p.webp"
               alt="Award-winning wedding singer Nicola Mason performing live music at a Scottish wedding ceremony"
