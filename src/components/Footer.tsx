@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-[#2C2C2C] text-stone-300">
@@ -14,6 +16,15 @@ export default function Footer() {
               <a href="mailto:hello@nicolamason.co.uk" className="hover:text-[#C4A882] transition-colors">
                 hello@nicolamason.co.uk
               </a>
+            </p>
+            <p className="mt-1">
+              <Link href="/faq" className="hover:text-[#C4A882] transition-colors">
+                FAQs
+              </Link>
+              {" · "}
+              <Link href="/privacy" className="hover:text-[#C4A882] transition-colors">
+                Privacy Policy
+              </Link>
             </p>
           </div>
 
