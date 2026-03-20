@@ -467,13 +467,18 @@ export default function WeddingsPage() {
             </div>
 
             {/* Image column */}
-            <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
-              <Image
-                src="/images/nicola-mason-full-package-p.webp"
-                alt="Wedding singer Nicola Mason performing full day wedding package with live vocals and acoustic guitar"
-                fill
-                className="object-cover"
-              />
+            <div>
+              <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
+                <Image
+                  src="/images/nicola-mason-full-package-p.webp"
+                  alt="Wedding singer Nicola Mason performing full day wedding package with live vocals and acoustic guitar"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <p className="text-sm text-[#C4A882] italic text-center mt-3">
+                Nicola Mason - Scottish Wedding Awards Ceremony Entertainer of the Year Winner 2026
+              </p>
             </div>
           </div>
 
