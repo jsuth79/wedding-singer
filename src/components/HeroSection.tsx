@@ -19,7 +19,7 @@ export default function HeroSection() {
             <div className="relative aspect-[4/4] rounded-xl overflow-hidden my-4 md:hidden">
               <Image
                 src="/images/nicola-mason-wedding-events-singer-p.webp"
-                alt="Award-winning wedding singer Nicola Mason performing live music at a Scottish wedding ceremony"
+                alt="Award-winning female wedding singer Nicola Mason performing live music at Scottish wedding ceremony in Glasgow"
                 fill
                 className="object-cover object-top"
                 priority
@@ -46,7 +46,7 @@ export default function HeroSection() {
           <div className="hidden md:block relative aspect-[4/4] rounded-xl overflow-hidden">
             <Image
               src="/images/nicola-mason-wedding-events-singer-p.webp"
-              alt="Award-winning wedding singer Nicola Mason performing live music at a Scottish wedding ceremony"
+              alt="Professional female wedding singer Nicola Mason performing live acoustic music at Edinburgh wedding venue"
               fill
               className="object-cover object-top"
               priority

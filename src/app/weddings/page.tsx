@@ -31,7 +31,7 @@ const packages = [
     price: "£325",
     description: "Elevate your moment with your favourite music sung live",
     image: "/images/nicola-mason-wedding-ceremony-singer-l.webp",
-    alt: "Wedding ceremony singer performing acoustic music during Scottish wedding ceremony with vocals and guitar",
+    alt: "Female wedding ceremony singer performing acoustic music at Edinburgh wedding with live vocals and guitar",
     features: [
       "Playlist during guest arrival",
       "Aisle entrance song",
@@ -49,7 +49,7 @@ const packages = [
     price: "£350",
     description: "Keep the atmosphere flowing while your guests celebrate",
     image: "/images/nicola-mason-drinks-reception-l.webp",
-    alt: "Live music at drinks reception with professional wedding singer performing acoustic sets for guests",
+    alt: "Live acoustic music at wedding drinks reception in Central Scotland with professional female singer entertaining guests",
     features: [
       "Two 45-minute live sets",
       "Playlist between sets",
@@ -58,7 +58,8 @@ const packages = [
       "Professional PA system included",
     ],
     tips: [
-      "Check your venue's outdoor/marquee setup - I'll need to know about power access and weather contingencies for my equipment"
+      "I can read the room - usually I start softer as guests arrive with drinks, then build energy as they relax and mingle",
+      "If I'm only doing drinks reception (not ceremony), I can usually set up while your ceremony is happening or right after - we'll coordinate with your venue"
     ],
   },
   {
@@ -75,7 +76,8 @@ const packages = [
       "Professional PA system included",
     ],
     tips: [
-      "Share your running order with me once confirmed - I'll coordinate with your venue to time the music around courses and speeches"
+      "I'll coordinate with your venue to time music around courses and speeches - fading out naturally so everyone can hear toasts",
+      "Grand entrance songs can be performed live for extra impact, then I'll transition to softer background music during the meal"
     ],
   },
   {
@@ -84,7 +86,7 @@ const packages = [
     popular: true,
     description: "Live acoustic music from your vows through drinks reception",
     image: "/images/nicola-mason-daytime-l.webp",
-    alt: "Full day wedding singer package covering ceremony and drinks reception with live acoustic performances",
+    alt: "Full day female wedding singer package Glasgow covering ceremony and drinks reception with live acoustic music",
     features: [
       "Full ceremony service",
       "Drinks reception entertainment",
@@ -93,7 +95,8 @@ const packages = [
       "All equipment included",
     ],
     tips: [
-      "Let me know your ceremony and drinks reception timings so I can plan my set lengths - especially if there's a gap between them"
+      "Most popular choice for couples who want consistent musical flow without worrying about coordinating multiple suppliers",
+      "I'll check in with your celebrant before the ceremony to confirm cues and timing - you don't need to be the middleman"
     ],
   },
   {
@@ -110,7 +113,8 @@ const packages = [
       "Everything you need for the day",
     ],
     tips: [
-      "I'll need a place to set up and store my equipment during dinner - just a small corner or back room works perfectly"
+      "Your first dance can be performed live as part of the package - it's a special moment that guests always remember",
+      "Perfect if you want me there from start to finish - I can help set the atmosphere for every major moment of your day"
     ],
   },
   {
@@ -118,7 +122,7 @@ const packages = [
     price: "£395",
     description: "Kick off your evening with live music to fill the dance floor",
     image: "/images/nicola-mason-first-dance-l.webp",
-    alt: "First dance wedding singer performing romantic live songs and upbeat party music for evening reception",
+    alt: "Female first dance wedding singer Edinburgh performing romantic live songs and party music for evening celebration",
     features: [
       "Your first dance performed live",
       "One hour of upbeat party songs",
@@ -138,7 +142,7 @@ const extras = [
     price: "From £795",
     popular: true,
     image: "/images/nicola-mason-surprise-singer-l.webp",
-    alt: "Surprise wedding singers disguised as waiters performing unexpected entertainment at Scottish wedding reception",
+    alt: "Female surprise wedding singers disguised as waiters performing unexpected entertainment at Glasgow wedding reception",
     description:
       "Create a show-stopping moment your guests will talk about for years",
     features: [
@@ -210,7 +214,7 @@ export default function WeddingsPage() {
               Pricing
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
-              Wedding Packages
+              Wedding Singer Packages from Ceremony to Evening
             </h2>
           </div>
 
@@ -471,7 +475,7 @@ export default function WeddingsPage() {
               <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
                 <Image
                   src="/images/nicola-mason-full-package-p.webp"
-                  alt="Wedding singer Nicola Mason performing full day wedding package with live vocals and acoustic guitar"
+                  alt="Female wedding singer Nicola Mason performing full day wedding package with live vocals and acoustic guitar in Central Scotland"
                   fill
                   className="object-cover"
                 />

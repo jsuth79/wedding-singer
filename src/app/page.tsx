@@ -6,14 +6,14 @@ import ReviewsSection from "@/components/ReviewsSection";
 import YouTubeGrid from "@/components/YouTubeGrid";
 
 export const metadata: Metadata = {
-  title: "Award-Winning Wedding Singer Glasgow | Nicola Mason | Scottish Ceremony & Event Singer",
+  title: "Award-Winning Female Wedding Singer Glasgow | Nicola Mason | Scottish Ceremony & Event Singer",
   description:
     "Professional wedding singer in Glasgow & Central Scotland. Scottish Wedding Awards Winner. Live acoustic music for ceremonies, receptions & celebrations. Book now for 2026/2027.",
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Award-Winning Wedding Singer Glasgow | Nicola Mason',
+    title: 'Award-Winning Female Wedding Singer Glasgow | Nicola Mason',
     description: 'Professional wedding singer in Glasgow & Central Scotland. Scottish Wedding Awards Winner. Live music for ceremonies, receptions & celebrations.',
     url: 'https://www.nicolamason.co.uk',
     images: [
@@ -120,11 +120,59 @@ export default function HomePage() {
     }))
   };
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Wedding Singer",
+    "provider": {
+      "@type": "Person",
+      "name": "Nicola Mason",
+      "gender": "Female",
+      "jobTitle": "Professional Wedding Singer"
+    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Glasgow"
+      },
+      {
+        "@type": "City",
+        "name": "Edinburgh"
+      },
+      {
+        "@type": "State",
+        "name": "Central Scotland"
+      },
+      {
+        "@type": "State",
+        "name": "Lanarkshire"
+      },
+      {
+        "@type": "State",
+        "name": "Ayrshire"
+      }
+    ],
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "GBP",
+      "price": "325",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "minPrice": "325",
+        "priceCurrency": "GBP"
+      }
+    }
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
       <HeroSection />
 
@@ -144,7 +192,7 @@ export default function HomePage() {
             <div className="aspect-[3/4] relative rounded-lg overflow-hidden">
               <Image
                 src="/images/nicola-mason-about-me-p.webp"
-                alt="Professional wedding and events singer Nicola Mason, trained at Berklee College of Music"
+                alt="Professional female wedding and events singer Nicola Mason based in Central Scotland, trained at Berklee College of Music"
                 fill
                 className="object-cover"
               />
@@ -244,7 +292,7 @@ export default function HomePage() {
                 <div className="aspect-[16/10] relative">
                   <Image
                     src="/images/nicola-mason-wedding-services-l.webp"
-                    alt="Live wedding singer performing acoustic music at Scottish wedding reception in Glasgow"
+                    alt="Female wedding singer performing live acoustic music at Scottish wedding reception in Glasgow"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -270,7 +318,7 @@ export default function HomePage() {
                 <div className="aspect-[16/10] relative">
                   <Image
                     src="/images/nicola-mason-events-services-l.webp"
-                    alt="Professional vocalist Nicola Mason performing at corporate event and private celebration"
+                    alt="Professional female vocalist Nicola Mason performing at corporate event and private celebration in Edinburgh"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />

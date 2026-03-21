@@ -30,7 +30,7 @@ const eventTypes = [
     description:
       "From awards ceremonies to company celebrations, I provide sophisticated entertainment that elevates your corporate event. Professional, punctual, and adaptable to your brand's tone.",
     image: "/images/nicola-mason-corporate-events-l.webp",
-    alt: "Professional corporate event singer performing at Glasgow business awards ceremony and gala dinner",
+    alt: "Professional female corporate event singer performing at Glasgow business awards ceremony and gala dinner",
     features: [
       "Awards ceremonies & gala dinners",
       "Conference entertainment",
@@ -45,7 +45,7 @@ const eventTypes = [
     description:
       "Whether it's a milestone birthday, anniversary celebration, or garden party, I'll create the perfect atmosphere for your gathering with a tailored setlist.",
     image: "/images/nicola-mason-celebration-singer-l.webp",
-    alt: "Singer performing live music at private birthday party and anniversary celebration in Scotland",
+    alt: "Female singer performing live music at private birthday party and anniversary celebration in Edinburgh and Central Scotland",
     features: [
       "Milestone birthdays (30th, 40th, 50th+)",
       "Anniversary celebrations",
