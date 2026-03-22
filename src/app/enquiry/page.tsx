@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import EnquiryForm from "@/components/EnquiryForm";
+import TrackedWhatsAppLink from "@/components/TrackedWhatsAppLink";
 
 export const metadata: Metadata = {
   title: "Check Availability | Nicola Mason Wedding & Events Singer",
@@ -77,17 +78,15 @@ export default function EnquirePage() {
                     </p>
                   </li>
                 </ul>
-                <a
-                  href="https://wa.me/447740360678"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <TrackedWhatsAppLink
+                  location="enquiry_page_sidebar"
                   className="mt-6 inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-6 py-3 rounded-[4px] transition-colors w-full"
                 >
                   <span className="font-medium text-sm uppercase tracking-wider">Check My Availability</span>
                   <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                     via WhatsApp (1-2 hour response)
                   </span>
-                </a>
+                </TrackedWhatsAppLink>
               </div>
 
               {/* Social Proof */}

@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import PackageTips from "@/components/PackageTips";
+import TrackedWhatsAppLink from "@/components/TrackedWhatsAppLink";
+import TrackedEnquiryLink from "@/components/TrackedEnquiryLink";
 
 export const metadata: Metadata = {
   title: "Wedding Singer Packages Glasgow | Ceremony & Reception | Nicola Mason",
@@ -363,26 +365,24 @@ export default function WeddingsPage() {
             special.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://wa.me/447740360678"
-              target="_blank"
-              rel="noopener noreferrer"
+            <TrackedWhatsAppLink
+              location="weddings_page_cta"
               className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
             >
               <span className="font-medium">Check My Availability</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                 via WhatsApp (1-2 hour response)
               </span>
-            </a>
-            <Link
-              href="/enquiry"
+            </TrackedWhatsAppLink>
+            <TrackedEnquiryLink
+              location="weddings_page_cta"
               className="inline-flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
             >
               <span className="font-medium">Check My Availability</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                 via Contact Form
               </span>
-            </Link>
+            </TrackedEnquiryLink>
           </div>
         </div>
       </section>

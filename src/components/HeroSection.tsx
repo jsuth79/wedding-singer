@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { trackEvent } from "@/lib/analytics";
 
 export default function HeroSection() {
   return (
@@ -29,6 +32,7 @@ export default function HeroSection() {
             <div className="flex justify-center md:justify-start w-full md:w-auto">
               <Link
                 href="/weddings"
+                onClick={() => trackEvent.viewPackage('hero_cta')}
                 className="inline-flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-8 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px] w-full md:w-auto"
               >
                 <span className="font-medium">View Wedding Packages</span>

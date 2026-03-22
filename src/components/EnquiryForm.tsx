@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import { trackEvent } from "@/lib/analytics";
 
 interface FormData {
   name: string;
@@ -51,6 +52,7 @@ export default function EnquiryForm() {
       }
 
       setStatus("success");
+      trackEvent.submitEnquiryForm();
       setFormData({
         name: "",
         email: "",
