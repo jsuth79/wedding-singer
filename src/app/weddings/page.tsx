@@ -33,14 +33,14 @@ const packages = [
     image: "/images/nicola-mason-wedding-ceremony-singer-l.webp",
     alt: "Female wedding ceremony singer performing acoustic music at Edinburgh wedding with live vocals and guitar",
     features: [
-      "Playlist during guest arrival",
-      "Aisle entrance song",
-      "Song during register signing",
-      "Exit/recessional song",
-      "Professional PA system included",
+      "Pre-ceremony background music from the moment guests are seated",
+      "Your aisle entrance song performed live by a professional wedding singer, timed to you",
+      "Music performed during the register signing",
+      "A live exit song to send you out as newlyweds",
+      "Professional PA system set up and managed at your venue throughout",
     ],
     tips: [
-      "Consider an upbeat recessional song to set the tone for your celebration ahead",
+      "Consider an upbeat exit song to set the tone for your celebration ahead",
       "If a backing track isn't available for your chosen song, I can arrange for a musician to record one for a small additional fee"
     ],
   },
@@ -51,15 +51,10 @@ const packages = [
     image: "/images/nicola-mason-drinks-reception-l.webp",
     alt: "Live acoustic music at wedding drinks reception in Central Scotland with professional female singer entertaining guests",
     features: [
-      "Two 45-minute live sets",
-      "Playlist between sets",
-      "Acoustic classics & modern hits",
-      "Perfect for mingling atmosphere",
-      "Professional PA system included",
-    ],
-    tips: [
-      "I can read the room - usually I start softer as guests arrive with drinks, then build energy as they relax and mingle",
-      "If I'm only doing drinks reception (not ceremony), I can usually set up while your ceremony is happening or right after - we'll coordinate with your venue"
+      "Two 45-minute live acoustic sets, tailored to you and your day",
+      "Curated playlist keeps the atmosphere flowing between sets",
+      "Pitched perfectly to keep guests mingling and the energy just right",
+      "PA system professionally set up and managed for your reception venue",
     ],
   },
   {
@@ -69,15 +64,10 @@ const packages = [
     image: "/images/nicola-mason-dinner-l.webp",
     alt: "Wedding dinner entertainment with live acoustic vocalist providing elegant background music during wedding breakfast",
     features: [
-      "Grand entrance song",
-      "Two 45-minute soft background sets",
-      "Tailored to your meal timing",
-      "Relaxed, ambient atmosphere",
-      "Professional PA system included",
-    ],
-    tips: [
-      "I'll coordinate with your venue to time music around courses and speeches - fading out naturally so everyone can hear toasts",
-      "Grand entrance songs can be performed live for extra impact, then I'll transition to softer background music during the meal"
+      "Your entrance into the wedding meal performed live",
+      "Two 45-minute sets of background music, paced to your meal timings",
+      "Volume and energy kept ambient — perfect for conversation and celebration",
+      "Professional PA system configured for your wedding venue's dining space",
     ],
   },
   {
@@ -88,15 +78,11 @@ const packages = [
     image: "/images/nicola-mason-daytime-l.webp",
     alt: "Full day female wedding singer package Glasgow covering ceremony and drinks reception with live acoustic music",
     features: [
-      "Full ceremony service",
-      "Drinks reception entertainment",
-      "Seamless transitions",
-      "Substitute drinks for dinner (+£55)",
+      "Full wedding ceremony singer service, from guest arrival through to walking out",
+      "Drinks reception coverage — one singer, one setup, one less thing to think about",
+      "Ceremony and drinks reception music covered under one package price — better value than booking separately",
+      "Swap drinks reception for dinner instead (+£55)",
       "All equipment included",
-    ],
-    tips: [
-      "Most popular choice for couples who want consistent musical flow without worrying about coordinating multiple suppliers",
-      "I'll check in with your celebrant before the ceremony to confirm cues and timing - you don't need to be the middleman"
     ],
   },
   {
@@ -106,15 +92,11 @@ const packages = [
     image: "/images/nicola-mason-full-day-singer-l.webp",
     alt: "Complete wedding day entertainment package from ceremony through evening reception with live singing and first dance",
     features: [
-      "Full ceremony service",
-      "90-minute drinks reception",
-      "First dance performance",
-      "One hour of party songs",
-      "Everything you need for the day",
-    ],
-    tips: [
-      "Your first dance can be performed live as part of the package - it's a special moment that guests always remember",
-      "Perfect if you want me there from start to finish - I can help set the atmosphere for every major moment of your day"
+      "Full wedding ceremony singer service, from guest arrival through to walking out",
+      "Drinks reception coverage with 90 minutes of live music",
+      "Your first dance performed live by your wedding singer",
+      "One hour of upbeat party songs to fill the floor",
+      "Everything from vows to dance floor, covered in one package",
     ],
   },
   {
@@ -124,14 +106,10 @@ const packages = [
     image: "/images/nicola-mason-first-dance-l.webp",
     alt: "Female first dance wedding singer Edinburgh performing romantic live songs and party music for evening celebration",
     features: [
-      "Your first dance performed live",
-      "One hour of upbeat party songs",
-      "Get guests on the dancefloor",
-      "High-energy performance",
-      "Professional PA system included",
-    ],
-    tips: [
-      "Send me your first dance song choice as soon as possible - I'll need time to rehearse and create the right arrangement"
+      "Your first dance performed live by a professional wedding singer",
+      "One hour of upbeat party songs to get guests on the floor",
+      "High-energy performance timed to kick off your evening",
+      "Professional PA system set up and managed for your performance",
     ],
   },
 ];

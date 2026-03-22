@@ -4,13 +4,13 @@ import { redirect } from "next/navigation";
 export const metadata: Metadata = {
   title: "Wedding Ceremony Singer Glasgow & Scotland | Nicola Mason | Acoustic Vocalist",
   description:
-    "Professional wedding ceremony singer in Glasgow & Central Scotland. Live acoustic music for your aisle entrance, register signing & recessional. Award-winning vocalist. From £325.",
+    "Professional wedding ceremony singer in Glasgow & Central Scotland. Live acoustic music for your aisle entrance, register signing & exit song. Award-winning vocalist. From £325.",
   alternates: {
     canonical: '/weddings',
   },
   openGraph: {
     title: 'Wedding Ceremony Singer Glasgow & Scotland | Nicola Mason',
-    description: 'Professional wedding ceremony singer. Live acoustic music for your ceremony - aisle entrance, register signing & recessional across Central Scotland.',
+    description: 'Professional wedding ceremony singer. Live acoustic music for your ceremony - aisle entrance, register signing & exit song across Central Scotland.',
     url: 'https://www.nicolamason.co.uk/wedding-ceremony-singer',
     images: [
       {
