@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
 import "./globals.css";
 
-const GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
+const GA_MEASUREMENT_ID = "G-3NCFEVQK4Y";
 
 const garamond = EB_Garamond({
   variable: "--font-garamond",
