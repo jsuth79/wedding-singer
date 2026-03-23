@@ -48,7 +48,7 @@ export default function YouTubeGrid() {
     "name": video.title,
     "description": video.description,
     "thumbnailUrl": `https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`,
-    "uploadDate": "2024-01-01",
+    "uploadDate": "2024-01-01T00:00:00Z",
     "contentUrl": `https://www.youtube.com/watch?v=${video.id}`,
     "embedUrl": `https://www.youtube.com/embed/${video.id}`,
     "publisher": {
