@@ -1,3 +1,48 @@
+const soundcloudTracks = [
+  {
+    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/dont-know-why-norah-jones-2",
+    title: "Don't Know Why – Norah Jones",
+  },
+  {
+    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/how-long-will-i-love-you-ellie-goulding-4",
+    title: "How Long Will I Love You – Ellie Goulding",
+  },
+  {
+    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/landslide-fleetwood-mac-6",
+    title: "Landslide – Fleetwood Mac",
+  },
+  {
+    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/heaven-bryan-adams-3",
+    title: "Heaven – Bryan Adams",
+  },
+  {
+    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/glasgow-no-place-like-home-jessie-buckley-at-oran-mor-1",
+    title: "Glasgow (No Place Like Home) – Jessie Buckley",
+    tags: ["Ceremony"],
+  },
+  {
+    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/at-last-etta-james-at-coats-paisley-2",
+    title: "At Last – Etta James",
+    tags: ["Ceremony"],
+  },
+  {
+    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/what-a-wonderful-world-louis-armstrong-3",
+    title: "What a Wonderful World – Louis Armstrong",
+  },
+  {
+    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/love-at-first-sight-kylie-minogue-4",
+    title: "Love at First Sight – Kylie Minogue",
+  },
+  {
+    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/everything-michael-buble-5",
+    title: "Everything – Michael Bublé",
+  },
+  {
+    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/someone-to-watch-over-me",
+    title: "Someone to Watch Over Me",
+  },
+];
+
 const videos = [
   {
     id: "0lfc3it4ipc",
@@ -70,7 +115,7 @@ export default function YouTubeGrid() {
             See &amp; Hear Nicola in Action
           </p>
           <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
-            A selection of videos from my YouTube channel
+            A selection of live performance clips
           </h2>
         </div>
 
@@ -89,6 +134,43 @@ export default function YouTubeGrid() {
               <h3 className="text-sm font-medium text-[#2C2C2C] group-hover:text-[#C4A882] transition-colors">
                 {video.title}
               </h3>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section className="py-12 md:py-24 px-6 bg-[#FCFCFC]">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-12">
+          <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
+            Listen
+          </p>
+          <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
+            A selection of live audio recordings
+          </h2>
+        </div>
+
+        <div className="flex flex-col gap-4 max-w-xl mx-auto">
+          {soundcloudTracks.map((track) => (
+            <div key={track.embedUrl}>
+              <iframe
+                title={track.title}
+                width="100%"
+                height="20"
+                scrolling="no"
+                allow="autoplay"
+                src={`${track.embedUrl}&color=%23C4A882&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false`}
+                className="rounded-lg"
+              />
+              <div className="flex items-center gap-2 mt-1 flex-wrap">
+                <p className="text-sm text-[#444444]">{track.title}</p>
+                {track.tags?.map((tag) => (
+                  <span key={tag} className="px-3 py-1 bg-[#C4A882]/10 text-[#2C2C2C] rounded-full text-sm">
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
           ))}
         </div>
