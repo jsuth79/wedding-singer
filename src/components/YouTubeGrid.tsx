@@ -1,9 +1,5 @@
 const soundcloudTracks = [
   {
-    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/man-i-need-raye",
-    title: "Man I Need – RAYE",
-  },
-  {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/dont-know-why-norah-jones-2",
     title: "Don't Know Why – Norah Jones",
   },
@@ -15,6 +11,10 @@ const soundcloudTracks = [
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/landslide-fleetwood-mac-6",
     title: "Landslide – Fleetwood Mac",
+  },
+  {
+    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/man-i-need-raye",
+    title: "Man I Need – RAYE",
   },
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/heaven-bryan-adams-3",
