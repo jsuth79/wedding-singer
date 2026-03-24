@@ -201,6 +201,12 @@ export default function ReviewsSection() {
           </h2>
         </div>
 
+        <div className="max-w-3xl mx-auto mb-12 border-l-4 border-[#C4A882] pl-6">
+          <p className="text-[#444444] text-base leading-relaxed italic">
+            &ldquo;Couples mention the same things: a voice described as &lsquo;phenomenal&rsquo; and &lsquo;extraordinary&rsquo;; communication that&apos;s fast, warm and proactive; songs learned and sets tailored to the room. And the guest reaction — &lsquo;everyone loved her&rsquo;, &lsquo;so many comments&rsquo;, &lsquo;the floor was filled all night&rsquo;. The phrase that comes up most? &lsquo;One less thing to worry about.&rsquo;&rdquo;
+          </p>
+        </div>
+
         {/* Desktop: 3 cards */}
         <div className="hidden lg:block">
           <div className="grid grid-cols-3 gap-6 mb-8">
