@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: '/enquiry',
   },
   openGraph: {
-    title: 'Check Availability | Nicola Mason Wedding & Events Singer',
+    title: "Check Availability | Nicola Mason Wedding & Events Singer",
     description: 'Get in touch to discuss your wedding or event. Quick response times via WhatsApp or contact form.',
     url: 'https://www.nicolamason.co.uk/enquiry',
   },

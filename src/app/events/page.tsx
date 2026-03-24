@@ -138,7 +138,7 @@ export default function EventsPage() {
                     href="/enquiry"
                     className="block w-full text-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-6 py-3 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
                   >
-                    Check Availability
+                    Check My Availability
                   </Link>
                 </div>
               </div>

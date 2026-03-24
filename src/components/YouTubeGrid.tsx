@@ -6,6 +6,7 @@ const soundcloudTracks = [
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/how-long-will-i-love-you-ellie-goulding-4",
     title: "How Long Will I Love You – Ellie Goulding",
+    tags: ["Ceremony"],
   },
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/landslide-fleetwood-mac-6",
@@ -36,6 +37,28 @@ const soundcloudTracks = [
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/everything-michael-buble-5",
     title: "Everything – Michael Bublé",
+  },
+  {
+    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/for-good-wicked-2",
+    title: "For Good – Wicked",
+    tags: ["Ceremony"],
+  },
+  {
+    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/i-cant-make-you-love-me-bonnie-raitt-1",
+    title: "I Can't Make You Love Me – Bonnie Raitt",
+  },
+  {
+    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/i-get-to-love-you-ruelle",
+    title: "I Get to Love You – Ruelle",
+    tags: ["Ceremony"],
+  },
+  {
+    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/caledonia-dougie-maclean",
+    title: "Caledonia – Dougie MacLean",
+  },
+  {
+    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/true-colours-cindy-lauper",
+    title: "True Colours – Cyndi Lauper",
   },
 ];
 

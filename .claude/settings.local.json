@@ -20,7 +20,9 @@
       "Bash(npm run:*)",
       "Read(//Users/jsutherl/Downloads/**)",
       "Bash(textutil -convert txt -stdout /Users/jsutherl/Downloads/nicola-mason-package-copy.docx)",
-      "WebFetch(domain:www.natashamareevocalist.co.uk)"
+      "WebFetch(domain:www.natashamareevocalist.co.uk)",
+      "Bash(sed -i 's/>Check My Availability<\\\\/Link>/>Check Availability<\\\\/Link>/g' src/components/Navbar.tsx src/app/weddings/page.tsx src/app/events/page.tsx)",
+      "Bash(sed -i 's/title: .Check My Availability | Nicola Mason Wedding \\\\& Events Singer./title: \"\"Check Availability | Nicola Mason Wedding \\\\& Events Singer\"\"/g' src/app/enquiry/page.tsx)"
     ]
   }
 }

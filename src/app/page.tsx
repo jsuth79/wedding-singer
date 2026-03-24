@@ -240,7 +240,7 @@ export default function HomePage() {
                   href="/weddings#whats-included"
                   className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider"
                 >
-                  See What&apos;s Included with Every Booking →
+                  Learn More About Working With Nicola →
                 </Link>
               </div>
             </div>

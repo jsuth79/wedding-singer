@@ -26,7 +26,7 @@ export default function NotFound() {
               href="/enquiry"
               className="inline-flex flex-col items-center border border-[#2C2C2C] text-[#2C2C2C] hover:bg-[#2C2C2C] hover:text-white px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
             >
-              <span className="font-medium">Check Availability</span>
+              <span className="font-medium">Check My Availability</span>
             </Link>
           </div>
         </div>
