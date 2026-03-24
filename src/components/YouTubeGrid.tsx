@@ -1,12 +1,16 @@
 const soundcloudTracks = [
   {
+    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/man-i-need-raye",
+    title: "Man I Need – RAYE",
+  },
+  {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/dont-know-why-norah-jones-2",
     title: "Don't Know Why – Norah Jones",
   },
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/how-long-will-i-love-you-ellie-goulding-4",
     title: "How Long Will I Love You – Ellie Goulding",
-    tags: ["Ceremony"],
+    tags: ["Wedding Ceremony"],
   },
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/landslide-fleetwood-mac-6",
@@ -19,12 +23,17 @@ const soundcloudTracks = [
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/glasgow-no-place-like-home-jessie-buckley-at-oran-mor-1",
     title: "Glasgow (No Place Like Home) – Jessie Buckley",
-    tags: ["Ceremony"],
+    tags: ["Wedding Ceremony"],
+  },
+  {
+    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/i-cant-help-falling-in-love",
+    title: "I Can't Help Falling In Love – Elvis Presley",
+    tags: ["Wedding Ceremony"],
   },
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/at-last-etta-james-at-coats-paisley-2",
     title: "At Last – Etta James",
-    tags: ["Ceremony"],
+    tags: ["Wedding Ceremony"],
   },
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/what-a-wonderful-world-louis-armstrong-3",
@@ -41,7 +50,7 @@ const soundcloudTracks = [
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/for-good-wicked-2",
     title: "For Good – Wicked",
-    tags: ["Ceremony"],
+    tags: ["Wedding Ceremony"],
   },
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/i-cant-make-you-love-me-bonnie-raitt-1",
@@ -50,7 +59,7 @@ const soundcloudTracks = [
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/i-get-to-love-you-ruelle",
     title: "I Get to Love You – Ruelle",
-    tags: ["Ceremony"],
+    tags: ["Wedding Ceremony"],
   },
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/caledonia-dougie-maclean",
