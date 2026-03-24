@@ -37,10 +37,6 @@ const soundcloudTracks = [
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/everything-michael-buble-5",
     title: "Everything – Michael Bublé",
   },
-  {
-    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/someone-to-watch-over-me",
-    title: "Someone to Watch Over Me",
-  },
 ];
 
 const videos = [
