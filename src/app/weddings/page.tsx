@@ -170,12 +170,12 @@ export default function WeddingsPage() {
   return (
     <div className="pt-20">
       {/* Hero */}
-      <section className="py-12 md:py-24 px-6 bg-[#F5F5F5]">
+      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
             Wedding Singer Packages
           </p>
-          <h1 className="text-4xl md:text-6xl font-serif text-[#2C2C2C] mb-6">
+          <h1 className="text-4xl md:text-6xl font-serif text-[#1a1a1a] mb-6">
             Your Perfect Day Deserves the Perfect Soundtrack
           </h1>
           <p className="text-xl text-[#444444] leading-relaxed">
@@ -187,13 +187,13 @@ export default function WeddingsPage() {
       </section>
 
       {/* Pricing Packages */}
-      <section className="py-12 md:py-24 px-6 bg-[#FCFCFC]">
+      <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
               Pricing
             </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
+            <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
               Wedding Singer Packages from Ceremony to Evening
             </h2>
           </div>
@@ -222,7 +222,7 @@ export default function WeddingsPage() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-2xl font-serif text-[#2C2C2C] mb-1">
+                  <h3 className="text-2xl font-serif text-[#1a1a1a] mb-1">
                     {pkg.name}
                   </h3>
                   <p className="text-2xl font-serif text-[#C4A882] mb-1">
@@ -274,13 +274,13 @@ export default function WeddingsPage() {
       </section>
 
       {/* Extras */}
-      <section className="py-12 md:py-24 px-6">
+      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
               Enhance Your Day
             </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
+            <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
               Surprise Singers, Vocal Trios &amp; Wedding Keepsakes
             </h2>
           </div>
@@ -309,7 +309,7 @@ export default function WeddingsPage() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-2xl font-serif text-[#2C2C2C] mb-1">
+                  <h3 className="text-2xl font-serif text-[#1a1a1a] mb-1">
                     {extra.name}
                   </h3>
                   <p className="text-2xl font-serif text-[#C4A882] mb-1">
@@ -352,15 +352,15 @@ export default function WeddingsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-12 md:py-24 px-6 bg-[#F5F5F5]">
+      <section className="py-12 md:py-24 px-6 bg-[#2C2C2C]">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C] mb-6">
+          <h2 className="text-3xl md:text-4xl font-serif text-white mb-6">
             Ready to Discuss Your Wedding?
           </h2>
-          <p className="text-[#444444] text-lg mb-4">
+          <p className="text-stone-300 text-lg mb-4">
             Now booking for 2027. Still some 2026 dates available.
           </p>
-          <p className="text-[#444444] mb-10">
+          <p className="text-stone-400 mb-10">
             I&apos;d love to hear about your plans and help make your day truly
             special.
           </p>
@@ -376,7 +376,7 @@ export default function WeddingsPage() {
             </TrackedWhatsAppLink>
             <TrackedEnquiryLink
               location="weddings_page_cta"
-              className="inline-flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
+              className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
             >
               <span className="font-medium">Check My Availability</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
@@ -388,13 +388,13 @@ export default function WeddingsPage() {
       </section>
 
       {/* The Full Package */}
-      <section id="whats-included" className="py-12 md:py-24 px-6 bg-[#FCFCFC]">
+      <section id="whats-included" className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
               What&apos;s Included
             </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
+            <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
               The Full Package
             </h2>
           </div>
@@ -491,7 +491,7 @@ export default function WeddingsPage() {
                 <div className="w-16 h-16 bg-[#C4A882]/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-[#C4A882] text-2xl">♪</span>
                 </div>
-                <h3 className="text-lg font-serif text-[#2C2C2C] mb-2">
+                <h3 className="text-lg font-serif text-[#1a1a1a] mb-2">
                   {item.title}
                 </h3>
                 <p className="text-[#444444] text-sm">{item.description}</p>
@@ -502,13 +502,13 @@ export default function WeddingsPage() {
       </section>
 
       {/* Venues */}
-      <section className="py-12 md:py-24 px-6">
+      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
               Experience
             </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
+            <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
               Trusted at Scotland&apos;s Finest Venues
             </h2>
           </div>

@@ -190,13 +190,13 @@ export default function ReviewsSection() {
   };
 
   return (
-    <section className="py-24 px-6 bg-[#F5F5F5]">
+    <section className="py-24 px-6 bg-[#FAF8F3]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
             Trusted By Couples Across Scotland
           </p>
-          <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
+          <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
             Kind Words from Recent Couples
           </h2>
         </div>
@@ -238,7 +238,7 @@ export default function ReviewsSection() {
                       </span>
                     )}
                     {review.venue && (
-                      <span className="px-3 py-1 bg-[#F5F5F5] text-[#2C2C2C] rounded-full">
+                      <span className="px-3 py-1 bg-[#F5F1EB] text-[#2C2C2C] rounded-full">
                         {review.venue}
                       </span>
                     )}
@@ -282,7 +282,7 @@ export default function ReviewsSection() {
                         </span>
                       )}
                       {review.venue && (
-                        <span className="px-3 py-1 bg-[#F5F5F5] text-[#2C2C2C] rounded-full">
+                        <span className="px-3 py-1 bg-[#F5F1EB] text-[#2C2C2C] rounded-full">
                           {review.venue}
                         </span>
                       )}
@@ -321,7 +321,7 @@ export default function ReviewsSection() {
                   </span>
                 )}
                 {reviews[currentIndex].venue && (
-                  <span className="px-3 py-1 bg-[#F5F5F5] text-[#2C2C2C] rounded-full">
+                  <span className="px-3 py-1 bg-[#F5F1EB] text-[#2C2C2C] rounded-full">
                     {reviews[currentIndex].venue}
                   </span>
                 )}

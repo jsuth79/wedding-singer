@@ -179,13 +179,13 @@ export default function HomePage() {
       <HeroSection />
 
       {/* About Section */}
-      <section className="py-12 md:py-24 px-6">
+      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
               About Nicola Mason, Wedding &amp; Events Singer
             </p>
-            <h2 className="text-4xl md:text-5xl font-serif text-[#2C2C2C]">
+            <h2 className="text-4xl md:text-5xl font-serif text-[#1a1a1a]">
               Your Vocal Soundtrack for Life&apos;s Special Moments
             </h2>
           </div>
@@ -249,13 +249,13 @@ export default function HomePage() {
       </section>
 
       {/* Common Questions */}
-      <section className="py-12 md:py-24 px-6 bg-[#FCFCFC]">
+      <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
               Common Questions &amp; Planning
             </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
+            <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
               Everything You Need to Know
             </h2>
           </div>
@@ -283,13 +283,13 @@ export default function HomePage() {
       </section>
 
       {/* Services Preview */}
-      <section className="py-12 md:py-24 px-6">
+      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
               What I Offer
             </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
+            <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
               Tailored Entertainment for Your Special Day
             </h2>
           </div>
@@ -395,13 +395,13 @@ export default function HomePage() {
       <YouTubeGrid />
 
       {/* Venue Regions */}
-      <section className="py-12 md:py-24 px-6 bg-[#F5F5F5]">
+      <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
               Coverage
             </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
+            <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
               Performing Across Scotland
             </h2>
           </div>
@@ -411,7 +411,7 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-[#C4A882]/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-[#C4A882] text-xl">✦</span>
                 </div>
-                <h3 className="text-lg font-serif text-[#2C2C2C] mb-3 text-center">
+                <h3 className="text-lg font-serif text-[#1a1a1a] mb-3 text-center">
                   {group.region}
                 </h3>
                 <p className="text-[#444444] text-base leading-relaxed mb-4 text-left">

@@ -10,11 +10,15 @@
   --color-brand-gold-dark: #A68B5B;
   --color-brand-charcoal: #2C2C2C;
   --color-brand-charcoal-light: #444444;
+
+  /* Sepia background variants */
+  --color-sepia-light: #F5F1EB;
+  --color-sepia-lighter: #FAF8F3;
 }
 
 body {
   font-family: var(--font-garamond), Georgia, serif;
-  background-color: #ffffff;
+  background-color: #FAF8F3;
   color: #2C2C2C;
 }
 

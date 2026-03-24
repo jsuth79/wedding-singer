@@ -78,12 +78,12 @@ export default function EventsPage() {
   return (
     <div className="pt-20">
       {/* Hero */}
-      <section className="py-12 md:py-24 px-6 bg-[#F5F5F5]">
+      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
             Event Singer Packages
           </p>
-          <h1 className="text-4xl md:text-6xl font-serif text-[#2C2C2C] mb-6">
+          <h1 className="text-4xl md:text-6xl font-serif text-[#1a1a1a] mb-6">
             Entertainment for Every Occasion
           </h1>
           <p className="text-xl text-[#444444] leading-relaxed">
@@ -93,13 +93,13 @@ export default function EventsPage() {
       </section>
 
       {/* Event Types */}
-      <section className="py-12 md:py-24 px-6 bg-[#FCFCFC]">
+      <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
               What I Offer
             </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
+            <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
               Event Entertainment Packages
             </h2>
           </div>
@@ -119,7 +119,7 @@ export default function EventsPage() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-2xl font-serif text-[#2C2C2C] mb-4">
+                  <h3 className="text-2xl font-serif text-[#1a1a1a] mb-4">
                     {event.title}
                   </h3>
                   <p className="text-[#888888] text-sm mb-4">{event.description}</p>
@@ -181,13 +181,13 @@ export default function EventsPage() {
       </section>
 
       {/* What's Included */}
-      <section className="py-12 md:py-24 px-6 bg-[#FCFCFC]">
+      <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
               What&apos;s Included
             </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C]">
+            <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
               Professional Event Entertainment
             </h2>
           </div>
@@ -219,7 +219,7 @@ export default function EventsPage() {
                 <div className="w-16 h-16 bg-[#C4A882]/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-[#C4A882] text-2xl">♪</span>
                 </div>
-                <h3 className="text-lg font-serif text-[#2C2C2C] mb-2">
+                <h3 className="text-lg font-serif text-[#1a1a1a] mb-2">
                   {item.title}
                 </h3>
                 <p className="text-[#444444] text-sm">{item.description}</p>
@@ -235,7 +235,7 @@ export default function EventsPage() {
           <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
             Coverage Area
           </p>
-          <h2 className="text-3xl md:text-4xl font-serif text-[#2C2C2C] mb-6">
+          <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a] mb-6">
             Serving Central Scotland
           </h2>
           <p className="text-[#444444] mb-8">
@@ -252,7 +252,7 @@ export default function EventsPage() {
             ].map((area) => (
               <span
                 key={area}
-                className="px-6 py-2 bg-[#F5F5F5] rounded-full text-[#2C2C2C]"
+                className="px-6 py-2 bg-[#F5F1EB] rounded-full text-[#2C2C2C]"
               >
                 {area}
               </span>

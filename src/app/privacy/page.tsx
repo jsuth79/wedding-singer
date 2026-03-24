@@ -12,12 +12,12 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <div className="pt-20">
-      <section className="py-12 md:py-24 px-6 bg-[#F5F5F5]">
+      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
             Legal
           </p>
-          <h1 className="text-4xl md:text-6xl font-serif text-[#2C2C2C] mb-6">
+          <h1 className="text-4xl md:text-6xl font-serif text-[#1a1a1a] mb-6">
             Privacy Policy
           </h1>
           <p className="text-[#444444]">Effective Date: March 2025</p>
@@ -28,14 +28,14 @@ export default function PrivacyPage() {
         <div className="max-w-3xl mx-auto space-y-10 text-[#444444]">
 
           <div>
-            <h2 className="text-xl font-serif text-[#2C2C2C] mb-3">1. Introduction</h2>
+            <h2 className="text-xl font-serif text-[#1a1a1a] mb-3">1. Introduction</h2>
             <p className="text-sm leading-relaxed">
               Nicola Mason Wedding &amp; Events Singer (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) is committed to protecting the privacy of individuals who enquire about our wedding and event vocalist services. This policy explains how we collect and use your personal information when you contact us.
             </p>
           </div>
 
           <div>
-            <h2 className="text-xl font-serif text-[#2C2C2C] mb-3">2. Information We Collect</h2>
+            <h2 className="text-xl font-serif text-[#1a1a1a] mb-3">2. Information We Collect</h2>
             <p className="text-sm leading-relaxed mb-3">
               We collect only the personal information you freely provide to us for the purpose of communicating regarding your event. This may include:
             </p>
@@ -48,7 +48,7 @@ export default function PrivacyPage() {
           </div>
 
           <div>
-            <h2 className="text-xl font-serif text-[#2C2C2C] mb-3">3. How We Use Your Information</h2>
+            <h2 className="text-xl font-serif text-[#1a1a1a] mb-3">3. How We Use Your Information</h2>
             <p className="text-sm leading-relaxed mb-3">We use your information solely to:</p>
             <ul className="text-sm space-y-1 pl-4 list-disc">
               <li>Respond to your enquiries about our vocal services</li>
@@ -58,7 +58,7 @@ export default function PrivacyPage() {
           </div>
 
           <div>
-            <h2 className="text-xl font-serif text-[#2C2C2C] mb-3">4. Legal Basis for Processing</h2>
+            <h2 className="text-xl font-serif text-[#1a1a1a] mb-3">4. Legal Basis for Processing</h2>
             <p className="text-sm leading-relaxed mb-3">The legal basis for processing your data is:</p>
             <ul className="text-sm space-y-2 pl-4 list-disc">
               <li><span className="text-[#2C2C2C] font-medium">Contractual Necessity:</span> Where it is necessary to take steps at your request prior to entering into a contract.</li>
@@ -67,28 +67,28 @@ export default function PrivacyPage() {
           </div>
 
           <div>
-            <h2 className="text-xl font-serif text-[#2C2C2C] mb-3">5. Data Sharing</h2>
+            <h2 className="text-xl font-serif text-[#1a1a1a] mb-3">5. Data Sharing</h2>
             <p className="text-sm leading-relaxed">
               We will not share your personal information with any third parties, except where required by law.
             </p>
           </div>
 
           <div>
-            <h2 className="text-xl font-serif text-[#2C2C2C] mb-3">6. Data Security</h2>
+            <h2 className="text-xl font-serif text-[#1a1a1a] mb-3">6. Data Security</h2>
             <p className="text-sm leading-relaxed">
               We take reasonable measures to protect your personal information from unauthorised access, use, or disclosure. As the data collected is minimal, security measures will be proportionate.
             </p>
           </div>
 
           <div>
-            <h2 className="text-xl font-serif text-[#2C2C2C] mb-3">7. Data Retention</h2>
+            <h2 className="text-xl font-serif text-[#1a1a1a] mb-3">7. Data Retention</h2>
             <p className="text-sm leading-relaxed">
               We will retain your personal information for as long as necessary to communicate with you about your event, and/or for as long as is required to fulfil any contractual obligations. After this period, your data will be securely deleted.
             </p>
           </div>
 
           <div>
-            <h2 className="text-xl font-serif text-[#2C2C2C] mb-3">8. Your Rights</h2>
+            <h2 className="text-xl font-serif text-[#1a1a1a] mb-3">8. Your Rights</h2>
             <p className="text-sm leading-relaxed mb-3">
               Under the UK GDPR, which applies in Scotland, you have the following rights:
             </p>
@@ -102,7 +102,7 @@ export default function PrivacyPage() {
           </div>
 
           <div>
-            <h2 className="text-xl font-serif text-[#2C2C2C] mb-3">9. Contact Us</h2>
+            <h2 className="text-xl font-serif text-[#1a1a1a] mb-3">9. Contact Us</h2>
             <p className="text-sm leading-relaxed">
               If you have any questions or concerns about this Privacy Policy, or wish to exercise your data protection rights, please{" "}
               <Link href="/enquiry" className="text-[#C4A882] hover:text-[#A68B5B] underline">
@@ -113,7 +113,7 @@ export default function PrivacyPage() {
           </div>
 
           <div>
-            <h2 className="text-xl font-serif text-[#2C2C2C] mb-3">10. Changes to this Privacy Policy</h2>
+            <h2 className="text-xl font-serif text-[#1a1a1a] mb-3">10. Changes to this Privacy Policy</h2>
             <p className="text-sm leading-relaxed">
               We may update this Privacy Policy from time to time. Any changes will be posted on our website.
             </p>

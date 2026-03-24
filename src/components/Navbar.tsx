@@ -17,10 +17,10 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-stone-200">
-      <div className="max-w-6xl mx-auto px-6 py-4">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/60 backdrop-blur-md border-b border-white/20">
+      <div className="w-full px-6 md:px-12 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-base md:text-xl font-serif text-[#2C2C2C]">
+          <Link href="/" className="text-base md:text-xl font-serif text-[#1a1a1a] ml-0 md:ml-8">
             Nicola Mason Wedding &amp; Events Singer
           </Link>
 
@@ -31,9 +31,9 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   onClick={() => trackEvent.clickNavLink(link.label)}
-                  className={`text-base tracking-wide transition-colors hover:text-[#C4A882] ${
+                  className={`text-base tracking-wide transition-colors hover:text-[#A68B5B] ${
                     pathname === link.href
-                      ? "text-[#C4A882] font-medium"
+                      ? "text-[#A68B5B] font-medium"
                       : "text-[#444444]"
                   }`}
                 >
@@ -82,9 +82,9 @@ export default function Navbar() {
                       setIsOpen(false);
                       trackEvent.clickNavLink(link.label);
                     }}
-                    className={`block text-sm tracking-wide transition-colors hover:text-[#C4A882] ${
+                    className={`block text-sm tracking-wide transition-colors hover:text-[#A68B5B] ${
                       pathname === link.href
-                        ? "text-[#C4A882] font-medium"
+                        ? "text-[#A68B5B] font-medium"
                         : "text-[#444444]"
                     }`}
                   >

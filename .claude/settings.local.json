@@ -22,7 +22,12 @@
       "Bash(textutil -convert txt -stdout /Users/jsutherl/Downloads/nicola-mason-package-copy.docx)",
       "WebFetch(domain:www.natashamareevocalist.co.uk)",
       "Bash(sed -i 's/>Check My Availability<\\\\/Link>/>Check Availability<\\\\/Link>/g' src/components/Navbar.tsx src/app/weddings/page.tsx src/app/events/page.tsx)",
-      "Bash(sed -i 's/title: .Check My Availability | Nicola Mason Wedding \\\\& Events Singer./title: \"\"Check Availability | Nicola Mason Wedding \\\\& Events Singer\"\"/g' src/app/enquiry/page.tsx)"
+      "Bash(sed -i 's/title: .Check My Availability | Nicola Mason Wedding \\\\& Events Singer./title: \"\"Check Availability | Nicola Mason Wedding \\\\& Events Singer\"\"/g' src/app/enquiry/page.tsx)",
+      "Bash(find /Users/jsutherl/Documents/Apps/Journal/wedding-singer/src -name \"*.tsx\" -type f -exec sed -i '' 's/bg-\\[#F5F5F5\\]/bg-[#F5F1EB]/g' {} +)",
+      "Bash(find /Users/jsutherl/Documents/Apps/Journal/wedding-singer/src -name \"*.tsx\" -type f -exec sed -i '' 's/bg-\\[#FCFCFC\\]/bg-[#FAF8F3]/g' {} +)",
+      "Bash(find /Users/jsutherl/Documents/Apps/Journal/wedding-singer/src -name \"*.tsx\" -type f -exec sed -i '' 's/font-serif text-\\[#2C2C2C\\]/font-serif text-[#1a1a1a]/g' {} +)",
+      "Bash(lsof -ti:3000 -ti:3001)",
+      "Bash(xargs kill -9)"
     ]
   }
 }

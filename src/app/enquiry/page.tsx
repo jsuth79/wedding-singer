@@ -20,12 +20,12 @@ export default function EnquirePage() {
   return (
     <div className="pt-20">
       {/* Hero */}
-      <section className="py-12 md:py-24 px-6 bg-[#F5F5F5]">
+      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
             Get in Touch
           </p>
-          <h1 className="text-4xl md:text-6xl font-serif text-[#2C2C2C] mb-6">
+          <h1 className="text-4xl md:text-6xl font-serif text-[#1a1a1a] mb-6">
             Let&apos;s Talk About Your Event
           </h1>
           <p className="text-xl text-[#444444] leading-relaxed">
@@ -47,8 +47,8 @@ export default function EnquirePage() {
             {/* Sidebar */}
             <div className="space-y-8">
               {/* Contact Info */}
-              <div className="bg-[#F5F5F5] rounded-lg p-8">
-                <h3 className="text-xl font-serif text-[#2C2C2C] mb-6">
+              <div className="bg-[#F5F1EB] rounded-lg p-8">
+                <h3 className="text-xl font-serif text-[#1a1a1a] mb-6">
                   Other Ways to Reach Me
                 </h3>
                 <ul className="space-y-4 text-[#444444]">
