@@ -19,7 +19,8 @@
       "Bash(find /Users/jsutherl/Documents/Apps/Journal/wedding-singer/src -name \"*.tsx\" -type f -exec sed -i '' 's/text-xs/text-sm/g' {} +)",
       "Bash(npm run:*)",
       "Read(//Users/jsutherl/Downloads/**)",
-      "Bash(textutil -convert txt -stdout /Users/jsutherl/Downloads/nicola-mason-package-copy.docx)"
+      "Bash(textutil -convert txt -stdout /Users/jsutherl/Downloads/nicola-mason-package-copy.docx)",
+      "WebFetch(domain:www.natashamareevocalist.co.uk)"
     ]
   }
 }
