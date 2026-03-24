@@ -147,7 +147,7 @@ export default function YouTubeGrid() {
           </h2>
         </div>
 
-        <div className="flex flex-col gap-4 max-w-xl mx-auto">
+        <div className="flex flex-col gap-4 max-w-3xl mx-auto">
           {soundcloudTracks.map((track) => (
             <div key={track.embedUrl}>
               <iframe

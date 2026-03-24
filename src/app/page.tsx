@@ -235,6 +235,14 @@ export default function HomePage() {
                   </span>
                 </TrackedEnquiryLink>
               </div>
+              <div className="text-center mt-6">
+                <Link
+                  href="/weddings#whats-included"
+                  className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider"
+                >
+                  See What&apos;s Included with Every Booking →
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -342,6 +350,11 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Testimonials */}
+      <div id="reviews">
+        <ReviewsSection />
+      </div>
+
       {/* CTA Section */}
       <section className="py-12 md:py-24 px-6 bg-[#2C2C2C]">
         <div className="max-w-4xl mx-auto text-center">
@@ -378,8 +391,11 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Video */}
+      <YouTubeGrid />
+
       {/* Venue Regions */}
-      <section className="py-12 md:py-24 px-6 bg-[#FCFCFC]">
+      <section className="py-12 md:py-24 px-6 bg-[#F5F5F5]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
@@ -414,14 +430,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* Video */}
-      <YouTubeGrid />
-
-      {/* Testimonials */}
-      <div id="reviews">
-        <ReviewsSection />
-      </div>
     </>
   );
 }

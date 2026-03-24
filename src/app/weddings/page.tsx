@@ -388,7 +388,7 @@ export default function WeddingsPage() {
       </section>
 
       {/* The Full Package */}
-      <section className="py-12 md:py-24 px-6 bg-[#FCFCFC]">
+      <section id="whats-included" className="py-12 md:py-24 px-6 bg-[#FCFCFC]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
