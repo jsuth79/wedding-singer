@@ -4,6 +4,7 @@ import Image from "next/image";
 import HeroSection from "@/components/HeroSection";
 import ReviewsSection from "@/components/ReviewsSection";
 import YouTubeGrid from "@/components/YouTubeGrid";
+import AudioSection from "@/components/AudioSection";
 import TrackedWhatsAppLink from "@/components/TrackedWhatsAppLink";
 import TrackedEnquiryLink from "@/components/TrackedEnquiryLink";
 
@@ -178,8 +179,11 @@ export default function HomePage() {
       />
       <HeroSection />
 
+      {/* Audio */}
+      <AudioSection />
+
       {/* About Section */}
-      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
+      <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
@@ -249,7 +253,7 @@ export default function HomePage() {
       </section>
 
       {/* Common Questions */}
-      <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
+      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
@@ -283,7 +287,7 @@ export default function HomePage() {
       </section>
 
       {/* Services Preview */}
-      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
+      <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
@@ -395,7 +399,7 @@ export default function HomePage() {
       <YouTubeGrid />
 
       {/* Venue Regions */}
-      <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
+      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
