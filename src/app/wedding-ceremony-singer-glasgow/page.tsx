@@ -153,7 +153,7 @@ const soundcloudSrc = (embedUrl: string) =>
 
 export default function WeddingCeremonySingerGlasgowPage() {
   return (
-    <div className="pt-20">
+    <div className="pt-16">
 
       {/* Hero */}
       <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
@@ -176,7 +176,7 @@ export default function WeddingCeremonySingerGlasgowPage() {
               more than a recording.
             </p>
           </div>
-          <div className="relative aspect-[4/3] rounded-lg overflow-hidden max-h-64">
+          <div className="relative aspect-[4/3] rounded-lg overflow-hidden max-h-64 lg:max-h-[276px]">
             <Image
               src="/images/nicola-mason-wedding-ceremony-singer-l.webp"
               alt="Nicola Mason wedding ceremony singer performing live acoustic music at a ceremony in Glasgow, Scotland"
@@ -274,6 +274,7 @@ export default function WeddingCeremonySingerGlasgowPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             <PackageCard pkg={ceremonyPackage} />
             <div className="flex flex-col gap-4">
+              <p className="text-xs uppercase tracking-[0.2em] text-[#888888]">What Couples Say</p>
               {[
                 {
                   initials: "JL",
@@ -316,12 +317,6 @@ export default function WeddingCeremonySingerGlasgowPage() {
               ))}
             </div>
           </div>
-          <p className="text-center text-[#888888] text-sm mt-8">
-            Also booking the drinks reception or full day?{" "}
-            <Link href="/weddings" className="text-[#C4A882] hover:underline">
-              View all wedding packages →
-            </Link>
-          </p>
         </div>
       </section>
 
