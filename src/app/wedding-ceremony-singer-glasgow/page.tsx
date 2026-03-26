@@ -33,7 +33,7 @@ const ceremonyPackage = packages.find((p) => p.name === "Ceremony")!;
 
 const ceremonyMoments = [
   {
-    number: "01",
+    number: "1",
     title: "Walking Down the Aisle",
     description:
       "Your entrance deserves more than a recording. I time the song to you — starting when you appear, building as you walk, and landing perfectly as you reach your partner. Timed to the moment, not to a countdown.",
@@ -44,21 +44,21 @@ const ceremonyMoments = [
         embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/i-cant-help-falling-in-love",
       },
       {
-        title: "I Get to Love You – Ruelle",
-        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/i-get-to-love-you-ruelle",
+        title: "Glasgow (No Place Like Home) – Jessie Buckley",
+        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/glasgow-no-place-like-home-jessie-buckley-at-oran-mor-1",
       },
     ],
     songs: [
-      "A Thousand Years – Christina Perri",
       "Make You Feel My Love – Adele",
-      "Turning Page – Sleeping at Last",
-      "Kiss Me – Ed Sheeran",
+      "Turning Page – Sleeping At Last",
+      "Kiss Me – Sixpence None The Richer",
       "At Last – Etta James",
       "Perfect – Ed Sheeran",
+      "Fields Of Gold – Eva Cassidy",
     ],
   },
   {
-    number: "02",
+    number: "2",
     title: "Signing the Register",
     description:
       "A quieter, more intimate moment — guests are seated and listening closely. The right song here adds real emotional weight. I'll perform one or two pieces, pitched softly so they underscore the moment without overpowering it.",
@@ -75,23 +75,23 @@ const ceremonyMoments = [
     ],
     songs: [
       "Don't Know Why – Norah Jones",
-      "The Book of Love – Peter Gabriel",
       "Everything – Michael Bublé",
-      "Caledonia – Dougie MacLean",
+      "Caledonia – Dougie McLean",
       "True Colours – Cyndi Lauper",
       "For Good – Wicked",
+      "Songbird – Eva Cassidy",
     ],
   },
   {
-    number: "03",
+    number: "3",
     title: "Your Exit Song",
     description:
       "Walk out as newlyweds to something that sets the tone for everything that follows. Guests often say this is the moment that got them up on their feet — the transition from ceremony to celebration.",
     tip: "An upbeat or anthemic exit gets guests clapping and creates a natural energy lift into drinks. It doesn't have to be a traditional wedding song — some of the best exits are completely unexpected.",
     clips: [
       {
-        title: "Glasgow (No Place Like Home) – Jessie Buckley",
-        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/glasgow-no-place-like-home-jessie-buckley-at-oran-mor-1",
+        title: "I Get to Love You – Ruelle",
+        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/i-get-to-love-you-ruelle",
       },
       {
         title: "Love at First Sight – Kylie Minogue",
@@ -102,7 +102,7 @@ const ceremonyMoments = [
       "Happy – Pharrell Williams",
       "September – Earth Wind & Fire",
       "Heaven – Bryan Adams",
-      "Man I Need – RAYE",
+      "Man I Need – Olivia Dean",
       "Don't Stop Me Now – Queen",
       "Dancing in the Street – Martha Reeves",
     ],
@@ -120,20 +120,12 @@ const faqs = [
     a: "Absolutely. Most couples have something personal in mind and I love making that happen. If a backing track isn't available for your chosen song, I can arrange for one to be recorded for a small additional fee. Just let me know early so there's plenty of time to prepare.",
   },
   {
-    q: "Do you perform a cappella?",
-    a: "Yes — for shorter moments like an aisle entrance I can perform a cappella, no backing track, just voice. It creates an incredibly intimate and emotional atmosphere. Some couples prefer this exactly because of how raw and personal it feels.",
-  },
-  {
     q: "How much setup time and space do you need?",
     a: "I need around 30–45 minutes to set up before guests arrive, and a space roughly 2m × 2m for the PA system and equipment. I'll liaise directly with your venue coordinator to make sure everything runs smoothly.",
   },
   {
     q: "What if our ceremony runs behind schedule?",
     a: "Weddings rarely run to the minute — I know that and I build in flexibility. I stay in close communication with your venue on the day so the music always lands at the right moment, no matter how the timings shift.",
-  },
-  {
-    q: "Is all equipment included?",
-    a: "Yes. A professional PA system, all cabling, and microphone are included in the ceremony package price. Everything is PAT-tested and I'm fully insured with Public Liability Insurance.",
   },
 ];
 
@@ -164,45 +156,25 @@ export default function WeddingCeremonySingerGlasgowPage() {
     <div className="pt-20">
 
       {/* Hero */}
-      <section className="py-8 md:py-14 px-6 bg-[#F5F1EB]">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-8 items-center">
+      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-8 items-center">
           <div>
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-              Wedding Ceremony Singer · Glasgow & Scotland
+              Wedding Ceremonies · Glasgow & Scotland
             </p>
             <h1 className="text-4xl md:text-5xl font-serif text-[#1a1a1a] mb-6 leading-tight">
-              Wedding Ceremony Singer in Glasgow &amp; Across Scotland
+              Live Music for Your Wedding Ceremony
             </h1>
             <p className="text-lg text-[#444444] leading-relaxed mb-4">
-              Live acoustic music for every moment of your ceremony — from the
-              second your guests are seated to the song you walk out to as
-              newlyweds.
+              Your ceremony is the heart of the day — the moment everything else
+              is built around. Live music makes it feel exactly as significant as
+              it is.
             </p>
-            <p className="text-[#444444] leading-relaxed mb-8">
-              Ceremony packages from{" "}
-              <span className="text-[#C4A882] font-medium">£325</span>, including
-              full PA setup, song learning, and direct venue liaison on the day.
+            <p className="text-[#444444] leading-relaxed">
+              From the minute your guests are seated to the song you walk out to
+              as newlyweds, every moment deserves to be marked with something
+              more than a recording.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <TrackedWhatsAppLink
-                location="ceremony_glasgow_hero"
-                className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-8 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px] min-w-[280px]"
-              >
-                <span className="font-medium">Check My Availability</span>
-                <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
-                  via WhatsApp (1–2 hour response)
-                </span>
-              </TrackedWhatsAppLink>
-              <TrackedEnquiryLink
-                location="ceremony_glasgow_hero"
-                className="inline-flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-8 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px] min-w-[280px]"
-              >
-                <span className="font-medium">Check My Availability</span>
-                <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
-                  via Contact Form
-                </span>
-              </TrackedEnquiryLink>
-            </div>
           </div>
           <div className="relative aspect-[4/3] rounded-lg overflow-hidden max-h-64">
             <Image
@@ -221,10 +193,10 @@ export default function WeddingCeremonySingerGlasgowPage() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-              How It Works
+              What to Expect
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
-              Live music for every moment
+              Live music for every moment of your ceremony
             </h2>
           </div>
 
@@ -235,8 +207,8 @@ export default function WeddingCeremonySingerGlasgowPage() {
 
                   {/* Left: description + tip */}
                   <div className="p-8 border-b lg:border-b-0 lg:border-r border-stone-200">
-                    <p className="text-[#C4A882] text-3xl font-serif mb-3">{moment.number}</p>
-                    <h3 className="text-2xl font-serif text-[#1a1a1a] mb-4">{moment.title}</h3>
+                    <h3 className="text-2xl font-serif text-[#1a1a1a] mb-4">{moment.number}. {moment.title}</h3>
+                    <p className="text-xs uppercase tracking-[0.2em] text-[#888888] mb-3">What to Expect</p>
                     <p className="text-[#444444] text-sm leading-relaxed mb-6">{moment.description}</p>
                     <div className="border-l-4 border-[#C4A882] pl-4 bg-[#F5F1EB] py-3 pr-3 rounded-r">
                       <p className="text-xs uppercase tracking-[0.15em] text-[#C4A882] mb-1">Top Tip</p>
@@ -247,7 +219,7 @@ export default function WeddingCeremonySingerGlasgowPage() {
                   {/* Right: audio + songs */}
                   <div className="p-8 flex flex-col gap-6">
                     <div>
-                      <p className="text-xs uppercase tracking-[0.2em] text-[#888888] mb-3">Listen</p>
+                      <p className="text-xs uppercase tracking-[0.2em] text-[#888888] mb-3">How It Sounds</p>
                       <div className="flex flex-col gap-3">
                         {moment.clips.map((clip) => (
                           <iframe
@@ -264,7 +236,7 @@ export default function WeddingCeremonySingerGlasgowPage() {
                       </div>
                     </div>
                     <div>
-                      <p className="text-xs uppercase tracking-[0.2em] text-[#888888] mb-3">Popular choices</p>
+                      <p className="text-xs uppercase tracking-[0.2em] text-[#888888] mb-3">Songs I&apos;ve Performed Here</p>
                       <ul className="space-y-1.5">
                         {moment.songs.map((song) => (
                           <li key={song} className="flex items-start gap-2 text-sm text-[#444444]">
@@ -291,7 +263,7 @@ export default function WeddingCeremonySingerGlasgowPage() {
               Pricing
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
-              The Ceremony Package
+              My Ceremony Package
             </h2>
             <p className="text-[#888888] mt-4 max-w-xl mx-auto">
               Everything you need for live ceremony music, in one package. Price
@@ -353,8 +325,48 @@ export default function WeddingCeremonySingerGlasgowPage() {
         </div>
       </section>
 
+      {/* Internal links */}
+      <section className="py-12 md:py-20 px-6 bg-[#FAF8F3]">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-10">
+            <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
+              Keep Exploring
+            </p>
+            <h2 className="text-2xl md:text-3xl font-serif text-[#1a1a1a]">
+              There&apos;s more to discover
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <Link href="/weddings" className="group bg-white rounded-lg border border-stone-200 p-8 hover:border-[#C4A882] transition-colors">
+              <p className="text-[#C4A882] text-xs uppercase tracking-[0.2em] mb-3">Wedding Packages</p>
+              <h3 className="text-xl font-serif text-[#1a1a1a] mb-3 group-hover:text-[#C4A882] transition-colors">
+                All Wedding Packages
+              </h3>
+              <p className="text-[#444444] text-sm leading-relaxed mb-5">
+                See ceremony, drinks reception, and full-day packages side by side — with everything that&apos;s included.
+              </p>
+              <span className="text-[#C4A882] text-sm border-b border-[#C4A882] pb-0.5">
+                View packages →
+              </span>
+            </Link>
+            <Link href="/repertoire" className="group bg-white rounded-lg border border-stone-200 p-8 hover:border-[#C4A882] transition-colors">
+              <p className="text-[#C4A882] text-xs uppercase tracking-[0.2em] mb-3">Song List</p>
+              <h3 className="text-xl font-serif text-[#1a1a1a] mb-3 group-hover:text-[#C4A882] transition-colors">
+                Full Song Repertoire
+              </h3>
+              <p className="text-[#444444] text-sm leading-relaxed mb-5">
+                Browse the complete list of songs available for your ceremony — or suggest something personal.
+              </p>
+              <span className="text-[#C4A882] text-sm border-b border-[#C4A882] pb-0.5">
+                Browse repertoire →
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* FAQs */}
-      <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
+      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
@@ -400,35 +412,6 @@ export default function WeddingCeremonySingerGlasgowPage() {
                 <span className="text-[#888888] ml-1">· {venue.area}</span>
               </span>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Internal links */}
-      <section className="py-12 px-6 bg-[#F5F1EB]">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-[#888888] text-sm text-center mb-6 uppercase tracking-[0.15em]">
-            Explore more
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link
-              href="/weddings"
-              className="px-6 py-3 bg-white border border-stone-200 rounded-[4px] text-sm text-[#2C2C2C] hover:border-[#C4A882] hover:text-[#C4A882] transition-colors"
-            >
-              All wedding packages →
-            </Link>
-            <Link
-              href="/weddings"
-              className="px-6 py-3 bg-white border border-stone-200 rounded-[4px] text-sm text-[#2C2C2C] hover:border-[#C4A882] hover:text-[#C4A882] transition-colors"
-            >
-              Drinks reception music →
-            </Link>
-            <Link
-              href="/enquiry"
-              className="px-6 py-3 bg-white border border-stone-200 rounded-[4px] text-sm text-[#2C2C2C] hover:border-[#C4A882] hover:text-[#C4A882] transition-colors"
-            >
-              Send an enquiry →
-            </Link>
           </div>
         </div>
       </section>

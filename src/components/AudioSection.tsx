@@ -13,7 +13,7 @@ const soundcloudTracks = [
   },
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/man-i-need-raye",
-    title: "Man I Need – RAYE",
+    title: "Man I Need – Olivia Dean",
   },
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/heaven-bryan-adams-3",

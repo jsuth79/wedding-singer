@@ -129,13 +129,11 @@ export default function FAQPage() {
       {/* FAQs */}
       <section className="py-12 md:py-24 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+          <div className="space-y-4">
             {faqs.map((faq) => (
-              <div key={faq.question} className="border-b border-stone-200 pb-6">
-                <h3 className="text-base font-medium text-[#2C2C2C] mb-2">
-                  {faq.question}
-                </h3>
-                <p className="text-[#444444] text-base leading-relaxed whitespace-pre-line">{faq.answer}</p>
+              <div key={faq.question} className="bg-white rounded-lg p-6 border border-stone-200">
+                <h3 className="font-serif text-[#1a1a1a] text-lg mb-3">{faq.question}</h3>
+                <p className="text-[#444444] text-sm leading-relaxed whitespace-pre-line">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -157,7 +155,7 @@ export default function FAQPage() {
               location="faq_page_cta"
               className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
             >
-              <span className="font-medium">Check My Availability</span>
+              <span className="font-medium">Get In Touch</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                 via WhatsApp (1-2 hour response)
               </span>
@@ -166,7 +164,7 @@ export default function FAQPage() {
               location="faq_page_cta"
               className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
             >
-              <span className="font-medium">Check My Availability</span>
+              <span className="font-medium">Get In Touch</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                 via Contact Form
               </span>

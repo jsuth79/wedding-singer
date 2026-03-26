@@ -187,7 +187,7 @@ export default function HomePage() {
               About Nicola Mason, Wedding &amp; Events Singer
             </p>
             <h2 className="text-4xl md:text-5xl font-serif text-[#1a1a1a]">
-              Your Vocal Soundtrack for Life&apos;s Special Moments
+              Your Soundtrack for Life&apos;s Special Moments
             </h2>
           </div>
 
@@ -202,8 +202,8 @@ export default function HomePage() {
             </div>
             <div>
               <p className="text-[#444444] leading-relaxed mb-6">
-                Trained at Napier University and Berklee College of Music in
-                Boston, I&apos;ve dedicated my career to creating the perfect musical
+                I trained at Napier University and Berklee College of Music in
+                Boston, and have dedicated my career to creating the perfect musical
                 atmosphere for weddings and events across Scotland.
               </p>
               <p className="text-[#444444] leading-relaxed mb-6">
