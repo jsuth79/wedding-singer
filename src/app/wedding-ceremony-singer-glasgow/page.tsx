@@ -190,7 +190,7 @@ export default function WeddingCeremonySingerGlasgowPage() {
 
       {/* 3 Ceremony Moments */}
       <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
               What to Expect
@@ -255,7 +255,7 @@ export default function WeddingCeremonySingerGlasgowPage() {
 
       {/* Ceremony package + review excerpts */}
       <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
               Pricing
@@ -274,6 +274,12 @@ export default function WeddingCeremonySingerGlasgowPage() {
             <div className="flex flex-col gap-4">
               <p className="text-xs uppercase tracking-[0.2em] text-[#888888]">What Couples Say</p>
               {[
+                {
+                  initials: "AM",
+                  name: "Amy D McFadyen",
+                  venue: "Sloan's",
+                  excerpt: "She was honestly amazing, nothing was too big an ask and even helped bring our ideas to life for the groom party walking in too.",
+                },
                 {
                   initials: "JL",
                   name: "Jane Lawson",
@@ -318,48 +324,9 @@ export default function WeddingCeremonySingerGlasgowPage() {
         </div>
       </section>
 
-      {/* Internal links */}
-      <section className="py-12 md:py-20 px-6 bg-[#FAF8F3]">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-10">
-            <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-              Keep Exploring
-            </p>
-            <h2 className="text-2xl md:text-3xl font-serif text-[#1a1a1a]">
-              There&apos;s more to discover
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <Link href="/weddings" className="group bg-white rounded-lg border border-stone-200 p-8 hover:border-[#C4A882] transition-colors">
-              <p className="text-[#C4A882] text-xs uppercase tracking-[0.2em] mb-3">Wedding Packages</p>
-              <h3 className="text-xl font-serif text-[#1a1a1a] mb-3 group-hover:text-[#C4A882] transition-colors">
-                All Wedding Packages
-              </h3>
-              <p className="text-[#444444] text-sm leading-relaxed mb-5">
-                See ceremony, drinks reception, and full-day packages side by side — with everything that&apos;s included.
-              </p>
-              <span className="text-[#C4A882] text-sm border-b border-[#C4A882] pb-0.5">
-                View packages →
-              </span>
-            </Link>
-            <div className="bg-white rounded-lg border border-stone-200 p-8">
-              <p className="text-[#C4A882] text-xs uppercase tracking-[0.2em] mb-3">Song List</p>
-              <h3 className="text-xl font-serif text-[#1a1a1a] mb-3 group-hover:text-[#C4A882] transition-colors">
-                Full Song Repertoire
-              </h3>
-              <p className="text-[#444444] text-sm leading-relaxed mb-5">
-                Browse the complete list of songs available for your ceremony — or suggest something personal.
-              </p>
-              <span className="text-[#888888] text-sm border-b border-[#888888] pb-0.5">
-                Browse repertoire →
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* FAQs */}
-      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
+      <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
@@ -377,11 +344,16 @@ export default function WeddingCeremonySingerGlasgowPage() {
               </div>
             ))}
           </div>
+          <div className="text-center mt-8">
+            <Link href="/faq" className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider">
+              Have More Questions? See All FAQs →
+            </Link>
+          </div>
         </div>
       </section>
 
       {/* Venues */}
-      <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
+      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">

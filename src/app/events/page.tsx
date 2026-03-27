@@ -177,11 +177,16 @@ export default function EventsPage() {
               </span>
             </TrackedEnquiryLink>
           </div>
+          <div className="mt-8">
+            <Link href="/weddings" className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider">
+              Also Available For Weddings →
+            </Link>
+          </div>
         </div>
       </section>
 
       {/* What's Included */}
-      <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
+      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
@@ -226,11 +231,17 @@ export default function EventsPage() {
               </div>
             ))}
           </div>
+
+          <div className="text-center mt-12">
+            <Link href="/faq" className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider">
+              Have More Questions? See All FAQs →
+            </Link>
+          </div>
         </div>
       </section>
 
       {/* Coverage Area */}
-      <section className="py-12 md:py-24 px-6">
+      <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
             Coverage Area

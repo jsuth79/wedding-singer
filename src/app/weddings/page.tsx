@@ -53,7 +53,7 @@ export default function WeddingsPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">Your Day</p>
-            <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">Where Live Music Fits Your Day</h2>
+            <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">Plan Your Live Wedding Music With Me</h2>
           </div>
 
           {/* Desktop timeline */}
@@ -251,6 +251,11 @@ export default function WeddingsPage() {
               </span>
             </TrackedEnquiryLink>
           </div>
+          <div className="mt-8">
+            <Link href="/events" className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider">
+              Also Available For Private Events →
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -364,6 +369,12 @@ export default function WeddingsPage() {
                 <p className="text-[#444444] text-sm">{item.description}</p>
               </div>
             ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link href="/faq" className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider">
+              Have More Questions? See All FAQs →
+            </Link>
           </div>
         </div>
       </section>
