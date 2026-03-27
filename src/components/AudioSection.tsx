@@ -34,6 +34,7 @@ const soundcloudTracks = [
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/at-last-etta-james-at-coats-paisley-2",
     title: "At Last – Etta James",
+    pill: "Wedding Ceremony",
   },
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/what-a-wonderful-world-louis-armstrong-3",

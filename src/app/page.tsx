@@ -82,6 +82,7 @@ const venueRegions = [
       { name: "Balbirnie House", location: "Fife" },
       { name: "Carnoustie Golf Hotel & Spa", location: "Angus" },
       { name: "Fasque Castle", location: "Aberdeenshire" },
+      { name: "Hidden River Barn", location: "Cumbria" },
     ],
   },
 ];
@@ -90,22 +91,22 @@ const faqs = [
   {
     question: "Where are you based and where can you perform?",
     answer:
-      "I am based in Central Scotland and regularly perform across Glasgow, Edinburgh, Lanarkshire, and Stirling. I am always happy to travel further afield. Just let me know your venue when you enquire.",
+      "I am based in Central Scotland and regularly perform across Glasgow, Edinburgh, Lanarkshire, Stirling, and Ayrshire. I am always happy to travel further afield. Just let me know your venue when you enquire.",
   },
   {
-    question: "Can we choose our own songs for the ceremony?",
+    question: "Can we choose our own songs for our wedding ceremony?",
     answer:
       "Absolutely. You can choose from my extensive repertoire of acoustic classics and modern hits. I may also be able to learn a special song (subject to availability) to make your walk down the aisle or first dance truly personal.",
   },
   {
     question: "Do you provide your own equipment and insurance?",
     answer:
-      "Yes. I provide a professional, compact PA system suitable for both indoor and outdoor venues. For your venue's peace of mind, all my equipment is PAT-tested, and I hold full Public Liability Insurance (PLI).",
+      "Yes. I provide a professional, compact PA system suitable for both indoor and outdoor venues. For your venue's peace of mind, all my equipment is PAT-tested, and I hold full Public Liability Insurance (PLI). I am also a full member of the Musicians' Union (MU).",
   },
   {
     question: "What happens when you aren't singing?",
     answer:
-      "There's never any 'dead air'. I provide tailored background music during my short breaks to keep the atmosphere seamless, so you don't need to worry about managing a separate playlist.",
+      "I provide tailored background music during my short breaks to keep the atmosphere seamless — no gaps, no silence. You can even choose the playlist — I'll take care of the rest.",
   },
 ];
 
@@ -366,7 +367,7 @@ export default function HomePage() {
             Let&apos;s Make Your Day Unforgettable
           </h2>
           <p className="text-stone-300 text-lg mb-4">
-            Now booking for 2027. Still some 2026 dates available.
+            Now booking for 2027. Limited 2026 dates remaining.
           </p>
           <p className="text-stone-400 mb-10">
             Get in touch to discuss your wedding or event and check my
@@ -403,7 +404,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-              Coverage
+              Some Recent Venues
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
               Performing at Weddings and Events Across Scotland

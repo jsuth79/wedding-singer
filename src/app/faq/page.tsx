@@ -55,7 +55,7 @@ const faqs: { question: string; answer: string }[] = [
   {
     question: "What areas in Scotland do you cover as a wedding singer?",
     answer:
-      "I am based in Central Scotland and regularly perform at weddings across Glasgow, Edinburgh, Lanarkshire and Stirling. I'm happy to travel further for weddings if required.",
+      "I am based in Central Scotland and regularly perform at weddings across Glasgow, Edinburgh, Lanarkshire, Stirling, and Ayrshire. I'm happy to travel further for weddings if required.",
   },
   {
     question: "What if my wedding singer has to travel to my wedding?",

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 
 const reviews = [
@@ -154,31 +154,17 @@ const reviews = [
 
 export default function ReviewsSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-
-  useEffect(() => {
-    if (!isAutoPlaying) return;
-
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % reviews.length);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, [isAutoPlaying]);
 
   const goToSlide = (index: number) => {
     setCurrentIndex(index);
-    setIsAutoPlaying(false);
   };
 
   const goToPrevious = () => {
     setCurrentIndex((prev) => (prev - 1 + reviews.length) % reviews.length);
-    setIsAutoPlaying(false);
   };
 
   const goToNext = () => {
     setCurrentIndex((prev) => (prev + 1) % reviews.length);
-    setIsAutoPlaying(false);
   };
 
   // Get visible reviews for the carousel
@@ -228,7 +214,7 @@ export default function ReviewsSection() {
                     <div className="text-[#C4A882] text-sm mt-1">★★★★★</div>
                   </div>
                 </div>
-                <p className="text-[#444444] text-sm leading-relaxed line-clamp-6 cursor-help" title={review.text}>
+                <p className="text-[#444444] text-sm leading-relaxed line-clamp-[12] cursor-help" title={review.text}>
                   {review.text}
                 </p>
                 {(review.package || review.venue) && (

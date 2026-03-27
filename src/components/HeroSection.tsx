@@ -27,7 +27,7 @@ export default function HeroSection() {
               Award-Winning Vocals. Unforgettable Atmosphere.
             </h1>
             <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
-              Tailored live music for elegant Scottish celebrations.
+              Tailored live music for memorable Scottish celebrations.
             </p>
           </div>
         </div>
@@ -54,7 +54,7 @@ export default function HeroSection() {
               </Link>
             </div>
             <p className="mt-6 text-white/80 text-base">
-              Now booking for 2027 &bull; Limited 2026 dates available
+              Now booking for 2027 &bull; Limited 2026 dates remaining
             </p>
           </div>
         </div>

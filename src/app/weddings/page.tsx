@@ -42,8 +42,8 @@ export default function WeddingsPage() {
           </h1>
           <p className="text-xl text-[#444444] leading-relaxed">
             From the moment your guests arrive to your last dance of the night,
-            I&apos;ll create an atmosphere of elegance and celebration that reflects
-            your unique love story.
+            I&apos;ll help create the kind of memories that stick with people long
+            after the day is over.
           </p>
         </div>
       </section>
@@ -79,13 +79,6 @@ export default function WeddingsPage() {
                 </div>
                 <p className="text-sm font-medium text-center mb-1 text-[#1a1a1a]">Drinks Reception</p>
                 <p className="text-xs text-center leading-snug text-[#C4A882]">Live acoustic set to entertain your guests</p>
-                <div className="mt-3 border-t border-stone-200 pt-3 w-full flex flex-col items-center self-start">
-                  <div className="w-8 h-8 rounded-full flex items-center justify-center mb-2 bg-stone-100">
-                    <span className="text-sm text-stone-400">·</span>
-                  </div>
-                  <p className="text-xs font-medium text-center text-[#888888]">Photographs</p>
-                  <p className="text-xs text-center leading-snug text-stone-400">Couple back in time for second set</p>
-                </div>
               </div>
               <div className="h-px bg-stone-200 flex-none w-4 mt-6" />
             </div>
@@ -98,38 +91,30 @@ export default function WeddingsPage() {
                 </div>
                 <p className="text-sm font-medium text-center mb-1 text-[#1a1a1a]">Wedding Meal</p>
                 <p className="text-xs text-center leading-snug text-[#C4A882]">Live background music to enhance the atmosphere</p>
-                <div className="mt-3 border-t border-stone-200 pt-3 w-full flex flex-col items-center self-end">
-                  <div className="w-8 h-8 rounded-full flex items-center justify-center mb-2 bg-stone-100">
-                    <span className="text-sm text-stone-400">·</span>
-                  </div>
-                  <p className="text-xs font-medium text-center text-[#888888]">Evening Guests Arrive</p>
-                  <p className="text-xs text-center leading-snug text-stone-400">Towards end of meal</p>
-                </div>
               </div>
               <div className="h-px bg-stone-200 flex-none w-4 mt-6" />
             </div>
 
-            {/* Evening: First Dances + Evening Entertainment */}
+            {/* First Dances */}
             <div className="flex items-start flex-1">
               <div className="flex flex-col items-center flex-1">
-                <div className="flex gap-4 w-full justify-center">
-                  {/* First Dances */}
-                  <div className="flex flex-col items-center flex-1">
-                    <div className="w-12 h-12 rounded-full flex items-center justify-center mb-3 bg-[#C4A882]/20">
-                      <span className="text-lg text-[#C4A882]">♪</span>
-                    </div>
-                    <p className="text-sm font-medium text-center mb-1 text-[#1a1a1a]">First Dances</p>
-                    <p className="text-xs text-center leading-snug text-[#C4A882]">Live performance of your first dance & party songs to kick off the evening</p>
-                  </div>
-                  {/* Wedding Band or DJ */}
-                  <div className="flex flex-col items-center flex-1">
-                    <div className="w-12 h-12 rounded-full flex items-center justify-center mb-3 bg-[#C4A882]/20">
-                      <span className="text-lg text-[#C4A882]">♪</span>
-                    </div>
-                    <p className="text-sm font-medium text-center mb-1 text-[#1a1a1a]">Wedding Band or DJ</p>
-                    <p className="text-xs text-center leading-snug text-[#C4A882]">The perfect handover</p>
-                  </div>
+                <div className="w-12 h-12 rounded-full flex items-center justify-center mb-3 bg-[#C4A882]/20">
+                  <span className="text-lg text-[#C4A882]">♪</span>
                 </div>
+                <p className="text-sm font-medium text-center mb-1 text-[#1a1a1a]">First Dances</p>
+                <p className="text-xs text-center leading-snug text-[#C4A882]">Live performance of your first dance & party songs to kick off the evening</p>
+              </div>
+              <div className="h-px bg-stone-200 flex-none w-4 mt-6" />
+            </div>
+
+            {/* Wedding Band or DJ */}
+            <div className="flex items-start flex-1">
+              <div className="flex flex-col items-center flex-1">
+                <div className="w-12 h-12 rounded-full flex items-center justify-center mb-3 bg-[#C4A882]/20">
+                  <span className="text-lg text-[#C4A882]">♪</span>
+                </div>
+                <p className="text-sm font-medium text-center mb-1 text-[#1a1a1a]">Evening Entertainment</p>
+                <p className="text-xs text-center leading-snug text-[#C4A882]">Keep the party going until last orders</p>
               </div>
             </div>
 
@@ -178,7 +163,7 @@ export default function WeddingsPage() {
               The Perfect Soundtrack
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
-              Wedding Singer Packages from Ceremony to Evening
+              Wedding Singer Packages from Ceremony to Evening Reception
             </h2>
           </div>
 
@@ -193,7 +178,7 @@ export default function WeddingsPage() {
           <p className="text-center text-[#888888] text-sm mt-10">
             All prices include professional PA equipment and 40 miles travel from Glasgow. Additional mileage at 45p/mile.
             <br />
-            Booking direct avoids platform fees (typically 20%).
+            Booking direct avoids agency and platform fees (typically 20%).
           </p>
         </div>
       </section>
@@ -225,7 +210,7 @@ export default function WeddingsPage() {
             Ready to Discuss Your Wedding?
           </h2>
           <p className="text-stone-300 text-lg mb-4">
-            Now booking for 2027. Still some 2026 dates available.
+            Now booking for 2027. Limited 2026 dates remaining.
           </p>
           <p className="text-stone-400 mb-10">
             I&apos;d love to hear about your plans and help make your day truly

@@ -27,7 +27,8 @@
       "Bash(find /Users/jsutherl/Documents/Apps/Journal/wedding-singer/src -name \"*.tsx\" -type f -exec sed -i '' 's/bg-\\[#FCFCFC\\]/bg-[#FAF8F3]/g' {} +)",
       "Bash(find /Users/jsutherl/Documents/Apps/Journal/wedding-singer/src -name \"*.tsx\" -type f -exec sed -i '' 's/font-serif text-\\[#2C2C2C\\]/font-serif text-[#1a1a1a]/g' {} +)",
       "Bash(lsof -ti:3000 -ti:3001)",
-      "Bash(xargs kill -9)"
+      "Bash(xargs kill -9)",
+      "Bash(ls:*)"
     ]
   }
 }

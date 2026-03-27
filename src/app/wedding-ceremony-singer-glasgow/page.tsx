@@ -388,7 +388,7 @@ export default function WeddingCeremonySingerGlasgowPage() {
             Check Availability for Your Date
           </h2>
           <p className="text-stone-300 text-lg mb-4">
-            Now booking for 2027. Still some 2026 dates available.
+            Now booking for 2027. Limited 2026 dates remaining.
           </p>
           <p className="text-stone-400 mb-10">
             Tell me about your ceremony and I&apos;ll get back to you within a couple of hours.
