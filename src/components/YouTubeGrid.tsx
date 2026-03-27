@@ -70,7 +70,7 @@ export default function YouTubeGrid() {
               See &amp; Hear Nicola in Action
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
-              A selection of live performance clips
+              A Selection of Live Performance Clips
             </h2>
           </div>
 

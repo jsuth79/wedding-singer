@@ -53,7 +53,7 @@ export default function WeddingsPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-              Pricing
+              The Perfect Soundtrack
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
               Wedding Singer Packages from Ceremony to Evening
@@ -62,7 +62,9 @@ export default function WeddingsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {packages.map((pkg) => (
-              <PackageCard key={pkg.name} pkg={pkg} />
+              <div key={pkg.name}>
+                <PackageCard pkg={pkg} findOutMoreHref={pkg.name === "Ceremony" ? "/wedding-ceremony-singer-glasgow" : undefined} />
+              </div>
             ))}
           </div>
 

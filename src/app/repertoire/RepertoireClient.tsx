@@ -293,7 +293,7 @@ export default function RepertoireClient() {
   return (
     <>
       {/* Category filters */}
-      <section className="py-8 px-6 bg-[#FAF8F3] border-b border-stone-200 sticky top-20 z-10">
+      <section className="py-8 px-6 bg-[#FAF8F3] border-b border-stone-200 sticky top-16 z-10">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-wrap gap-2 justify-center">
             <button

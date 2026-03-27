@@ -24,10 +24,6 @@ export const packages: Package[] = [
       "A live exit song to send you out as newlyweds",
       "Professional PA system set up and managed at your venue throughout",
     ],
-    tips: [
-      "Consider an upbeat exit song to set the tone for your celebration ahead",
-      "If a backing track isn't available for your chosen song, I can arrange for a musician to record one for a small additional fee",
-    ],
   },
   {
     name: "Drinks Reception",

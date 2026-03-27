@@ -406,7 +406,7 @@ export default function HomePage() {
               Coverage
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
-              Performing Across Scotland
+              Performing at Weddings and Events Across Scotland
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

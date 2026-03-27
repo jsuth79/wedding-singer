@@ -170,7 +170,7 @@ export default function WeddingCeremonySingerGlasgowPage() {
               is built around. Live music makes it feel exactly as significant as
               it is.
             </p>
-            <p className="text-[#444444] leading-relaxed">
+            <p className="text-lg text-[#444444] leading-relaxed">
               From the minute your guests are seated to the song you walk out to
               as newlyweds, every moment deserves to be marked with something
               more than a recording.
@@ -196,30 +196,29 @@ export default function WeddingCeremonySingerGlasgowPage() {
               What to Expect
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
-              Live music for every moment of your ceremony
+              Live Music for Every Moment of Your Ceremony
             </h2>
           </div>
 
-          <div className="flex flex-col gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {ceremonyMoments.map((moment) => (
-              <div key={moment.number} className="bg-white rounded-lg border border-stone-200 overflow-hidden">
-                <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr]">
-
-                  {/* Left: description + tip */}
-                  <div className="p-8 border-b lg:border-b-0 lg:border-r border-stone-200">
-                    <h3 className="text-2xl font-serif text-[#1a1a1a] mb-4">{moment.number}. {moment.title}</h3>
-                    <p className="text-xs uppercase tracking-[0.2em] text-[#888888] mb-3">What to Expect</p>
+              <div key={moment.number}>
+                <div className="w-12 h-12 bg-[#C4A882]/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                  <span className="text-[#C4A882] font-serif text-lg">{moment.number}</span>
+                </div>
+                <h3 className="text-2xl font-serif text-[#1a1a1a] mb-4 text-center">{moment.title}</h3>
+                <div className="bg-white rounded-lg border border-stone-200 overflow-hidden">
+                  <div className="p-6 border-b border-stone-200">
+                    <p className="text-xs uppercase tracking-[0.2em] text-[#888888] mb-3">The Moment</p>
                     <p className="text-[#444444] text-sm leading-relaxed mb-6">{moment.description}</p>
                     <div className="border-l-4 border-[#C4A882] pl-4 bg-[#F5F1EB] py-3 pr-3 rounded-r">
                       <p className="text-xs uppercase tracking-[0.15em] text-[#C4A882] mb-1">Top Tip</p>
                       <p className="text-[#444444] text-sm leading-relaxed">{moment.tip}</p>
                     </div>
                   </div>
-
-                  {/* Right: audio + songs */}
-                  <div className="p-8 flex flex-col gap-6">
+                  <div className="p-6 flex flex-col gap-6">
                     <div>
-                      <p className="text-xs uppercase tracking-[0.2em] text-[#888888] mb-3">How It Sounds</p>
+                      <p className="text-xs uppercase tracking-[0.2em] text-[#888888] mb-3">Listen In</p>
                       <div className="flex flex-col gap-3">
                         {moment.clips.map((clip) => (
                           <iframe
@@ -236,7 +235,7 @@ export default function WeddingCeremonySingerGlasgowPage() {
                       </div>
                     </div>
                     <div>
-                      <p className="text-xs uppercase tracking-[0.2em] text-[#888888] mb-3">Songs I&apos;ve Performed Here</p>
+                      <p className="text-xs uppercase tracking-[0.2em] text-[#888888] mb-3">Songs Couples Love Here</p>
                       <ul className="space-y-1.5">
                         {moment.songs.map((song) => (
                           <li key={song} className="flex items-start gap-2 text-sm text-[#444444]">
@@ -247,7 +246,6 @@ export default function WeddingCeremonySingerGlasgowPage() {
                       </ul>
                     </div>
                   </div>
-
                 </div>
               </div>
             ))}
@@ -368,7 +366,7 @@ export default function WeddingCeremonySingerGlasgowPage() {
               FAQs
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
-              Ceremony questions, answered
+              Ceremony Questions, Answered
             </h2>
           </div>
           <div className="space-y-4">
@@ -390,7 +388,7 @@ export default function WeddingCeremonySingerGlasgowPage() {
               Locations
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
-              Covering Glasgow, Edinburgh &amp; beyond
+              Covering Glasgow, Edinburgh &amp; Beyond
             </h2>
             <p className="text-[#888888] mt-4 max-w-xl mx-auto">
               Based in Glasgow with 40 miles travel included — covering the

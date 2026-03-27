@@ -76,7 +76,7 @@ export default function AudioSection() {
             Listen For Yourself
           </p>
           <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
-            Live music to match the moment
+            Live Music to Match the Moment
           </h2>
         </div>
 
