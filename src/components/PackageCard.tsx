@@ -3,10 +3,22 @@ import Image from "next/image";
 import PackageTips from "@/components/PackageTips";
 import type { Package } from "@/data/packages";
 
+const PACKAGE_NAMES = ["The Full Shebang", "Daytime Package", "Drinks Reception", "Wedding Meal", "Ceremony", "First Dances"];
+
+function highlightFeature(text: string) {
+  const pattern = new RegExp(`(${PACKAGE_NAMES.map(n => n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})`, "g");
+  const parts = text.split(pattern);
+  return parts.map((part, i) =>
+    PACKAGE_NAMES.includes(part)
+      ? <span key={i} className="text-[#C4A882] font-medium">{part}</span>
+      : part
+  );
+}
+
 const tipTitles: Record<string, string> = {
   "Ceremony": "Top Ceremony Tips from Nicola",
   "Drinks Reception": "Top Drinks Reception Music Tips from Nicola",
-  "Dinner": "Top Wedding Dinner Music Tips from Nicola",
+  "Wedding Meal": "Top Wedding Meal Music Tips from Nicola",
   "Daytime Package": "Top Daytime Music Tips from Nicola",
   "The Full Shebang": "Top Wedding Music Tips from Nicola",
   "First Dances": "Top First Dance Music Tips from Nicola",
@@ -47,7 +59,7 @@ export default function PackageCard({ pkg, findOutMoreHref }: Props) {
           {pkg.features.map((feature, i) => (
             <li key={i} className="flex items-start gap-2 text-sm text-[#444444]">
               <span className="text-[#C4A882] mt-0.5">✓</span>
-              {feature}
+              <span>{highlightFeature(feature)}</span>
             </li>
           ))}
         </ul>

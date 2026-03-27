@@ -39,7 +39,7 @@ export const packages: Package[] = [
     ],
   },
   {
-    name: "Dinner",
+    name: "Wedding Meal",
     price: "£350",
     description: "Create the perfect ambience for conversation and dining",
     image: "/images/nicola-mason-dinner-l.webp",
@@ -61,8 +61,8 @@ export const packages: Package[] = [
     features: [
       "Full wedding ceremony singer service, from guest arrival through to walking out",
       "Drinks reception coverage — one singer, one setup, one less thing to think about",
-      "Ceremony and drinks reception music covered under one package price — better value than booking separately",
-      "Swap drinks reception for dinner instead (+£55)",
+      "Ceremony and Drinks Reception music covered under one package price — better value than booking separately",
+      "Swap Drinks Reception for Wedding Meal instead (+£55)",
       "All equipment included",
     ],
   },
@@ -73,11 +73,11 @@ export const packages: Package[] = [
     image: "/images/nicola-mason-full-day-singer-l.webp",
     alt: "Complete wedding day entertainment package from ceremony through evening reception with live singing and first dance",
     features: [
-      "Full wedding ceremony singer service, from guest arrival through to walking out",
-      "Drinks reception coverage with 90 minutes of live music",
+      "Full Ceremony singer service, from guest arrival through to walking out",
+      "Drinks Reception coverage with 90 minutes of live music",
       "Your first dance performed live by your wedding singer",
       "One hour of upbeat party songs to fill the floor",
-      "Everything from vows to dance floor, covered in one package",
+      "Ceremony, Drinks Reception and First Dances covered in one package",
     ],
   },
   {
@@ -91,6 +91,7 @@ export const packages: Package[] = [
       "One hour of upbeat party songs to get guests on the floor",
       "High-energy performance timed to kick off your evening",
       "Professional PA system set up and managed for your performance",
+      "The perfect handover to your evening DJ",
     ],
   },
 ];

@@ -48,6 +48,128 @@ export default function WeddingsPage() {
         </div>
       </section>
 
+      {/* Wedding Day Timeline */}
+      <section className="py-12 md:py-20 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">Your Day</p>
+            <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">Where Live Music Fits Your Day</h2>
+          </div>
+
+          {/* Desktop timeline */}
+          <div className="hidden md:flex items-start">
+
+            {/* Ceremony */}
+            <div className="flex items-start flex-1">
+              <Link href="/wedding-ceremony-singer-glasgow" className="flex flex-col items-center flex-1 group">
+                <div className="w-12 h-12 rounded-full flex items-center justify-center mb-3 bg-[#C4A882]/20 group-hover:bg-[#C4A882]/40 transition-colors">
+                  <span className="text-lg text-[#C4A882]">♪</span>
+                </div>
+                <p className="text-sm font-medium text-center mb-1 text-[#1a1a1a] group-hover:text-[#C4A882] transition-colors">Ceremony</p>
+                <p className="text-xs text-center leading-snug text-[#C4A882]">Live performance of aisle, register & exit songs</p>
+              </Link>
+              <div className="h-px bg-stone-200 flex-none w-4 mt-6" />
+            </div>
+
+            {/* Drinks Reception with Photographs at the start */}
+            <div className="flex items-start flex-1">
+              <div className="flex flex-col items-center flex-1">
+                <div className="w-12 h-12 rounded-full flex items-center justify-center mb-3 bg-[#C4A882]/20">
+                  <span className="text-lg text-[#C4A882]">♪</span>
+                </div>
+                <p className="text-sm font-medium text-center mb-1 text-[#1a1a1a]">Drinks Reception</p>
+                <p className="text-xs text-center leading-snug text-[#C4A882]">Live acoustic set to entertain your guests</p>
+                <div className="mt-3 border-t border-stone-200 pt-3 w-full flex flex-col items-center self-start">
+                  <div className="w-8 h-8 rounded-full flex items-center justify-center mb-2 bg-stone-100">
+                    <span className="text-sm text-stone-400">·</span>
+                  </div>
+                  <p className="text-xs font-medium text-center text-[#888888]">Photographs</p>
+                  <p className="text-xs text-center leading-snug text-stone-400">Couple back in time for second set</p>
+                </div>
+              </div>
+              <div className="h-px bg-stone-200 flex-none w-4 mt-6" />
+            </div>
+
+            {/* Wedding Meal with Evening Guests arriving toward end */}
+            <div className="flex items-start flex-1">
+              <div className="flex flex-col items-center flex-1">
+                <div className="w-12 h-12 rounded-full flex items-center justify-center mb-3 bg-[#C4A882]/20">
+                  <span className="text-lg text-[#C4A882]">♪</span>
+                </div>
+                <p className="text-sm font-medium text-center mb-1 text-[#1a1a1a]">Wedding Meal</p>
+                <p className="text-xs text-center leading-snug text-[#C4A882]">Live background music to enhance the atmosphere</p>
+                <div className="mt-3 border-t border-stone-200 pt-3 w-full flex flex-col items-center self-end">
+                  <div className="w-8 h-8 rounded-full flex items-center justify-center mb-2 bg-stone-100">
+                    <span className="text-sm text-stone-400">·</span>
+                  </div>
+                  <p className="text-xs font-medium text-center text-[#888888]">Evening Guests Arrive</p>
+                  <p className="text-xs text-center leading-snug text-stone-400">Towards end of meal</p>
+                </div>
+              </div>
+              <div className="h-px bg-stone-200 flex-none w-4 mt-6" />
+            </div>
+
+            {/* Evening: First Dances + Evening Entertainment */}
+            <div className="flex items-start flex-1">
+              <div className="flex flex-col items-center flex-1">
+                <div className="flex gap-4 w-full justify-center">
+                  {/* First Dances */}
+                  <div className="flex flex-col items-center flex-1">
+                    <div className="w-12 h-12 rounded-full flex items-center justify-center mb-3 bg-[#C4A882]/20">
+                      <span className="text-lg text-[#C4A882]">♪</span>
+                    </div>
+                    <p className="text-sm font-medium text-center mb-1 text-[#1a1a1a]">First Dances</p>
+                    <p className="text-xs text-center leading-snug text-[#C4A882]">Live performance of your first dance & party songs to kick off the evening</p>
+                  </div>
+                  {/* Wedding Band or DJ */}
+                  <div className="flex flex-col items-center flex-1">
+                    <div className="w-12 h-12 rounded-full flex items-center justify-center mb-3 bg-stone-100">
+                      <span className="text-lg text-stone-400">·</span>
+                    </div>
+                    <p className="text-sm font-medium text-center mb-1 text-[#888888]">Wedding Band or DJ</p>
+                    <p className="text-xs text-center leading-snug text-stone-400">The perfect handover</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Mobile timeline */}
+          <div className="flex flex-col md:hidden gap-0">
+            {[
+              { title: "Ceremony", music: true, label: "Live performance of aisle, register & exit songs", href: "/wedding-ceremony-singer-glasgow" },
+              { title: "Photographs", music: false, label: "Couple back in time for second set", note: "During drinks reception" },
+              { title: "Drinks Reception", music: true, label: "Live acoustic set to entertain your guests" },
+              { title: "Wedding Meal", music: true, label: "Live background music to enhance the atmosphere" },
+              { title: "Evening Guests Arrive", music: false, label: "Towards end of meal", note: "During the meal" },
+              { title: "First Dances", music: true, label: "Live performance of your first dance & party songs to kick off the evening" },
+              { title: "Wedding Band or DJ", music: false, label: "The perfect handover" },
+            ].map((step, i, arr) => (
+              <div key={step.title} className="flex items-start gap-4">
+                <div className="flex flex-col items-center">
+                  <div className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 ${step.music ? "bg-[#C4A882]/20" : "bg-stone-100"}`}>
+                    <span className={`text-base ${step.music ? "text-[#C4A882]" : "text-stone-400"}`}>
+                      {step.music ? "♪" : "·"}
+                    </span>
+                  </div>
+                  {i < arr.length - 1 && <div className="w-px flex-1 bg-stone-200 my-1 min-h-[24px]" />}
+                </div>
+                <div className="pb-6">
+                  {"note" in step && <p className="text-xs text-stone-400 uppercase tracking-wider mb-1">{step.note}</p>}
+                  {"href" in step
+                    ? <Link href={step.href as string} className="text-sm font-medium mb-0.5 text-[#1a1a1a] hover:text-[#C4A882] transition-colors">{step.title}</Link>
+                    : <p className={`text-sm font-medium mb-0.5 ${step.music ? "text-[#1a1a1a]" : "text-[#888888]"}`}>{step.title}</p>
+                  }
+                  <p className={`text-xs leading-snug ${step.music ? "text-[#C4A882]" : "text-stone-400"}`}>{step.label}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
       {/* Pricing Packages */}
       <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
         <div className="max-w-6xl mx-auto">

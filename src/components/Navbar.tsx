@@ -82,7 +82,7 @@ export default function Navbar() {
                       setIsOpen(false);
                       trackEvent.clickNavLink(link.label);
                     }}
-                    className={`block text-sm tracking-wide transition-colors hover:text-[#A68B5B] ${
+                    className={`block text-base tracking-wide transition-colors hover:text-[#A68B5B] ${
                       pathname === link.href
                         ? "text-[#A68B5B] font-medium"
                         : "text-[#444444]"

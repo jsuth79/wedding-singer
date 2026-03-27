@@ -236,15 +236,15 @@ export default function HomePage() {
                   </span>
                 </TrackedEnquiryLink>
               </div>
-              <div className="text-center mt-6">
-                <Link
-                  href="/weddings#whats-included"
-                  className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider"
-                >
-                  Learn More About Working With Nicola →
-                </Link>
-              </div>
             </div>
+          </div>
+          <div className="text-center mt-10">
+            <Link
+              href="/weddings#whats-included"
+              className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider"
+            >
+              Learn More About Working With Nicola →
+            </Link>
           </div>
         </div>
       </section>

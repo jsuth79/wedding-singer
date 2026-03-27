@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const soundcloudTracks = [
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/dont-know-why-norah-jones-2",
@@ -69,7 +71,7 @@ const soundcloudTracks = [
 
 export default function AudioSection() {
   return (
-    <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
+    <section id="listen" className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
@@ -99,6 +101,11 @@ export default function AudioSection() {
               )}
             </div>
           ))}
+        </div>
+        <div className="text-center mt-10">
+          <Link href="/#videos" className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider">
+            View More Live Performances &rarr;
+          </Link>
         </div>
       </div>
     </section>
