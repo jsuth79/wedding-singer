@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 const reviews = [
   {
@@ -232,11 +233,23 @@ export default function ReviewsSection() {
                 </p>
                 {(review.package || review.venue) && (
                   <div className="mt-4 pt-4 border-t border-stone-100 flex items-center gap-2">
-                    {review.package && (
-                      <span className="px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-xs rounded-full border border-[#C4A882]/30 whitespace-nowrap">
-                        {review.package}
-                      </span>
-                    )}
+                    {review.package && (() => {
+                      const packageLinks: Record<string, string> = {
+                        "Wedding Ceremony": "/wedding-ceremony-singer-glasgow",
+                        "Drinks Reception": "/weddings",
+                        "Ceremony & Drinks Reception": "/weddings",
+                        "Surprise Singers": "/weddings",
+                        "The Full Shebang": "/weddings",
+                        "Afternoon Tea": "/events",
+                        "Birthday Celebration": "/events",
+                        "Garden Birthday Party": "/events",
+                      };
+                      const href = packageLinks[review.package];
+                      const pillClass = "px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-xs rounded-full border border-[#C4A882]/30 whitespace-nowrap";
+                      return href
+                        ? <Link href={href} className={`${pillClass} hover:bg-[#C4A882]/30 transition-colors`}>{review.package}</Link>
+                        : <span className={pillClass}>{review.package}</span>;
+                    })()}
                     {review.venue && (
                       <span className="px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-xs rounded-full border border-[#C4A882]/30 whitespace-nowrap">
                         {review.venue}

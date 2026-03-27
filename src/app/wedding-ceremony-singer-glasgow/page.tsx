@@ -342,7 +342,7 @@ export default function WeddingCeremonySingerGlasgowPage() {
                 View packages →
               </span>
             </Link>
-            <Link href="/repertoire" className="group bg-white rounded-lg border border-stone-200 p-8 hover:border-[#C4A882] transition-colors">
+            <div className="bg-white rounded-lg border border-stone-200 p-8">
               <p className="text-[#C4A882] text-xs uppercase tracking-[0.2em] mb-3">Song List</p>
               <h3 className="text-xl font-serif text-[#1a1a1a] mb-3 group-hover:text-[#C4A882] transition-colors">
                 Full Song Repertoire
@@ -350,10 +350,10 @@ export default function WeddingCeremonySingerGlasgowPage() {
               <p className="text-[#444444] text-sm leading-relaxed mb-5">
                 Browse the complete list of songs available for your ceremony — or suggest something personal.
               </p>
-              <span className="text-[#C4A882] text-sm border-b border-[#C4A882] pb-0.5">
+              <span className="text-[#888888] text-sm border-b border-[#888888] pb-0.5">
                 Browse repertoire →
               </span>
-            </Link>
+            </div>
           </div>
         </div>
       </section>

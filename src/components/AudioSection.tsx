@@ -95,9 +95,9 @@ export default function AudioSection() {
                 className="rounded-lg flex-1 min-w-0"
               />
               {track.pill && (
-                <span className="shrink-0 px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-xs rounded-full border border-[#C4A882]/30 whitespace-nowrap">
-                  {track.pill}
-                </span>
+                track.pill === "Wedding Ceremony"
+                  ? <Link href="/wedding-ceremony-singer-glasgow" className="shrink-0 px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-xs rounded-full border border-[#C4A882]/30 whitespace-nowrap hover:bg-[#C4A882]/30 transition-colors">{track.pill}</Link>
+                  : <span className="shrink-0 px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-xs rounded-full border border-[#C4A882]/30 whitespace-nowrap">{track.pill}</span>
               )}
             </div>
           ))}

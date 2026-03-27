@@ -123,11 +123,11 @@ export default function WeddingsPage() {
                   </div>
                   {/* Wedding Band or DJ */}
                   <div className="flex flex-col items-center flex-1">
-                    <div className="w-12 h-12 rounded-full flex items-center justify-center mb-3 bg-stone-100">
-                      <span className="text-lg text-stone-400">·</span>
+                    <div className="w-12 h-12 rounded-full flex items-center justify-center mb-3 bg-[#C4A882]/20">
+                      <span className="text-lg text-[#C4A882]">♪</span>
                     </div>
-                    <p className="text-sm font-medium text-center mb-1 text-[#888888]">Wedding Band or DJ</p>
-                    <p className="text-xs text-center leading-snug text-stone-400">The perfect handover</p>
+                    <p className="text-sm font-medium text-center mb-1 text-[#1a1a1a]">Wedding Band or DJ</p>
+                    <p className="text-xs text-center leading-snug text-[#C4A882]">The perfect handover</p>
                   </div>
                 </div>
               </div>
@@ -144,7 +144,7 @@ export default function WeddingsPage() {
               { title: "Wedding Meal", music: true, label: "Live background music to enhance the atmosphere" },
               { title: "Evening Guests Arrive", music: false, label: "Towards end of meal", note: "During the meal" },
               { title: "First Dances", music: true, label: "Live performance of your first dance & party songs to kick off the evening" },
-              { title: "Wedding Band or DJ", music: false, label: "The perfect handover" },
+              { title: "Wedding Band or DJ", music: true, label: "The perfect handover" },
             ].map((step, i, arr) => (
               <div key={step.title} className="flex items-start gap-4">
                 <div className="flex flex-col items-center">

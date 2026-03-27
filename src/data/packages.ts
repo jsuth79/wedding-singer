@@ -8,6 +8,7 @@ export type Package = {
   tips?: string[];
   popular?: boolean;
   link?: string;
+  disableHighlight?: boolean;
 };
 
 export const packages: Package[] = [
@@ -115,6 +116,7 @@ export const extras: Package[] = [
   {
     name: "The Clooneys",
     price: "POA",
+    disableHighlight: true,
     image: "/images/the-clooneys-band-l.webp",
     alt: "The Clooneys vocal harmony trio performing live three-part harmonies at wedding ceremony and reception",
     description: "Stunning three-part harmonies that bring depth and richness to your day",
