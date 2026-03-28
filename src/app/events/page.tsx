@@ -212,7 +212,7 @@ export default function EventsPage() {
               {
                 title: "Fully Insured",
                 description:
-                  "Full Public Liability Insurance with PAT-tested equipment",
+                  "Full Public Liability Insurance, PAT-tested equipment and a member of the Musicians' Union (MU)",
               },
               {
                 title: "Song Requests",

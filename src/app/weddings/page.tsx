@@ -249,10 +249,10 @@ export default function WeddingsPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-              What&apos;s Included
+              The Details
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
-              The Full Package
+              What's Always Included
             </h2>
           </div>
 
@@ -268,7 +268,7 @@ export default function WeddingsPage() {
                 </p>
                 <p>
                   I know how different venues work and can read a room - quiet and
-                  elegant during dinner, or getting folk up dancing when it&apos;s time
+                  setting the mood during dinner, or getting folk up dancing when it&apos;s time
                   to celebrate.
                 </p>
                 <p>
@@ -336,7 +336,7 @@ export default function WeddingsPage() {
               {
                 title: "Fully Insured",
                 description:
-                  "Full Public Liability Insurance with PAT-tested equipment",
+                  "Full Public Liability Insurance, PAT-tested equipment and a member of the Musicians' Union (MU)",
               },
               {
                 title: "Song Requests",

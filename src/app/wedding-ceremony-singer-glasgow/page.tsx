@@ -36,8 +36,8 @@ const ceremonyMoments = [
     number: "1",
     title: "Walking Down the Aisle",
     description:
-      "Your entrance deserves more than a recording. I time the song to you — starting when you appear, building as you walk, and landing perfectly as you reach your partner. Timed to the moment, not to a countdown.",
-    tip: "Think about the length of your aisle — I'll time the song to begin as you appear and finish just as you arrive. For shorter aisles, something slower works better; for longer ones you have room for a bigger build.",
+      "Your entrance deserves more than a recording. I time the song to you, starting when you appear, building as you walk, and finishing just as you reach your partner. Timed to the moment, not to a countdown.",
+    tip: "Think about the length of your aisle. I'll time the song to begin as you appear and finish just as you reach your partner. For shorter aisles, something slower works better; for longer ones you have room for a bigger build.",
     clips: [
       {
         title: "I Can't Help Falling In Love – Elvis Presley",
@@ -49,19 +49,19 @@ const ceremonyMoments = [
       },
     ],
     songs: [
-      "Make You Feel My Love – Adele",
-      "Turning Page – Sleeping At Last",
-      "Kiss Me – Sixpence None The Richer",
       "At Last – Etta James",
+      "Can't Help Falling In Love – Elvis",
+      "All Of Me – John Legend",
       "Perfect – Ed Sheeran",
-      "Fields Of Gold – Eva Cassidy",
+      "I Get To Love You – Ruelle",
+      "Turning Page – Sleeping At Last",
     ],
   },
   {
     number: "2",
     title: "Signing the Register",
     description:
-      "A quieter, more intimate moment — guests are seated and listening closely. The right song here adds real emotional weight. I'll perform one or two pieces, pitched softly so they underscore the moment without overpowering it.",
+      "A quieter, more intimate moment. Guests are seated and listening closely. The right song here adds real emotional weight. I'll perform one or two pieces, kept soft so the music lifts the room without taking it over.",
     tip: "This moment typically lasts 5–10 minutes, enough for two full songs. Quieter and more personal choices land best here — save the upbeat energy for your exit.",
     clips: [
       {
@@ -76,18 +76,18 @@ const ceremonyMoments = [
     songs: [
       "Don't Know Why – Norah Jones",
       "Everything – Michael Bublé",
-      "Caledonia – Dougie McLean",
-      "True Colours – Cyndi Lauper",
-      "For Good – Wicked",
-      "Songbird – Eva Cassidy",
+      "How Long Will I Love You – Ellie Goulding",
+      "Make You Feel My Love – Adele",
+      "Somewhere Only We Know – Keane",
+      "Your Song – Elton John",
     ],
   },
   {
     number: "3",
     title: "Your Exit Song",
     description:
-      "Walk out as newlyweds to something that sets the tone for everything that follows. Guests often say this is the moment that got them up on their feet — the transition from ceremony to celebration.",
-    tip: "An upbeat or anthemic exit gets guests clapping and creates a natural energy lift into drinks. It doesn't have to be a traditional wedding song — some of the best exits are completely unexpected.",
+      "Walk out as newlyweds to something that sets the tone for everything that follows. Guests often say this is the moment that got them up on their feet, the transition from ceremony to celebration.",
+    tip: "An upbeat or anthemic exit gets guests clapping and creates a natural energy lift into drinks. It doesn't have to be a traditional wedding song. Some of the best exits are completely unexpected.",
     clips: [
       {
         title: "I Get to Love You – Ruelle",
@@ -99,12 +99,12 @@ const ceremonyMoments = [
       },
     ],
     songs: [
-      "Happy – Pharrell Williams",
-      "September – Earth Wind & Fire",
-      "Heaven – Bryan Adams",
       "Man I Need – Olivia Dean",
-      "Don't Stop Me Now – Queen",
-      "Dancing in the Street – Martha Reeves",
+      "Marry You – Bruno Mars",
+      "Can't Take My Eyes Off You – Frankie Valli",
+      "Love On Top – Beyoncé",
+      "Nothing's Gonna Stop Us Now – Starship",
+      "The Best – Tina Turner",
     ],
   },
 ];
@@ -166,12 +166,11 @@ export default function WeddingCeremonySingerGlasgowPage() {
               Live Music for Your Wedding Ceremony
             </h1>
             <p className="text-lg text-[#444444] leading-relaxed mb-4">
-              Your ceremony is the heart of the day — the moment everything else
-              is built around. Live music makes it feel exactly as significant as
-              it is.
+              Your ceremony is the heart of the day — the thing everything else
+              is built around. Live music makes it feel as special as it should.
             </p>
             <p className="text-lg text-[#444444] leading-relaxed">
-              From the minute your guests are seated to the song you walk out to
+              From the moment your guests are seated to the song you walk out to
               as newlyweds, every moment deserves to be marked with something
               more than a recording.
             </p>
