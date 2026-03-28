@@ -6,6 +6,14 @@ import TrackedEnquiryLink from "@/components/TrackedEnquiryLink";
 import PackageCard from "@/components/PackageCard";
 import { packages, extras } from "@/data/packages";
 
+type MobileTimelineStep = {
+  title: string;
+  music: boolean;
+  label: string;
+  href?: string;
+  note?: string;
+};
+
 export const metadata: Metadata = {
   title: "Wedding Singer Packages Glasgow | Ceremony & Reception | Nicola Mason",
   description:
@@ -29,6 +37,14 @@ export const metadata: Metadata = {
 };
 
 export default function WeddingsPage() {
+  const mobileTimelineSteps: MobileTimelineStep[] = [
+    { title: "Ceremony", music: true, label: "Live performance of aisle, register & exit songs", href: "/wedding-ceremony-singer-glasgow" },
+    { title: "Drinks Reception", music: true, label: "Live acoustic set to entertain your guests" },
+    { title: "Wedding Meal", music: true, label: "Live background music to enhance the atmosphere" },
+    { title: "First Dances", music: true, label: "Live performance of your first dance & party songs to kick off the evening" },
+    { title: "Wedding Band or DJ", music: true, label: "The perfect handover" },
+  ];
+
   return (
     <div className="pt-16">
       {/* Hero */}
@@ -122,13 +138,7 @@ export default function WeddingsPage() {
 
           {/* Mobile timeline */}
           <div className="flex flex-col md:hidden gap-0">
-            {[
-              { title: "Ceremony", music: true, label: "Live performance of aisle, register & exit songs", href: "/wedding-ceremony-singer-glasgow" },
-              { title: "Drinks Reception", music: true, label: "Live acoustic set to entertain your guests" },
-              { title: "Wedding Meal", music: true, label: "Live background music to enhance the atmosphere" },
-              { title: "First Dances", music: true, label: "Live performance of your first dance & party songs to kick off the evening" },
-              { title: "Wedding Band or DJ", music: true, label: "The perfect handover" },
-            ].map((step, i, arr) => (
+            {mobileTimelineSteps.map((step, i, arr) => (
               <div key={step.title} className="flex items-start gap-4">
                 <div className="flex flex-col items-center">
                   <div className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 ${step.music ? "bg-[#C4A882]/20" : "bg-stone-100"}`}>
@@ -139,9 +149,9 @@ export default function WeddingsPage() {
                   {i < arr.length - 1 && <div className="w-px flex-1 bg-stone-200 my-1 min-h-[24px]" />}
                 </div>
                 <div className="pb-6">
-                  {"note" in step && <p className="text-xs text-stone-400 uppercase tracking-wider mb-1">{step.note}</p>}
-                  {"href" in step
-                    ? <Link href={step.href as string} className="text-sm font-medium mb-0.5 text-[#1a1a1a] hover:text-[#C4A882] transition-colors">{step.title}</Link>
+                  {step.note && <p className="text-xs text-stone-400 uppercase tracking-wider mb-1">{step.note}</p>}
+                  {step.href
+                    ? <Link href={step.href} className="text-sm font-medium mb-0.5 text-[#1a1a1a] hover:text-[#C4A882] transition-colors">{step.title}</Link>
                     : <p className={`text-sm font-medium mb-0.5 ${step.music ? "text-[#1a1a1a]" : "text-[#888888]"}`}>{step.title}</p>
                   }
                   <p className={`text-xs leading-snug ${step.music ? "text-[#C4A882]" : "text-stone-400"}`}>{step.label}</p>
