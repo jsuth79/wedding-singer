@@ -36,8 +36,8 @@ const ceremonyMoments = [
     number: "1",
     title: "Walking Down the Aisle",
     description:
-      "Your entrance deserves more than a recording. I time the song to you, starting when you appear, building as you walk, and finishing just as you reach your partner. Timed to the moment, not to a countdown.",
-    tip: "Think about the length of your aisle. I'll time the song to begin as you appear and finish just as you reach your partner. For shorter aisles, something slower works better; for longer ones you have room for a bigger build.",
+      "Your entrance deserves more than a recording. I shape the timing around your ceremony, your pace and the feel you want in the room, so the music supports the moment naturally rather than feeling fixed or rushed.",
+    tip: "Save the live music for the key ceremony moments rather than starting as guests arrive (although this can absolutely be done if it is important to you). Instead, we can curate a meaningful playlist to set the tone. This can build anticipation and make your aisle walk as epic as it should be.\n\nIt is also really helpful for me to know a little about your aisle, how many bridesmaids or groomsmen are walking, and who is coming down the aisle when, whether that is individually, together, or even with your dog, so we can plan it together.",
     clips: [
       {
         title: "I Can't Help Falling In Love – Elvis Presley",
@@ -61,8 +61,8 @@ const ceremonyMoments = [
     number: "2",
     title: "Signing the Register",
     description:
-      "A quieter, more intimate moment. Guests are seated and listening closely. The right song here adds real emotional weight. I'll perform one or two pieces, kept soft so the music lifts the room without taking it over.",
-    tip: "This moment typically lasts 5–10 minutes, enough for two full songs. Quieter and more personal choices land best here — save the upbeat energy for your exit.",
+      "While you are signing, your photographer gets those first just-married shots and your guests have a moment to take it all in. Live music fills that space naturally, keeps the ceremony moving, and lets the mood stay exactly where you want it to be.",
+    tip: "This can be a great place to include a special song. I would usually suggest choosing two backup songs as well, just in case the photos take longer.\n\nAcoustic guitar and piano based versions of songs usually work best for the aisle and register-signing moments. This does not limit your song choice, as acoustic-style tracks can usually be sourced for any song you can think of. And if your dream choice is something a bit more left-field — the kind of obscure mixtape track nobody else has heard of — made-to-order tracks can usually be arranged for around £40–£60.",
     clips: [
       {
         title: "How Long Will I Love You – Ellie Goulding",
@@ -160,19 +160,21 @@ export default function WeddingCeremonySingerGlasgowPage() {
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-8 items-center">
           <div>
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-              Wedding Ceremonies · Glasgow & Scotland
+              Wedding Ceremonies · Glasgow, Scotland and beyond
             </p>
             <h1 className="text-4xl md:text-5xl font-serif text-[#1a1a1a] mb-6 leading-tight">
               Live Music for Your Wedding Ceremony
             </h1>
             <p className="text-lg text-[#444444] leading-relaxed mb-4">
-              Your ceremony is the heart of the day — the thing everything else
-              is built around. Live music makes it feel as special as it should.
+              Your ceremony is where the emotion of the whole day begins. It is
+              the moment the room goes quiet, the nerves turn into excitement,
+              and everything starts to feel real.
             </p>
             <p className="text-lg text-[#444444] leading-relaxed">
-              From the moment your guests are seated to the song you walk out to
-              as newlyweds, every moment deserves to be marked with something
-              more than a recording.
+              Live music adds warmth, atmosphere and feeling to each part of it
+              — from walking down the aisle, to the signing, to the moment you
+              leave as newlyweds. The right songs do more than fill the silence.
+              They stay with you.
             </p>
           </div>
           <div className="relative aspect-[4/3] rounded-lg overflow-hidden max-h-64 lg:max-h-[276px]">
@@ -211,8 +213,8 @@ export default function WeddingCeremonySingerGlasgowPage() {
                     <p className="text-xs uppercase tracking-[0.2em] text-[#888888] mb-3">The Moment</p>
                     <p className="text-[#444444] text-sm leading-relaxed mb-6">{moment.description}</p>
                     <div className="border-l-4 border-[#C4A882] pl-4 bg-[#F5F1EB] py-3 pr-3 rounded-r">
-                      <p className="text-xs uppercase tracking-[0.15em] text-[#C4A882] mb-1">Top Tip</p>
-                      <p className="text-[#444444] text-sm leading-relaxed">{moment.tip}</p>
+                      <p className="text-xs uppercase tracking-[0.15em] text-[#C4A882] mb-1">Top Tips</p>
+                      <p className="text-[#444444] text-sm leading-relaxed whitespace-pre-line">{moment.tip}</p>
                     </div>
                   </div>
                   <div className="p-6 flex flex-col gap-6">
