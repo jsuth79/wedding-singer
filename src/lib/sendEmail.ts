@@ -20,15 +20,17 @@ function getResendClient() {
 interface EnquiryData {
   name: string;
   email: string;
+  phone?: string;
   eventDate: string;
   eventType: string;
   message: string;
 }
 
 export async function sendEnquiryEmail(data: EnquiryData) {
-  const { name, email, eventDate, eventType, message } = data;
+  const { name, email, phone, eventDate, eventType, message } = data;
   const safeName = escapeHtml(name);
   const safeEmail = escapeHtml(email);
+  const safePhone = phone ? escapeHtml(phone) : "";
   const safeEventType = escapeHtml(eventType);
   const safeMessage = escapeHtml(message);
   const safeMailtoEmail = encodeURIComponent(email);
@@ -68,6 +70,12 @@ export async function sendEnquiryEmail(data: EnquiryData) {
               <a href="mailto:${safeMailtoEmail}" style="color: #e11d48;">${safeEmail}</a>
             </td>
           </tr>
+          ${phone ? `
+          <tr>
+            <td style="padding: 10px 0; color: #78716c;">Phone:</td>
+            <td style="padding: 10px 0; color: #1c1917;">${safePhone}</td>
+          </tr>
+          ` : ""}
           <tr>
             <td style="padding: 10px 0; color: #78716c;">Event Type:</td>
             <td style="padding: 10px 0; color: #1c1917;">${safeEventType}</td>

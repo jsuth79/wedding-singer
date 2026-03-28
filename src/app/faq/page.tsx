@@ -40,7 +40,7 @@ const faqs: { question: string; answer: string }[] = [
   {
     question: "When does a wedding singer usually perform during a ceremony?",
     answer:
-      "Wedding ceremony music is usually performed at several key moments. This often includes music while guests arrive, the walk down the aisle, music during the signing of the register, and an upbeat song as the couple exit the ceremony.",
+      "Wedding ceremony music is usually performed at the key moments of the ceremony itself. This often includes the walk down the aisle, music during the signing of the register, and an upbeat song as the couple exit the ceremony, with guest-arrival music often handled as a curated playlist.",
   },
   {
     question: "Why choose a live singer for your wedding ceremony?",
@@ -148,7 +148,8 @@ export default function FAQPage() {
           </h2>
           <p className="text-stone-300 text-lg mb-10 max-w-2xl mx-auto">
             I&apos;m here to help! Get in touch and I&apos;ll be happy to answer any
-            questions about your wedding or event.
+            questions about your wedding or event. If you leave a phone number,
+            I can text or WhatsApp as well so you don&apos;t miss my reply.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <TrackedWhatsAppLink

@@ -37,6 +37,11 @@ const soundcloudTracks = [
     pill: "Wedding Ceremony",
   },
   {
+    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/the-promise-girls-aloud",
+    title: "The Promise – Girls Aloud",
+    pill: "Wedding Ceremony",
+  },
+  {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/what-a-wonderful-world-louis-armstrong-3",
     title: "What a Wonderful World – Louis Armstrong",
   },

@@ -40,21 +40,21 @@ const ceremonyMoments = [
     tip: "Save the live music for the key ceremony moments rather than starting as guests arrive (although this can absolutely be done if it is important to you). Instead, we can curate a meaningful playlist to set the tone. This can build anticipation and make your aisle walk as epic as it should be.\n\nIt is also really helpful for me to know a little about your aisle, how many are in your 'I do' crew, and who is coming down the aisle when, whether that is individually, together, or even with your dog, so we can plan it together.",
     clips: [
       {
+        title: "I Get to Love You – Ruelle",
+        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/i-get-to-love-you-ruelle",
+      },
+      {
         title: "I Can't Help Falling In Love – Elvis Presley",
         embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/i-cant-help-falling-in-love",
       },
-      {
-        title: "Glasgow (No Place Like Home) – Jessie Buckley",
-        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/glasgow-no-place-like-home-jessie-buckley-at-oran-mor-1",
-      },
     ],
     songs: [
-      "At Last – Etta James",
-      "Can't Help Falling In Love – Elvis",
-      "All Of Me – John Legend",
-      "Perfect – Ed Sheeran",
-      "I Get To Love You – Ruelle",
-      "Turning Page – Sleeping At Last",
+      "Feels Like Home – Chantal Kreviazuk",
+      "Can't Help Falling in Love – Haley Reinhart",
+      "I Get to Love You – Ruelle",
+      "Marry You – Bruno Mars",
+      "You're Still the One – Shania Twain",
+      "Lover – Taylor Swift",
     ],
   },
   {
@@ -65,20 +65,20 @@ const ceremonyMoments = [
     tip: "This can be a great place to include a special song. I would usually suggest choosing two backup songs as well, just in case the photos take longer than expected.\n\nAcoustic guitar and piano based versions of songs usually work best for the aisle and register-signing moments. This does not limit your song choice, as acoustic-style tracks can usually be sourced for any song you can think of. If your dream choice is something a bit more left-field — the kind of obscure mixtape track nobody else has heard of — made-to-order tracks can usually be arranged for around £35–£60.",
     clips: [
       {
-        title: "How Long Will I Love You – Ellie Goulding",
-        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/how-long-will-i-love-you-ellie-goulding-4",
+        title: "Everything – Michael Bublé",
+        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/everything-michael-buble-5",
       },
       {
-        title: "Landslide – Fleetwood Mac",
-        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/landslide-fleetwood-mac-6",
+        title: "Love at First Sight – Kylie Minogue",
+        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/love-at-first-sight-kylie-minogue-4",
       },
     ],
     songs: [
-      "Don't Know Why – Norah Jones",
       "Everything – Michael Bublé",
       "How Long Will I Love You – Ellie Goulding",
+      "Love At First Sight – Kylie Minogue",
       "Make You Feel My Love – Adele",
-      "Somewhere Only We Know – Keane",
+      "Don't Worry Be Happy – Bobby McFerrin",
       "Your Song – Elton John",
     ],
   },
@@ -90,21 +90,21 @@ const ceremonyMoments = [
     tip: "Your exit song is a great place to bring in a bit more personality. It does not have to be a traditional wedding song at all, and some of the best choices are the ones nobody sees coming.",
     clips: [
       {
-        title: "I Get to Love You – Ruelle",
-        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/i-get-to-love-you-ruelle",
+        title: "Man I Need – Olivia Dean",
+        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/man-i-need-raye",
       },
       {
-        title: "Love at First Sight – Kylie Minogue",
-        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/love-at-first-sight-kylie-minogue-4",
+        title: "The Promise – Girls Aloud",
+        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/the-promise-girls-aloud",
       },
     ],
     songs: [
       "Man I Need – Olivia Dean",
-      "Marry You – Bruno Mars",
-      "Can't Take My Eyes Off You – Frankie Valli",
-      "Love On Top – Beyoncé",
-      "Nothing's Gonna Stop Us Now – Starship",
-      "The Best – Tina Turner",
+      "This Will Be – Natalie Cole",
+      "Love Story – Taylor Swift",
+      "Signed, Sealed, Delivered, I'm Yours – Stevie Wonder",
+      "Young Hearts Run Free – Candi Staton",
+      "Yes Sir, I Can Boogie – Baccara",
     ],
   },
 ];
@@ -113,15 +113,15 @@ const ceremonyMoments = [
 const faqs = [
   {
     q: "How many songs does a wedding singer usually perform during a ceremony?",
-    a: "Three to five live performances, depending on what you want included. This usually covers your aisle entrance, one or two songs during the register signing, and your exit song, with pre-ceremony music handled as a curated playlist.",
+    a: "Three to five live performances, depending on the timing of your ceremony. This usually covers your aisle entrance, one to three songs during the register signing, and your exit song, with pre-ceremony music usually handled as a curated playlist.",
   },
   {
     q: "Can a wedding singer learn a specific song for my ceremony?",
-    a: "Absolutely. Most couples have something personal in mind and I love making that happen. If a backing track isn't available for your chosen song, I can arrange for one to be recorded for a small additional fee. Just let me know early so there's plenty of time to prepare.",
+    a: "Absolutely. Most couples have something personal in mind and I love making that happen. If it all feels a bit overwhelming, I also have an extensive song list to help inspire you. If a backing track isn't available for your chosen song, I can arrange for one to be recorded for a small additional fee. Just let me know early so there's plenty of time to prepare.",
   },
   {
     q: "How much setup time and space does a wedding singer need for a ceremony?",
-    a: "Not much. I usually need around 30–45 minutes to set up before guests arrive, and a space roughly 2m × 2m for the PA system and equipment. I'll liaise directly with your venue coordinator to make sure everything runs smoothly.",
+    a: "Not much. I usually need around 30 minutes to set up, but I normally arrive 1 to 1.5 hours before your guests arrive so there is plenty of time to soundcheck properly. I need a space roughly 2m × 2m for the PA system and equipment, and I'll liaise directly with your venue coordinator to make sure everything runs smoothly.",
   },
   {
     q: "What happens if a wedding ceremony runs behind schedule?",
@@ -365,7 +365,7 @@ export default function WeddingCeremonySingerGlasgowPage() {
             </h2>
             <p className="text-[#888888] mt-4 max-w-xl mx-auto">
               Based in Glasgow with 40 miles travel included — covering the
-              Central Belt, Loch Lomond, Edinburgh, and further by arrangement.
+              Central Belt, Loch Lomond, Edinburgh and beyond
             </p>
           </div>
           <div className="flex flex-wrap justify-center gap-3">

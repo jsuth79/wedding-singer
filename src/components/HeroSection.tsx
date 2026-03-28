@@ -7,11 +7,11 @@ import { trackEvent } from "@/lib/analytics";
 export default function HeroSection() {
   return (
     <>
-      <section className="relative h-[calc(70vh+30px)] overflow-hidden">
+      <section className="relative h-[calc(77vh+30px)] overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/nicola-mason-wedding-events-singer-2.webp"
+            src="/images/nicola-mason-wedding-events-singer-l.webp"
             alt="Award-winning female wedding singer Nicola Mason performing live music at Scottish wedding"
             fill
             className="object-cover object-top"
