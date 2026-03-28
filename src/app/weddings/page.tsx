@@ -173,7 +173,11 @@ export default function WeddingsPage() {
                 key={pkg.name}
                 id={pkg.name === "Ceremony" ? "ceremony" : undefined}
               >
-                <PackageCard pkg={pkg} findOutMoreHref={pkg.name === "Ceremony" ? "/wedding-ceremony-singer-glasgow" : undefined} />
+                <PackageCard
+                  pkg={pkg}
+                  findOutMoreHref={pkg.name === "Ceremony" ? "/wedding-ceremony-singer-glasgow" : undefined}
+                  findOutMoreLabel={pkg.name === "Ceremony" ? "Plan your ceremony music" : undefined}
+                />
               </div>
             ))}
           </div>
@@ -313,7 +317,7 @@ export default function WeddingsPage() {
               <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
                 <Image
                   src="/images/nicola-mason-full-package-p.webp"
-                  alt="Female wedding singer Nicola Mason performing full day wedding package with live vocals and acoustic guitar in Central Scotland"
+                  alt="Nicola Mason performing live music as part of a full-day wedding package in Central Scotland"
                   fill
                   className="object-cover"
                 />

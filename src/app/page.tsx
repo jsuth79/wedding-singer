@@ -203,19 +203,20 @@ export default function HomePage() {
             </div>
             <div>
               <p className="text-[#444444] leading-relaxed mb-6">
-                I trained at Napier University and Berklee College of Music in
-                Boston, and have dedicated my career to creating the perfect musical
-                atmosphere for weddings and events across Scotland.
+                I create relaxed, acoustic live music for weddings across Central
+                Scotland — from walking down the aisle to your drinks reception
+                and wedding meal.
               </p>
               <p className="text-[#444444] leading-relaxed mb-6">
-                Whether you&apos;re planning an intimate ceremony, a lively drinks
-                reception, or an unforgettable evening celebration, I work
-                closely with you to curate a repertoire that tells your story
-                and moves your guests.
+                Trained at Napier University and Berklee College of Music in
+                Boston, I work closely with you to choose songs that feel
+                personal to you — creating moments that you and your guests
+                will genuinely remember.
               </p>
               <p className="text-[#444444] leading-relaxed mb-8">
-                I handle all bookings personally, ensuring you receive dedicated
-                attention from your first enquiry to your last dance.
+                I handle everything personally, so you can relax and enjoy your
+                day knowing your music is taken care of from your first enquiry
+                to the final song.
               </p>
               <div className="flex flex-col md:flex-row gap-4 justify-center">
                 <TrackedWhatsAppLink
@@ -244,7 +245,7 @@ export default function HomePage() {
               href="/weddings#whats-included"
               className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider"
             >
-              Learn More About Working With Nicola →
+              See Where Music Fits Within Your Day →
             </Link>
           </div>
         </div>
@@ -253,42 +254,8 @@ export default function HomePage() {
       {/* Audio */}
       <AudioSection />
 
-      {/* Common Questions */}
-      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-              Common Questions &amp; Planning
-            </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
-              Everything You Need to Know
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
-            {faqs.map((faq) => (
-              <div key={faq.question} className="border-b border-stone-200 pb-6">
-                <h3 className="text-base font-medium text-[#2C2C2C] mb-2">
-                  {faq.question}
-                </h3>
-                <p className="text-[#444444] text-base leading-relaxed">{faq.answer}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-10">
-            <Link
-              href="/faq"
-              className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider"
-            >
-              View All Frequently Asked Questions →
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Services Preview */}
-      <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
+      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
@@ -355,11 +322,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <div id="reviews">
-        <ReviewsSection />
-      </div>
-
       {/* CTA Section */}
       <section className="py-12 md:py-24 px-6 bg-[#2C2C2C]">
         <div className="max-w-4xl mx-auto text-center">
@@ -396,18 +358,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Video */}
-      <YouTubeGrid />
-
       {/* Venue Regions */}
-      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
+      <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-              Some Recent Venues
+              Recent Weddings &amp; Events
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
-              Performing at Weddings and Events Across Scotland
+              Trusted at Wedding Venues Across Central Scotland
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -435,6 +394,49 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Testimonials */}
+      <div id="reviews">
+        <ReviewsSection />
+      </div>
+
+      {/* Common Questions */}
+      <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
+              Common Questions &amp; Planning
+            </p>
+            <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
+              Everything You Need to Know
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+            {faqs.map((faq) => (
+              <div key={faq.question} className="border-b border-stone-200 pb-6">
+                <h3 className="text-base font-medium text-[#2C2C2C] mb-2">
+                  {faq.question}
+                </h3>
+                <p className="text-[#444444] text-base leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <Link
+              href="/faq"
+              className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider"
+            >
+              View All Frequently Asked Questions →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Video */}
+      <YouTubeGrid />
+
     </>
   );
 }

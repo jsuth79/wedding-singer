@@ -11,10 +11,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Wedding Ceremony Singer Glasgow & Scotland | Nicola Mason',
     description: 'Professional wedding ceremony singer. Live acoustic music for your ceremony - aisle entrance, register signing & exit song across Central Scotland.',
-    url: 'https://www.nicolamason.co.uk/wedding-ceremony-singer',
+    url: 'https://www.nicolamason.co.uk/weddings',
     images: [
       {
-        url: '/images/nicola-mason-wedding-ceremony.jpg',
+        url: '/images/nicola-mason-wedding-ceremony-singer-l.webp',
         width: 1200,
         height: 630,
         alt: 'Wedding Ceremony Singer Glasgow',

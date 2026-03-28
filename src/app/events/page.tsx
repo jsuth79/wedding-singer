@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     url: 'https://www.nicolamason.co.uk/events',
     images: [
       {
-        url: '/images/nicola-mason-wedding-events.jpg',
+        url: '/images/nicola-mason-events-services-l.webp',
         width: 1200,
         height: 630,
         alt: 'Nicola Mason Events Singer',

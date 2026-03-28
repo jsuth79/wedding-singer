@@ -27,9 +27,14 @@ const tipTitles: Record<string, string> = {
 type Props = {
   pkg: Package;
   findOutMoreHref?: string;
+  findOutMoreLabel?: string;
 };
 
-export default function PackageCard({ pkg, findOutMoreHref }: Props) {
+export default function PackageCard({
+  pkg,
+  findOutMoreHref,
+  findOutMoreLabel = "Find Out More",
+}: Props) {
   return (
     <div
       className={`relative bg-white rounded-lg overflow-hidden ${
@@ -74,7 +79,7 @@ export default function PackageCard({ pkg, findOutMoreHref }: Props) {
             href={findOutMoreHref}
             className="block w-full text-center border border-[#C4A882] text-[#C4A882] hover:bg-[#C4A882] hover:text-white px-6 py-3 text-sm uppercase tracking-wider transition-colors rounded-[4px] mb-3"
           >
-            Find Out More
+            {findOutMoreLabel}
           </Link>
         )}
         {pkg.link ? (

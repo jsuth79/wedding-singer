@@ -15,12 +15,12 @@ export const packages: Package[] = [
   {
     name: "Ceremony",
     price: "£325",
-    description: "Elevate your moment with your favourite music brought to life",
+    description: "Bring your ceremony to life with music performed live, just for you",
     image: "/images/nicola-mason-wedding-ceremony-singer-l.webp",
-    alt: "Female wedding ceremony singer performing acoustic music at Edinburgh wedding with live vocals and guitar",
+    alt: "Nicola Mason performing live wedding ceremony music at an Edinburgh wedding",
     features: [
-      "Pre-ceremony background music from the moment guests are seated",
-      "Your aisle, register signing and exit songs, all performed live with a focus on you",
+      "Pre-ceremony background music as your guests arrive and take their seats",
+      "Your aisle, signing and exit songs performed live, timed perfectly to each moment",
       "Professional PA system, clear, discreet, and perfectly balanced for your ceremony",
     ],
   },
@@ -54,7 +54,7 @@ export const packages: Package[] = [
     price: "£395",
     description: "Kick off your evening reception with live music to fill the dance floor",
     image: "/images/nicola-mason-first-dance-l.webp",
-    alt: "Female first dance wedding singer Edinburgh performing romantic live songs and party music for evening celebration",
+    alt: "Nicola Mason performing live first dance and evening reception music at a wedding in Edinburgh",
     features: [
       "Your first dances performed live by a professional wedding singer",
       "One hour of bangers to get everyone on their feet",
@@ -69,7 +69,7 @@ export const packages: Package[] = [
     popular: true,
     description: "Live music from your vows and through your drinks reception",
     image: "/images/nicola-mason-daytime-l.webp",
-    alt: "Full day female wedding singer package Glasgow covering ceremony and drinks reception with live acoustic music",
+    alt: "Nicola Mason providing live ceremony and drinks reception music as part of a daytime wedding package in Glasgow",
     features: [
       "Complete Ceremony coverage, from guest arrival to your exit",
       "Drinks Reception coverage, one singer, one setup and one less thing to think about",
@@ -83,7 +83,7 @@ export const packages: Package[] = [
     price: "£795",
     description: "Live music from your ceremony to the dance floor",
     image: "/images/nicola-mason-full-day-singer-l.webp",
-    alt: "Complete wedding day entertainment package from ceremony through evening reception with live singing and first dance",
+    alt: "Nicola Mason providing full-day wedding entertainment from ceremony through first dance and evening reception",
     features: [
       "Complete Ceremony coverage, from guest arrival to your exit",
       "Drinks Reception coverage with 90 minutes of live music",
