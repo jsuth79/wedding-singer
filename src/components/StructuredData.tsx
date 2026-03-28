@@ -117,7 +117,7 @@ export default function StructuredData() {
     "jobTitle": "Professional Wedding & Events Singer",
     "description": "Award-winning vocalist trained at Napier University and Berklee College of Music, specializing in wedding and event entertainment across Scotland.",
     "url": "https://www.nicolamason.co.uk",
-    "image": "https://www.nicolamason.co.uk/images/nicola-mason-wedding-events-singer-ceremony.jpg",
+    "image": "https://www.nicolamason.co.uk/images/nicola-mason-wedding-events-singer-p.webp",
     "email": "hello@nicolamason.co.uk",
     "telephone": "+447740360678",
     "alumniOf": [

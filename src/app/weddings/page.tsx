@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: 'https://www.nicolamason.co.uk/weddings',
     images: [
       {
-        url: '/images/nicola-mason-wedding-first-dance.jpg',
+        url: '/images/nicola-mason-first-dance-l.webp',
         width: 1200,
         height: 630,
         alt: 'Nicola Mason Wedding Singer Packages',
@@ -169,7 +169,10 @@ export default function WeddingsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {packages.map((pkg) => (
-              <div key={pkg.name}>
+              <div
+                key={pkg.name}
+                id={pkg.name === "Ceremony" ? "ceremony" : undefined}
+              >
                 <PackageCard pkg={pkg} findOutMoreHref={pkg.name === "Ceremony" ? "/wedding-ceremony-singer-glasgow" : undefined} />
               </div>
             ))}
@@ -252,7 +255,7 @@ export default function WeddingsPage() {
               The Details
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
-              What's Always Included
+              What&apos;s Always Included
             </h2>
           </div>
 
