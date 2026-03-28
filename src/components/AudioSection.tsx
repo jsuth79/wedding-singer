@@ -37,8 +37,18 @@ const soundcloudTracks = [
     pill: "Wedding Ceremony",
   },
   {
+    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/misty-ella-fitzgerald-1",
+    title: "Misty – Ella Fitzgerald",
+    pill: "Wedding Ceremony",
+  },
+  {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/the-promise-girls-aloud",
     title: "The Promise – Girls Aloud",
+    pill: "Wedding Ceremony",
+  },
+  {
+    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/dont-worry-be-happy-bobby-mcferrin-2",
+    title: "Don't Worry, Be Happy – Bobby McFerrin",
     pill: "Wedding Ceremony",
   },
   {
