@@ -245,7 +245,7 @@ export default function HomePage() {
               href="/weddings#whats-included"
               className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider"
             >
-              See Where Music Fits Within Your Day →
+              See Where Music Fits Within Your Wedding Day →
             </Link>
           </div>
         </div>
@@ -287,7 +287,7 @@ export default function HomePage() {
                     classics and modern favorites tailored to your love story.
                   </p>
                   <span className="text-[#C4A882] text-sm uppercase tracking-wider">
-                    View Packages →
+                    Explore Wedding Packages →
                   </span>
                 </div>
               </div>
@@ -313,7 +313,7 @@ export default function HomePage() {
                     celebrations, and life&apos;s important moments.
                   </p>
                   <span className="text-[#C4A882] text-sm uppercase tracking-wider">
-                    Learn More →
+                    Explore Event Packages →
                   </span>
                 </div>
               </div>

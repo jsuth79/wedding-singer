@@ -124,10 +124,8 @@ export default function WeddingsPage() {
           <div className="flex flex-col md:hidden gap-0">
             {[
               { title: "Ceremony", music: true, label: "Live performance of aisle, register & exit songs", href: "/wedding-ceremony-singer-glasgow" },
-              { title: "Photographs", music: false, label: "Couple back in time for second set", note: "During drinks reception" },
               { title: "Drinks Reception", music: true, label: "Live acoustic set to entertain your guests" },
               { title: "Wedding Meal", music: true, label: "Live background music to enhance the atmosphere" },
-              { title: "Evening Guests Arrive", music: false, label: "Towards end of meal", note: "During the meal" },
               { title: "First Dances", music: true, label: "Live performance of your first dance & party songs to kick off the evening" },
               { title: "Wedding Band or DJ", music: true, label: "The perfect handover" },
             ].map((step, i, arr) => (
