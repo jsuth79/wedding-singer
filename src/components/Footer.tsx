@@ -33,7 +33,7 @@ export default function Footer() {
             Nicola Mason is an award-winning professional wedding singer
             providing live music across Central Scotland, including Glasgow,
             Lanarkshire, Edinburgh, Ayrshire, and The Lothians, bringing years
-            of experience to every ceremony and reception.
+            of experience and good vibes to every event.
           </p>
 
           {/* Social Links - Right */}

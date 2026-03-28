@@ -1,5 +1,14 @@
 import { Resend } from "resend";
 
+function escapeHtml(value: string) {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 function getResendClient() {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
@@ -11,13 +20,20 @@ function getResendClient() {
 interface EnquiryData {
   name: string;
   email: string;
+  phone?: string;
   eventDate: string;
   eventType: string;
   message: string;
 }
 
 export async function sendEnquiryEmail(data: EnquiryData) {
-  const { name, email, eventDate, eventType, message } = data;
+  const { name, email, phone, eventDate, eventType, message } = data;
+  const safeName = escapeHtml(name);
+  const safeEmail = escapeHtml(email);
+  const safePhone = phone ? escapeHtml(phone) : "";
+  const safeEventType = escapeHtml(eventType);
+  const safeMessage = escapeHtml(message);
+  const safeMailtoEmail = encodeURIComponent(email);
 
   const formattedDate = new Date(eventDate).toLocaleDateString("en-GB", {
     weekday: "long",
@@ -36,7 +52,7 @@ export async function sendEnquiryEmail(data: EnquiryData) {
     from: `Website Enquiry <${enquiryEmail}>`,
     to: enquiryEmail,
     replyTo: email,
-    subject: `New Enquiry: ${eventType} on ${formattedDate}`,
+    subject: `New Enquiry: ${safeEventType} on ${formattedDate}`,
     html: `
       <div style="font-family: Georgia, serif; max-width: 600px; margin: 0 auto;">
         <h1 style="color: #44403c; border-bottom: 2px solid #e11d48; padding-bottom: 10px;">
@@ -46,17 +62,23 @@ export async function sendEnquiryEmail(data: EnquiryData) {
         <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
           <tr>
             <td style="padding: 10px 0; color: #78716c; width: 140px;">Name:</td>
-            <td style="padding: 10px 0; color: #1c1917;">${name}</td>
+            <td style="padding: 10px 0; color: #1c1917;">${safeName}</td>
           </tr>
           <tr>
             <td style="padding: 10px 0; color: #78716c;">Email:</td>
             <td style="padding: 10px 0; color: #1c1917;">
-              <a href="mailto:${email}" style="color: #e11d48;">${email}</a>
+              <a href="mailto:${safeMailtoEmail}" style="color: #e11d48;">${safeEmail}</a>
             </td>
           </tr>
+          ${phone ? `
+          <tr>
+            <td style="padding: 10px 0; color: #78716c;">Phone:</td>
+            <td style="padding: 10px 0; color: #1c1917;">${safePhone}</td>
+          </tr>
+          ` : ""}
           <tr>
             <td style="padding: 10px 0; color: #78716c;">Event Type:</td>
-            <td style="padding: 10px 0; color: #1c1917;">${eventType}</td>
+            <td style="padding: 10px 0; color: #1c1917;">${safeEventType}</td>
           </tr>
           <tr>
             <td style="padding: 10px 0; color: #78716c;">Event Date:</td>
@@ -66,7 +88,7 @@ export async function sendEnquiryEmail(data: EnquiryData) {
 
         <div style="background: #fafaf9; padding: 20px; border-left: 4px solid #e11d48; margin: 20px 0;">
           <h3 style="color: #44403c; margin-top: 0;">Message:</h3>
-          <p style="color: #1c1917; white-space: pre-wrap; line-height: 1.6;">${message}</p>
+          <p style="color: #1c1917; white-space: pre-wrap; line-height: 1.6;">${safeMessage}</p>
         </div>
 
         <p style="color: #78716c; font-size: 14px; margin-top: 30px;">

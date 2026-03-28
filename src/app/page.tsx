@@ -82,6 +82,7 @@ const venueRegions = [
       { name: "Balbirnie House", location: "Fife" },
       { name: "Carnoustie Golf Hotel & Spa", location: "Angus" },
       { name: "Fasque Castle", location: "Aberdeenshire" },
+      { name: "Hidden River Barn", location: "Cumbria" },
     ],
   },
 ];
@@ -90,22 +91,22 @@ const faqs = [
   {
     question: "Where are you based and where can you perform?",
     answer:
-      "I am based in Central Scotland and regularly perform across Glasgow, Edinburgh, Lanarkshire, and Stirling. I am always happy to travel further afield. Just let me know your venue when you enquire.",
+      "I am based in Central Scotland and regularly perform across Glasgow, Edinburgh, Lanarkshire, Stirling, and Ayrshire. I am always happy to travel further afield. Just let me know your venue when you enquire.",
   },
   {
-    question: "Can we choose our own songs for the ceremony?",
+    question: "Can we choose our own songs for our wedding ceremony?",
     answer:
       "Absolutely. You can choose from my extensive repertoire of acoustic classics and modern hits. I may also be able to learn a special song (subject to availability) to make your walk down the aisle or first dance truly personal.",
   },
   {
     question: "Do you provide your own equipment and insurance?",
     answer:
-      "Yes. I provide a professional, compact PA system suitable for both indoor and outdoor venues. For your venue's peace of mind, all my equipment is PAT-tested, and I hold full Public Liability Insurance (PLI).",
+      "Yes. I provide a professional, compact PA system suitable for both indoor and outdoor venues. For your venue's peace of mind, all my equipment is PAT-tested, and I hold full Public Liability Insurance (PLI). I am also a full member of the Musicians' Union (MU).",
   },
   {
     question: "What happens when you aren't singing?",
     answer:
-      "There's never any 'dead air'. I provide tailored background music during my short breaks to keep the atmosphere seamless, so you don't need to worry about managing a separate playlist.",
+      "I provide tailored background music during my short breaks to keep the atmosphere seamless — no gaps, no silence. You can even choose the playlist — I'll take care of the rest.",
   },
 ];
 
@@ -187,7 +188,7 @@ export default function HomePage() {
               About Nicola Mason, Wedding &amp; Events Singer
             </p>
             <h2 className="text-4xl md:text-5xl font-serif text-[#1a1a1a]">
-              Your Vocal Soundtrack for Life&apos;s Special Moments
+              Your Soundtrack for Life&apos;s Special Moments
             </h2>
           </div>
 
@@ -202,19 +203,20 @@ export default function HomePage() {
             </div>
             <div>
               <p className="text-[#444444] leading-relaxed mb-6">
-                Trained at Napier University and Berklee College of Music in
-                Boston, I&apos;ve dedicated my career to creating the perfect musical
-                atmosphere for weddings and events across Scotland.
+                I create relaxed, acoustic live music for weddings across Central
+                Scotland — from walking down the aisle to your drinks reception
+                and wedding meal.
               </p>
               <p className="text-[#444444] leading-relaxed mb-6">
-                Whether you&apos;re planning an intimate ceremony, a lively drinks
-                reception, or an unforgettable evening celebration, I work
-                closely with you to curate a repertoire that tells your story
-                and moves your guests.
+                Trained at Napier University and Berklee College of Music in
+                Boston, I work closely with you to choose songs that feel
+                personal to you — creating moments that you and your guests
+                will genuinely remember.
               </p>
               <p className="text-[#444444] leading-relaxed mb-8">
-                I handle all bookings personally, ensuring you receive dedicated
-                attention from your first enquiry to your last dance.
+                I handle everything personally, so you can relax and enjoy your
+                day knowing your music is taken care of from your first enquiry
+                to the final song.
               </p>
               <div className="flex flex-col md:flex-row gap-4 justify-center">
                 <TrackedWhatsAppLink
@@ -236,15 +238,15 @@ export default function HomePage() {
                   </span>
                 </TrackedEnquiryLink>
               </div>
-              <div className="text-center mt-6">
-                <Link
-                  href="/weddings#whats-included"
-                  className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider"
-                >
-                  Learn More About Working With Nicola →
-                </Link>
-              </div>
             </div>
+          </div>
+          <div className="text-center mt-10">
+            <Link
+              href="/weddings#whats-included"
+              className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider"
+            >
+              See Where Music Fits Within Your Day →
+            </Link>
           </div>
         </div>
       </section>
@@ -252,42 +254,8 @@ export default function HomePage() {
       {/* Audio */}
       <AudioSection />
 
-      {/* Common Questions */}
-      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-              Common Questions &amp; Planning
-            </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
-              Everything You Need to Know
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
-            {faqs.map((faq) => (
-              <div key={faq.question} className="border-b border-stone-200 pb-6">
-                <h3 className="text-base font-medium text-[#2C2C2C] mb-2">
-                  {faq.question}
-                </h3>
-                <p className="text-[#444444] text-base leading-relaxed">{faq.answer}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-10">
-            <Link
-              href="/faq"
-              className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider"
-            >
-              View All Frequently Asked Questions →
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Services Preview */}
-      <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
+      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
@@ -354,11 +322,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <div id="reviews">
-        <ReviewsSection />
-      </div>
-
       {/* CTA Section */}
       <section className="py-12 md:py-24 px-6 bg-[#2C2C2C]">
         <div className="max-w-4xl mx-auto text-center">
@@ -366,7 +329,7 @@ export default function HomePage() {
             Let&apos;s Make Your Day Unforgettable
           </h2>
           <p className="text-stone-300 text-lg mb-4">
-            Now booking for 2027. Still some 2026 dates available.
+            Now booking for 2027. Limited 2026 dates remaining.
           </p>
           <p className="text-stone-400 mb-10">
             Get in touch to discuss your wedding or event and check my
@@ -395,18 +358,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Video */}
-      <YouTubeGrid />
-
       {/* Venue Regions */}
-      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
+      <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-              Coverage
+              Recent Weddings &amp; Events
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
-              Performing Across Scotland
+              Trusted at Wedding Venues Across Central Scotland
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -434,6 +394,49 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Testimonials */}
+      <div id="reviews">
+        <ReviewsSection />
+      </div>
+
+      {/* Common Questions */}
+      <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
+              Common Questions &amp; Planning
+            </p>
+            <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
+              Everything You Need to Know
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+            {faqs.map((faq) => (
+              <div key={faq.question} className="border-b border-stone-200 pb-6">
+                <h3 className="text-base font-medium text-[#2C2C2C] mb-2">
+                  {faq.question}
+                </h3>
+                <p className="text-[#444444] text-base leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <Link
+              href="/faq"
+              className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider"
+            >
+              View All Frequently Asked Questions →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Video */}
+      <YouTubeGrid />
+
     </>
   );
 }

@@ -40,7 +40,7 @@ const faqs: { question: string; answer: string }[] = [
   {
     question: "When does a wedding singer usually perform during a ceremony?",
     answer:
-      "Wedding ceremony music is usually performed at several key moments. This often includes music while guests arrive, the walk down the aisle, music during the signing of the register, and an upbeat song as the couple exit the ceremony.",
+      "Wedding ceremony music is usually performed at the key moments of the ceremony itself. This often includes the walk down the aisle, music during the signing of the register, and an upbeat song as the couple exit the ceremony, with guest-arrival music often handled as a curated playlist.",
   },
   {
     question: "Why choose a live singer for your wedding ceremony?",
@@ -55,7 +55,7 @@ const faqs: { question: string; answer: string }[] = [
   {
     question: "What areas in Scotland do you cover as a wedding singer?",
     answer:
-      "I am based in Central Scotland and regularly perform at weddings across Glasgow, Edinburgh, Lanarkshire and Stirling. I'm happy to travel further for weddings if required.",
+      "I am based in Central Scotland and regularly perform at weddings across Glasgow, Edinburgh, Lanarkshire, Stirling, and Ayrshire. I'm happy to travel further for weddings if required.",
   },
   {
     question: "What if my wedding singer has to travel to my wedding?",
@@ -109,7 +109,7 @@ export default function FAQPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <div className="pt-20">
+      <div className="pt-16">
       {/* Hero */}
       <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
         <div className="max-w-4xl mx-auto text-center">
@@ -129,13 +129,11 @@ export default function FAQPage() {
       {/* FAQs */}
       <section className="py-12 md:py-24 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+          <div className="space-y-4">
             {faqs.map((faq) => (
-              <div key={faq.question} className="border-b border-stone-200 pb-6">
-                <h3 className="text-base font-medium text-[#2C2C2C] mb-2">
-                  {faq.question}
-                </h3>
-                <p className="text-[#444444] text-base leading-relaxed whitespace-pre-line">{faq.answer}</p>
+              <div key={faq.question} className="bg-white rounded-lg p-6 border border-stone-200">
+                <h3 className="font-serif text-[#1a1a1a] text-lg mb-3">{faq.question}</h3>
+                <p className="text-[#444444] text-sm leading-relaxed whitespace-pre-line">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -150,14 +148,15 @@ export default function FAQPage() {
           </h2>
           <p className="text-stone-300 text-lg mb-10 max-w-2xl mx-auto">
             I&apos;m here to help! Get in touch and I&apos;ll be happy to answer any
-            questions about your wedding or event.
+            questions about your wedding or event. If you leave a phone number,
+            I can text or WhatsApp as well so you don&apos;t miss my reply.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <TrackedWhatsAppLink
               location="faq_page_cta"
               className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
             >
-              <span className="font-medium">Check My Availability</span>
+              <span className="font-medium">Get In Touch</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                 via WhatsApp (1-2 hour response)
               </span>
@@ -166,7 +165,7 @@ export default function FAQPage() {
               location="faq_page_cta"
               className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
             >
-              <span className="font-medium">Check My Availability</span>
+              <span className="font-medium">Get In Touch</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                 via Contact Form
               </span>

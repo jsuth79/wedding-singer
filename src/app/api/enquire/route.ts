@@ -5,7 +5,7 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
 
-    const { name, email, eventDate, eventType, message } = body;
+    const { name, email, phone, eventDate, eventType, message } = body;
 
     // Validate required fields
     if (!name || !email || !eventDate || !eventType || !message) {
@@ -40,6 +40,7 @@ export async function POST(request: NextRequest) {
     await sendEnquiryEmail({
       name,
       email,
+      phone,
       eventDate,
       eventType,
       message,

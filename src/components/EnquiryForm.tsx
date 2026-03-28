@@ -6,15 +6,14 @@ import { trackEvent } from "@/lib/analytics";
 interface FormData {
   name: string;
   email: string;
+  phone: string;
   eventDate: string;
   eventType: string;
   message: string;
 }
 
 const eventTypes = [
-  "Wedding Ceremony",
-  "Wedding Drinks Reception",
-  "Wedding Full Day",
+  "Wedding",
   "Corporate Event",
   "Private Party / Celebration",
   "Funeral / Memorial",
@@ -25,6 +24,7 @@ export default function EnquiryForm() {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
+    phone: "",
     eventDate: "",
     eventType: "",
     message: "",
@@ -56,6 +56,7 @@ export default function EnquiryForm() {
       setFormData({
         name: "",
         email: "",
+        phone: "",
         eventDate: "",
         eventType: "",
         message: "",
@@ -134,6 +135,24 @@ export default function EnquiryForm() {
             className="w-full px-4 py-3 border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow"
             placeholder="your@email.com"
           />
+        </div>
+
+        <div>
+          <label htmlFor="phone" className="block text-sm font-medium text-[#2C2C2C] mb-2">
+            Phone Number
+          </label>
+          <input
+            type="tel"
+            id="phone"
+            value={formData.phone}
+            onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+            className="w-full px-4 py-3 border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow"
+            placeholder="Your phone number"
+          />
+          <p className="mt-2 text-xs text-[#888888]">
+            If you leave your number, I will send a text or WhatsApp message to
+            make sure you dont miss any emails
+          </p>
         </div>
 
         <div>

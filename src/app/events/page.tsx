@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     url: 'https://www.nicolamason.co.uk/events',
     images: [
       {
-        url: '/images/nicola-mason-wedding-events.jpg',
+        url: '/images/nicola-mason-events-services-l.webp',
         width: 1200,
         height: 630,
         alt: 'Nicola Mason Events Singer',
@@ -76,7 +76,7 @@ const eventTypes = [
 
 export default function EventsPage() {
   return (
-    <div className="pt-20">
+    <div className="pt-16">
       {/* Hero */}
       <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
         <div className="max-w-4xl mx-auto text-center">
@@ -97,10 +97,10 @@ export default function EventsPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-              What I Offer
+              Make It Memorable
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
-              Event Entertainment Packages
+              Corporate and Private Event Entertainment
             </h2>
           </div>
 
@@ -177,11 +177,16 @@ export default function EventsPage() {
               </span>
             </TrackedEnquiryLink>
           </div>
+          <div className="mt-8">
+            <Link href="/weddings" className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider">
+              Also Available For Weddings →
+            </Link>
+          </div>
         </div>
       </section>
 
       {/* What's Included */}
-      <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
+      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
@@ -207,7 +212,7 @@ export default function EventsPage() {
               {
                 title: "Fully Insured",
                 description:
-                  "Full Public Liability Insurance with PAT-tested equipment",
+                  "Full Public Liability Insurance, PAT-tested equipment and a member of the Musicians' Union (MU)",
               },
               {
                 title: "Song Requests",
@@ -226,11 +231,17 @@ export default function EventsPage() {
               </div>
             ))}
           </div>
+
+          <div className="text-center mt-12">
+            <Link href="/faq" className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider">
+              Have More Questions? See All FAQs →
+            </Link>
+          </div>
         </div>
       </section>
 
       {/* Coverage Area */}
-      <section className="py-12 md:py-24 px-6">
+      <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
             Coverage Area

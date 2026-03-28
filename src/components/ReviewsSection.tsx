@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import Link from "next/link";
 
 const reviews = [
   {
@@ -153,31 +154,17 @@ const reviews = [
 
 export default function ReviewsSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-
-  useEffect(() => {
-    if (!isAutoPlaying) return;
-
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % reviews.length);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, [isAutoPlaying]);
 
   const goToSlide = (index: number) => {
     setCurrentIndex(index);
-    setIsAutoPlaying(false);
   };
 
   const goToPrevious = () => {
     setCurrentIndex((prev) => (prev - 1 + reviews.length) % reviews.length);
-    setIsAutoPlaying(false);
   };
 
   const goToNext = () => {
     setCurrentIndex((prev) => (prev + 1) % reviews.length);
-    setIsAutoPlaying(false);
   };
 
   // Get visible reviews for the carousel
@@ -227,18 +214,30 @@ export default function ReviewsSection() {
                     <div className="text-[#C4A882] text-sm mt-1">★★★★★</div>
                   </div>
                 </div>
-                <p className="text-[#444444] text-sm leading-relaxed line-clamp-6 cursor-help" title={review.text}>
+                <p className="text-[#444444] text-sm leading-relaxed line-clamp-[12] cursor-help" title={review.text}>
                   {review.text}
                 </p>
                 {(review.package || review.venue) && (
-                  <div className="mt-4 pt-4 border-t border-stone-100 flex items-center gap-2 text-sm">
-                    {review.package && (
-                      <span className="px-3 py-1 bg-[#C4A882]/10 text-[#2C2C2C] rounded-full">
-                        {review.package}
-                      </span>
-                    )}
+                  <div className="mt-4 pt-4 border-t border-stone-100 flex items-center gap-2">
+                    {review.package && (() => {
+                      const packageLinks: Record<string, string> = {
+                        "Wedding Ceremony": "/wedding-ceremony-singer-glasgow",
+                        "Drinks Reception": "/weddings",
+                        "Ceremony & Drinks Reception": "/weddings",
+                        "Surprise Singers": "/weddings",
+                        "The Full Shebang": "/weddings",
+                        "Afternoon Tea": "/events",
+                        "Birthday Celebration": "/events",
+                        "Garden Birthday Party": "/events",
+                      };
+                      const href = packageLinks[review.package];
+                      const pillClass = "px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-xs rounded-full border border-[#C4A882]/30 whitespace-nowrap";
+                      return href
+                        ? <Link href={href} className={`${pillClass} hover:bg-[#C4A882]/30 transition-colors`}>{review.package}</Link>
+                        : <span className={pillClass}>{review.package}</span>;
+                    })()}
                     {review.venue && (
-                      <span className="px-3 py-1 bg-[#F5F1EB] text-[#2C2C2C] rounded-full">
+                      <span className="px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-xs rounded-full border border-[#C4A882]/30 whitespace-nowrap">
                         {review.venue}
                       </span>
                     )}
@@ -275,14 +274,14 @@ export default function ReviewsSection() {
                     {review.text}
                   </p>
                   {(review.package || review.venue) && (
-                    <div className="mt-4 pt-4 border-t border-stone-100 flex items-center gap-2 text-sm">
+                    <div className="mt-4 pt-4 border-t border-stone-100 flex items-center gap-2">
                       {review.package && (
-                        <span className="px-3 py-1 bg-[#C4A882]/10 text-[#2C2C2C] rounded-full">
+                        <span className="px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-xs rounded-full border border-[#C4A882]/30 whitespace-nowrap">
                           {review.package}
                         </span>
                       )}
                       {review.venue && (
-                        <span className="px-3 py-1 bg-[#F5F1EB] text-[#2C2C2C] rounded-full">
+                        <span className="px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-xs rounded-full border border-[#C4A882]/30 whitespace-nowrap">
                           {review.venue}
                         </span>
                       )}
@@ -314,14 +313,14 @@ export default function ReviewsSection() {
               {reviews[currentIndex].text}
             </p>
             {(reviews[currentIndex].package || reviews[currentIndex].venue) && (
-              <div className="mt-4 pt-4 border-t border-stone-100 flex items-center gap-2 text-sm">
+              <div className="mt-4 pt-4 border-t border-stone-100 flex items-center gap-2">
                 {reviews[currentIndex].package && (
-                  <span className="px-3 py-1 bg-[#C4A882]/10 text-[#2C2C2C] rounded-full">
+                  <span className="px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-xs rounded-full border border-[#C4A882]/30 whitespace-nowrap">
                     {reviews[currentIndex].package}
                   </span>
                 )}
                 {reviews[currentIndex].venue && (
-                  <span className="px-3 py-1 bg-[#F5F1EB] text-[#2C2C2C] rounded-full">
+                  <span className="px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-xs rounded-full border border-[#C4A882]/30 whitespace-nowrap">
                     {reviews[currentIndex].venue}
                   </span>
                 )}

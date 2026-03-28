@@ -20,12 +20,12 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/60 backdrop-blur-md border-b border-white/20">
       <div className="w-full px-6 md:px-12 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-base md:text-xl font-serif text-[#1a1a1a] ml-0 md:ml-8">
+          <Link href="/" className="text-base lg:text-xl font-serif text-[#1a1a1a] ml-0 lg:ml-8">
             Nicola Mason Wedding &amp; Events Singer
           </Link>
 
           {/* Desktop nav */}
-          <ul className="hidden md:flex items-center gap-8">
+          <ul className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
@@ -55,7 +55,7 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-[#2C2C2C]"
+            className="lg:hidden p-2 text-[#2C2C2C]"
             aria-label="Toggle menu"
           >
             {isOpen ? (
@@ -72,7 +72,7 @@ export default function Navbar() {
 
         {/* Mobile nav */}
         {isOpen && (
-          <div className="md:hidden pt-4 pb-2">
+          <div className="lg:hidden pt-4 pb-2">
             <ul className="flex flex-col items-center text-center divide-y divide-stone-200">
               {navLinks.map((link) => (
                 <li key={link.href} className="w-full py-3">
@@ -82,7 +82,7 @@ export default function Navbar() {
                       setIsOpen(false);
                       trackEvent.clickNavLink(link.label);
                     }}
-                    className={`block text-sm tracking-wide transition-colors hover:text-[#A68B5B] ${
+                    className={`block text-base tracking-wide transition-colors hover:text-[#A68B5B] ${
                       pathname === link.href
                         ? "text-[#A68B5B] font-medium"
                         : "text-[#444444]"

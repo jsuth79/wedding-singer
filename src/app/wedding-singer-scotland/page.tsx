@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Wedding Singer Scotland | Nicola Mason',
     description: 'Professional wedding singer across Central Scotland. Serving Glasgow, Edinburgh, Lanarkshire, Stirling & The Lothians.',
-    url: 'https://www.nicolamason.co.uk/wedding-singer-scotland',
+    url: 'https://www.nicolamason.co.uk/weddings',
     images: [
       {
         url: '/images/nicola-mason-wedding-events-singer.jpg',
