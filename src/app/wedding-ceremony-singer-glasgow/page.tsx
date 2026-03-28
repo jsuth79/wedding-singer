@@ -37,7 +37,7 @@ const ceremonyMoments = [
     title: "Walking Down the Aisle",
     description:
       "Your entrance deserves more than a recording. I shape the timing around your ceremony, your pace and the feel you want in the room, so the music supports the moment naturally rather than feeling fixed or rushed.",
-    tip: "Save the live music for the key ceremony moments rather than starting as guests arrive (although this can absolutely be done if it is important to you). Instead, we can curate a meaningful playlist to set the tone. This can build anticipation and make your aisle walk as epic as it should be.\n\nIt is also really helpful for me to know a little about your aisle, how many bridesmaids or groomsmen are walking, and who is coming down the aisle when, whether that is individually, together, or even with your dog, so we can plan it together.",
+    tip: "Save the live music for the key ceremony moments rather than starting as guests arrive (although this can absolutely be done if it is important to you). Instead, we can curate a meaningful playlist to set the tone. This can build anticipation and make your aisle walk as epic as it should be.\n\nIt is also really helpful for me to know a little about your aisle, how many are in your 'I do' crew, and who is coming down the aisle when, whether that is individually, together, or even with your dog, so we can plan it together.",
     clips: [
       {
         title: "I Can't Help Falling In Love – Elvis Presley",
@@ -62,7 +62,7 @@ const ceremonyMoments = [
     title: "Signing the Register",
     description:
       "While you are signing, your photographer gets those first just-married shots and your guests have a moment to take it all in. Live music fills that space naturally, keeps the ceremony moving, and lets the mood stay exactly where you want it to be.",
-    tip: "This can be a great place to include a special song. I would usually suggest choosing two backup songs as well, just in case the photos take longer.\n\nAcoustic guitar and piano based versions of songs usually work best for the aisle and register-signing moments. This does not limit your song choice, as acoustic-style tracks can usually be sourced for any song you can think of. And if your dream choice is something a bit more left-field — the kind of obscure mixtape track nobody else has heard of — made-to-order tracks can usually be arranged for around £40–£60.",
+    tip: "This can be a great place to include a special song. I would usually suggest choosing two backup songs as well, just in case the photos take longer than expected.\n\nAcoustic guitar and piano based versions of songs usually work best for the aisle and register-signing moments. This does not limit your song choice, as acoustic-style tracks can usually be sourced for any song you can think of. If your dream choice is something a bit more left-field — the kind of obscure mixtape track nobody else has heard of — made-to-order tracks can usually be arranged for around £35–£60.",
     clips: [
       {
         title: "How Long Will I Love You – Ellie Goulding",
@@ -86,8 +86,8 @@ const ceremonyMoments = [
     number: "3",
     title: "Your Exit Song",
     description:
-      "Walk out as newlyweds to something that sets the tone for everything that follows. Guests often say this is the moment that got them up on their feet, the transition from ceremony to celebration.",
-    tip: "An upbeat or anthemic exit gets guests clapping and creates a natural energy lift into drinks. It doesn't have to be a traditional wedding song. Some of the best exits are completely unexpected.",
+      "Set the scene for your first introduction as a married couple. The vibe is excited cheers, confetti and hopefully a few happy tears. The right song here transitions the mood from ceremony to celebration.",
+    tip: "Your exit song is a great place to bring in a bit more personality. It does not have to be a traditional wedding song at all, and some of the best choices are the ones nobody sees coming.",
     clips: [
       {
         title: "I Get to Love You – Ruelle",
@@ -112,20 +112,20 @@ const ceremonyMoments = [
 
 const faqs = [
   {
-    q: "How many songs will you perform during the ceremony?",
-    a: "Typically four to five live performances — background music as guests are seated, your aisle entrance, one or two songs during the register signing, and your exit song. The exact number can be tailored to your ceremony length and preference.",
+    q: "How many songs does a wedding singer usually perform during a ceremony?",
+    a: "Three to five live performances, depending on what you want included. This usually covers your aisle entrance, one or two songs during the register signing, and your exit song, with pre-ceremony music handled as a curated playlist.",
   },
   {
-    q: "Can you learn a specific song for us?",
+    q: "Can a wedding singer learn a specific song for my ceremony?",
     a: "Absolutely. Most couples have something personal in mind and I love making that happen. If a backing track isn't available for your chosen song, I can arrange for one to be recorded for a small additional fee. Just let me know early so there's plenty of time to prepare.",
   },
   {
-    q: "How much setup time and space do you need?",
-    a: "I need around 30–45 minutes to set up before guests arrive, and a space roughly 2m × 2m for the PA system and equipment. I'll liaise directly with your venue coordinator to make sure everything runs smoothly.",
+    q: "How much setup time and space does a wedding singer need for a ceremony?",
+    a: "Not much. I usually need around 30–45 minutes to set up before guests arrive, and a space roughly 2m × 2m for the PA system and equipment. I'll liaise directly with your venue coordinator to make sure everything runs smoothly.",
   },
   {
-    q: "What if our ceremony runs behind schedule?",
-    a: "Weddings rarely run to the minute — I know that and I build in flexibility. I stay in close communication with your venue on the day so the music always lands at the right moment, no matter how the timings shift.",
+    q: "What happens if a wedding ceremony runs behind schedule?",
+    a: "It is not a problem. Weddings rarely run to the minute, so I build in flexibility and stay in close communication with your venue on the day so the music always lands at the right moment, no matter how the timings shift.",
   },
 ];
 
