@@ -7,7 +7,7 @@ import { trackEvent } from "@/lib/analytics";
 export default function HeroSection() {
   return (
     <>
-      <section className="relative h-[calc(77vh+30px)] overflow-hidden">
+      <section className="relative min-h-[600px] h-[calc(84vh+30px)] md:h-[calc(77vh+30px)] overflow-hidden flex flex-col justify-between">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
@@ -21,7 +21,7 @@ export default function HeroSection() {
         </div>
 
         {/* Heading - top */}
-        <div className="relative z-10 w-full px-6 md:px-12 pt-32 md:pt-36">
+        <div className="relative z-10 w-full px-6 md:px-12 pt-32 max-md:landscape:pt-20 md:pt-32">
           <div className="max-w-2xl ml-0 md:ml-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6 leading-tight">
               Award-Winning Vocals. Unforgettable Atmosphere.
@@ -33,7 +33,7 @@ export default function HeroSection() {
         </div>
 
         {/* CTA - bottom */}
-        <div className="absolute bottom-12 left-0 right-0 z-10 w-full px-6 md:px-12">
+        <div className="relative z-10 w-full px-6 md:px-12 pb-12">
           <div className="ml-0 md:ml-8">
             <div className="flex flex-col gap-4 md:inline-flex">
               <Link
