@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function RepertoirePage() {
   return (
-    <div className="pt-16">
+    <div className="pt-24">
       <section className="py-12 md:py-20 px-6 bg-[#F5F1EB]">
         <div className="max-w-5xl mx-auto text-center">
           <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">

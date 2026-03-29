@@ -76,7 +76,7 @@ const eventTypes = [
 
 export default function EventsPage() {
   return (
-    <div className="pt-16">
+    <div className="pt-24">
       {/* Hero */}
       <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
         <div className="max-w-4xl mx-auto text-center">

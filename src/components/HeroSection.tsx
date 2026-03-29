@@ -21,7 +21,7 @@ export default function HeroSection() {
         </div>
 
         {/* Heading - top */}
-        <div className="relative z-10 w-full px-6 md:px-12 pt-24 md:pt-32">
+        <div className="relative z-10 w-full px-6 md:px-12 pt-32 md:pt-36">
           <div className="max-w-2xl ml-0 md:ml-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6 leading-tight">
               Award-Winning Vocals. Unforgettable Atmosphere.
@@ -53,9 +53,6 @@ export default function HeroSection() {
                 </span>
               </Link>
             </div>
-            <p className="mt-6 text-white/80 text-base">
-              Now booking for 2027 &bull; Limited 2026 dates remaining
-            </p>
           </div>
         </div>
       </section>

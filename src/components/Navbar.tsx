@@ -17,7 +17,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/60 backdrop-blur-md border-b border-white/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/60 backdrop-blur-md">
       <div className="w-full px-6 md:px-12 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-base lg:text-xl font-serif text-[#1a1a1a] ml-0 lg:ml-8">
@@ -107,6 +107,11 @@ export default function Navbar() {
             </ul>
           </div>
         )}
+      </div>
+      <div className="w-full bg-[#C4A882] py-2 text-center">
+        <p className="text-[#2C2C2C] text-xs uppercase tracking-[0.15em] font-medium">
+          Now booking for 2027 &bull; Limited 2026 dates remaining
+        </p>
       </div>
     </nav>
   );

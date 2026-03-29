@@ -153,7 +153,7 @@ const soundcloudSrc = (embedUrl: string) =>
 
 export default function WeddingCeremonySingerGlasgowPage() {
   return (
-    <div className="pt-16">
+    <div className="pt-24">
 
       {/* Hero */}
       <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
