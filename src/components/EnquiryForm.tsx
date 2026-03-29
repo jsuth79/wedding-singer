@@ -151,7 +151,7 @@ export default function EnquiryForm() {
           />
           <p className="mt-2 text-xs text-[#888888]">
             If you leave your number, I will send a text or WhatsApp message to
-            make sure you dont miss any emails
+            make sure you don&apos;t miss any emails
           </p>
         </div>
 
