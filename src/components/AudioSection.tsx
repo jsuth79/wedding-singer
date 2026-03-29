@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const soundcloudTracks = [
+const soundcloudTracks: { embedUrl: string; title: string }[] = [
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/dont-know-why-norah-jones-2",
     title: "Don't Know Why – Norah Jones",
@@ -24,32 +24,26 @@ const soundcloudTracks = [
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/glasgow-no-place-like-home-jessie-buckley-at-oran-mor-1",
     title: "Glasgow (No Place Like Home) – Jessie Buckley",
-    pill: "Wedding Ceremony",
   },
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/i-cant-help-falling-in-love",
     title: "I Can't Help Falling In Love – Elvis Presley",
-    pill: "Wedding Ceremony",
   },
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/at-last-etta-james-at-coats-paisley-2",
     title: "At Last – Etta James",
-    pill: "Wedding Ceremony",
   },
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/misty-ella-fitzgerald-1",
     title: "Misty – Ella Fitzgerald",
-    pill: "Wedding Ceremony",
   },
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/the-promise-girls-aloud",
     title: "The Promise – Girls Aloud",
-    pill: "Wedding Ceremony",
   },
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/dont-worry-be-happy-bobby-mcferrin-2",
     title: "Don't Worry, Be Happy – Bobby McFerrin",
-    pill: "Wedding Ceremony",
   },
   {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/what-a-wonderful-world-louis-armstrong-3",
@@ -100,7 +94,7 @@ export default function AudioSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {soundcloudTracks.map((track) => (
-            <div key={track.embedUrl} className="flex items-center gap-3">
+            <div key={track.embedUrl}>
               <iframe
                 title={track.title}
                 width="100%"
@@ -108,13 +102,8 @@ export default function AudioSection() {
                 scrolling="no"
                 allow="autoplay"
                 src={`${track.embedUrl}&color=%23C4A882&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false`}
-                className="rounded-lg flex-1 min-w-0"
+                className="rounded-lg"
               />
-              {track.pill && (
-                track.pill === "Wedding Ceremony"
-                  ? <Link href="/wedding-ceremony-singer-glasgow" className="shrink-0 px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-xs rounded-full border border-[#C4A882]/30 whitespace-nowrap hover:bg-[#C4A882]/30 transition-colors">{track.pill}</Link>
-                  : <span className="shrink-0 px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-xs rounded-full border border-[#C4A882]/30 whitespace-nowrap">{track.pill}</span>
-              )}
             </div>
           ))}
         </div>
