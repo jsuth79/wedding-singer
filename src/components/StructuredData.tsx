@@ -1,7 +1,7 @@
 export default function StructuredData() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "EntertainmentBusiness"],
     "@id": "https://www.nicolamason.co.uk/#localbusiness",
     "name": "Nicola Mason Wedding & Events Singer",
     "image": "https://www.nicolamason.co.uk/images/nicola-mason-wedding-events-singer.jpg",
@@ -59,6 +59,13 @@ export default function StructuredData() {
       "https://www.tiktok.com/@nicolamasonvocalist",
       "https://www.youtube.com/@nicolamasonvocalist"
     ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "20"
+    },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Wedding & Events Services",
@@ -68,11 +75,8 @@ export default function StructuredData() {
           "itemOffered": {
             "@type": "Service",
             "name": "Wedding Ceremony",
-            "description": "Live acoustic singing for wedding ceremonies",
-            "provider": {
-              "@type": "LocalBusiness",
-              "name": "Nicola Mason"
-            }
+            "description": "Live acoustic singing for wedding ceremonies, including pre-ceremony music, aisle, signing and exit songs",
+            "provider": { "@id": "https://www.nicolamason.co.uk/#localbusiness" }
           },
           "price": "325",
           "priceCurrency": "GBP"
@@ -82,11 +86,8 @@ export default function StructuredData() {
           "itemOffered": {
             "@type": "Service",
             "name": "Wedding Drinks Reception",
-            "description": "Live entertainment for wedding drinks receptions",
-            "provider": {
-              "@type": "LocalBusiness",
-              "name": "Nicola Mason"
-            }
+            "description": "Two 45-minute live sets tailored to the couple, with curated playlist between sets",
+            "provider": { "@id": "https://www.nicolamason.co.uk/#localbusiness" }
           },
           "price": "350",
           "priceCurrency": "GBP"
@@ -95,14 +96,44 @@ export default function StructuredData() {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
+            "name": "Wedding Meal",
+            "description": "Live background music during the wedding breakfast, including grand entrance song and two live sets",
+            "provider": { "@id": "https://www.nicolamason.co.uk/#localbusiness" }
+          },
+          "price": "350",
+          "priceCurrency": "GBP"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "First Dances",
+            "description": "Live performance of first dances and one hour of evening reception music to kick off the dance floor",
+            "provider": { "@id": "https://www.nicolamason.co.uk/#localbusiness" }
+          },
+          "price": "395",
+          "priceCurrency": "GBP"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
             "name": "Daytime Wedding Package",
-            "description": "Ceremony and drinks reception entertainment",
-            "provider": {
-              "@type": "LocalBusiness",
-              "name": "Nicola Mason"
-            }
+            "description": "Complete ceremony and drinks reception coverage — the most popular package combination",
+            "provider": { "@id": "https://www.nicolamason.co.uk/#localbusiness" }
           },
           "price": "575",
+          "priceCurrency": "GBP"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "The Full Shebang",
+            "description": "Full-day wedding music from ceremony through drinks reception to first dances and evening reception",
+            "provider": { "@id": "https://www.nicolamason.co.uk/#localbusiness" }
+          },
+          "price": "795",
           "priceCurrency": "GBP"
         }
       ]
@@ -150,8 +181,16 @@ export default function StructuredData() {
       "Wedding Music",
       "Live Performance",
       "Acoustic Music",
-      "Event Entertainment"
+      "Event Entertainment",
+      "Scottish Wedding Traditions",
+      "Ceremony Music Planning",
+      "First Dance Songs",
+      "Wedding Ceremony Songs",
+      "Glasgow Weddings",
+      "Edinburgh Weddings",
+      "Central Scotland Weddings"
     ],
+    "genre": ["Acoustic Pop", "Easy Listening", "Contemporary", "Classic Wedding"],
     "hasOccupation": {
       "@type": "Occupation",
       "name": "Wedding Singer",
@@ -159,57 +198,8 @@ export default function StructuredData() {
         "@type": "City",
         "name": "Glasgow"
       }
-    }
-  };
-
-  const performerSchema = {
-    "@context": "https://schema.org",
-    "@type": "MusicGroup",
-    "@id": "https://www.nicolamason.co.uk/#performer",
-    "name": "Nicola Mason",
-    "url": "https://www.nicolamason.co.uk",
-    "image": "https://www.nicolamason.co.uk/images/nicola-mason-wedding-events-singer.jpg",
-    "description": "Professional solo wedding and events singer based in Glasgow, performing acoustic live music across Scotland for ceremonies, receptions and celebrations.",
-    "genre": ["Acoustic Pop", "Easy Listening", "Contemporary", "Classic Wedding"],
-    "member": {
-      "@type": "OrganizationRole",
-      "member": { "@id": "https://www.nicolamason.co.uk/#person" },
-      "roleName": "Vocalist"
     },
-    "award": [
-      "Scottish Wedding Awards - Ceremony Entertainer of the Year",
-      "Confetti Awards 2025 - Finalist Best Ceremony Entertainer",
-      "UKbride Approved Wedding Supplier"
-    ],
-    "location": {
-      "@type": "Place",
-      "name": "Glasgow, Scotland",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Glasgow",
-        "addressRegion": "Scotland",
-        "addressCountry": "GB"
-      }
-    },
-    "sameAs": [
-      "https://www.facebook.com/nicolamasonvocalist",
-      "https://www.instagram.com/nicolamasonvocalist",
-      "https://www.tiktok.com/@nicolamasonvocalist",
-      "https://www.youtube.com/@nicolamasonvocalist"
-    ]
-  };
-
-  const aggregateRatingSchema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Nicola Mason Wedding & Events Singer",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "bestRating": "5",
-      "worstRating": "1",
-      "ratingCount": "20"
-    }
+    "worksFor": { "@id": "https://www.nicolamason.co.uk/#localbusiness" }
   };
 
   return (
@@ -221,14 +211,6 @@ export default function StructuredData() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(performerSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateRatingSchema) }}
       />
     </>
   );

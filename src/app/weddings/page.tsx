@@ -82,7 +82,7 @@ export default function WeddingsPage() {
                   <span className="text-lg text-[#C4A882]">♪</span>
                 </div>
                 <p className="text-sm font-medium text-center mb-1 text-[#1a1a1a] group-hover:text-[#C4A882] transition-colors">Ceremony</p>
-                <p className="text-xs text-center leading-snug text-[#C4A882]">Live performance of aisle, register & exit songs</p>
+                <p className="text-sm text-center leading-snug text-[#C4A882]">Live performance of aisle, register & exit songs</p>
               </Link>
               <div className="h-px bg-stone-200 flex-none w-4 mt-6" />
             </div>
@@ -94,7 +94,7 @@ export default function WeddingsPage() {
                   <span className="text-lg text-[#C4A882]">♪</span>
                 </div>
                 <p className="text-sm font-medium text-center mb-1 text-[#1a1a1a]">Drinks Reception</p>
-                <p className="text-xs text-center leading-snug text-[#C4A882]">Live acoustic set to entertain your guests</p>
+                <p className="text-sm text-center leading-snug text-[#C4A882]">Live acoustic set to entertain your guests</p>
               </div>
               <div className="h-px bg-stone-200 flex-none w-4 mt-6" />
             </div>
@@ -106,7 +106,7 @@ export default function WeddingsPage() {
                   <span className="text-lg text-[#C4A882]">♪</span>
                 </div>
                 <p className="text-sm font-medium text-center mb-1 text-[#1a1a1a]">Wedding Meal</p>
-                <p className="text-xs text-center leading-snug text-[#C4A882]">Live background music to enhance the atmosphere</p>
+                <p className="text-sm text-center leading-snug text-[#C4A882]">Live background music to enhance the atmosphere</p>
               </div>
               <div className="h-px bg-stone-200 flex-none w-4 mt-6" />
             </div>
@@ -118,7 +118,7 @@ export default function WeddingsPage() {
                   <span className="text-lg text-[#C4A882]">♪</span>
                 </div>
                 <p className="text-sm font-medium text-center mb-1 text-[#1a1a1a]">First Dances</p>
-                <p className="text-xs text-center leading-snug text-[#C4A882]">Live performance of your first dance & party songs to kick off the evening</p>
+                <p className="text-sm text-center leading-snug text-[#C4A882]">Live performance of your first dance & party songs to kick off the evening</p>
               </div>
               <div className="h-px bg-stone-200 flex-none w-4 mt-6" />
             </div>
@@ -130,7 +130,7 @@ export default function WeddingsPage() {
                   <span className="text-lg text-[#C4A882]">♪</span>
                 </div>
                 <p className="text-sm font-medium text-center mb-1 text-[#1a1a1a]">Evening Entertainment</p>
-                <p className="text-xs text-center leading-snug text-[#C4A882]">Keep the party going until last orders</p>
+                <p className="text-sm text-center leading-snug text-[#C4A882]">Keep the party going until last orders</p>
               </div>
             </div>
 
@@ -154,7 +154,7 @@ export default function WeddingsPage() {
                     ? <Link href={step.href} className="text-sm font-medium mb-0.5 text-[#1a1a1a] hover:text-[#C4A882] transition-colors">{step.title}</Link>
                     : <p className={`text-sm font-medium mb-0.5 ${step.music ? "text-[#1a1a1a]" : "text-[#888888]"}`}>{step.title}</p>
                   }
-                  <p className={`text-xs leading-snug ${step.music ? "text-[#C4A882]" : "text-stone-400"}`}>{step.label}</p>
+                  <p className={`text-sm leading-snug ${step.music ? "text-[#C4A882]" : "text-stone-400"}`}>{step.label}</p>
                 </div>
               </div>
             ))}

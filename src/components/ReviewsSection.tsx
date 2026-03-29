@@ -231,13 +231,13 @@ export default function ReviewsSection() {
                         "Garden Birthday Party": "/events",
                       };
                       const href = packageLinks[review.package];
-                      const pillClass = "px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-xs rounded-full border border-[#C4A882]/30 whitespace-nowrap";
+                      const pillClass = "px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-sm rounded-full border border-[#C4A882]/30 whitespace-nowrap";
                       return href
                         ? <Link href={href} className={`${pillClass} hover:bg-[#C4A882]/30 transition-colors`}>{review.package}</Link>
                         : <span className={pillClass}>{review.package}</span>;
                     })()}
                     {review.venue && (
-                      <span className="px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-xs rounded-full border border-[#C4A882]/30 whitespace-nowrap">
+                      <span className="px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-sm rounded-full border border-[#C4A882]/30 whitespace-nowrap">
                         {review.venue}
                       </span>
                     )}
@@ -276,12 +276,12 @@ export default function ReviewsSection() {
                   {(review.package || review.venue) && (
                     <div className="mt-4 pt-4 border-t border-stone-100 flex items-center gap-2">
                       {review.package && (
-                        <span className="px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-xs rounded-full border border-[#C4A882]/30 whitespace-nowrap">
+                        <span className="px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-sm rounded-full border border-[#C4A882]/30 whitespace-nowrap">
                           {review.package}
                         </span>
                       )}
                       {review.venue && (
-                        <span className="px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-xs rounded-full border border-[#C4A882]/30 whitespace-nowrap">
+                        <span className="px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-sm rounded-full border border-[#C4A882]/30 whitespace-nowrap">
                           {review.venue}
                         </span>
                       )}
@@ -315,12 +315,12 @@ export default function ReviewsSection() {
             {(reviews[currentIndex].package || reviews[currentIndex].venue) && (
               <div className="mt-4 pt-4 border-t border-stone-100 flex items-center gap-2">
                 {reviews[currentIndex].package && (
-                  <span className="px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-xs rounded-full border border-[#C4A882]/30 whitespace-nowrap">
+                  <span className="px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-sm rounded-full border border-[#C4A882]/30 whitespace-nowrap">
                     {reviews[currentIndex].package}
                   </span>
                 )}
                 {reviews[currentIndex].venue && (
-                  <span className="px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-xs rounded-full border border-[#C4A882]/30 whitespace-nowrap">
+                  <span className="px-2.5 py-0.5 bg-[#C4A882]/15 text-[#C4A882] text-sm rounded-full border border-[#C4A882]/30 whitespace-nowrap">
                     {reviews[currentIndex].venue}
                   </span>
                 )}

@@ -114,6 +114,8 @@ export default function EnquiryForm() {
           <input
             type="text"
             id="name"
+            name="name"
+            autoComplete="name"
             required
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -129,6 +131,8 @@ export default function EnquiryForm() {
           <input
             type="email"
             id="email"
+            name="email"
+            autoComplete="email"
             required
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -144,6 +148,8 @@ export default function EnquiryForm() {
           <input
             type="tel"
             id="phone"
+            name="phone"
+            autoComplete="tel"
             value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
             className="w-full px-4 py-3 border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow"
