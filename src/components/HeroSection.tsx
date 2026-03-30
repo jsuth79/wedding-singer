@@ -24,10 +24,10 @@ export default function HeroSection() {
         <div className="relative z-10 w-full px-6 md:px-12 pt-32 max-md:landscape:pt-20 md:pt-32">
           <div className="max-w-2xl ml-0 md:ml-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6 leading-tight">
-              Wedding Ceremony Singer in Scotland
+              Award-Winning Music for Your Wedding Day
             </h1>
             <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
-              Live singing for your aisle walk, signing and exit, with options to continue into your drinks reception and wedding meal.
+              Live singing throughout your wedding day, from your aisle walk through to your first dances.
             </p>
           </div>
         </div>
@@ -58,20 +58,26 @@ export default function HeroSection() {
       </section>
 
       {/* Awards - below image */}
-      <section className="py-6 px-6">
+      <section className="py-3 px-6 bg-[#FAF8F3]">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm text-[#888888]">
-            <span className="flex items-start justify-center gap-1.5">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-6 text-sm text-[#2C2C2C] items-center">
+            <span className="flex items-center justify-center gap-1.5 text-center">
               <span className="text-[#C4A882] shrink-0">★</span> Scottish Wedding Awards Winner
             </span>
-            <span className="flex items-start justify-center gap-1.5">
+            <span className="flex items-center justify-center gap-1.5 text-center">
+              <span className="text-[#C4A882] shrink-0">★</span> Find Me On Hitched
+            </span>
+            <span className="flex items-center justify-center gap-1.5 text-center">
+              <span className="text-[#C4A882] shrink-0">★</span> 5-Star Reviews on Google
+            </span>
+            <span className="flex items-center justify-center gap-1.5 text-center">
+              <span className="text-[#C4A882] shrink-0">★</span> As Featured on Bridebook
+            </span>
+            <span className="flex items-center justify-center gap-1.5 text-center">
               <span className="text-[#C4A882] shrink-0">★</span> Confetti Awards Finalist
             </span>
-            <span className="flex items-start justify-center gap-1.5">
+            <span className="flex items-center justify-center gap-1.5 text-center">
               <span className="text-[#C4A882] shrink-0">★</span> UKbride Approved
-            </span>
-            <span className="flex items-start justify-center gap-1.5">
-              <span className="text-[#C4A882] shrink-0">★</span> 5-Star Reviews
             </span>
           </div>
         </div>

@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   description:
     "Acoustic wedding ceremony singer in Glasgow and across Scotland. Live music for walking down the aisle, signing the register and exit songs. Check availability for your date.",
   alternates: {
-    canonical: "/wedding-ceremony-singer-glasgow",
+    canonical: "/wedding-ceremony-singer-scotland",
   },
   openGraph: {
     title: "Wedding Ceremony Singer Glasgow | Live Aisle & Ceremony Music Scotland",
     description:
       "Acoustic wedding ceremony singer in Glasgow and across Scotland. Live music for walking down the aisle, signing the register and exit songs.",
-    url: "https://www.nicolamason.co.uk/wedding-ceremony-singer-glasgow",
+    url: "https://www.nicolamason.co.uk/wedding-ceremony-singer-scotland",
     images: [
       {
         url: "/images/nicola-mason-wedding-ceremony-singer-l.webp",

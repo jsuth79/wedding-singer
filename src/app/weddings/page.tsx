@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 
 export default function WeddingsPage() {
   const mobileTimelineSteps: MobileTimelineStep[] = [
-    { title: "Ceremony", music: true, label: "Live performance of aisle, register & exit songs", href: "/wedding-ceremony-singer-glasgow" },
+    { title: "Ceremony", music: true, label: "Live performance of aisle, register & exit songs", href: "/wedding-ceremony-singer-scotland" },
     { title: "Drinks Reception", music: true, label: "Live acoustic set to entertain your guests" },
     { title: "Wedding Meal", music: true, label: "Live background music to enhance the atmosphere" },
     { title: "First Dances", music: true, label: "Live performance of your first dance & party songs to kick off the evening" },
@@ -77,7 +77,7 @@ export default function WeddingsPage() {
 
             {/* Ceremony */}
             <div className="flex items-start flex-1">
-              <Link href="/wedding-ceremony-singer-glasgow" className="flex flex-col items-center flex-1 group">
+              <Link href="/wedding-ceremony-singer-scotland" className="flex flex-col items-center flex-1 group">
                 <div className="w-12 h-12 rounded-full flex items-center justify-center mb-3 bg-[#C4A882]/20 group-hover:bg-[#C4A882]/40 transition-colors">
                   <span className="text-lg text-[#C4A882]">♪</span>
                 </div>
@@ -183,7 +183,7 @@ export default function WeddingsPage() {
               >
                 <PackageCard
                   pkg={pkg}
-                  findOutMoreHref={pkg.name === "Ceremony" ? "/wedding-ceremony-singer-glasgow" : undefined}
+                  findOutMoreHref={pkg.name === "Ceremony" ? "/wedding-ceremony-singer-scotland" : undefined}
                   findOutMoreLabel={pkg.name === "Ceremony" ? "Plan your ceremony music" : undefined}
                 />
               </div>

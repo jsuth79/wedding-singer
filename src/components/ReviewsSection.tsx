@@ -221,7 +221,7 @@ export default function ReviewsSection() {
                   <div className="mt-4 pt-4 border-t border-stone-100 flex items-center gap-2">
                     {review.package && (() => {
                       const packageLinks: Record<string, string> = {
-                        "Wedding Ceremony": "/wedding-ceremony-singer-glasgow",
+                        "Wedding Ceremony": "/wedding-ceremony-singer-scotland",
                         "Drinks Reception": "/weddings",
                         "Ceremony & Drinks Reception": "/weddings",
                         "Surprise Singers": "/weddings",
