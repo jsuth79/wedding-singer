@@ -259,10 +259,10 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-              What I Offer
+              From Weddings to Special Events
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
-              Tailored Entertainment for Your Special Day
+              Live Music for Your Occasion
             </h2>
           </div>
 

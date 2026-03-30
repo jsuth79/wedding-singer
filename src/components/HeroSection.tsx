@@ -24,10 +24,10 @@ export default function HeroSection() {
         <div className="relative z-10 w-full px-6 md:px-12 pt-32 max-md:landscape:pt-20 md:pt-32">
           <div className="max-w-2xl ml-0 md:ml-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6 leading-tight">
-              Award-Winning Vocals. Unforgettable Atmosphere.
+              Wedding Ceremony Singer in Scotland
             </h1>
             <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
-              Tailored live music for memorable Scottish celebrations.
+              Live singing for your aisle walk, signing and exit, with options to continue into your drinks reception and wedding meal.
             </p>
           </div>
         </div>

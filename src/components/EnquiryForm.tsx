@@ -119,7 +119,7 @@ export default function EnquiryForm() {
             required
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            className="w-full px-4 py-3 border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow"
+            className="w-full px-4 py-3 bg-white border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow"
             placeholder="Your name"
           />
         </div>
@@ -136,7 +136,7 @@ export default function EnquiryForm() {
             required
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            className="w-full px-4 py-3 border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow"
+            className="w-full px-4 py-3 bg-white border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow"
             placeholder="your@email.com"
           />
         </div>
@@ -152,7 +152,7 @@ export default function EnquiryForm() {
             autoComplete="tel"
             value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-            className="w-full px-4 py-3 border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow"
+            className="w-full px-4 py-3 bg-white border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow"
             placeholder="Your phone number"
           />
           <p className="mt-2 text-xs text-[#888888]">
@@ -171,7 +171,7 @@ export default function EnquiryForm() {
             required
             value={formData.eventDate}
             onChange={(e) => setFormData({ ...formData, eventDate: e.target.value })}
-            className="w-full px-4 py-3 border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow"
+            className="w-full px-4 py-3 bg-white border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow"
           />
         </div>
 
@@ -206,7 +206,7 @@ export default function EnquiryForm() {
           rows={5}
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-          className="w-full px-4 py-3 border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow resize-none"
+          className="w-full px-4 py-3 bg-white border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow resize-none"
           placeholder="Please include details about your venue, approximate number of guests, and any specific songs or packages you're interested in..."
         />
       </div>
