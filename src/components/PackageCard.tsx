@@ -94,9 +94,10 @@ export default function PackageCard({
         ) : (
           <Link
             href="/enquiry"
-            className="block w-full text-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-6 py-3 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
+            className="flex flex-col items-center w-full text-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-6 py-3 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
           >
-            Check My Availability
+            <span>Check My Availability</span>
+            <span className="text-xs normal-case tracking-normal mt-0.5 opacity-75">Quick reply, no obligation</span>
           </Link>
         )}
       </div>
