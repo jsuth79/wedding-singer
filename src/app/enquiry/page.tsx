@@ -45,8 +45,11 @@ export default function EnquirePage() {
               <h2 className="text-2xl md:text-3xl font-serif text-[#1a1a1a] mb-4">
                 Message me Instantly
               </h2>
-              <p className="text-[#444444] leading-relaxed mb-8">
+              <p className="text-[#444444] leading-relaxed mb-4">
                 Drop me a message with your date and what you&apos;re looking for. I usually reply within an hour or two — no forms, no waiting.
+              </p>
+              <p className="text-sm text-[#888888] mb-8">
+                Try to include: <span className="text-[#C4A882]">your name</span>, <span className="text-[#C4A882]">wedding date</span>, <span className="text-[#C4A882]">venue</span>, and <span className="text-[#C4A882]">what you need music for</span> — ceremony, drinks reception, full day, or something else.
               </p>
 
               <TrackedWhatsAppLink
@@ -60,12 +63,12 @@ export default function EnquirePage() {
               </TrackedWhatsAppLink>
 
               <a
-                href="sms:+447740360678"
-                className="inline-flex flex-col items-center bg-[#007AFF] hover:bg-[#0063CC] text-white px-8 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px] w-full text-center mb-8"
+                href="sms:+447740360678?body=Hi%20Nicola%2C%20I'm%20%5BNAME%5D%20and%20I'm%20getting%20married%20on%20%5BDATE%5D%20at%20%5BVENUE%5D.%20I'm%20interested%20in%20music%20for%20%5BCEREMONY%20%2F%20DRINKS%20%2F%20FULL%20DAY%5D.%20Are%20you%20available%3F"
+                className="inline-flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-8 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px] w-full text-center mb-8"
               >
                 <span className="font-medium">Check My Availability</span>
                 <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
-                  via iMessage (1–2 hour response)
+                  via SMS (1–2 hour response)
                 </span>
               </a>
 
