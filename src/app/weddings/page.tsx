@@ -191,9 +191,9 @@ export default function WeddingsPage() {
           </div>
 
           <p className="text-center text-[#888888] text-sm mt-10">
-            All prices include professional PA equipment and 40 miles travel from Glasgow. Additional mileage at 45p/mile.
+            All prices include professional PA equipment and travel within 40 miles of Motherwell — covering most of Central Scotland, including Glasgow, Edinburgh, Stirling and Ayrshire.
             <br />
-            Booking direct avoids agency and platform fees (typically 20%).
+            For venues further afield, mileage is charged at 45p per mile. Booking direct means no agency or platform fees (often 20%+).
           </p>
         </div>
       </section>

@@ -266,7 +266,7 @@ export default function WeddingCeremonySingerGlasgowPage() {
             </h2>
             <p className="text-[#888888] mt-4 max-w-xl mx-auto">
               Everything you need for live ceremony music, in one package. Price
-              includes PA, travel up to 40 miles from Glasgow, and full song
+              includes PA, travel within 40 miles of Motherwell, and full song
               preparation.
             </p>
             <div className="mt-4">
@@ -369,8 +369,7 @@ export default function WeddingCeremonySingerGlasgowPage() {
               Covering Glasgow, Edinburgh &amp; Beyond
             </h2>
             <p className="text-[#888888] mt-4 max-w-xl mx-auto">
-              Based in Glasgow with 40 miles travel included — covering the
-              Central Belt, Loch Lomond, Edinburgh and beyond
+              Based in Motherwell with 40 miles travel included — covering most of Central Scotland, including Glasgow, Edinburgh, Stirling and Ayrshire
             </p>
           </div>
           <div className="flex flex-wrap justify-center gap-3">
