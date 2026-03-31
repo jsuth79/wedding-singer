@@ -72,6 +72,13 @@ export default function EnquirePage() {
                 </span>
               </a>
 
+              <div className="text-center mb-6 lg:hidden">
+                <span className="text-sm text-[#888888] uppercase tracking-wider mr-2">Or</span>
+                <a href="#enquiry-form" className="text-[#C4A882] hover:text-[#A68B5B] border-b-2 border-[#C4A882] hover:border-[#A68B5B] pb-1 transition-colors uppercase text-sm tracking-wider">
+                  Fill In The Form Below ↓
+                </a>
+              </div>
+
               <div className="border-t border-stone-200 pt-6 space-y-4 text-sm text-[#444444] mt-auto">
                 <div>
                   <p className="text-xs text-[#888888] uppercase tracking-wider mb-1">Phone / WhatsApp</p>
@@ -94,7 +101,7 @@ export default function EnquirePage() {
             </div>
 
             {/* Form Column */}
-            <div className="bg-[#FAF8F3] rounded-lg p-8 lg:p-10">
+            <div id="enquiry-form" className="bg-[#FAF8F3] rounded-lg p-8 lg:p-10">
               <p className="text-[#C4A882] text-xs uppercase tracking-[0.2em] mb-4">Prefer to Write it Out</p>
               <h2 className="text-2xl md:text-3xl font-serif text-[#1a1a1a] mb-4">
                 Send Your Details

@@ -435,7 +435,9 @@ export default function HomePage() {
       </section>
 
       {/* Video */}
-      <YouTubeGrid />
+      <div id="videos">
+        <YouTubeGrid />
+      </div>
 
     </>
   );

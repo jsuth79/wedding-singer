@@ -269,6 +269,11 @@ export default function WeddingCeremonySingerGlasgowPage() {
               includes PA, travel up to 40 miles from Glasgow, and full song
               preparation.
             </p>
+            <div className="mt-4">
+              <Link href="/weddings" className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider">
+                See All Wedding Packages →
+              </Link>
+            </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             <PackageCard pkg={ceremonyPackage} />
