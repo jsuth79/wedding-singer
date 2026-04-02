@@ -69,6 +69,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <StructuredData />
+        <script defer src="https://umami-three-smoky.vercel.app/script.js" data-website-id="22e8cb62-e1d7-4dbd-8df2-b4adcdd62f66" />
       </head>
       <body className={`${garamond.variable} ${lato.variable} antialiased`}>
         <Navbar />
