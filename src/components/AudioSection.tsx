@@ -1,4 +1,20 @@
+"use client";
+
+import { useEffect, useRef } from "react";
 import Link from "next/link";
+import { trackEvent } from "@/lib/analytics";
+
+declare global {
+  interface Window {
+    SC: {
+      Widget: ((iframe: HTMLIFrameElement) => {
+        bind: (event: string, callback: () => void) => void;
+      }) & {
+        Events: { PLAY: string };
+      };
+    };
+  }
+}
 
 const soundcloudTracks: { embedUrl: string; title: string }[] = [
   {
@@ -80,6 +96,24 @@ const soundcloudTracks: { embedUrl: string; title: string }[] = [
 ];
 
 export default function AudioSection() {
+  const iframeRefs = useRef<(HTMLIFrameElement | null)[]>([]);
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://w.soundcloud.com/player/api.js";
+    script.onload = () => {
+      iframeRefs.current.forEach((iframe, i) => {
+        if (!iframe) return;
+        const widget = window.SC.Widget(iframe);
+        const title = soundcloudTracks[i].title;
+        widget.bind(window.SC.Widget.Events.PLAY, () => {
+          trackEvent.playSoundCloud(title);
+        });
+      });
+    };
+    document.head.appendChild(script);
+  }, []);
+
   return (
     <section id="listen" className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
       <div className="max-w-6xl mx-auto">
@@ -93,9 +127,10 @@ export default function AudioSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {soundcloudTracks.map((track) => (
+          {soundcloudTracks.map((track, i) => (
             <div key={track.embedUrl}>
               <iframe
+                ref={(el) => { iframeRefs.current[i] = el; }}
                 title={track.title}
                 width="100%"
                 height="20"

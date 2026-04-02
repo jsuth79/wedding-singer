@@ -1,3 +1,25 @@
+"use client";
+
+import { useEffect } from "react";
+import { trackEvent } from "@/lib/analytics";
+
+declare global {
+  interface Window {
+    YT: {
+      Player: new (
+        id: string,
+        options: {
+          events: {
+            onStateChange: (event: { data: number }) => void;
+          };
+        }
+      ) => void;
+      PlayerState: { PLAYING: number };
+    };
+    onYouTubeIframeAPIReady: () => void;
+  }
+}
+
 const videos = [
   {
     id: "0lfc3it4ipc",
@@ -57,6 +79,31 @@ export default function YouTubeGrid() {
     }
   }));
 
+  useEffect(() => {
+    function initPlayers() {
+      videos.forEach((video) => {
+        new window.YT.Player(`yt-player-${video.id}`, {
+          events: {
+            onStateChange: (event) => {
+              if (event.data === window.YT.PlayerState.PLAYING) {
+                trackEvent.playYouTube(video.title);
+              }
+            },
+          },
+        });
+      });
+    }
+
+    if (window.YT && window.YT.Player) {
+      initPlayers();
+    } else {
+      window.onYouTubeIframeAPIReady = initPlayers;
+      const tag = document.createElement("script");
+      tag.src = "https://www.youtube.com/iframe_api";
+      document.head.appendChild(tag);
+    }
+  }, []);
+
   return (
     <>
       <script
@@ -79,7 +126,8 @@ export default function YouTubeGrid() {
               <div key={video.id} className="group">
                 <div className="relative aspect-video bg-stone-200 rounded-lg overflow-hidden mb-3">
                   <iframe
-                    src={`https://www.youtube.com/embed/${video.id}`}
+                    id={`yt-player-${video.id}`}
+                    src={`https://www.youtube.com/embed/${video.id}?enablejsapi=1`}
                     title={video.title}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
