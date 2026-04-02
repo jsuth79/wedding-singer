@@ -10,7 +10,7 @@ declare global {
       Widget: ((iframe: HTMLIFrameElement) => {
         bind: (event: string, callback: () => void) => void;
       }) & {
-        Events: { PLAY: string };
+        Events: { PLAY: string; PAUSE: string; FINISH: string };
       };
     };
   }
@@ -106,14 +106,15 @@ export default function AudioSection() {
         if (!iframe) return;
         const widget = window.SC.Widget(iframe);
         const title = soundcloudTracks[i].title;
-        let lastFired = 0;
+        let isPlaying = false;
         widget.bind(window.SC.Widget.Events.PLAY, () => {
-          const now = Date.now();
-          if (now - lastFired > 1000) {
+          if (!isPlaying) {
             trackEvent.playSoundCloud(title);
-            lastFired = now;
+            isPlaying = true;
           }
         });
+        widget.bind(window.SC.Widget.Events.PAUSE, () => { isPlaying = false; });
+        widget.bind(window.SC.Widget.Events.FINISH, () => { isPlaying = false; });
       });
     };
     document.head.appendChild(script);
