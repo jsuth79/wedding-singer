@@ -10,7 +10,7 @@ declare global {
       Widget: ((iframe: HTMLIFrameElement) => {
         bind: (event: string, callback: () => void) => void;
       }) & {
-        Events: { PLAY: string; READY: string };
+        Events: { PLAY: string };
       };
     };
   }
@@ -106,10 +106,8 @@ export default function AudioSection() {
         if (!iframe) return;
         const widget = window.SC.Widget(iframe);
         const title = soundcloudTracks[i].title;
-        widget.bind(window.SC.Widget.Events.READY, () => {
-          widget.bind(window.SC.Widget.Events.PLAY, () => {
-            trackEvent.playSoundCloud(title);
-          });
+        widget.bind(window.SC.Widget.Events.PLAY, () => {
+          trackEvent.playSoundCloud(title);
         });
       });
     };
