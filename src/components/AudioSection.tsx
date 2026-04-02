@@ -10,7 +10,7 @@ declare global {
       Widget: ((iframe: HTMLIFrameElement) => {
         bind: (event: string, callback: () => void) => void;
       }) & {
-        Events: { PLAY: string };
+        Events: { PLAY: string; READY: string };
       };
     };
   }
@@ -106,8 +106,10 @@ export default function AudioSection() {
         if (!iframe) return;
         const widget = window.SC.Widget(iframe);
         const title = soundcloudTracks[i].title;
-        widget.bind(window.SC.Widget.Events.PLAY, () => {
-          trackEvent.playSoundCloud(title);
+        widget.bind(window.SC.Widget.Events.READY, () => {
+          widget.bind(window.SC.Widget.Events.PLAY, () => {
+            trackEvent.playSoundCloud(title);
+          });
         });
       });
     };
@@ -136,7 +138,7 @@ export default function AudioSection() {
                 height="20"
                 scrolling="no"
                 allow="autoplay"
-                src={`${track.embedUrl}&color=%23C4A882&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false`}
+                src={`${track.embedUrl}&color=%23C4A882&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false&api=true`}
                 className="rounded-lg"
               />
             </div>
