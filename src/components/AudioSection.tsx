@@ -106,8 +106,13 @@ export default function AudioSection() {
         if (!iframe) return;
         const widget = window.SC.Widget(iframe);
         const title = soundcloudTracks[i].title;
+        let lastFired = 0;
         widget.bind(window.SC.Widget.Events.PLAY, () => {
-          trackEvent.playSoundCloud(title);
+          const now = Date.now();
+          if (now - lastFired > 1000) {
+            trackEvent.playSoundCloud(title);
+            lastFired = now;
+          }
         });
       });
     };
