@@ -68,7 +68,7 @@ export default function WeddingsPage() {
       <section className="py-12 md:py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">Your Day</p>
+            <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">Your Wedding Day Music Timeline</p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">Plan Your Live Wedding Music With Me</h2>
           </div>
 
@@ -184,7 +184,7 @@ export default function WeddingsPage() {
                 <PackageCard
                   pkg={pkg}
                   findOutMoreHref={pkg.name === "Ceremony" ? "/wedding-ceremony-singer-scotland" : undefined}
-                  findOutMoreLabel={pkg.name === "Ceremony" ? "Plan your ceremony music" : undefined}
+                  findOutMoreLabel={pkg.name === "Ceremony" ? "Plan Your Ceremony Music" : undefined}
                 />
               </div>
             ))}
@@ -218,47 +218,6 @@ export default function WeddingsPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-12 md:py-24 px-6 bg-[#2C2C2C]">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-serif text-white mb-6">
-            Ready to Discuss Your Wedding?
-          </h2>
-          <p className="text-stone-300 text-lg mb-4">
-            Now booking for 2027. Limited 2026 dates remaining.
-          </p>
-          <p className="text-stone-400 mb-10">
-            I&apos;d love to hear about your plans and help make your day truly
-            special.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <TrackedWhatsAppLink
-              location="weddings_page_cta"
-              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
-            >
-              <span className="font-medium">Check My Availability</span>
-              <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
-                via WhatsApp (1-2 hour response)
-              </span>
-            </TrackedWhatsAppLink>
-            <TrackedEnquiryLink
-              location="weddings_page_cta"
-              className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
-            >
-              <span className="font-medium">Check My Availability</span>
-              <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
-                via Contact Form
-              </span>
-            </TrackedEnquiryLink>
-          </div>
-          <div className="mt-8">
-            <Link href="/events" className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider">
-              Also Available For Private Events →
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* The Full Package */}
       <section id="whats-included" className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
         <div className="max-w-6xl mx-auto">
@@ -267,7 +226,7 @@ export default function WeddingsPage() {
               The Details
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
-              What&apos;s Always Included
+              You Won&apos;t Need To Worry About The Music
             </h2>
           </div>
 
@@ -276,23 +235,16 @@ export default function WeddingsPage() {
             <div>
               <div className="text-[#444444] space-y-4 mb-10">
                 <p>
-                  You&apos;re not just getting a singer - you&apos;re getting someone who&apos;ll
-                  help you pick songs if you&apos;re stuck, learn whatever&apos;s special to
-                  you, and sort out the timing and sound with your venue so it&apos;s one
-                  less thing on your list.
+                  I&apos;ll help you choose songs, handle timings with your venue, and make sure everything sounds exactly right on the day.
                 </p>
                 <p>
-                  I know how different venues work and can read a room - quiet and
-                  setting the mood during dinner, or getting folk up dancing when it&apos;s time
-                  to celebrate.
+                  I know how different weddings flow — when to keep things subtle, and when to lift the room.
                 </p>
                 <p>
-                  I&apos;ll keep you in the loop without pestering you. Weddings are
-                  stressful enough without suppliers making it worse.
+                  No awkward silences, no technical issues, no chasing suppliers.
                 </p>
                 <p>
-                  No awkward silences, no technical disasters, no drama. Just the
-                  music you want, done right.
+                  Just the music you want, done properly.
                 </p>
               </div>
 
@@ -374,6 +326,46 @@ export default function WeddingsPage() {
           <div className="text-center mt-12">
             <Link href="/faq" className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider">
               Have More Questions? See All FAQs →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-12 md:py-24 px-6 bg-[#2C2C2C]">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-serif text-white mb-6">
+            Tell Me Your Date — I&apos;ll Let You Know If It&apos;s Free
+          </h2>
+          <p className="text-stone-300 text-lg mb-4">
+            Now booking for 2027. Limited 2026 dates remaining.
+          </p>
+          <p className="text-stone-400 mb-10">
+            I&apos;ll reply personally and quickly so you know where you stand.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <TrackedWhatsAppLink
+              location="weddings_page_cta"
+              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[4px]"
+            >
+              <span className="font-medium">Message on WhatsApp</span>
+              <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
+                I usually reply within a few hours
+              </span>
+            </TrackedWhatsAppLink>
+            <TrackedEnquiryLink
+              location="weddings_page_cta"
+              className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[4px]"
+            >
+              <span className="font-medium">Send An Enquiry</span>
+              <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
+                quick form · I&apos;ll reply personally
+              </span>
+            </TrackedEnquiryLink>
+          </div>
+          <div className="mt-8">
+            <Link href="/events" className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider">
+              Also Available For Private Events →
             </Link>
           </div>
         </div>

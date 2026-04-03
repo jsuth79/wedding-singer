@@ -127,7 +127,7 @@ export const extras: Package[] = [
   },
   {
     name: "Keepsake Recording",
-    price: "£80",
+    price: "From £80",
     image: "/images/nicola-mason-keepsake-recording-l.webp",
     alt: "Studio recording session for personalized wedding song keepsake with professional vocalist",
     description: "A professional recording of your song, yours to keep forever",
@@ -135,6 +135,7 @@ export const extras: Package[] = [
       "Studio-quality recording of your chosen song",
       "Digital download delivered straight to your inbox",
       "The perfect gift for anniversaries, birthdays, or just because",
+      "Available as an add-on to your wedding package",
     ],
   },
 ];

@@ -214,12 +214,12 @@ export default function EnquiryForm() {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="w-full flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] disabled:bg-[#888888] text-white py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
+        className="w-full flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] disabled:bg-[#888888] text-white py-4 text-sm tracking-wider transition-colors rounded-[4px]"
       >
         {status === "loading" ? "Sending..." : (
           <>
-            <span className="font-medium">Check My Availability</span>
-            <span className="text-sm normal-case tracking-normal mt-1 opacity-75">via Contact Form (24 hour response)</span>
+            <span className="font-medium">Send Your Details</span>
+            <span className="text-sm normal-case tracking-normal mt-1 opacity-75">I'll get back to you within 24 hours</span>
           </>
         )}
       </button>

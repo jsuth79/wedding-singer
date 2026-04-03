@@ -136,9 +136,10 @@ export default function EventsPage() {
                   </ul>
                   <Link
                     href="/enquiry"
-                    className="block w-full text-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-6 py-3 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
+                    className="flex flex-col items-center w-full text-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-6 py-3 text-sm tracking-wider transition-colors rounded-[4px]"
                   >
-                    Check My Availability
+                    <span>Check Your Date</span>
+                    <span className="text-xs normal-case tracking-normal mt-0.5 opacity-75">quick reply, no pressure</span>
                   </Link>
                 </div>
               </div>
@@ -151,35 +152,34 @@ export default function EventsPage() {
       <section className="py-12 md:py-24 px-6 bg-[#2C2C2C]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-serif text-white mb-6">
-            Ready to Discuss Your Event?
+            Tell Me About Your Event — I&apos;ll Let You Know If I&apos;m Free
           </h2>
           <p className="text-stone-300 text-lg mb-10 max-w-2xl mx-auto">
-            I&apos;d love to discuss how I can make your event memorable. Get in
-            touch with details about your occasion for a personalised quote.
+            Send a few details and I&apos;ll come back to you quickly.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <TrackedWhatsAppLink
               location="events_page_cta"
-              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
+              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[4px]"
             >
-              <span className="font-medium">Check My Availability</span>
+              <span className="font-medium">Message on WhatsApp</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
-                via WhatsApp (1-2 hour response)
+                I usually reply within a few hours
               </span>
             </TrackedWhatsAppLink>
             <TrackedEnquiryLink
               location="events_page_cta"
-              className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
+              className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[4px]"
             >
-              <span className="font-medium">Check My Availability</span>
+              <span className="font-medium">Send An Enquiry</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
-                via Contact Form
+                quick form · I&apos;ll reply personally
               </span>
             </TrackedEnquiryLink>
           </div>
           <div className="mt-8">
             <Link href="/weddings" className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider">
-              Also Available For Weddings →
+              Planning A Wedding? →
             </Link>
           </div>
         </div>

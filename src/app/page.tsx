@@ -181,7 +181,7 @@ export default function HomePage() {
       <HeroSection />
 
       {/* About Section */}
-      <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
+      <section className="pt-6 pb-12 md:pt-12 md:pb-24 px-6 bg-[#F5F1EB]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
@@ -218,23 +218,26 @@ export default function HomePage() {
                 day knowing your music is taken care of from your first enquiry
                 to the final song.
               </p>
+              <h3 className="text-xl font-serif text-[#1a1a1a] text-center mb-4">
+                Tell me your date — I&apos;ll let you know if it&apos;s free
+              </h3>
               <div className="flex flex-col md:flex-row gap-4 justify-center">
                 <TrackedWhatsAppLink
                   location="homepage_why_book"
-                  className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-8 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px] min-w-[280px]"
+                  className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-8 py-4 text-sm tracking-wider transition-colors rounded-[4px] min-w-[280px]"
                 >
-                  <span className="font-medium">Check My Availability</span>
+                  <span className="font-medium">Message on WhatsApp</span>
                   <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
-                    via WhatsApp (1-2 hour response)
+                    I usually reply within a few hours
                   </span>
                 </TrackedWhatsAppLink>
                 <TrackedEnquiryLink
                   location="homepage_why_book"
-                  className="inline-flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-8 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px] min-w-[280px]"
+                  className="inline-flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-8 py-4 text-sm tracking-wider transition-colors rounded-[4px] min-w-[280px]"
                 >
-                  <span className="font-medium">Check My Availability</span>
+                  <span className="font-medium">Send An Enquiry</span>
                   <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
-                    via Contact Form
+                    quick form · I&apos;ll reply personally
                   </span>
                 </TrackedEnquiryLink>
               </div>
@@ -247,6 +250,33 @@ export default function HomePage() {
             >
               See Where Music Fits Within Your Wedding Day →
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Bar */}
+      <section className="py-6 px-6 bg-[#2C2C2C]">
+        <div className="max-w-6xl mx-auto">
+          <p className="text-center text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">Trusted By Couples Across Scotland</p>
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-6 text-sm text-stone-300 items-center">
+            <span className="flex items-center justify-center gap-1.5 text-center">
+              <span className="text-[#C4A882] shrink-0">★</span> Scottish Wedding Awards Winner
+            </span>
+            <span className="flex items-center justify-center gap-1.5 text-center">
+              <span className="text-[#C4A882] shrink-0">★</span> 5-Star Reviews on Google
+            </span>
+            <span className="flex items-center justify-center gap-1.5 text-center">
+              <span className="text-[#C4A882] shrink-0">★</span> Featured on Bridebook
+            </span>
+            <span className="flex items-center justify-center gap-1.5 text-center">
+              <span className="text-[#C4A882] shrink-0">★</span> Confetti Awards Finalist
+            </span>
+            <span className="flex items-center justify-center gap-1.5 text-center">
+              <span className="text-[#C4A882] shrink-0">★</span> UKBride Approved
+            </span>
+            <span className="flex items-center justify-center gap-1.5 text-center">
+              <span className="text-[#C4A882] shrink-0">★</span> Featured on Hitched
+            </span>
           </div>
         </div>
       </section>
@@ -326,32 +356,28 @@ export default function HomePage() {
       <section className="py-12 md:py-24 px-6 bg-[#2C2C2C]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-serif text-white mb-6">
-            Let&apos;s Make Your Day Unforgettable
+            Tell Me Your Date — I&apos;ll Let You Know If It&apos;s Free
           </h2>
-          <p className="text-stone-300 text-lg mb-4">
+          <p className="text-stone-300 text-lg mb-10">
             Now booking for 2027. Limited 2026 dates remaining.
-          </p>
-          <p className="text-stone-400 mb-10">
-            Get in touch to discuss your wedding or event and check my
-            availability.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <TrackedWhatsAppLink
               location="homepage_bottom_cta"
-              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
+              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[4px]"
             >
-              <span className="font-medium">Check My Availability</span>
+              <span className="font-medium">Message on WhatsApp</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
-                via WhatsApp (1-2 hour response)
+                I usually reply within a few hours
               </span>
             </TrackedWhatsAppLink>
             <TrackedEnquiryLink
               location="homepage_bottom_cta"
-              className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
+              className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[4px]"
             >
-              <span className="font-medium">Check My Availability</span>
+              <span className="font-medium">Send An Enquiry</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
-                via Contact Form
+                quick form · I&apos;ll reply personally
               </span>
             </TrackedEnquiryLink>
           </div>

@@ -390,31 +390,31 @@ export default function WeddingCeremonySingerGlasgowPage() {
       <section className="py-12 md:py-24 px-6 bg-[#2C2C2C]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-serif text-white mb-6">
-            Check Availability for Your Date
+            Tell Me Your Ceremony Date — I&apos;ll Let You Know If I&apos;m Free
           </h2>
           <p className="text-stone-300 text-lg mb-4">
             Now booking for 2027. Limited 2026 dates remaining.
           </p>
           <p className="text-stone-400 mb-10">
-            Tell me about your ceremony and I&apos;ll get back to you within a couple of hours.
+            Send a few details and I&apos;ll come back to you within a few hours.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <TrackedWhatsAppLink
               location="ceremony_glasgow_footer_cta"
-              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
+              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[4px]"
             >
-              <span className="font-medium">Check My Availability</span>
+              <span className="font-medium">Message on WhatsApp</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
-                via WhatsApp (1–2 hour response)
+                I usually reply within a few hours
               </span>
             </TrackedWhatsAppLink>
             <TrackedEnquiryLink
               location="ceremony_glasgow_footer_cta"
-              className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
+              className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[4px]"
             >
-              <span className="font-medium">Check My Availability</span>
+              <span className="font-medium">Send An Enquiry</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
-                via Contact Form
+                quick form · I'll reply personally
               </span>
             </TrackedEnquiryLink>
           </div>

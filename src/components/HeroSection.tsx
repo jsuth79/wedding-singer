@@ -38,14 +38,14 @@ export default function HeroSection() {
             <div className="flex flex-col gap-4 md:inline-flex">
               <Link
                 href="/#listen"
-                className="flex justify-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-8 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px] w-full"
+                className="flex justify-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-8 py-4 text-sm tracking-wider transition-colors rounded-[4px] w-full"
               >
                 Listen Now
               </Link>
               <Link
                 href="/weddings"
                 onClick={() => trackEvent.viewPackage('hero_cta')}
-                className="inline-flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-8 py-4 text-sm uppercase tracking-wider transition-colors rounded-[4px] w-full"
+                className="inline-flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-8 py-4 text-sm tracking-wider transition-colors rounded-[4px] w-full"
               >
                 <span className="font-medium">View Wedding Packages</span>
                 <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
@@ -57,31 +57,6 @@ export default function HeroSection() {
         </div>
       </section>
 
-      {/* Awards - below image */}
-      <section className="py-3 px-6 bg-[#FAF8F3]">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-6 text-sm text-[#2C2C2C] items-center">
-            <span className="flex items-center justify-center gap-1.5 text-center">
-              <span className="text-[#C4A882] shrink-0">★</span> Scottish Wedding Awards Winner
-            </span>
-            <span className="flex items-center justify-center gap-1.5 text-center">
-              <span className="text-[#C4A882] shrink-0">★</span> Find Me On Hitched
-            </span>
-            <span className="flex items-center justify-center gap-1.5 text-center">
-              <span className="text-[#C4A882] shrink-0">★</span> 5-Star Reviews on Google
-            </span>
-            <span className="flex items-center justify-center gap-1.5 text-center">
-              <span className="text-[#C4A882] shrink-0">★</span> As Featured on Bridebook
-            </span>
-            <span className="flex items-center justify-center gap-1.5 text-center">
-              <span className="text-[#C4A882] shrink-0">★</span> Confetti Awards Finalist
-            </span>
-            <span className="flex items-center justify-center gap-1.5 text-center">
-              <span className="text-[#C4A882] shrink-0">★</span> UKbride Approved
-            </span>
-          </div>
-        </div>
-      </section>
     </>
   );
 }

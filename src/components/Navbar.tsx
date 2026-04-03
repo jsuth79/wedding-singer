@@ -48,7 +48,7 @@ export default function Navbar() {
                 onClick={() => trackEvent.clickEnquiryCTA('navbar_desktop')}
                 className="bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-4 xl:px-6 py-2.5 text-xs xl:text-sm uppercase tracking-wider transition-colors rounded-[4px] whitespace-nowrap"
               >
-                Check My Availability
+                Check Your Date
               </Link>
             </li>
           </ul>
@@ -102,7 +102,7 @@ export default function Navbar() {
                   }}
                   className="inline-block bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-5 py-2 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
                 >
-                  Check My Availability
+                  Check Your Date
                 </Link>
               </li>
             </ul>
