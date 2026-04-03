@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { EB_Garamond, Lato } from "next/font/google";
+import { Suspense } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
+import PreviewMode from "@/components/PreviewMode";
 import "./globals.css";
 
 const garamond = EB_Garamond({
@@ -71,6 +73,9 @@ export default function RootLayout({
         )}
       </head>
       <body className={`${garamond.variable} ${lato.variable} antialiased`}>
+        <Suspense>
+          <PreviewMode />
+        </Suspense>
         <Navbar />
         <main>{children}</main>
         <Footer />
