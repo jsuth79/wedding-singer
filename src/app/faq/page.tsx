@@ -43,6 +43,11 @@ const faqs: { question: string; answer: string }[] = [
       "Wedding ceremony music is usually performed at the key moments of the ceremony itself. This often includes the walk down the aisle, music during the signing of the register, and an upbeat song as the couple exit the ceremony, with guest-arrival music often handled as a curated playlist.",
   },
   {
+    question: "Do you perform at humanist weddings in Scotland?",
+    answer:
+      "Yes. Humanist ceremonies are one of the most popular choices in Scotland, and I regularly perform for them.\n\nMost couples choose live music for the aisle walk, signing and exit, and I can help you decide what works best for your ceremony and venue.",
+  },
+  {
     question: "Why choose a live singer for your wedding ceremony?",
     answer:
       "Live music makes ceremony moments feel more personal and emotional. I've had couples tell me their guests still mention the music years later. Particularly during the aisle entrance and register signing. There's something about live vocals that recorded tracks just don't capture.",

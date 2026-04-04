@@ -185,6 +185,10 @@ const faqs = [
     q: "What happens if a wedding ceremony runs behind schedule?",
     a: "It is not a problem. Weddings rarely run to the minute, so I build in flexibility and stay in close communication with your venue on the day so the music always lands at the right moment, no matter how the timings shift.",
   },
+  {
+    q: "Do you perform at humanist weddings in Scotland?",
+    a: "Yes. Humanist ceremonies are one of the most popular choices in Scotland, and I regularly perform for them.\n\nMost couples choose live music for the aisle walk, signing and exit, and I can help you decide what works best for your ceremony and venue.",
+  },
 ];
 
 const venues = [
@@ -231,7 +235,8 @@ export default function WeddingCeremonySingerGlasgowPage() {
             <p className="text-lg text-[#444444] leading-relaxed">
               Live music adds warmth, atmosphere and feeling to each part of it
               — from walking down the aisle, to the signing, to the moment you
-              leave as newlyweds. The right songs do more than fill the silence.
+              leave as newlyweds, whether you&apos;re planning a civil or
+              humanist ceremony. The right songs do more than fill the silence.
               They stay with you.
             </p>
           </div>
