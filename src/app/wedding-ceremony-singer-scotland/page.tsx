@@ -40,6 +40,10 @@ const ceremonyMoments = [
     tip: "Save the live music for the key ceremony moments rather than starting as guests arrive (although this can absolutely be done if it is important to you). Instead, we can curate a meaningful playlist to set the tone. This can build anticipation and make your aisle walk as epic as it should be.\n\nIt is also really helpful for me to know a little about your aisle, how many are in your 'I do' crew, and who is coming down the aisle when, whether that is individually, together, or even with your dog, so we can plan it together.",
     clips: [
       {
+        title: "How Long Will I Love You – Ellie Goulding",
+        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/how-long-will-i-love-you-ellie-goulding-4",
+      },
+      {
         title: "I Get to Love You – Ruelle",
         embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/i-get-to-love-you-ruelle",
       },
@@ -47,14 +51,32 @@ const ceremonyMoments = [
         title: "I Can't Help Falling In Love – Elvis Presley",
         embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/i-cant-help-falling-in-love",
       },
+      {
+        title: "Lover – Taylor Swift",
+        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/lover-taylor-swift-8",
+      },
+      {
+        title: "Iris – Goo Goo Dolls",
+        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/iris-goo-goo-dolls-5",
+      },
+      {
+        title: "Feels Like Home – Chantal Kreviazuk",
+        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/feels-like-home-chantal-kreviazuk-2",
+      },
+      {
+        title: "Have I Told You Lately – Rod Stewart",
+        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/have-i-you-lately-rod-stewart-4",
+      },
     ],
     songs: [
-      "Feels Like Home – Chantal Kreviazuk",
-      "Can't Help Falling in Love – Haley Reinhart",
+      "How Long Will I Love You – Ellie Goulding",
       "I Get to Love You – Ruelle",
+      "I Can't Help Falling In Love – Elvis Presley",
+      "Lover – Taylor Swift",
+      "Iris – Goo Goo Dolls",
+      "Feels Like Home – Chantal Kreviazuk",
       "Marry You – Bruno Mars",
       "You're Still the One – Shania Twain",
-      "Lover – Taylor Swift",
     ],
   },
   {
@@ -65,20 +87,37 @@ const ceremonyMoments = [
     tip: "This can be a great place to include a special song. I would usually suggest choosing two backup songs as well, just in case the photos take longer than expected.\n\nAcoustic guitar and piano based versions of songs usually work best for the aisle and register-signing moments. This does not limit your song choice, as acoustic-style tracks can usually be sourced for any song you can think of. If your dream choice is something a bit more left-field — the kind of obscure mixtape track nobody else has heard of — made-to-order tracks can usually be arranged for around £35–£60.",
     clips: [
       {
-        title: "Everything – Michael Bublé",
-        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/everything-michael-buble-5",
+        title: "Misty – Ella Fitzgerald",
+        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/misty-ella-fitzgerald-1",
       },
       {
-        title: "Love at First Sight – Kylie Minogue",
-        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/love-at-first-sight-kylie-minogue-4",
+        title: "At Last – Etta James",
+        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/at-last-etta-james-at-coats-paisley-2",
+      },
+      {
+        title: "Heaven – Bryan Adams",
+        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/heaven-bryan-adams-3",
+      },
+      {
+        title: "For Good – Wicked",
+        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/for-good-wicked-2",
+      },
+      {
+        title: "A Million Dreams – The Greatest Showman",
+        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/a-million-dreams-the-greatest-showman-1",
+      },
+      {
+        title: "From This Moment – Shania Twain",
+        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/from-this-moment-shania-twain-3",
       },
     ],
     songs: [
-      "Everything – Michael Bublé",
-      "How Long Will I Love You – Ellie Goulding",
-      "Love At First Sight – Kylie Minogue",
+      "Misty – Ella Fitzgerald",
+      "At Last – Etta James",
+      "Heaven – Bryan Adams",
+      "For Good – Wicked",
+      "A Million Dreams – The Greatest Showman",
       "Make You Feel My Love – Adele",
-      "Don't Worry Be Happy – Bobby McFerrin",
       "Your Song – Elton John",
     ],
   },
@@ -94,14 +133,33 @@ const ceremonyMoments = [
         embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/man-i-need-raye",
       },
       {
+        title: "Love at First Sight – Kylie Minogue",
+        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/love-at-first-sight-kylie-minogue-4",
+      },
+      {
+        title: "Don't Worry, Be Happy – Bobby McFerrin",
+        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/dont-worry-be-happy-bobby-mcferrin-2",
+      },
+      {
         title: "The Promise – Girls Aloud",
         embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/the-promise-girls-aloud",
+      },
+      {
+        title: "Love Story – Taylor Swift",
+        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/love-story-taylor-swift-7",
+      },
+      {
+        title: "Signed, Sealed, Delivered – Stevie Wonder",
+        embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/signed-sealed-delivered-stevie-wonder-6",
       },
     ],
     songs: [
       "Man I Need – Olivia Dean",
-      "This Will Be – Natalie Cole",
+      "Love at First Sight – Kylie Minogue",
+      "Don't Worry, Be Happy – Bobby McFerrin",
+      "The Promise – Girls Aloud",
       "Love Story – Taylor Swift",
+      "This Will Be – Natalie Cole",
       "Signed, Sealed, Delivered, I'm Yours – Stevie Wonder",
       "Young Hearts Run Free – Candi Staton",
       "Yes Sir, I Can Boogie – Baccara",
