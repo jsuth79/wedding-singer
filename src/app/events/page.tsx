@@ -137,7 +137,7 @@ export default function EventsPage() {
                   </ul>
                   <Link
                     href="/enquiry"
-                    className="flex flex-col items-center w-full text-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-6 py-3 text-sm tracking-wider transition-colors rounded-[4px]"
+                    className="flex flex-col items-center w-full text-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-6 py-3 text-sm tracking-wider transition-colors rounded-[6px]"
                   >
                     <span>Check Your Date</span>
                     <span className="text-xs normal-case tracking-normal mt-0.5 opacity-75">quick reply, no pressure</span>
@@ -161,18 +161,18 @@ export default function EventsPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <TrackedWhatsAppLink
               location="events_page_cta"
-              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[4px]"
+              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[6px]"
             >
-              <span className="font-medium">Message on WhatsApp</span>
+              <span className="font-medium text-base">Message on WhatsApp</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                 I usually reply within a few hours
               </span>
             </TrackedWhatsAppLink>
             <TrackedEnquiryLink
               location="events_page_cta"
-              className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[4px]"
+              className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[6px]"
             >
-              <span className="font-medium">Send An Enquiry</span>
+              <span className="font-medium text-base">Send An Enquiry</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                 quick form · I&apos;ll reply personally
               </span>
@@ -204,26 +204,30 @@ export default function EventsPage() {
                 title: "Professional PA",
                 description:
                   "State-of-the-art audio equipment suitable for indoor and outdoor venues",
+                icon: "▶",
               },
               {
                 title: "Flexible Setlist",
                 description:
                   "Repertoire tailored to your event theme and audience preferences",
+                icon: "♪",
               },
               {
                 title: "Fully Insured",
                 description:
                   "Full Public Liability Insurance, PAT-tested equipment and a member of the Musicians' Union (MU)",
+                icon: "✓",
               },
               {
                 title: "Song Requests",
                 description:
                   "Happy to learn specific songs for your event (subject to availability)",
+                icon: "♡",
               },
             ].map((item) => (
               <div key={item.title} className="text-center">
                 <div className="w-16 h-16 bg-[#C4A882]/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-[#C4A882] text-2xl">♪</span>
+                  <span className="text-[#C4A882] text-2xl">{item.icon}</span>
                 </div>
                 <h3 className="text-lg font-serif text-[#1a1a1a] mb-2">
                   {item.title}

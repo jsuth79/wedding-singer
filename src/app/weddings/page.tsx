@@ -77,13 +77,14 @@ export default function WeddingsPage() {
 
             {/* Ceremony */}
             <div className="flex items-start flex-1">
-              <Link href="/wedding-ceremony-singer-scotland" className="flex flex-col items-center flex-1 group">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center mb-3 bg-[#C4A882]/20 group-hover:bg-[#C4A882]/40 transition-colors">
+              <div className="flex flex-col items-center flex-1">
+                <div className="w-12 h-12 rounded-full flex items-center justify-center mb-3 bg-[#C4A882]/20">
                   <span className="text-lg text-[#C4A882]">♪</span>
                 </div>
-                <p className="text-sm font-medium text-center mb-1 text-[#1a1a1a] group-hover:text-[#C4A882] transition-colors">Ceremony</p>
-                <p className="text-sm text-center leading-snug text-[#C4A882]">Live performance of aisle, register & exit songs</p>
-              </Link>
+                <p className="text-sm font-medium text-center mb-1 text-[#1a1a1a]">Ceremony</p>
+                <p className="text-sm text-center leading-snug text-[#C4A882] mb-2">Live performance of aisle, register & exit songs</p>
+                <Link href="/wedding-ceremony-singer-scotland" className="text-xs text-[#C4A882] hover:text-[#A68B5B] transition-colors uppercase tracking-wider">Learn more →</Link>
+              </div>
               <div className="h-px bg-stone-200 flex-none w-4 mt-6" />
             </div>
 
@@ -150,11 +151,9 @@ export default function WeddingsPage() {
                 </div>
                 <div className="pb-6">
                   {step.note && <p className="text-xs text-stone-400 uppercase tracking-wider mb-1">{step.note}</p>}
-                  {step.href
-                    ? <Link href={step.href} className="text-sm font-medium mb-0.5 text-[#1a1a1a] hover:text-[#C4A882] transition-colors">{step.title}</Link>
-                    : <p className={`text-sm font-medium mb-0.5 ${step.music ? "text-[#1a1a1a]" : "text-[#888888]"}`}>{step.title}</p>
-                  }
+                  <p className={`text-sm font-medium mb-0.5 ${step.href ? "text-[#1a1a1a]" : step.music ? "text-[#1a1a1a]" : "text-[#888888]"}`}>{step.title}</p>
                   <p className={`text-sm leading-snug ${step.music ? "text-[#C4A882]" : "text-stone-400"}`}>{step.label}</p>
+                  {step.href && <Link href={step.href} className="text-xs text-[#C4A882] hover:text-[#A68B5B] transition-colors uppercase tracking-wider">Learn more →</Link>}
                 </div>
               </div>
             ))}
@@ -295,26 +294,30 @@ export default function WeddingsPage() {
                 title: "Professional PA",
                 description:
                   "State-of-the-art audio equipment suitable for indoor and outdoor venues",
+                icon: "▶",
               },
               {
                 title: "Flexible Setlist",
                 description:
                   "Repertoire tailored to your wedding theme and personal preferences",
+                icon: "♪",
               },
               {
                 title: "Fully Insured",
                 description:
                   "Full Public Liability Insurance, PAT-tested equipment and a member of the Musicians' Union (MU)",
+                icon: "✓",
               },
               {
                 title: "Song Requests",
                 description:
                   "Happy to learn specific songs for your day (subject to availability)",
+                icon: "♡",
               },
             ].map((item) => (
               <div key={item.title} className="text-center">
                 <div className="w-16 h-16 bg-[#C4A882]/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-[#C4A882] text-2xl">♪</span>
+                  <span className="text-[#C4A882] text-2xl">{item.icon}</span>
                 </div>
                 <h3 className="text-lg font-serif text-[#1a1a1a] mb-2">
                   {item.title}
@@ -347,18 +350,18 @@ export default function WeddingsPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <TrackedWhatsAppLink
               location="weddings_page_cta"
-              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[4px]"
+              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[6px]"
             >
-              <span className="font-medium">Message on WhatsApp</span>
+              <span className="font-medium text-base">Message on WhatsApp</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                 I usually reply within a few hours
               </span>
             </TrackedWhatsAppLink>
             <TrackedEnquiryLink
               location="weddings_page_cta"
-              className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[4px]"
+              className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[6px]"
             >
-              <span className="font-medium">Send An Enquiry</span>
+              <span className="font-medium text-base">Send An Enquiry</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                 quick form · I&apos;ll reply personally
               </span>

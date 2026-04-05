@@ -46,7 +46,7 @@ export default function RepertoireClient() {
           <div className="flex flex-wrap gap-2 justify-center">
             <button
               onClick={() => setActive(null)}
-              className={`px-4 py-2 text-xs uppercase tracking-[0.15em] rounded-[4px] border transition-colors ${
+              className={`px-4 py-2 text-xs uppercase tracking-[0.15em] rounded-[6px] border transition-colors ${
                 active === null
                   ? "bg-[#2C2C2C] text-white border-[#2C2C2C]"
                   : "bg-white text-[#2C2C2C] border-stone-200 hover:border-[#C4A882] hover:text-[#C4A882]"
@@ -58,7 +58,7 @@ export default function RepertoireClient() {
               <button
                 key={category}
                 onClick={() => setActive(category)}
-                className={`px-4 py-2 text-xs uppercase tracking-[0.15em] rounded-[4px] border transition-colors ${
+                className={`px-4 py-2 text-xs uppercase tracking-[0.15em] rounded-[6px] border transition-colors ${
                   active === category
                     ? "bg-[#2C2C2C] text-white border-[#2C2C2C]"
                     : "bg-white text-[#2C2C2C] border-stone-200 hover:border-[#C4A882] hover:text-[#C4A882]"
@@ -88,7 +88,7 @@ export default function RepertoireClient() {
           )}
 
           {displayedSongs.length === 0 && (
-            <div className="border border-dashed border-stone-300 rounded-[4px] bg-white/60 px-6 py-12 text-center">
+            <div className="border border-dashed border-stone-300 rounded-[6px] bg-white/60 px-6 py-12 text-center">
               <p className="text-[#2C2C2C] font-medium mb-2">
                 No songs listed right now
               </p>
@@ -123,18 +123,18 @@ export default function RepertoireClient() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <TrackedWhatsAppLink
               location="repertoire_cta"
-              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[4px]"
+              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[6px]"
             >
-              <span className="font-medium">Message on WhatsApp</span>
+              <span className="font-medium text-base">Message on WhatsApp</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                 I usually reply within a few hours
               </span>
             </TrackedWhatsAppLink>
             <TrackedEnquiryLink
               location="repertoire_cta"
-              className="inline-flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-10 py-4 text-sm tracking-wider transition-colors rounded-[4px]"
+              className="inline-flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-10 py-4 text-sm tracking-wider transition-colors rounded-[6px]"
             >
-              <span className="font-medium">Send An Enquiry</span>
+              <span className="font-medium text-base">Send An Enquiry</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                 quick form · I'll reply personally
               </span>

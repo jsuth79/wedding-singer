@@ -101,7 +101,7 @@ export default function EnquiryForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       {status === "error" && (
-        <div className="bg-red-50 border border-red-200 rounded-[4px] p-4 text-red-700 text-sm">
+        <div className="bg-red-50 border border-red-200 rounded-[6px] p-4 text-red-700 text-sm">
           {errorMessage}
         </div>
       )}
@@ -119,7 +119,7 @@ export default function EnquiryForm() {
             required
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            className="w-full px-4 py-3 bg-white border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow"
+            className="w-full px-4 py-3 bg-white border border-stone-300 rounded-[6px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow"
             placeholder="Your name"
           />
         </div>
@@ -136,7 +136,7 @@ export default function EnquiryForm() {
             required
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            className="w-full px-4 py-3 bg-white border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow"
+            className="w-full px-4 py-3 bg-white border border-stone-300 rounded-[6px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow"
             placeholder="your@email.com"
           />
         </div>
@@ -152,7 +152,7 @@ export default function EnquiryForm() {
             autoComplete="tel"
             value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-            className="w-full px-4 py-3 bg-white border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow"
+            className="w-full px-4 py-3 bg-white border border-stone-300 rounded-[6px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow"
             placeholder="Your phone number"
           />
           <p className="mt-2 text-xs text-[#888888]">
@@ -171,7 +171,7 @@ export default function EnquiryForm() {
             required
             value={formData.eventDate}
             onChange={(e) => setFormData({ ...formData, eventDate: e.target.value })}
-            className="w-full px-4 py-3 bg-white border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow"
+            className="w-full px-4 py-3 bg-white border border-stone-300 rounded-[6px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow"
           />
         </div>
 
@@ -184,7 +184,7 @@ export default function EnquiryForm() {
             required
             value={formData.eventType}
             onChange={(e) => setFormData({ ...formData, eventType: e.target.value })}
-            className="w-full px-4 py-3 border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow bg-white"
+            className="w-full px-4 py-3 border border-stone-300 rounded-[6px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow bg-white"
           >
             <option value="">Select event type...</option>
             {eventTypes.map((type) => (
@@ -206,7 +206,7 @@ export default function EnquiryForm() {
           rows={5}
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-          className="w-full px-4 py-3 bg-white border border-stone-300 rounded-[4px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow resize-none"
+          className="w-full px-4 py-3 bg-white border border-stone-300 rounded-[6px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow resize-none"
           placeholder="Please include details about your venue, approximate number of guests, and any specific songs or packages you're interested in..."
         />
       </div>
@@ -214,11 +214,11 @@ export default function EnquiryForm() {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="w-full flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] disabled:bg-[#888888] text-white py-4 text-sm tracking-wider transition-colors rounded-[4px]"
+        className="w-full flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] disabled:bg-[#888888] text-white py-4 text-sm tracking-wider transition-colors rounded-[6px]"
       >
         {status === "loading" ? "Sending..." : (
           <>
-            <span className="font-medium">Send Your Details</span>
+            <span className="font-medium text-base">Send Your Details</span>
             <span className="text-sm normal-case tracking-normal mt-1 opacity-75">I'll get back to you within 24 hours</span>
           </>
         )}
