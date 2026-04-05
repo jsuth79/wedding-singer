@@ -65,7 +65,7 @@ export default function WeddingsPage() {
       </section>
 
       {/* Wedding Day Timeline */}
-      <section className="py-12 md:py-20 px-6 bg-white">
+      <section id="timeline" className="py-12 md:py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">Your Wedding Day Music Timeline</p>

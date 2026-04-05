@@ -245,7 +245,7 @@ export default function HomePage() {
           </div>
           <div className="text-center mt-10">
             <Link
-              href="/weddings#whats-included"
+              href="/weddings#timeline"
               className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider"
             >
               See Where Music Fits Within Your Wedding Day →
