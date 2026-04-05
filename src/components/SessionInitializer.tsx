@@ -1,9 +1,12 @@
 'use client';
 
 import { useEffect } from 'react';
-import { identifySession } from '@/lib/analytics';
+import { usePathname } from 'next/navigation';
+import { identifySession, updateFunnelStage } from '@/lib/analytics';
 
 export default function SessionInitializer() {
+  const pathname = usePathname();
+
   useEffect(() => {
     if (window.umami) {
       identifySession();
@@ -21,6 +24,10 @@ export default function SessionInitializer() {
     }, 100);
     return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    updateFunnelStage(pathname);
+  }, [pathname]);
 
   return null;
 }

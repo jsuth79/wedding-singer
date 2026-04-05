@@ -30,11 +30,26 @@ function getReferrerDomain(referrer: string): string {
   }
 }
 
+const FUNNEL_RANKS: Record<string, number> = { awareness: 1, consideration: 2, conversion: 3 };
+const FUNNEL_KEY = 'umami_funnel_rank';
+
 function getFunnelStage(path: string): string | null {
   if (path === '/') return 'awareness';
   if (/^\/(weddings|events|repertoire|faq|wedding-ceremony-singer-scotland)/.test(path)) return 'consideration';
   if (path.startsWith('/enquiry')) return 'conversion';
   return null;
+}
+
+export function updateFunnelStage(path: string) {
+  if (typeof window === 'undefined' || !window.umami) return;
+  const stage = getFunnelStage(path);
+  if (!stage) return;
+  const newRank = FUNNEL_RANKS[stage];
+  const currentRank = parseInt(sessionStorage.getItem(FUNNEL_KEY) || '0', 10);
+  if (newRank > currentRank) {
+    sessionStorage.setItem(FUNNEL_KEY, String(newRank));
+    window.umami.identify({ funnel: stage });
+  }
 }
 
 function getTimeOfDay(): string {
@@ -53,14 +68,21 @@ export function identifySession() {
   const now = new Date();
   const day_of_week = [0, 6].includes(now.getDay()) ? 'weekend' : 'weekday';
 
+  const isFirstVisit = !localStorage.getItem('nm_visited');
+  if (isFirstVisit) localStorage.setItem('nm_visited', '1');
+
   const data: Record<string, string> = {
     channel,
     time_of_day: getTimeOfDay(),
     day_of_week,
+    first_visit: isFirstVisit ? 'true' : 'false',
   };
   if (referrer_domain) data.referrer_domain = referrer_domain;
   const funnel = getFunnelStage(window.location.pathname);
-  if (funnel) data.funnel = funnel;
+  if (funnel) {
+    data.funnel = funnel;
+    sessionStorage.setItem(FUNNEL_KEY, String(FUNNEL_RANKS[funnel]));
+  }
 
   window.umami.identify(data);
 }
