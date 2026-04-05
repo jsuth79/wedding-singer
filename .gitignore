@@ -44,3 +44,4 @@ yarn-error.log*
 next-env.d.ts
 /.claude
 wedding-ceremony-music-scotland.md
+.claude/settings.local.json
