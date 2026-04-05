@@ -54,9 +54,9 @@ export default function EnquirePage() {
 
               <TrackedWhatsAppLink
                 location="enquiry_page_whatsapp_col"
-                className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-8 py-4 text-sm tracking-wider transition-colors rounded-[4px] w-full lg:w-auto text-center mb-3"
+                className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-8 py-4 text-sm tracking-wider transition-colors rounded-[6px] w-full lg:w-auto text-center mb-3"
               >
-                <span className="font-medium">Message on WhatsApp</span>
+                <span className="font-medium text-base">Message on WhatsApp</span>
                 <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                   I usually reply within a few hours
                 </span>
@@ -64,9 +64,9 @@ export default function EnquirePage() {
 
               <a
                 href="sms:+447740360678?body=Hi%20Nicola%2C%20I'm%20%5BNAME%5D%20and%20I'm%20getting%20married%20on%20%5BDATE%5D%20at%20%5BVENUE%5D.%20I'm%20interested%20in%20music%20for%20%5BCEREMONY%20%2F%20DRINKS%20%2F%20FULL%20DAY%5D.%20Are%20you%20available%3F"
-                className="inline-flex flex-col items-center bg-[#8C8C93] hover:bg-[#757578] text-white px-8 py-4 text-sm tracking-wider transition-colors rounded-[4px] w-full lg:w-auto text-center mb-8"
+                className="inline-flex flex-col items-center bg-[#8C8C93] hover:bg-[#757578] text-white px-8 py-4 text-sm tracking-wider transition-colors rounded-[6px] w-full lg:w-auto text-center mb-8"
               >
-                <span className="font-medium">Message by SMS</span>
+                <span className="font-medium text-base">Message by SMS</span>
                 <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                   I usually reply within a few hours
                 </span>

@@ -78,7 +78,7 @@ export default function PackageCard({
         {findOutMoreHref && (
           <Link
             href={findOutMoreHref}
-            className="block w-full text-center border border-[#C4A882] text-[#C4A882] hover:bg-[#C4A882] hover:text-white px-6 py-3 text-sm tracking-wider transition-colors rounded-[4px] mb-3"
+            className="block w-full text-center border border-[#C4A882] text-[#C4A882] hover:bg-[#C4A882] hover:text-white px-6 py-3 text-sm tracking-wider transition-colors rounded-[6px] mb-3"
           >
             {findOutMoreLabel}
           </Link>
@@ -88,14 +88,14 @@ export default function PackageCard({
             href={pkg.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full text-center border border-[#C4A882] text-[#C4A882] hover:bg-[#C4A882] hover:text-white px-6 py-3 text-sm tracking-wider transition-colors rounded-[4px] mb-3"
+            className="block w-full text-center border border-[#C4A882] text-[#C4A882] hover:bg-[#C4A882] hover:text-white px-6 py-3 text-sm tracking-wider transition-colors rounded-[6px] mb-3"
           >
             Find Out More
           </a>
         ) : (
           <Link
             href="/enquiry"
-            className="flex flex-col items-center w-full text-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-6 py-3 text-sm tracking-wider transition-colors rounded-[4px]"
+            className="flex flex-col items-center w-full text-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-6 py-3 text-sm tracking-wider transition-colors rounded-[6px]"
           >
             <span>Check Your Date</span>
             <span className="text-xs normal-case tracking-normal mt-0.5 opacity-75">quick reply, no pressure</span>

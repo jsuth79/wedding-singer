@@ -160,18 +160,18 @@ export default function FAQPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <TrackedWhatsAppLink
               location="faq_page_cta"
-              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[4px]"
+              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[6px]"
             >
-              <span className="font-medium">Message on WhatsApp</span>
+              <span className="font-medium text-base">Message on WhatsApp</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                 I usually reply within a few hours
               </span>
             </TrackedWhatsAppLink>
             <TrackedEnquiryLink
               location="faq_page_cta"
-              className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[4px]"
+              className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[6px]"
             >
-              <span className="font-medium">Send An Enquiry</span>
+              <span className="font-medium text-base">Send An Enquiry</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                 quick form · I&apos;ll reply personally
               </span>

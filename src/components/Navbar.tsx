@@ -46,9 +46,9 @@ export default function Navbar() {
               <Link
                 href="/enquiry"
                 onClick={() => trackEvent.clickEnquiryCTA('navbar_desktop')}
-                className="bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-4 xl:px-6 py-2.5 text-xs xl:text-sm uppercase tracking-wider transition-colors rounded-[4px] whitespace-nowrap"
+                className="bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-4 xl:px-6 py-2.5 text-xs xl:text-sm uppercase tracking-wider transition-colors rounded-[6px] whitespace-nowrap"
               >
-                Check Your Date
+                <span className="font-medium">Check Your Date</span>
               </Link>
             </li>
           </ul>
@@ -100,9 +100,9 @@ export default function Navbar() {
                     setIsOpen(false);
                     trackEvent.clickEnquiryCTA('navbar_mobile');
                   }}
-                  className="inline-block bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-5 py-2 text-sm uppercase tracking-wider transition-colors rounded-[4px]"
+                  className="inline-block bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-5 py-2 text-sm uppercase tracking-wider transition-colors rounded-[6px]"
                 >
-                  Check Your Date
+                  <span className="font-medium">Check Your Date</span>
                 </Link>
               </li>
             </ul>

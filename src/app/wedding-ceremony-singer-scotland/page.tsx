@@ -214,42 +214,47 @@ const soundcloudSrc = (embedUrl: string) =>
   `${embedUrl}&color=%23C4A882&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false`;
 
 export default function WeddingCeremonySingerGlasgowPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map((faq) => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a,
+      },
+    })),
+  };
+
   return (
     <div className="pt-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
       {/* Hero */}
       <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-8 items-center">
-          <div>
-            <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-              Wedding Ceremonies · Glasgow, Scotland and beyond
-            </p>
-            <h1 className="text-4xl md:text-5xl font-serif text-[#1a1a1a] mb-6 leading-tight">
-              Live Music for Your Wedding Ceremony
-            </h1>
-            <p className="text-lg text-[#444444] leading-relaxed mb-4">
-              Your ceremony is where the emotion of the whole day begins. It is
-              the moment the room goes quiet, the nerves turn into excitement,
-              and everything starts to feel real.
-            </p>
-            <p className="text-lg text-[#444444] leading-relaxed">
-              Live music adds warmth, atmosphere and feeling to each part of it
-              — from walking down the aisle, to the signing, to the moment you
-              leave as newlyweds, whether you&apos;re planning a civil or
-              humanist ceremony. The right songs do more than fill the silence.
-              They stay with you.
-            </p>
-          </div>
-          <div className="relative aspect-[4/3] rounded-lg overflow-hidden max-h-64 lg:max-h-[276px]">
-            <Image
-              src="/images/nicola-mason-wedding-ceremony-singer-l.webp"
-              alt="Nicola Mason wedding ceremony singer performing live acoustic music at a ceremony in Glasgow, Scotland"
-              fill
-              sizes="(max-width: 1024px) 100vw, 40vw"
-              className="object-cover"
-              priority
-            />
-          </div>
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
+            Wedding Ceremonies · Glasgow, Scotland and beyond
+          </p>
+          <h1 className="text-4xl md:text-6xl font-serif text-[#1a1a1a] mb-6">
+            Live Music for Your Wedding Ceremony
+          </h1>
+          <p className="text-xl text-[#444444] leading-relaxed mb-4">
+            Your ceremony is where the emotion of the whole day begins. It is
+            the moment the room goes quiet, the nerves turn into excitement,
+            and everything starts to feel real.
+          </p>
+          <p className="text-xl text-[#444444] leading-relaxed">
+            Live music adds warmth, atmosphere and feeling to each part of it
+            — from walking down the aisle, to the signing, to the moment you
+            leave as newlyweds, whether you&apos;re planning a civil or
+            humanist ceremony. The right songs do more than fill the silence.
+            They stay with you.
+          </p>
         </div>
       </section>
 
@@ -376,7 +381,7 @@ export default function WeddingCeremonySingerGlasgowPage() {
                 },
               ].map((r) => (
                 <div key={r.initials + r.venue} className="bg-white rounded-lg p-5 border border-stone-200">
-                  <p className="text-[#444444] text-sm leading-relaxed mb-4 italic">&ldquo;{r.excerpt}&rdquo;</p>
+                  <p className="text-[#444444] text-sm leading-relaxed mb-4">{r.excerpt}</p>
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-full bg-[#C4A882] flex items-center justify-center text-white text-xs font-medium shrink-0">
                       {r.initials}
@@ -397,24 +402,24 @@ export default function WeddingCeremonySingerGlasgowPage() {
 
       {/* FAQs */}
       <section className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
-              FAQs
+              Common Questions &amp; Planning
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#1a1a1a]">
               Ceremony Questions, Answered
             </h2>
           </div>
-          <div className="space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
             {faqs.map((faq) => (
-              <div key={faq.q} className="bg-white rounded-lg p-6 border border-stone-200">
-                <h3 className="font-serif text-[#1a1a1a] text-lg mb-3">{faq.q}</h3>
-                <p className="text-[#444444] text-sm leading-relaxed">{faq.a}</p>
+              <div key={faq.q} className="border-b border-stone-200 pb-6">
+                <h3 className="text-base font-medium text-[#2C2C2C] mb-2">{faq.q}</h3>
+                <p className="text-[#444444] text-base leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
-          <div className="text-center mt-8">
+          <div className="text-center mt-10">
             <Link href="/faq" className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider">
               Have More Questions? See All FAQs →
             </Link>
@@ -465,18 +470,18 @@ export default function WeddingCeremonySingerGlasgowPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <TrackedWhatsAppLink
               location="ceremony_glasgow_footer_cta"
-              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[4px]"
+              className="inline-flex flex-col items-center bg-[#C4A882] hover:bg-[#A68B5B] text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[6px]"
             >
-              <span className="font-medium">Message on WhatsApp</span>
+              <span className="font-medium text-base">Message on WhatsApp</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                 I usually reply within a few hours
               </span>
             </TrackedWhatsAppLink>
             <TrackedEnquiryLink
               location="ceremony_glasgow_footer_cta"
-              className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[4px]"
+              className="inline-flex flex-col items-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-10 py-4 text-sm tracking-wider transition-colors rounded-[6px]"
             >
-              <span className="font-medium">Send An Enquiry</span>
+              <span className="font-medium text-base">Send An Enquiry</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                 quick form · I'll reply personally
               </span>

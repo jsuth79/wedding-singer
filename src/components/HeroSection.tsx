@@ -38,16 +38,16 @@ export default function HeroSection() {
             <div className="flex flex-col gap-4 md:inline-flex">
               <Link
                 href="/#listen"
-                className="flex justify-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-8 py-4 text-sm tracking-wider transition-colors rounded-[4px] w-full"
+                className="flex justify-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-8 py-4 text-sm tracking-wider transition-colors rounded-[6px] w-full"
               >
-                Listen Now
+                <span className="font-medium text-base">Listen Now</span>
               </Link>
               <Link
                 href="/weddings"
                 onClick={() => trackEvent.viewPackage('hero_cta')}
-                className="inline-flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-8 py-4 text-sm tracking-wider transition-colors rounded-[4px] w-full"
+                className="inline-flex flex-col items-center bg-[#2C2C2C] hover:bg-[#1a1a1a] text-white px-8 py-4 text-sm tracking-wider transition-colors rounded-[6px] w-full"
               >
-                <span className="font-medium">View Wedding Packages</span>
+                <span className="font-medium text-base">View Wedding Packages</span>
                 <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
                   Starting from £325
                 </span>

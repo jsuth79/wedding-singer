@@ -227,6 +227,13 @@ export default function AudioSection() {
             </div>
           ))}
         </div>
+
+        <div className="text-center mt-8">
+          <Link href="/wedding-ceremony-singer-scotland" className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider">
+            Plan Your Ceremony Music &rarr;
+          </Link>
+        </div>
+
         <div className="mt-12">
           <p className="text-[#C4A882] text-xs uppercase tracking-[0.2em] mb-6 text-center">More From the Repertoire</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
