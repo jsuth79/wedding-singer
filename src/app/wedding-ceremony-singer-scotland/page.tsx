@@ -245,6 +245,7 @@ export default function WeddingCeremonySingerGlasgowPage() {
               src="/images/nicola-mason-wedding-ceremony-singer-l.webp"
               alt="Nicola Mason wedding ceremony singer performing live acoustic music at a ceremony in Glasgow, Scotland"
               fill
+              sizes="(max-width: 1024px) 100vw, 40vw"
               className="object-cover"
               priority
             />

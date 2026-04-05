@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
 import PreviewMode from "@/components/PreviewMode";
+import SessionInitializer from "@/components/SessionInitializer";
 import "./globals.css";
 
 const garamond = EB_Garamond({
@@ -79,6 +80,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <SessionInitializer />
       </body>
     </html>
   );

@@ -198,6 +198,7 @@ export default function HomePage() {
                 src="/images/nicola-mason-about-me-p.webp"
                 alt="Professional female wedding and events singer Nicola Mason based in Central Scotland, trained at Berklee College of Music"
                 fill
+                sizes="(max-width: 768px) 100vw, 30vw"
                 className="object-cover"
               />
             </div>

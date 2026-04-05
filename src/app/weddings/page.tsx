@@ -279,6 +279,7 @@ export default function WeddingsPage() {
                   src="/images/nicola-mason-full-package-p.webp"
                   alt="Nicola Mason performing live music as part of a full-day wedding package in Central Scotland"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 30vw"
                   className="object-cover"
                 />
               </div>
