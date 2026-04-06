@@ -3,15 +3,15 @@ import EnquiryForm from "@/components/EnquiryForm";
 import TrackedWhatsAppLink from "@/components/TrackedWhatsAppLink";
 
 export const metadata: Metadata = {
-  title: "Get In Touch | Nicola Mason Wedding & Events Singer",
+  title: "Check Availability | Wedding Singer Glasgow | Nicola Mason",
   description:
-    "Tell me your date and I'll let you know if I'm free. Message on WhatsApp or send a quick enquiry — I'll reply personally and quickly. Based in Glasgow, serving Central Scotland.",
+    "Check availability for your wedding date and get a quick personal reply. Message on WhatsApp or send an enquiry — I'll get back to you promptly.",
   alternates: {
     canonical: '/enquiry',
   },
   openGraph: {
-    title: "Get In Touch | Nicola Mason Wedding & Events Singer",
-    description: "Tell me your date and I'll let you know if I'm free. Message on WhatsApp or send a quick enquiry — I'll reply personally and quickly.",
+    title: "Check Availability | Wedding Singer Glasgow | Nicola Mason",
+    description: "Check availability for your wedding date and get a quick personal reply. Message on WhatsApp or send an enquiry — I'll get back to you promptly.",
     url: 'https://www.nicolamason.co.uk/enquiry',
   },
 };

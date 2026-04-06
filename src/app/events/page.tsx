@@ -5,15 +5,15 @@ import TrackedWhatsAppLink from "@/components/TrackedWhatsAppLink";
 import TrackedEnquiryLink from "@/components/TrackedEnquiryLink";
 
 export const metadata: Metadata = {
-  title: "Events Singer Glasgow | Corporate & Private Events | Nicola Mason",
+  title: "Event Singer Glasgow | Corporate & Private Events | Nicola Mason",
   description:
-    "Professional event singer for corporate functions, private parties, and celebrations. Based in Glasgow, serving Central Scotland.",
+    "Professional event singer for corporate functions and private events in Glasgow and across Central Scotland. Acoustic live music tailored to your event.",
   alternates: {
     canonical: '/events',
   },
   openGraph: {
-    title: 'Events Singer Glasgow | Corporate & Private Events | Nicola Mason',
-    description: 'Professional event entertainment for corporate functions, private parties, and celebrations across Central Scotland.',
+    title: "Event Singer Glasgow | Corporate & Private Events | Nicola Mason",
+    description: "Professional event singer for corporate functions and private events in Glasgow and across Central Scotland. Acoustic live music tailored to your event.",
     url: 'https://www.nicolamason.co.uk/events',
     images: [
       {

@@ -15,15 +15,15 @@ type MobileTimelineStep = {
 };
 
 export const metadata: Metadata = {
-  title: "Wedding Singer Packages Glasgow | Ceremony & Reception | Nicola Mason",
+  title: "Wedding Singer Packages Glasgow | Ceremony & Reception Music | Nicola Mason",
   description:
-    "Wedding singer packages for ceremonies, drinks receptions, and evening entertainment. Serving Glasgow, Edinburgh, and Central Scotland. Packages from £325.",
+    "Wedding singer packages for ceremonies, drinks receptions and wedding meals. Clear pricing and options across Glasgow and Central Scotland.",
   alternates: {
     canonical: '/weddings',
   },
   openGraph: {
-    title: 'Wedding Singer Packages Glasgow | Nicola Mason',
-    description: 'Professional wedding singer packages for ceremonies, drinks receptions, and evening entertainment across Central Scotland.',
+    title: "Wedding Singer Packages Glasgow | Ceremony & Reception Music | Nicola Mason",
+    description: "Wedding singer packages for ceremonies, drinks receptions and wedding meals. Clear pricing and options across Glasgow and Central Scotland.",
     url: 'https://www.nicolamason.co.uk/weddings',
     images: [
       {
@@ -175,7 +175,7 @@ export default function WeddingsPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {packages.map((pkg) => (
+            {packages.slice(0, 3).map((pkg) => (
               <div
                 key={pkg.name}
                 id={pkg.name === "Ceremony" ? "ceremony" : undefined}
@@ -185,6 +185,20 @@ export default function WeddingsPage() {
                   findOutMoreHref={pkg.name === "Ceremony" ? "/wedding-ceremony-singer-scotland" : undefined}
                   findOutMoreLabel={pkg.name === "Ceremony" ? "Plan Your Ceremony Music" : undefined}
                 />
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center my-10">
+            <Link href="/repertoire" className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider">
+              Want an idea of the songs I perform? →
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {packages.slice(3).map((pkg) => (
+              <div key={pkg.name}>
+                <PackageCard pkg={pkg} />
               </div>
             ))}
           </div>

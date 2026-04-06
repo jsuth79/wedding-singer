@@ -258,8 +258,8 @@ export default function AudioSection() {
         </div>
 
         <div className="text-center mt-10">
-          <Link href="/#videos" className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider">
-            View More Live Performances &rarr;
+          <Link href="/repertoire" className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider">
+            See More Songs &rarr;
           </Link>
         </div>
       </div>

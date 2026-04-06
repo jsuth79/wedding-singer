@@ -9,15 +9,15 @@ import TrackedWhatsAppLink from "@/components/TrackedWhatsAppLink";
 import TrackedEnquiryLink from "@/components/TrackedEnquiryLink";
 
 export const metadata: Metadata = {
-  title: "Award-Winning Female Wedding Singer Glasgow | Nicola Mason | Scottish Ceremony & Event Singer",
+  title: "Wedding Singer Glasgow | Acoustic Wedding Music Scotland | Nicola Mason",
   description:
-    "Professional wedding singer in Glasgow & Central Scotland. Scottish Wedding Awards Winner. Live acoustic music for ceremonies, receptions & celebrations. Book now for 2026/2027.",
+    "Professional wedding singer in Glasgow and across Scotland. Acoustic live music for ceremonies, drinks receptions and wedding meals. Scottish Wedding Awards winner.",
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Award-Winning Female Wedding Singer Glasgow | Nicola Mason',
-    description: 'Professional wedding singer in Glasgow & Central Scotland. Scottish Wedding Awards Winner. Live music for ceremonies, receptions & celebrations.',
+    title: "Wedding Singer Glasgow | Acoustic Wedding Music Scotland | Nicola Mason",
+    description: "Professional wedding singer in Glasgow and across Scotland. Acoustic live music for ceremonies, drinks receptions and wedding meals. Scottish Wedding Awards winner.",
     url: 'https://www.nicolamason.co.uk',
     images: [
       {
@@ -87,7 +87,7 @@ const venueRegions = [
   },
 ];
 
-const faqs = [
+const faqs: { question: string; answer: React.ReactNode; schemaAnswer?: string }[] = [
   {
     question: "Where are you based and where can you perform?",
     answer:
@@ -95,8 +95,8 @@ const faqs = [
   },
   {
     question: "Can we choose our own songs for our wedding ceremony?",
-    answer:
-      "Absolutely. You can choose from my extensive repertoire of acoustic classics and modern hits. I may also be able to learn a special song (subject to availability) to make your walk down the aisle or first dance truly personal.",
+    answer: <>Absolutely. You can choose from <Link href="/repertoire" className="text-[#C4A882] hover:text-[#A68B5B] underline underline-offset-2 transition-colors">my extensive repertoire</Link> of acoustic classics and modern hits. I may also be able to learn a special song (subject to availability) to make your walk down the aisle or first dance truly personal.</>,
+    schemaAnswer: "Absolutely. You can choose from my extensive repertoire of acoustic classics and modern hits. I may also be able to learn a special song (subject to availability) to make your walk down the aisle or first dance truly personal.",
   },
   {
     question: "Do you provide your own equipment and insurance?",
@@ -119,7 +119,7 @@ export default function HomePage() {
       "name": faq.question,
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": faq.answer
+        "text": faq.schemaAnswer ?? faq.answer
       }
     }))
   };

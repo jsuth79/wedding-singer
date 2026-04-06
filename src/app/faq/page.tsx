@@ -1,22 +1,23 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import TrackedWhatsAppLink from "@/components/TrackedWhatsAppLink";
 import TrackedEnquiryLink from "@/components/TrackedEnquiryLink";
 
 export const metadata: Metadata = {
-  title: "Frequently Asked Questions | Nicola Mason",
+  title: "Wedding Singer FAQs Scotland | Booking, Songs & Pricing | Nicola Mason",
   description:
-    "Common questions about booking a wedding singer in Scotland. Learn about packages, availability, repertoire, and what to expect.",
+    "Answers to common questions about hiring a wedding singer in Scotland, including song choices, packages, pricing and what to expect on the day.",
   alternates: {
     canonical: '/faq',
   },
   openGraph: {
-    title: 'Wedding Singer FAQs | Nicola Mason',
-    description: 'Common questions about booking a wedding singer in Scotland. Learn about packages, availability, repertoire, and what to expect.',
+    title: "Wedding Singer FAQs Scotland | Booking, Songs & Pricing | Nicola Mason",
+    description: "Answers to common questions about hiring a wedding singer in Scotland, including song choices, packages, pricing and what to expect on the day.",
     url: 'https://www.nicolamason.co.uk/faq',
   },
 };
 
-const faqs: { question: string; answer: string }[] = [
+const faqs: { question: string; answer: React.ReactNode; schemaAnswer?: string }[] = [
   {
     question: "How much does a wedding singer cost in Scotland?",
     answer:
@@ -25,7 +26,8 @@ const faqs: { question: string; answer: string }[] = [
   {
     question: "Can one singer cover the whole wedding day — ceremony, drinks reception, and evening?",
     answer:
-      "Yes — and for many couples, having a single artist carry the musical thread through the entire day creates a far more cohesive, relaxed experience than coordinating multiple acts. A professional solo singer with full PA can move through your ceremony, drinks reception, during the meal, and evening entertainment, adapting the mood and repertoire at each stage.\n\nThat said, it requires stamina, versatility, and proper planning. Not every singer is set up to do this well.\n\nI offer tailored full-day and part-day packages designed specifically to flow naturally through each moment — from the quiet intimacy of a ceremony to the energy of an evening reception — with everything managed seamlessly so you don't have to think about it.",
+      <>Yes — and for many couples, having a single artist carry the musical thread through the entire day creates a far more cohesive, relaxed experience than coordinating multiple acts. A professional solo singer with full PA can move through your ceremony, drinks reception, during the meal, and evening entertainment, adapting the mood and <Link href="/repertoire" className="text-[#C4A882] hover:text-[#A68B5B] underline underline-offset-2 transition-colors">repertoire</Link> at each stage.{"\n\n"}That said, it requires stamina, versatility, and proper planning. Not every singer is set up to do this well.{"\n\n"}I offer tailored full-day and part-day packages designed specifically to flow naturally through each moment — from the quiet intimacy of a ceremony to the energy of an evening reception — with everything managed seamlessly so you don&apos;t have to think about it.</>,
+    schemaAnswer: "Yes — and for many couples, having a single artist carry the musical thread through the entire day creates a far more cohesive, relaxed experience than coordinating multiple acts. A professional solo singer with full PA can move through your ceremony, drinks reception, during the meal, and evening entertainment, adapting the mood and repertoire at each stage.\n\nThat said, it requires stamina, versatility, and proper planning. Not every singer is set up to do this well.\n\nI offer tailored full-day and part-day packages designed specifically to flow naturally through each moment — from the quiet intimacy of a ceremony to the energy of an evening reception — with everything managed seamlessly so you don't have to think about it.",
   },
   {
     question: "What parts of the wedding day does a singer typically perform at?",
@@ -75,7 +77,8 @@ const faqs: { question: string; answer: string }[] = [
   {
     question: "Can I choose my own songs for the wedding ceremony?",
     answer:
-      "I perform solo vocals to high-quality backing tracks, with the option to incorporate live accompaniment where suitable. You can choose songs from my repertoire and I may also be able to accommodate special requests depending on preparation time and the availability of backing tracks.",
+      <>I perform solo vocals to high-quality backing tracks, with the option to incorporate live accompaniment where suitable. You can choose songs from <Link href="/repertoire" className="text-[#C4A882] hover:text-[#A68B5B] underline underline-offset-2 transition-colors">my repertoire</Link> and I may also be able to accommodate special requests depending on preparation time and the availability of backing tracks.</>,
+    schemaAnswer: "I perform solo vocals to high-quality backing tracks, with the option to incorporate live accompaniment where suitable. You can choose songs from my repertoire and I may also be able to accommodate special requests depending on preparation time and the availability of backing tracks.",
   },
   {
     question: "Can I book a wedding singer directly without an agency?",
@@ -90,7 +93,8 @@ const faqs: { question: string; answer: string }[] = [
   {
     question: "What type of music can you perform at weddings?",
     answer:
-      "I have a versatile repertoire covering everything from classic wedding favourites to current chart hits, but I've found acoustic versions of well-known songs to be popular with couples and guests. I can tailor my song selections to match your preferences and the mood of your event, whether you want romantic ballads for your ceremony or a more upbeat vibe for later in the day.",
+      <>I have a <Link href="/repertoire" className="text-[#C4A882] hover:text-[#A68B5B] underline underline-offset-2 transition-colors">versatile repertoire</Link> covering everything from classic wedding favourites to current chart hits, but I&apos;ve found acoustic versions of well-known songs to be popular with couples and guests. I can tailor my song selections to match your preferences and the mood of your event, whether you want romantic ballads for your ceremony or a more upbeat vibe for later in the day.</>,
+    schemaAnswer: "I have a versatile repertoire covering everything from classic wedding favourites to current chart hits, but I've found acoustic versions of well-known songs to be popular with couples and guests. I can tailor my song selections to match your preferences and the mood of your event, whether you want romantic ballads for your ceremony or a more upbeat vibe for later in the day.",
   },
 ];
 
@@ -103,7 +107,7 @@ export default function FAQPage() {
       "name": faq.question,
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": faq.answer,
+        "text": faq.schemaAnswer ?? faq.answer,
       },
     })),
   };

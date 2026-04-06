@@ -27,15 +27,15 @@ export default function HeroSection() {
               Award-Winning Music for Your Wedding Day
             </h1>
             <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
-              Live singing throughout your wedding day, from your aisle walk through to your first dances.
+              Live acoustic singing throughout your wedding day, from your aisle walk through to your first dances.
             </p>
           </div>
         </div>
 
         {/* CTA - bottom */}
-        <div className="relative z-10 w-full px-6 md:px-12 pb-12">
-          <div className="ml-0 md:ml-8">
-            <div className="flex flex-col gap-4 md:inline-flex">
+        <div className="relative z-10 w-full px-6 md:px-12 pb-8">
+          <div className="ml-0 md:ml-8 flex flex-col items-center md:items-start gap-5">
+            <div className="flex flex-col gap-4 md:inline-flex w-full md:w-auto">
               <Link
                 href="/#listen"
                 className="flex justify-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-8 py-4 text-sm tracking-wider transition-colors rounded-[6px] w-full"
@@ -53,6 +53,12 @@ export default function HeroSection() {
                 </span>
               </Link>
             </div>
+            <Link
+              href="/wedding-ceremony-singer-scotland"
+              className="inline-block text-white border-b-2 border-white/60 pb-1 hover:border-white transition-colors uppercase text-sm tracking-wider"
+            >
+              Live Music for Your Ceremony →
+            </Link>
           </div>
         </div>
       </section>

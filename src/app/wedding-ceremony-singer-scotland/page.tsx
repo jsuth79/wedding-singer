@@ -7,16 +7,15 @@ import TrackedEnquiryLink from "@/components/TrackedEnquiryLink";
 import { packages } from "@/data/packages";
 
 export const metadata: Metadata = {
-  title: "Wedding Ceremony Singer Glasgow | Live Aisle & Ceremony Music Scotland",
+  title: "Wedding Ceremony Singer Glasgow | Acoustic Aisle & Ceremony Music | Nicola Mason",
   description:
-    "Acoustic wedding ceremony singer in Glasgow and across Scotland. Live music for walking down the aisle, signing the register and exit songs. Check availability for your date.",
+    "Acoustic wedding ceremony singer in Glasgow and across Scotland. Live music for your aisle walk, signing and exit. Check availability for your date.",
   alternates: {
     canonical: "/wedding-ceremony-singer-scotland",
   },
   openGraph: {
-    title: "Wedding Ceremony Singer Glasgow | Live Aisle & Ceremony Music Scotland",
-    description:
-      "Acoustic wedding ceremony singer in Glasgow and across Scotland. Live music for walking down the aisle, signing the register and exit songs.",
+    title: "Wedding Ceremony Singer Glasgow | Acoustic Aisle & Ceremony Music | Nicola Mason",
+    description: "Acoustic wedding ceremony singer in Glasgow and across Scotland. Live music for your aisle walk, signing and exit. Check availability for your date.",
     url: "https://www.nicolamason.co.uk/wedding-ceremony-singer-scotland",
     images: [
       {
@@ -244,16 +243,18 @@ export default function WeddingCeremonySingerGlasgowPage() {
             Live Music for Your Wedding Ceremony
           </h1>
           <p className="text-xl text-[#444444] leading-relaxed mb-4">
-            Your ceremony is where the emotion of the whole day begins. It is
+            Your ceremony is where the emotion of the whole day begins. It&apos;s
             the moment the room goes quiet, the nerves turn into excitement,
             and everything starts to feel real.
           </p>
+          <p className="text-xl text-[#444444] leading-relaxed mb-4">
+            I perform live acoustic vocals that bring warmth, atmosphere and
+            feeling to each part of your ceremony — from walking down the aisle,
+            to the signing, to the moment you leave as newlyweds, whether
+            you&apos;re planning a civil or humanist ceremony.
+          </p>
           <p className="text-xl text-[#444444] leading-relaxed">
-            Live music adds warmth, atmosphere and feeling to each part of it
-            — from walking down the aisle, to the signing, to the moment you
-            leave as newlyweds, whether you&apos;re planning a civil or
-            humanist ceremony. The right songs do more than fill the silence.
-            They stay with you.
+            The right songs do more than fill the silence. They stay with you.
           </p>
         </div>
       </section>
@@ -319,6 +320,11 @@ export default function WeddingCeremonySingerGlasgowPage() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link href="/repertoire" className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider">
+              Browse My Ceremony Song List →
+            </Link>
           </div>
         </div>
       </section>
