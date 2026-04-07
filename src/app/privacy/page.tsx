@@ -74,7 +74,8 @@ export default function PrivacyPage() {
             </p>
             <ul className="text-sm space-y-2 pl-4 list-disc">
               <li><span className="text-[#2C2C2C] font-medium">Resend:</span> used to deliver website enquiry emails to us.</li>
-              <li><span className="text-[#2C2C2C] font-medium">Google Analytics:</span> used to collect website usage information.</li>
+              <li><span className="text-[#2C2C2C] font-medium">Umami:</span> used to collect anonymised website usage information.</li>
+              <li><span className="text-[#2C2C2C] font-medium">Vercel:</span> used to host and serve this website; may process request data including IP addresses at the network edge.</li>
             </ul>
             <p className="text-sm leading-relaxed mt-3">
               We may also disclose information where required to comply with applicable law, regulation, legal process, or to protect our legal rights.
@@ -84,7 +85,7 @@ export default function PrivacyPage() {
           <div>
             <h2 className="text-xl font-serif text-[#1a1a1a] mb-3">6. Cookies and Analytics</h2>
             <p className="text-sm leading-relaxed">
-              This website uses Google Analytics to help us understand how visitors use the site, such as which pages are visited and how visitors arrive here. Google Analytics may use cookies or similar technologies to collect information such as your IP address, browser type, device information, and on-site interactions.
+              This website uses Umami to help us understand how visitors use the site, such as which pages are visited and how visitors arrive here. Umami is a privacy-focused analytics tool that <strong>does not use cookies</strong> and does not collect personally identifiable information. Usage data is <strong>anonymised</strong>.
             </p>
           </div>
 
