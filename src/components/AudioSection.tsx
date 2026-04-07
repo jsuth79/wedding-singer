@@ -148,10 +148,6 @@ const moreTracks: { embedUrl: string; title: string }[] = [
     title: "Both Sides Now – Joni Mitchell",
   },
   {
-    embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/misty-ella-fitzgerald-1",
-    title: "Misty – Ella Fitzgerald",
-  },
-  {
     embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/mamma-mia-abba-5",
     title: "Mamma Mia – ABBA",
   },

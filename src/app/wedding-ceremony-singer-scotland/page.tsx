@@ -68,12 +68,6 @@ const ceremonyMoments = [
       },
     ],
     songs: [
-      "How Long Will I Love You – Ellie Goulding",
-      "I Get to Love You – Ruelle",
-      "I Can't Help Falling In Love – Elvis Presley",
-      "Lover – Taylor Swift",
-      "Iris – Goo Goo Dolls",
-      "Feels Like Home – Chantal Kreviazuk",
       "Marry You – Bruno Mars",
       "You're Still the One – Shania Twain",
     ],
@@ -111,11 +105,6 @@ const ceremonyMoments = [
       },
     ],
     songs: [
-      "Misty – Ella Fitzgerald",
-      "At Last – Etta James",
-      "Heaven – Bryan Adams",
-      "For Good – Wicked",
-      "A Million Dreams – The Greatest Showman",
       "Make You Feel My Love – Adele",
       "Your Song – Elton John",
     ],
@@ -153,13 +142,7 @@ const ceremonyMoments = [
       },
     ],
     songs: [
-      "Man I Need – Olivia Dean",
-      "Love at First Sight – Kylie Minogue",
-      "Don't Worry, Be Happy – Bobby McFerrin",
-      "The Promise – Girls Aloud",
-      "Love Story – Taylor Swift",
       "This Will Be – Natalie Cole",
-      "Signed, Sealed, Delivered, I'm Yours – Stevie Wonder",
       "Young Hearts Run Free – Candi Staton",
       "Yes Sir, I Can Boogie – Baccara",
     ],
@@ -306,7 +289,7 @@ export default function WeddingCeremonySingerGlasgowPage() {
                       </div>
                     </div>
                     <div>
-                      <p className="text-xs uppercase tracking-[0.2em] text-[#888888] mb-3">Songs Couples Love Here</p>
+                      <p className="text-xs uppercase tracking-[0.2em] text-[#888888] mb-3">Other Songs Couples Love Here</p>
                       <ul className="space-y-1.5">
                         {moment.songs.map((song) => (
                           <li key={song} className="flex items-start gap-2 text-sm text-[#444444]">
