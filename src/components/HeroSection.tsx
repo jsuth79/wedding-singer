@@ -36,12 +36,12 @@ export default function HeroSection() {
         <div className="relative z-10 w-full px-6 md:px-12 pb-8">
           <div className="ml-0 md:ml-8 flex flex-col items-center md:items-start gap-5">
             <div className="flex flex-col gap-4 md:inline-flex w-full md:w-auto">
-              <Link
-                href="/#listen"
+              <a
+                href="#listen"
                 className="flex justify-center border border-white text-white hover:bg-white hover:text-[#2C2C2C] px-8 py-4 text-sm tracking-wider transition-colors rounded-[6px] w-full"
               >
                 <span className="font-medium text-base">Listen Now</span>
-              </Link>
+              </a>
               <Link
                 href="/weddings"
                 onClick={() => trackEvent.viewPackage('hero_cta')}

@@ -18,7 +18,7 @@ declare global {
 
 const columns: { label: string; tracks: { embedUrl: string; title: string }[] }[] = [
   {
-    label: "Aisle Walk",
+    label: "Ceremony · Aisle Walk",
     tracks: [
       {
         embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/how-long-will-i-love-you-ellie-goulding-4",
@@ -51,7 +51,7 @@ const columns: { label: string; tracks: { embedUrl: string; title: string }[] }[
     ],
   },
   {
-    label: "Signing the Register",
+    label: "Ceremony · Signing the Register",
     tracks: [
       {
         embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/misty-ella-fitzgerald-1",
@@ -80,7 +80,7 @@ const columns: { label: string; tracks: { embedUrl: string; title: string }[] }[
     ],
   },
   {
-    label: "Ceremony Exit",
+    label: "Ceremony · Exit",
     tracks: [
       {
         embedUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nic-mason-2/man-i-need-raye",
@@ -183,7 +183,7 @@ export default function AudioSection() {
   let trackIndex = 0;
 
   return (
-    <section id="listen" className="py-12 md:py-24 px-6 bg-[#FAF8F3]">
+    <section id="listen" className="py-12 md:py-24 px-6 bg-[#FAF8F3] scroll-mt-24">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4">
@@ -226,7 +226,7 @@ export default function AudioSection() {
 
         <div className="text-center mt-8">
           <Link href="/wedding-ceremony-singer-scotland" className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider">
-            Plan Your Ceremony Music &rarr;
+            See Ceremony Options &rarr;
           </Link>
         </div>
 
@@ -255,7 +255,7 @@ export default function AudioSection() {
 
         <div className="text-center mt-10">
           <Link href="/repertoire" className="inline-block text-[#C4A882] border-b-2 border-[#C4A882] pb-1 hover:text-[#A68B5B] hover:border-[#A68B5B] transition-colors uppercase text-sm tracking-wider">
-            See More Songs &rarr;
+            Browse Song List &rarr;
           </Link>
         </div>
       </div>

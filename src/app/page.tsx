@@ -192,17 +192,9 @@ export default function HomePage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-[3fr_7fr] gap-8 md:gap-16 items-center">
-            <div className="aspect-[3/4] relative rounded-lg overflow-hidden">
-              <Image
-                src="/images/nicola-mason-about-me-p.webp"
-                alt="Professional female wedding and events singer Nicola Mason based in Central Scotland, trained at Berklee College of Music"
-                fill
-                sizes="(max-width: 768px) 100vw, 30vw"
-                className="object-cover"
-              />
-            </div>
-            <div>
+          <div className="flex flex-col md:grid md:grid-cols-[3fr_7fr] md:gap-x-16 gap-6 md:items-start">
+            {/* Text — first on mobile, right col top on desktop */}
+            <div className="order-1 md:order-2">
               <p className="text-[#444444] leading-relaxed mb-6">
                 I create relaxed, acoustic live music for weddings across Central
                 Scotland — from walking down the aisle to your drinks reception
@@ -214,11 +206,26 @@ export default function HomePage() {
                 personal to you — creating moments that you and your guests
                 will genuinely remember.
               </p>
-              <p className="text-[#444444] leading-relaxed mb-8">
+              <p className="text-[#444444] leading-relaxed">
                 I handle everything personally, so you can relax and enjoy your
                 day knowing your music is taken care of from your first enquiry
                 to the final song.
               </p>
+            </div>
+
+            {/* Image — second on mobile, left col spanning both rows on desktop */}
+            <div className="order-2 md:order-1 md:row-span-2 w-2/3 md:w-full mx-auto md:mx-0 aspect-[3/4] relative rounded-lg overflow-hidden">
+              <Image
+                src="/images/nicola-mason-about-me-p.webp"
+                alt="Professional female wedding and events singer Nicola Mason based in Central Scotland, trained at Berklee College of Music"
+                fill
+                sizes="(max-width: 768px) 100vw, 30vw"
+                className="object-cover"
+              />
+            </div>
+
+            {/* CTA — third on mobile, right col bottom on desktop */}
+            <div className="order-3 md:col-start-2">
               <h3 className="text-xl font-serif text-[#1a1a1a] text-center mb-4">
                 Tell me your date — I&apos;ll let you know if it&apos;s free
               </h3>

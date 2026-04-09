@@ -42,7 +42,7 @@ export default function WeddingsPage() {
     { title: "Drinks Reception", music: true, label: "Live acoustic set to entertain your guests" },
     { title: "Wedding Meal", music: true, label: "Live background music to enhance the atmosphere" },
     { title: "First Dances", music: true, label: "Live performance of your first dance & party songs to kick off the evening" },
-    { title: "Wedding Band or DJ", music: true, label: "The perfect handover" },
+    { title: "Evening Entertainment", music: true, label: "Keep the party going until last orders" },
   ];
 
   return (
@@ -286,7 +286,7 @@ export default function WeddingsPage() {
             </div>
 
             {/* Image column */}
-            <div>
+            <div className="w-2/3 lg:w-full mx-auto lg:mx-0">
               <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
                 <Image
                   src="/images/nicola-mason-full-package-p.webp"
