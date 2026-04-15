@@ -111,9 +111,13 @@ const faqs: { question: string; answer: React.ReactNode; schemaAnswer?: string }
 ];
 
 export default function HomePage() {
+  const pageUrl = "https://www.nicolamason.co.uk";
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": `${pageUrl}#faq`,
+    "mainEntityOfPage": pageUrl,
     "mainEntity": faqs.map((faq) => ({
       "@type": "Question",
       "name": faq.question,
@@ -127,12 +131,14 @@ export default function HomePage() {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
+    "@id": `${pageUrl}#service`,
+    "name": "Wedding Singer Services in Glasgow and Central Scotland",
+    "url": pageUrl,
+    "mainEntityOfPage": pageUrl,
+    "description": "Live acoustic wedding music for ceremonies, drinks receptions, wedding meals and celebrations across Glasgow and Central Scotland.",
     "serviceType": "Wedding Singer",
     "provider": {
-      "@type": "Person",
-      "name": "Nicola Mason",
-      "gender": "Female",
-      "jobTitle": "Professional Wedding Singer"
+      "@id": "https://www.nicolamason.co.uk/#localbusiness"
     },
     "areaServed": [
       {
@@ -144,20 +150,21 @@ export default function HomePage() {
         "name": "Edinburgh"
       },
       {
-        "@type": "State",
+        "@type": "AdministrativeArea",
         "name": "Central Scotland"
       },
       {
-        "@type": "State",
+        "@type": "AdministrativeArea",
         "name": "Lanarkshire"
       },
       {
-        "@type": "State",
+        "@type": "AdministrativeArea",
         "name": "Ayrshire"
       }
     ],
     "offers": {
       "@type": "Offer",
+      "url": "https://www.nicolamason.co.uk/weddings",
       "priceCurrency": "GBP",
       "price": "325",
       "priceSpecification": {
@@ -178,6 +185,7 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
+
       <HeroSection />
 
       {/* About Section */}

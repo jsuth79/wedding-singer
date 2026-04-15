@@ -1,12 +1,31 @@
 export default function StructuredData() {
+  const baseUrl = "https://www.nicolamason.co.uk";
+  const websiteId = `${baseUrl}/#website`;
+  const localBusinessId = `${baseUrl}/#localbusiness`;
+  const personId = `${baseUrl}/#person`;
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": websiteId,
+    url: baseUrl,
+    name: "Nicola Mason Wedding & Events Singer",
+    inLanguage: "en-GB",
+    publisher: { "@id": localBusinessId },
+  };
+
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "EntertainmentBusiness"],
-    "@id": "https://www.nicolamason.co.uk/#localbusiness",
+    "@id": localBusinessId,
     "name": "Nicola Mason Wedding & Events Singer",
-    "image": "https://www.nicolamason.co.uk/images/nicola-mason-wedding-events-singer.jpg",
+    "url": baseUrl,
+    "mainEntityOfPage": baseUrl,
+    "image": [
+      `${baseUrl}/images/nicola-mason-wedding-events-singer.jpg`,
+      `${baseUrl}/images/nicola-mason-about-me-p.webp`,
+    ],
     "description": "Award-winning wedding and events singer based in Glasgow, Scotland. Professional live music for ceremonies, receptions, and celebrations across Central Scotland.",
-    "url": "https://www.nicolamason.co.uk",
     "telephone": "+447740360678",
     "email": "hello@nicolamason.co.uk",
     "priceRange": "£325-£795",
@@ -59,13 +78,6 @@ export default function StructuredData() {
       "https://www.tiktok.com/@nicolamasonvocalist",
       "https://www.youtube.com/@nicolamasonvocalist"
     ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "bestRating": "5",
-      "worstRating": "1",
-      "ratingCount": "20"
-    },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Wedding & Events Services",
@@ -76,7 +88,7 @@ export default function StructuredData() {
             "@type": "Service",
             "name": "Wedding Ceremony",
             "description": "Live acoustic singing for wedding ceremonies, including pre-ceremony music, aisle, signing and exit songs",
-            "provider": { "@id": "https://www.nicolamason.co.uk/#localbusiness" }
+            "provider": { "@id": localBusinessId }
           },
           "price": "325",
           "priceCurrency": "GBP"
@@ -87,7 +99,7 @@ export default function StructuredData() {
             "@type": "Service",
             "name": "Wedding Drinks Reception",
             "description": "Two 45-minute live sets tailored to the couple, with curated playlist between sets",
-            "provider": { "@id": "https://www.nicolamason.co.uk/#localbusiness" }
+            "provider": { "@id": localBusinessId }
           },
           "price": "350",
           "priceCurrency": "GBP"
@@ -98,7 +110,7 @@ export default function StructuredData() {
             "@type": "Service",
             "name": "Wedding Meal",
             "description": "Live background music during the wedding breakfast, including grand entrance song and two live sets",
-            "provider": { "@id": "https://www.nicolamason.co.uk/#localbusiness" }
+            "provider": { "@id": localBusinessId }
           },
           "price": "350",
           "priceCurrency": "GBP"
@@ -109,7 +121,7 @@ export default function StructuredData() {
             "@type": "Service",
             "name": "First Dances",
             "description": "Live performance of first dances and one hour of evening reception music to kick off the dance floor",
-            "provider": { "@id": "https://www.nicolamason.co.uk/#localbusiness" }
+            "provider": { "@id": localBusinessId }
           },
           "price": "395",
           "priceCurrency": "GBP"
@@ -120,7 +132,7 @@ export default function StructuredData() {
             "@type": "Service",
             "name": "Daytime Wedding Package",
             "description": "Complete ceremony and drinks reception coverage — the most popular package combination",
-            "provider": { "@id": "https://www.nicolamason.co.uk/#localbusiness" }
+            "provider": { "@id": localBusinessId }
           },
           "price": "575",
           "priceCurrency": "GBP"
@@ -131,7 +143,7 @@ export default function StructuredData() {
             "@type": "Service",
             "name": "The Full Shebang",
             "description": "Full-day wedding music from ceremony through drinks reception to first dances and evening reception",
-            "provider": { "@id": "https://www.nicolamason.co.uk/#localbusiness" }
+            "provider": { "@id": localBusinessId }
           },
           "price": "795",
           "priceCurrency": "GBP"
@@ -143,12 +155,13 @@ export default function StructuredData() {
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": "https://www.nicolamason.co.uk/#person",
+    "@id": personId,
     "name": "Nicola Mason",
     "jobTitle": "Professional Wedding & Events Singer",
     "description": "Award-winning vocalist trained at Napier University and Berklee College of Music, specializing in wedding and event entertainment across Scotland.",
-    "url": "https://www.nicolamason.co.uk",
-    "image": "https://www.nicolamason.co.uk/images/nicola-mason-wedding-events-singer-p.webp",
+    "url": baseUrl,
+    "mainEntityOfPage": baseUrl,
+    "image": `${baseUrl}/images/nicola-mason-wedding-events-singer-p.webp`,
     "email": "hello@nicolamason.co.uk",
     "telephone": "+447740360678",
     "alumniOf": [
@@ -199,11 +212,15 @@ export default function StructuredData() {
         "name": "Glasgow"
       }
     },
-    "worksFor": { "@id": "https://www.nicolamason.co.uk/#localbusiness" }
+    "worksFor": { "@id": localBusinessId }
   };
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}

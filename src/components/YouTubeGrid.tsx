@@ -24,42 +24,42 @@ const videos = [
   {
     id: "0lfc3it4ipc",
     title: "Don't Worry Be Happy by Bobby McFerrin at Atholl Palace Hotel",
-    description: "Watch Nicola Mason perform Don't Worry Be Happy at a Scottish wedding at Atholl Palace Hotel"
+    description: "Watch Nicola Mason perform Don't Worry Be Happy at a Scottish wedding at Atholl Palace Hotel",
   },
   {
     id: "eWq4rpsgmr0",
     title: "At Last by Etta James",
-    description: "Live wedding ceremony performance of At Last by professional female singer Nicola Mason"
+    description: "Live wedding ceremony performance of At Last by professional female singer Nicola Mason",
   },
   {
     id: "szMqypzyTVo",
     title: "Feels Like Home by Chantal Kreviazuk",
-    description: "Female vocalist performing Feels Like Home at a Scottish wedding ceremony"
+    description: "Female vocalist performing Feels Like Home at a Scottish wedding ceremony",
   },
   {
     id: "QpFyIJRPBR4",
     title: "I Can't Help Falling In Love by Elvis Presley at Pollokshields Burgh Hall",
-    description: "Elvis Presley classic performed live by female wedding singer at Glasgow wedding venue"
+    description: "Elvis Presley classic performed live by female wedding singer at Glasgow wedding venue",
   },
   {
     id: "ECPd4LBicRI",
     title: "True Colors by Cyndi Lauper",
-    description: "Live acoustic performance of True Colors by professional female wedding vocalist"
+    description: "Live acoustic performance of True Colors by professional female wedding vocalist",
   },
   {
     id: "PwrhoMe0cxA",
     title: "Glasgow No Place Like Home by Jessie Buckley at Oran Mor",
-    description: "Jessie Buckley song performed by female wedding singer at iconic Glasgow venue Oran Mor"
+    description: "Jessie Buckley song performed by female wedding singer at iconic Glasgow venue Oran Mor",
   },
   {
     id: "NvmNEAfTk2Y",
     title: "I Get To Love You by Ruelle at Dalziel Park",
-    description: "Ruelle wedding song performed live by female vocalist at Dalziel Park wedding"
+    description: "Ruelle wedding song performed live by female vocalist at Dalziel Park wedding",
   },
   {
     id: "6xz9mic2SA4",
     title: "At Last by Etta James at Coats Paisley",
-    description: "Classic wedding song performed by professional female singer at Coats Paisley venue"
+    description: "Classic wedding song performed by professional female singer at Coats Paisley venue",
   },
 ];
 
@@ -67,15 +67,18 @@ export default function YouTubeGrid() {
   const videoSchema = videos.map((video) => ({
     "@context": "https://schema.org",
     "@type": "VideoObject",
+    "@id": `https://www.nicolamason.co.uk/#video-${video.id}`,
     "name": video.title,
     "description": video.description,
     "thumbnailUrl": `https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`,
-    "uploadDate": "2024-01-01T00:00:00Z",
-    "contentUrl": `https://www.youtube.com/watch?v=${video.id}`,
     "embedUrl": `https://www.youtube.com/embed/${video.id}`,
+    "contentUrl": `https://www.youtube.com/watch?v=${video.id}`,
+    "mainEntityOfPage": "https://www.nicolamason.co.uk",
+    "isFamilyFriendly": true,
     "publisher": {
       "@type": "Person",
-      "name": "Nicola Mason"
+      "@id": "https://www.nicolamason.co.uk/#person",
+      "name": "Nicola Mason",
     }
   }));
 

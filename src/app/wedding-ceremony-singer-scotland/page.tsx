@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import PackageCard from "@/components/PackageCard";
@@ -196,9 +195,13 @@ const soundcloudSrc = (embedUrl: string) =>
   `${embedUrl}&color=%23C4A882&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false`;
 
 export default function WeddingCeremonySingerGlasgowPage() {
+  const pageUrl = "https://www.nicolamason.co.uk/wedding-ceremony-singer-scotland";
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": `${pageUrl}#faq`,
+    "mainEntityOfPage": pageUrl,
     "mainEntity": faqs.map((faq) => ({
       "@type": "Question",
       "name": faq.q,
@@ -209,11 +212,75 @@ export default function WeddingCeremonySingerGlasgowPage() {
     })),
   };
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${pageUrl}#service`,
+    name: "Wedding Ceremony Singer",
+    url: pageUrl,
+    mainEntityOfPage: pageUrl,
+    description:
+      "Live wedding ceremony music for aisle, signing and exit songs across Glasgow and Scotland.",
+    serviceType: "Wedding Ceremony Singer",
+    provider: {
+      "@id": "https://www.nicolamason.co.uk/#localbusiness",
+    },
+    areaServed: [
+      { "@type": "City", name: "Glasgow" },
+      { "@type": "City", name: "Edinburgh" },
+      { "@type": "AdministrativeArea", name: "Central Scotland" },
+    ],
+    offers: {
+      "@type": "Offer",
+      url: pageUrl,
+      price: ceremonyPackage.price.replace("£", ""),
+      priceCurrency: "GBP",
+      itemOffered: {
+        "@type": "Service",
+        name: "Wedding Ceremony",
+      },
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": `${pageUrl}#breadcrumb`,
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.nicolamason.co.uk",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Weddings",
+        item: "https://www.nicolamason.co.uk/weddings",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Wedding Ceremony Singer Scotland",
+        item: pageUrl,
+      },
+    ],
+  };
+
   return (
     <div className="pt-24">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* Hero */}
@@ -472,7 +539,7 @@ export default function WeddingCeremonySingerGlasgowPage() {
             >
               <span className="font-medium text-base">Send An Enquiry</span>
               <span className="text-sm normal-case tracking-normal mt-1 opacity-90">
-                quick form · I'll reply personally
+                quick form · I&apos;ll reply personally
               </span>
             </TrackedEnquiryLink>
           </div>
