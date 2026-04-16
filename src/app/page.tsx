@@ -9,14 +9,14 @@ import TrackedWhatsAppLink from "@/components/TrackedWhatsAppLink";
 import TrackedEnquiryLink from "@/components/TrackedEnquiryLink";
 
 export const metadata: Metadata = {
-  title: "Wedding Singer Glasgow | Acoustic Wedding Music Scotland | Nicola Mason",
+  title: "Nicola Mason Wedding & Events Singer",
   description:
     "Professional wedding singer in Glasgow and across Scotland. Acoustic live music for ceremonies, drinks receptions and wedding meals. Scottish Wedding Awards winner.",
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: "Wedding Singer Glasgow | Acoustic Wedding Music Scotland | Nicola Mason",
+    title: "Nicola Mason Wedding & Events Singer",
     description: "Professional wedding singer in Glasgow and across Scotland. Acoustic live music for ceremonies, drinks receptions and wedding meals. Scottish Wedding Awards winner.",
     url: 'https://www.nicolamason.co.uk',
     images: [
