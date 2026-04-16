@@ -68,8 +68,13 @@ export function identifySession() {
   const now = new Date();
   const day_of_week = [0, 6].includes(now.getDay()) ? 'weekend' : 'weekday';
 
-  const isFirstVisit = !localStorage.getItem('nm_visited');
-  if (isFirstVisit) localStorage.setItem('nm_visited', '1');
+  let isFirstVisit = false;
+  try {
+    isFirstVisit = !localStorage.getItem('nm_visited');
+    if (isFirstVisit) localStorage.setItem('nm_visited', '1');
+  } catch {
+    // localStorage unavailable (e.g. private browsing with strict settings)
+  }
 
   const data: Record<string, string> = {
     channel,
@@ -81,7 +86,11 @@ export function identifySession() {
   const funnel = getFunnelStage(window.location.pathname);
   if (funnel) {
     data.funnel = funnel;
-    sessionStorage.setItem(FUNNEL_KEY, String(FUNNEL_RANKS[funnel]));
+    try {
+      sessionStorage.setItem(FUNNEL_KEY, String(FUNNEL_RANKS[funnel]));
+    } catch {
+      // sessionStorage unavailable
+    }
   }
 
   window.umami.identify(data);

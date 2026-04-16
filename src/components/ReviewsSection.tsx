@@ -197,9 +197,9 @@ export default function ReviewsSection() {
         {/* Desktop: 3 cards */}
         <div className="hidden lg:block">
           <div className="grid grid-cols-3 gap-6 mb-8">
-            {getVisibleReviews().map((review, idx) => (
+            {getVisibleReviews().map((review) => (
               <div
-                key={`${review.initials}-${idx}`}
+                key={review.name}
                 className="bg-white rounded-lg p-6 shadow-sm"
               >
                 <div className="flex items-start gap-4 mb-4">
@@ -253,9 +253,9 @@ export default function ReviewsSection() {
           <div className="grid grid-cols-2 gap-6 mb-8">
             {getVisibleReviews()
               .slice(0, 2)
-              .map((review, idx) => (
+              .map((review) => (
                 <div
-                  key={`${review.initials}-${idx}`}
+                  key={review.name}
                   className="bg-white rounded-lg p-6 shadow-sm"
                 >
                   <div className="flex items-start gap-4 mb-4">
