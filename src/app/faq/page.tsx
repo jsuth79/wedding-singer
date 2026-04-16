@@ -99,6 +99,18 @@ const faqs: { question: string; answer: React.ReactNode; schemaAnswer?: string }
 ];
 
 export default function FAQPage() {
+  const pageUrl = "https://www.nicolamason.co.uk/faq";
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": `${pageUrl}#breadcrumb`,
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.nicolamason.co.uk" },
+      { "@type": "ListItem", position: 2, name: "FAQ", item: pageUrl },
+    ],
+  };
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -114,6 +126,7 @@ export default function FAQPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

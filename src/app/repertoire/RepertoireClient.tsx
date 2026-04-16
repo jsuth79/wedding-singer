@@ -98,6 +98,7 @@ const songs: { song: string; artist: string }[] = [
   { song: "I Choose You", artist: "Sara Bareilles" },
   { song: "From This Moment", artist: "Shania Twain" },
   { song: "Whose Bed Have Your Boots Been Under", artist: "Shania Twain" },
+  { song: "You're Still The One", artist: "Shania Twain" },
   { song: "Kiss Me", artist: "Sixpence None the Richer" },
   { song: "Turning Page", artist: "Sleeping at Last" },
   { song: "Murder on the Dancefloor", artist: "Sophie Ellis-Bextor" },

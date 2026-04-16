@@ -1,6 +1,18 @@
 import type { Metadata } from "next";
 import RepertoireClient from "./RepertoireClient";
 
+const pageUrl = "https://www.nicolamason.co.uk/repertoire";
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": `${pageUrl}#breadcrumb`,
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.nicolamason.co.uk" },
+    { "@type": "ListItem", position: 2, name: "Repertoire", item: pageUrl },
+  ],
+};
+
 export const metadata: Metadata = {
   title: "Wedding Singer Song List | Acoustic Repertoire Scotland | Nicola Mason",
   description:
@@ -18,6 +30,7 @@ export const metadata: Metadata = {
 export default function RepertoirePage() {
   return (
     <div className="pt-24">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
         <div className="max-w-5xl mx-auto">
           <p className="text-[#C4A882] text-sm uppercase tracking-[0.2em] mb-4 text-center">

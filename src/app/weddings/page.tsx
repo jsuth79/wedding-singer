@@ -6,6 +6,18 @@ import TrackedEnquiryLink from "@/components/TrackedEnquiryLink";
 import PackageCard from "@/components/PackageCard";
 import { packages, extras } from "@/data/packages";
 
+const pageUrl = "https://www.nicolamason.co.uk/weddings";
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": `${pageUrl}#breadcrumb`,
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.nicolamason.co.uk" },
+    { "@type": "ListItem", position: 2, name: "Weddings", item: pageUrl },
+  ],
+};
+
 type MobileTimelineStep = {
   title: string;
   music: boolean;
@@ -47,6 +59,7 @@ export default function WeddingsPage() {
 
   return (
     <div className="pt-24">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {/* Hero */}
       <section className="py-12 md:py-24 px-6 bg-[#F5F1EB]">
         <div className="max-w-4xl mx-auto text-center">
