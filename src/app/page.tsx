@@ -11,13 +11,13 @@ import TrackedEnquiryLink from "@/components/TrackedEnquiryLink";
 export const metadata: Metadata = {
   title: "Nicola Mason Wedding & Events Singer",
   description:
-    "Professional wedding singer in Glasgow and across Scotland. Acoustic live music for ceremonies, drinks receptions and wedding meals. Scottish Wedding Awards winner.",
+    "Professional acoustic wedding singer in Glasgow, Edinburgh and across Scotland. Live music for ceremonies, drinks receptions and wedding meals. Scottish Wedding Awards winner.",
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Nicola Mason Wedding & Events Singer",
-    description: "Professional wedding singer in Glasgow and across Scotland. Acoustic live music for ceremonies, drinks receptions and wedding meals. Scottish Wedding Awards winner.",
+    description: "Professional acoustic wedding singer in Glasgow, Edinburgh and across Scotland. Live music for ceremonies, drinks receptions and wedding meals. Scottish Wedding Awards winner.",
     url: 'https://www.nicolamason.co.uk',
     images: [
       {
@@ -204,9 +204,7 @@ export default function HomePage() {
             {/* Text — first on mobile, right col top on desktop */}
             <div className="order-1 md:order-2">
               <p className="text-[#444444] leading-relaxed mb-6">
-                I create relaxed, acoustic live music for weddings across Central
-                Scotland — from walking down the aisle to your drinks reception
-                and wedding meal.
+                I'm an acoustic wedding singer based in Central Scotland — from walking down the aisle to your drinks reception and wedding meal.
               </p>
               <p className="text-[#444444] leading-relaxed mb-6">
                 Trained at Napier University and Berklee College of Music in

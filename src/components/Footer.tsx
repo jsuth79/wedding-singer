@@ -30,7 +30,7 @@ export default function Footer() {
 
           {/* SEO Text - Middle */}
           <p className="text-sm leading-relaxed text-center max-w-2xl">
-            Nicola Mason is an award-winning professional female wedding singer
+            Nicola Mason is an award-winning professional acoustic wedding singer
             providing live music across Central Scotland, including Glasgow,
             Lanarkshire, Edinburgh, Ayrshire, and The Lothians, bringing years
             of experience and good vibes to every event.

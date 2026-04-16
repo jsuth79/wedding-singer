@@ -27,7 +27,7 @@ export default function HeroSection() {
               Award-Winning Music for Your Wedding Day
             </h1>
             <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
-              Live acoustic singing throughout your wedding day, from your aisle walk through to your first dances.
+              Acoustic wedding singer for your wedding day — from your aisle walk and drinks reception through to your first dances.
             </p>
           </div>
         </div>

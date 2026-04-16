@@ -14,14 +14,14 @@ const breadcrumbSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "Wedding Singer Song List | Acoustic Repertoire Scotland | Nicola Mason",
+  title: "Acoustic Wedding Singer Song List | Repertoire Scotland | Nicola Mason",
   description:
     "Browse Nicola Mason's acoustic wedding song list, featuring popular songs for ceremonies, drinks receptions and wedding meals across Scotland.",
   alternates: {
     canonical: "/repertoire",
   },
   openGraph: {
-    title: "Wedding Singer Song List | Acoustic Repertoire Scotland | Nicola Mason",
+    title: "Acoustic Wedding Singer Song List | Repertoire Scotland | Nicola Mason",
     description: "Browse Nicola Mason's acoustic wedding song list, featuring popular songs for ceremonies, drinks receptions and wedding meals across Scotland.",
     url: "https://www.nicolamason.co.uk/repertoire",
   },
