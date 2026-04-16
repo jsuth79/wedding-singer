@@ -23,15 +23,17 @@ interface EnquiryData {
   phone?: string;
   eventDate: string;
   eventType: string;
+  location?: string;
   message: string;
 }
 
 export async function sendEnquiryEmail(data: EnquiryData) {
-  const { name, email, phone, eventDate, eventType, message } = data;
+  const { name, email, phone, eventDate, eventType, location, message } = data;
   const safeName = escapeHtml(name);
   const safeEmail = escapeHtml(email);
   const safePhone = phone ? escapeHtml(phone) : "";
   const safeEventType = escapeHtml(eventType);
+  const safeLocation = location ? escapeHtml(location) : "";
   const safeMessage = escapeHtml(message);
   const safeMailtoEmail = encodeURIComponent(email);
 
@@ -84,6 +86,12 @@ export async function sendEnquiryEmail(data: EnquiryData) {
             <td style="padding: 10px 0; color: #78716c;">Event Date:</td>
             <td style="padding: 10px 0; color: #1c1917;">${formattedDate}</td>
           </tr>
+          ${location ? `
+          <tr>
+            <td style="padding: 10px 0; color: #78716c;">Venue / Location:</td>
+            <td style="padding: 10px 0; color: #1c1917;">${safeLocation}</td>
+          </tr>
+          ` : ""}
         </table>
 
         <div style="background: #fafaf9; padding: 20px; border-left: 4px solid #e11d48; margin: 20px 0;">

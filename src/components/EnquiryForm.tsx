@@ -9,6 +9,7 @@ interface FormData {
   phone: string;
   eventDate: string;
   eventType: string;
+  location: string;
   message: string;
 }
 
@@ -27,6 +28,7 @@ export default function EnquiryForm() {
     phone: "",
     eventDate: "",
     eventType: "",
+    location: "",
     message: "",
   });
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -193,6 +195,21 @@ export default function EnquiryForm() {
               </option>
             ))}
           </select>
+        </div>
+
+        <div>
+          <label htmlFor="location" className="block text-sm font-medium text-[#2C2C2C] mb-2">
+            Venue / Location
+          </label>
+          <input
+            type="text"
+            id="location"
+            name="location"
+            value={formData.location}
+            onChange={(e) => setFormData({ ...formData, location: e.target.value })}
+            className="w-full px-4 py-3 bg-white border border-stone-300 rounded-[6px] focus:ring-2 focus:ring-[#C4A882] focus:border-transparent transition-shadow"
+            placeholder="e.g. Balmoral Hotel, Edinburgh"
+          />
         </div>
       </div>
 
