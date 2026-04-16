@@ -3,14 +3,14 @@ import EnquiryForm from "@/components/EnquiryForm";
 import TrackedWhatsAppLink from "@/components/TrackedWhatsAppLink";
 
 export const metadata: Metadata = {
-  title: "Check Availability | Wedding Singer Glasgow | Nicola Mason",
+  title: "Check Availability | Wedding Singer Glasgow & Edinburgh",
   description:
     "Check availability for your wedding date and get a quick personal reply. Message on WhatsApp or send an enquiry — I'll get back to you promptly.",
   alternates: {
     canonical: '/enquiry',
   },
   openGraph: {
-    title: "Check Availability | Wedding Singer Glasgow | Nicola Mason",
+    title: "Check Availability | Wedding Singer Glasgow & Edinburgh",
     description: "Check availability for your wedding date and get a quick personal reply. Message on WhatsApp or send an enquiry — I'll get back to you promptly.",
     url: 'https://www.nicolamason.co.uk/enquiry',
   },

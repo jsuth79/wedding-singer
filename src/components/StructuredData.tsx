@@ -207,10 +207,10 @@ export default function StructuredData() {
     "hasOccupation": {
       "@type": "Occupation",
       "name": "Wedding Singer",
-      "occupationLocation": {
-        "@type": "City",
-        "name": "Glasgow"
-      }
+      "occupationLocation": [
+        { "@type": "City", "name": "Glasgow" },
+        { "@type": "City", "name": "Edinburgh" }
+      ]
     },
     "worksFor": { "@id": localBusinessId }
   };

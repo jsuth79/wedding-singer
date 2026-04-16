@@ -6,15 +6,15 @@ import TrackedEnquiryLink from "@/components/TrackedEnquiryLink";
 import { packages } from "@/data/packages";
 
 export const metadata: Metadata = {
-  title: "Wedding Ceremony Singer Glasgow | Acoustic Aisle & Ceremony Music | Nicola Mason",
+  title: "Wedding Ceremony Singer Glasgow & Edinburgh | Acoustic Aisle & Ceremony Music",
   description:
-    "Acoustic wedding ceremony singer in Glasgow and across Scotland. Live music for your aisle walk, signing and exit. Check availability for your date.",
+    "Acoustic wedding ceremony singer in Glasgow, Edinburgh and across Scotland. Live music for your aisle walk, signing and exit. Check availability for your date.",
   alternates: {
     canonical: "/wedding-ceremony-singer-scotland",
   },
   openGraph: {
-    title: "Wedding Ceremony Singer Glasgow | Acoustic Aisle & Ceremony Music | Nicola Mason",
-    description: "Acoustic wedding ceremony singer in Glasgow and across Scotland. Live music for your aisle walk, signing and exit. Check availability for your date.",
+    title: "Wedding Ceremony Singer Glasgow & Edinburgh | Acoustic Aisle & Ceremony Music",
+    description: "Acoustic wedding ceremony singer in Glasgow, Edinburgh and across Scotland. Live music for your aisle walk, signing and exit. Check availability for your date.",
     url: "https://www.nicolamason.co.uk/wedding-ceremony-singer-scotland",
     images: [
       {

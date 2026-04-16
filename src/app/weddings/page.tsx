@@ -27,15 +27,15 @@ type MobileTimelineStep = {
 };
 
 export const metadata: Metadata = {
-  title: "Wedding Singer Packages Glasgow | Ceremony & Reception Music | Nicola Mason",
+  title: "Wedding Singer Packages Glasgow & Edinburgh | Ceremony & Reception Music",
   description:
-    "Wedding singer packages for ceremonies, drinks receptions and wedding meals. Clear pricing and options across Glasgow and Central Scotland.",
+    "Wedding singer packages for ceremonies, drinks receptions and wedding meals. Clear pricing and options across Glasgow, Edinburgh and Central Scotland.",
   alternates: {
     canonical: '/weddings',
   },
   openGraph: {
-    title: "Wedding Singer Packages Glasgow | Ceremony & Reception Music | Nicola Mason",
-    description: "Wedding singer packages for ceremonies, drinks receptions and wedding meals. Clear pricing and options across Glasgow and Central Scotland.",
+    title: "Wedding Singer Packages Glasgow & Edinburgh | Ceremony & Reception Music",
+    description: "Wedding singer packages for ceremonies, drinks receptions and wedding meals. Clear pricing and options across Glasgow, Edinburgh and Central Scotland.",
     url: 'https://www.nicolamason.co.uk/weddings',
     images: [
       {
