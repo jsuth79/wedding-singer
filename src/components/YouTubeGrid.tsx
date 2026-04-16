@@ -25,41 +25,49 @@ const videos = [
     id: "0lfc3it4ipc",
     title: "Don't Worry Be Happy by Bobby McFerrin at Atholl Palace Hotel",
     description: "Watch Nicola Mason perform Don't Worry Be Happy at a Scottish wedding at Atholl Palace Hotel",
+    uploadDate: "2025-04-12T00:00:00+01:00",
   },
   {
     id: "eWq4rpsgmr0",
     title: "At Last by Etta James",
     description: "Live wedding ceremony performance of At Last by professional female singer Nicola Mason",
+    uploadDate: "2025-04-12T00:00:00+01:00",
   },
   {
     id: "szMqypzyTVo",
     title: "Feels Like Home by Chantal Kreviazuk",
     description: "Female vocalist performing Feels Like Home at a Scottish wedding ceremony",
+    uploadDate: "2025-04-12T00:00:00+01:00",
   },
   {
     id: "QpFyIJRPBR4",
     title: "I Can't Help Falling In Love by Elvis Presley at Pollokshields Burgh Hall",
     description: "Elvis Presley classic performed live by female wedding singer at Glasgow wedding venue",
+    uploadDate: "2025-04-12T00:00:00+01:00",
   },
   {
     id: "ECPd4LBicRI",
     title: "True Colors by Cyndi Lauper",
     description: "Live acoustic performance of True Colors by professional female wedding vocalist",
+    uploadDate: "2025-04-12T00:00:00+01:00",
   },
   {
     id: "PwrhoMe0cxA",
     title: "Glasgow No Place Like Home by Jessie Buckley at Oran Mor",
     description: "Jessie Buckley song performed by female wedding singer at iconic Glasgow venue Oran Mor",
+    uploadDate: "2025-04-12T00:00:00+01:00",
   },
   {
     id: "NvmNEAfTk2Y",
     title: "I Get To Love You by Ruelle at Dalziel Park",
     description: "Ruelle wedding song performed live by female vocalist at Dalziel Park wedding",
+    uploadDate: "2025-04-12T00:00:00+01:00",
   },
   {
     id: "6xz9mic2SA4",
     title: "At Last by Etta James at Coats Paisley",
     description: "Classic wedding song performed by professional female singer at Coats Paisley venue",
+    uploadDate: "2025-04-12T00:00:00+01:00",
   },
 ];
 
@@ -70,6 +78,7 @@ export default function YouTubeGrid() {
     "@id": `https://www.nicolamason.co.uk/#video-${video.id}`,
     "name": video.title,
     "description": video.description,
+    "uploadDate": video.uploadDate,
     "thumbnailUrl": `https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`,
     "embedUrl": `https://www.youtube.com/embed/${video.id}`,
     "contentUrl": `https://www.youtube.com/watch?v=${video.id}`,

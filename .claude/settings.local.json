@@ -30,7 +30,9 @@
       "Bash(xargs kill -9)",
       "Bash(ls:*)",
       "Bash(xargs grep:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "WebFetch(domain:www.youtube.com)",
+      "WebFetch(domain:developers.google.com)"
     ]
   }
 }
