@@ -61,6 +61,7 @@ export default function EnquiryForm() {
         phone: "",
         eventDate: "",
         eventType: "",
+        location: "",
         message: "",
       });
     } catch (error) {

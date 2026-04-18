@@ -27,7 +27,7 @@ export default function HeroSection() {
               Award-Winning Music for Your Wedding Day
             </h1>
             <p className="hidden md:block text-xl md:text-2xl text-white/90 leading-relaxed">
-              Acoustic wedding singer for your wedding day — from your aisle walk and drinks reception through to your first dances.
+              Acoustic wedding singer — from your aisle walk through to your first dances.
             </p>
           </div>
         </div>
@@ -36,7 +36,7 @@ export default function HeroSection() {
         <div className="relative z-10 w-full px-6 md:px-12 pb-8">
           <div className="mr-0 md:mr-8 flex flex-col items-center md:items-end gap-5">
             <p className="md:hidden text-xl text-white/90 leading-relaxed text-center">
-              Acoustic wedding singer for your wedding day — from your aisle walk and drinks reception through to your first dances.
+              Acoustic wedding singer — from your aisle walk through to your first dances.
             </p>
             <div className="flex flex-col gap-4 md:inline-flex w-full md:w-auto">
               <a
