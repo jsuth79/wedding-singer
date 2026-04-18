@@ -14,19 +14,19 @@ export default function HeroSection() {
             src="/images/nicola-mason-wedding-events-singer-l.webp"
             alt="Award-winning female wedding singer Nicola Mason performing live music at Scottish wedding"
             fill
-            className="object-cover object-top"
+            className="object-cover [object-position:calc(50%+110px)_top] md:object-top"
             priority
           />
           <div className="absolute inset-0 bg-black/15" />
         </div>
 
         {/* Heading - top */}
-        <div className="relative z-10 w-full px-6 md:px-12 pt-32 max-md:landscape:pt-20 md:pt-32">
-          <div className="max-w-2xl ml-0 md:ml-8">
+        <div className="relative z-10 w-full px-6 md:px-12 pt-32 max-md:landscape:pt-20 md:pt-32 flex justify-end">
+          <div className="max-w-lg mr-0 md:mr-8 text-right">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6 leading-tight">
               Award-Winning Music for Your Wedding Day
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
+            <p className="hidden md:block text-xl md:text-2xl text-white/90 leading-relaxed">
               Acoustic wedding singer for your wedding day — from your aisle walk and drinks reception through to your first dances.
             </p>
           </div>
@@ -34,7 +34,10 @@ export default function HeroSection() {
 
         {/* CTA - bottom */}
         <div className="relative z-10 w-full px-6 md:px-12 pb-8">
-          <div className="ml-0 md:ml-8 flex flex-col items-center md:items-start gap-5">
+          <div className="mr-0 md:mr-8 flex flex-col items-center md:items-end gap-5">
+            <p className="md:hidden text-xl text-white/90 leading-relaxed text-center">
+              Acoustic wedding singer for your wedding day — from your aisle walk and drinks reception through to your first dances.
+            </p>
             <div className="flex flex-col gap-4 md:inline-flex w-full md:w-auto">
               <a
                 href="#listen"
